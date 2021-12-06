@@ -5,4 +5,19 @@ import 'package:get/get.dart';
 
 class LevelControllerImpl extends LevelController {
   final LevelUseCase levelUseCase = Get.find<LevelUseCase>();
+
+  @override
+  List<LevelDomain> findAll() {
+    return levelUseCase.findAll();
+  }
+
+  @override
+  LevelDomain findBy(int keyId) {
+    return levelUseCase.findBy(keyId);
+  }
+
+  @override
+  int count() {
+    return levelUseCase.count();
+  }
 }

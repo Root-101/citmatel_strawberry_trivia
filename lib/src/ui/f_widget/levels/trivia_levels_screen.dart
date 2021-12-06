@@ -18,14 +18,18 @@ class TriviaLevelsScreen extends GetView<LevelController> {
 
   AppBar _appBar() {
     return AppBar(
-      title: Text("Trivia Module AppBar"),
+      title: Text(
+        "Trivia Module AppBar",
+      ),
     );
   }
 
   Widget _buildBody() {
     return Container(
       child: Center(
-        child: Text("Trivia Module"),
+        child: Text(
+          "Trivia Module. ${controller.count()}",
+        ),
       ),
     );
   }
