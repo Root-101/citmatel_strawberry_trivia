@@ -2,8 +2,8 @@ import 'package:get/get.dart';
 
 import '../trivia_app_exporter.dart';
 
-class ShopCoreModule {
+class TriviaCoreModule {
   static void init() {
-    Get.put<ProductUseCase>(LevelUseCaseImpl());
+    Get.put<LevelUseCase>(LevelUseCaseImpl(LevelsAll.levels));
   }
 }
