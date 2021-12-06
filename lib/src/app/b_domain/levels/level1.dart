@@ -1,7 +1,7 @@
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 
 class Level1 {
-  final LevelDomain level1 = LevelDomain(
+  static final LevelDomain level1 = LevelDomain(
     id: 1,
     theme: "Tutorial",
     urlThemePicture: "",
