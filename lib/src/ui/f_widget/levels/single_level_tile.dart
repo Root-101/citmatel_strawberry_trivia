@@ -20,6 +20,7 @@ class SingleLevelTile extends StatelessWidget {
     );
   }
 
+  //Tile chiquito que se muestra en la lista con todos los subniveles
   _buildClosed() {
     return Container(
       child: Center(
@@ -28,6 +29,7 @@ class SingleLevelTile extends StatelessWidget {
     );
   }
 
+  //Screen grande para cuando se entra al subnivel, pantalla de juego del subnivel especifico.
   _buildOpen() {
     return Container(
       child: Center(
