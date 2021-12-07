@@ -29,6 +29,82 @@ class Level1 {
           ]),
         ],
       ),
+      SubLevelDomain(
+        id: 2,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 3,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 4,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 5,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 6,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 7,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 8,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 9,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 10,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 11,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 12,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 13,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 14,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 15,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 16,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 17,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 18,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 19,
+        question: [],
+      ),
+      SubLevelDomain(
+        id: 20,
+        question: [],
+      ),
     ],
   );
 }
