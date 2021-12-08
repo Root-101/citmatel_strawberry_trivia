@@ -20,6 +20,9 @@ dependencies:
   animations: ^2.0.2
   cupertino_icons: ^1.0.2
   page_view_indicators: ^2.0.0
+  liquid_progress_indicator: ^0.4.0  
+  flutter_countdown_timer: ^4.1.0
+  flutter_svg: ^0.23.0+1
 
 
   #Modified Masters
@@ -31,5 +34,7 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  assets:
+    - assets/icons/
 
   uses-material-design: true
