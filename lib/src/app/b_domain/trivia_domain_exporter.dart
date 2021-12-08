@@ -7,4 +7,4 @@ export 'question_domain.dart';
 export 'sub_level_domain.dart';
 
 
-export 'levels/trivia_domain_exporter.dart';
+export 'levels/trivia_level_exporter.dart';
