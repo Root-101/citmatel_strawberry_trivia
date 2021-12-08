@@ -16,11 +16,15 @@ dependencies:
   clean_core: ^1.1.2-SNAPSHOT.20211206
 
   cupertino_icons: ^1.0.2
+  # to handle SVGs for Android, iOS, and Web
+  flutter_svg: ^0.23.0+1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
+  assets:
+    - assets/icons/
 
   uses-material-design: true
