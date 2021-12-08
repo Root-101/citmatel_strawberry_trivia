@@ -11,14 +11,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  get: ^4.5.1
 
+  # Architecture & Management
+  get: ^4.5.1
   clean_core: ^1.1.2-SNAPSHOT.20211206
 
+  # Visual & Animations
   animations: ^2.0.2
-  page_view_indicators: ^2.0.0
-  
   cupertino_icons: ^1.0.2
+  page_view_indicators: ^2.0.0
+
+
+  #Modified Masters
+  circular_countdown_timer:
+    path: ../master/circular_countdown_timer
 
 dev_dependencies:
   flutter_test:
