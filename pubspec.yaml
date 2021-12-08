@@ -16,6 +16,8 @@ dependencies:
   clean_core: ^1.1.2-SNAPSHOT.20211206
 
   cupertino_icons: ^1.0.2
+  liquid_progress_indicator: ^0.4.0  
+  flutter_countdown_timer: ^4.1.0
   # to handle SVGs for Android, iOS, and Web
   flutter_svg: ^0.23.0+1
 
