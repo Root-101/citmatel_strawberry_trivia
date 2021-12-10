@@ -3,10 +3,20 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 abstract class SubLevelController extends GetxController {
-  SubLevelDomain get subLevelDomain;
-  int get activeStep;
+  RxInt get activeStep;
+
   int get dotCount;
-  PageController get pageController;
+  int get correctAnswerId;
+  int get numOfCorrectAnswers;
+  int get durationOfProgressBar;
+
   void onDotTapped(tappedDotIndex);
   void nextQuestion();
+  void updateTheQuestionNum(int index);
+  void checkAnswer(int selectedId);
+
+  int questionsLength();
+  SubLevelDomain get subLevelDomain;
+  Color getTheRightColor(int index);
+  IconData getTheRightIconData(int index);
 }
