@@ -29,38 +29,51 @@ class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
   late CountdownTimerController _timerController;
 
   _buildCountDown() {
+    //Current time.
     int startTime = DateTime.now().millisecondsSinceEpoch;
-    int dif = 30;
+    //Seconds it takes to reach 0.
+    int dif = widget.subLevelController.durationOfProgressBar;
+    //The end time is the current time plus the choosen amount of seconds.
     int endTime = startTime + dif * 1000;
+
     _timerController = CountdownTimerController(
         endTime: endTime,
         onEnd: () {
+          //What should happen when time reach 0.
           print("end game");
         });
+
     return CountdownTimer(
       controller: _timerController,
       widgetBuilder: (_, CurrentRemainingTime? time) {
         if (time == null || time.sec == null) {
           return Text('Game over');
         }
+        //Current percent of the remaining time.
         double perc = time.sec! / dif;
-        print("perc");
+
         return Stack(children: [
           Container(
             padding: EdgeInsets.all(10),
             height: 70,
             child: LiquidLinearProgressIndicator(
-              value: double.parse(perc.toStringAsFixed(5)), // Defaults to 0.5.
-              valueColor: AlwaysStoppedAnimation(
-                  triviaLevelPrimaryColor), // Defaults to the current Theme's accentColor.
-              backgroundColor: Colors
-                  .transparent, // Defaults to the current Theme's backgroundColor.
-              borderColor: triviaLevelDarkColor, //border color of the bar
-              borderWidth: 5.0, //border width of the bar
-              borderRadius: 12.0, //border radius
+              //Value of the progress bar.
+              value: double.parse(perc.toStringAsFixed(5)),
+              //Color of the liquid animation.
+              valueColor: AlwaysStoppedAnimation(triviaLevelPrimaryColor),
+              //Background Color of the progress bar.
+              backgroundColor: Colors.transparent,
+              //Border color of the bar.
+              borderColor: triviaLevelDarkColor,
+              //Border width and radius of the bar.
+              borderWidth: 5.0,
+              borderRadius: 12.0,
+              //The direction the liquid moves.
+              //(Axis.vertical = bottom to top, Axis.horizontal = left to right).
+              //Defaults to Axis.horizontal.
               direction: Axis.horizontal,
-              // The direction the liquid moves (Axis.vertical = bottom to top, Axis.horizontal = left to right). Defaults to Axis.horizontal.
-              //  center: Text("${time.sec} sec"), //text inside bar
+              //Text inside bar.
+              //center: Text("${time.sec} sec"),
             ),
           ),
           Positioned.fill(
@@ -95,14 +108,20 @@ class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
       child: Column(
         children: [
           DotStepper(
+            //Amount of dots to show.
             dotCount: widget.subLevelController.dotCount,
+            //Size of the dots.
             dotRadius: 25,
-            activeStep: widget.subLevelController.activeStep,
+            //Current selected dot.
+            activeStep: widget.subLevelController.activeStep.value,
+            //Tipe of shape of the dot.
             shape: Shape.circle,
+            //Space between the dots.
             spacing: 10,
+            //The animation that is shown when switch from a dot to another.
             indicator: Indicator.jump,
 
-            /// TAPPING WILL NOT FUNCTION PROPERLY WITHOUT THIS PIECE OF CODE.
+            //What should happen when a dot is tapped.
             onDotTapped: (tappedDotIndex) {
               widget.subLevelController.onDotTapped(tappedDotIndex);
               setState(() {});
@@ -121,28 +140,105 @@ class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
               strokeWidth: 2,
             ),
           ),
+
+          //Build the liquid progress bar.
           SizedBox(height: 10),
           _buildCountDown(),
-
-          //  Expanded(
-          //       child: PageView.builder(
-          //         // Block swipe to next qn
-          //         physics: const NeverScrollableScrollPhysics(),
-          //         controller: _questionController.pageController,
-          //         onPageChanged: _questionController.updateTheQnNum,
-          //         itemCount: _questionController.questions.length,
-          //         itemBuilder: (context, index) => QuestionCard(
-          //             question: _questionController.questions[index]),
-          //       ),
-          
+          SizedBox(height: 10),
+          //Build the Question card
           Expanded(
-            child: FittedBox(
-              child: Center(
-                child: Text('${widget.subLevelController.activeStep}'),
-              ),
-            ),
+            child: _questionCard(widget.subLevelController.activeStep.value),
           ),
         ],
+      ),
+    );
+  }
+
+  _questionCard(int currentQuestion) {
+    //Question Domain of the current question.
+    final QuestionDomain questionDomain =
+        widget.subLevelController.subLevelDomain.question[currentQuestion];
+
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        //  color: Colors.white,
+        borderRadius: BorderRadius.circular(25),
+      ),
+      child: Column(
+        children: [
+          Text(
+            //Text of the current question.
+            questionDomain.question,
+            style: Theme.of(context)
+                .textTheme
+                .headline6!
+                .copyWith(color: Colors.white),
+          ),
+          const SizedBox(height: 10),
+          ...List.generate(
+            //Amount of questions.
+            questionDomain.answers.length,
+
+            (index) => _answerOptions(questionDomain.answers[index].id,
+                questionDomain.answers[index].answer),
+          ),
+        ],
+      ),
+    );
+  }
+
+  _answerOptions(int id, String answerText) {
+    return InkWell(
+      onTap: () {
+        widget.subLevelController.checkAnswer(id);
+
+        setState(() {});
+
+        Future.delayed(Duration(seconds: 3), () {
+          widget.subLevelController.nextQuestion();
+          setState(() {});
+        });
+      },
+      child: Container(
+        margin: const EdgeInsets.only(top: 10),
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          //The color of the question border changes when is pressed.
+          border:
+              Border.all(color: widget.subLevelController.getTheRightColor(id)),
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              "$id. $answerText",
+              style: TextStyle(
+                  color: widget.subLevelController.getTheRightColor(id),
+                  fontSize: 16),
+            ),
+            Container(
+              height: 26,
+              width: 26,
+              decoration: BoxDecoration(
+                color:
+                    widget.subLevelController.getTheRightColor(id) == kGrayColor
+                        ? Colors.transparent
+                        : widget.subLevelController.getTheRightColor(id),
+                borderRadius: BorderRadius.circular(50),
+                border: Border.all(
+                    color: widget.subLevelController.getTheRightColor(id)),
+              ),
+              child:
+                  widget.subLevelController.getTheRightColor(id) == kGrayColor
+                      ? null
+                      : Icon(widget.subLevelController.getTheRightIconData(id),
+                          size: 16),
+            )
+          ],
+        ),
       ),
     );
   }
@@ -159,7 +255,10 @@ class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
     return Container(
       child: Stack(
         children: [
-          SvgPicture.asset("assets/icons/bg.svg", fit: BoxFit.fill,),
+          SvgPicture.asset(
+            "assets/icons/bg.svg",
+            fit: BoxFit.fill,
+          ),
           SafeArea(child: _buildStepper()),
         ],
       ),
