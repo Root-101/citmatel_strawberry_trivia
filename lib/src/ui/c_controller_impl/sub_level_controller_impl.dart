@@ -1,7 +1,5 @@
 import 'package:citmatel_strawberry_trivia/src/ui/f_widget/widget_constants.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
-import 'package:flutter/animation.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,8 +16,8 @@ class SubLevelControllerImpl extends SubLevelController {
   };
 
   // Used to control the Stteper
-  RxInt _activeStep = 0.obs; // Initial step set to 0.
-  RxInt get activeStep => this._activeStep;
+  int _activeStep = 0; // Initial step set to 0.
+  int get activeStep => this._activeStep;
 
   SubLevelDomain subLevelDomain;
   SubLevelControllerImpl({required this.subLevelDomain});
@@ -29,33 +27,33 @@ class SubLevelControllerImpl extends SubLevelController {
 
   @override
   void onDotTapped(tappedDotIndex) {
-    _activeStep.value = tappedDotIndex;
+    _activeStep = tappedDotIndex;
+    update();
   }
 
   @override
   int get durationOfProgressBar =>
-      subLevelDomain.question[_activeStep.value].duration;
+      subLevelDomain.question[_activeStep].duration;
 
   bool _isAnswered = false;
 
   @override
   int get correctAnswerId =>
-      subLevelDomain.question[_activeStep.value].correctAnswerId;
+      subLevelDomain.question[_activeStep].correctAnswerId;
 
   int _numOfCorrectAnswers = 0;
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
 
   void nextQuestion() {
     _isAnswered = false;
-    if (_activeStep.value < subLevelDomain.question.length) {
-      _activeStep.value++;
-    } else {
-      
-    }
+    if (_activeStep < dotCount) {
+      _activeStep++;
+      update();
+    } else {}
   }
 
   void updateTheQuestionNum(int index) {
-    _activeStep.value = index + 1;
+    _activeStep = index + 1;
   }
 
   int questionsLength() {
@@ -70,12 +68,12 @@ class SubLevelControllerImpl extends SubLevelController {
 
     // // It will stop the counter
     // _animationController.stop();
-    // update();
+    update();
 
     // Once user select an ans after 3s it will go to the next qn
-    // Future.delayed(Duration(seconds: 3), () {
-    //   nextQuestion();
-    // });
+    Future.delayed(Duration(seconds: 3), () {
+      nextQuestion();
+    });
   }
 
   QuestionState questionState(int questionIndex) {

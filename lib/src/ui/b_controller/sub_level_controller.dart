@@ -3,7 +3,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 abstract class SubLevelController extends GetxController {
-  RxInt get activeStep;
+  static const String TAG = "sub-level-controller";
+
+  int get activeStep;
 
   int get dotCount;
   int get correctAnswerId;
