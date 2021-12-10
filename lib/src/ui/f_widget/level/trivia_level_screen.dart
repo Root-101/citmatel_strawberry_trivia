@@ -9,30 +9,27 @@ import 'package:im_stepper/stepper.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 
 // ignore: must_be_immutable
-class TriviaLevelScreen extends StatefulWidget {
+class TriviaLevelScreen extends GetView<SubLevelController> {
   static const ROUTE_NAME = "/trivia-level-screen";
 
-  late SubLevelController subLevelController;
+  late CountdownTimerController
+      _timerController; //TODO: crearla local donde unico se usa, o en su clase aparte
 
   TriviaLevelScreen({
     required SubLevelDomain subLevelDomain,
-    Key? key,
-  })  : subLevelController =
-            SubLevelControllerImpl(subLevelDomain: subLevelDomain),
-        super(key: key);
-
-  @override
-  State<TriviaLevelScreen> createState() => _TriviaLevelScreenState();
-}
-
-class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
-  late CountdownTimerController _timerController;
+  }) : super() {
+    Get.put<SubLevelController>(
+      SubLevelControllerImpl(
+        subLevelDomain: subLevelDomain,
+      ),
+    );
+  }
 
   _buildCountDown() {
     //Current time.
     int startTime = DateTime.now().millisecondsSinceEpoch;
     //Seconds it takes to reach 0.
-    int dif = widget.subLevelController.durationOfProgressBar;
+    int dif = controller.durationOfProgressBar;
     //The end time is the current time plus the choosen amount of seconds.
     int endTime = startTime + dif * 1000;
 
@@ -105,51 +102,38 @@ class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
   _buildStepper() {
     return Padding(
       padding: const EdgeInsets.all(10),
-      child: Column(
-        children: [
-          DotStepper(
-            //Amount of dots to show.
-            dotCount: widget.subLevelController.dotCount,
-            //Size of the dots.
-            dotRadius: 25,
-            //Current selected dot.
-            activeStep: widget.subLevelController.activeStep.value,
-            //Tipe of shape of the dot.
-            shape: Shape.circle,
-            //Space between the dots.
-            spacing: 10,
-            //The animation that is shown when switch from a dot to another.
-            indicator: Indicator.jump,
+      child: DotStepper(
+        //Amount of dots to show.
+        dotCount: controller.dotCount,
+        //Size of the dots.
+        dotRadius: 25,
+        //Current selected dot.
+        activeStep: controller.activeStep,
+        //Tipe of shape of the dot.
+        shape: Shape.circle,
+        //Space between the dots.
+        spacing: 10,
+        //The animation that is shown when switch from a dot to another.
+        indicator: Indicator.jump,
 
-            //What should happen when a dot is tapped.
-            onDotTapped: (tappedDotIndex) {
-              widget.subLevelController.onDotTapped(tappedDotIndex);
-              setState(() {});
-            },
+        //What should happen when a dot is tapped.
+        onDotTapped: (tappedDotIndex) {
+          controller.onDotTapped(tappedDotIndex);
+          //setState(() {});
+        },
 
-            // DOT-STEPPER DECORATIONS
-            fixedDotDecoration: FixedDotDecoration(
-              color: triviaLevelPrimaryColor,
-            ),
+        // DOT-STEPPER DECORATIONS
+        fixedDotDecoration: FixedDotDecoration(
+          color: triviaLevelPrimaryColor,
+        ),
 
-            indicatorDecoration: IndicatorDecoration(
-              color: triviaLevelSecundaryColor,
-            ),
-            lineConnectorDecoration: LineConnectorDecoration(
-              color: Colors.amber,
-              strokeWidth: 2,
-            ),
-          ),
-
-          //Build the liquid progress bar.
-          SizedBox(height: 10),
-          _buildCountDown(),
-          SizedBox(height: 10),
-          //Build the Question card
-          Expanded(
-            child: _questionCard(widget.subLevelController.activeStep.value),
-          ),
-        ],
+        indicatorDecoration: IndicatorDecoration(
+          color: triviaLevelSecundaryColor,
+        ),
+        lineConnectorDecoration: LineConnectorDecoration(
+          color: Colors.amber,
+          strokeWidth: 2,
+        ),
       ),
     );
   }
@@ -157,7 +141,7 @@ class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
   _questionCard(int currentQuestion) {
     //Question Domain of the current question.
     final QuestionDomain questionDomain =
-        widget.subLevelController.subLevelDomain.question[currentQuestion];
+        controller.subLevelDomain.question[currentQuestion];
 
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -171,7 +155,7 @@ class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
           Text(
             //Text of the current question.
             questionDomain.question,
-            style: Theme.of(context)
+            style: Theme.of(Get.context!)
                 .textTheme
                 .headline6!
                 .copyWith(color: Colors.white),
@@ -192,22 +176,21 @@ class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
   _answerOptions(int id, String answerText) {
     return InkWell(
       onTap: () {
-        widget.subLevelController.checkAnswer(id);
+        controller.checkAnswer(id);
 
-        setState(() {});
+        //setState(() {});
 
-        Future.delayed(Duration(seconds: 3), () {
-          widget.subLevelController.nextQuestion();
-          setState(() {});
-        });
+        /*Future.delayed(Duration(seconds: 3), () {
+          subLevelController.nextQuestion();
+          //setState(() {});
+        });*/
       },
       child: Container(
         margin: const EdgeInsets.only(top: 10),
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           //The color of the question border changes when is pressed.
-          border:
-              Border.all(color: widget.subLevelController.getTheRightColor(id)),
+          border: Border.all(color: controller.getTheRightColor(id)),
           borderRadius: BorderRadius.circular(15),
         ),
         child: Row(
@@ -216,26 +199,21 @@ class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
             Text(
               "$id. $answerText",
               style: TextStyle(
-                  color: widget.subLevelController.getTheRightColor(id),
-                  fontSize: 16),
+                  color: controller.getTheRightColor(id), fontSize: 16),
             ),
             Container(
               height: 26,
               width: 26,
               decoration: BoxDecoration(
-                color:
-                    widget.subLevelController.getTheRightColor(id) == kGrayColor
-                        ? Colors.transparent
-                        : widget.subLevelController.getTheRightColor(id),
+                color: controller.getTheRightColor(id) == kGrayColor
+                    ? Colors.transparent
+                    : controller.getTheRightColor(id),
                 borderRadius: BorderRadius.circular(50),
-                border: Border.all(
-                    color: widget.subLevelController.getTheRightColor(id)),
+                border: Border.all(color: controller.getTheRightColor(id)),
               ),
-              child:
-                  widget.subLevelController.getTheRightColor(id) == kGrayColor
-                      ? null
-                      : Icon(widget.subLevelController.getTheRightIconData(id),
-                          size: 16),
+              child: controller.getTheRightColor(id) == kGrayColor
+                  ? null
+                  : Icon(controller.getTheRightIconData(id), size: 16),
             )
           ],
         ),
@@ -259,7 +237,24 @@ class _TriviaLevelScreenState extends State<TriviaLevelScreen> {
             "assets/icons/bg.svg",
             fit: BoxFit.fill,
           ),
-          SafeArea(child: _buildStepper()),
+          GetBuilder<SubLevelController>(
+            builder: (_) {
+              return SafeArea(
+                child: Column(children: [
+                  //Build the stepper.
+                  _buildStepper(),
+                  //Build the liquid progress bar.
+                  SizedBox(height: 10),
+                  _buildCountDown(),
+                  SizedBox(height: 10),
+                  //Build the Question card
+                  Expanded(
+                    child: _questionCard(controller.activeStep),
+                  ),
+                ]),
+              );
+            },
+          ),
         ],
       ),
     );
