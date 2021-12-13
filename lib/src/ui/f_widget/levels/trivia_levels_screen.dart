@@ -90,7 +90,7 @@ class TriviaLevelsScreen extends GetView<LevelController> {
       ),
       children: level.sublevel
           .map(
-            (subLevel) => SingleLevelTile(subLevel: subLevel),
+            (subLevel) => SingleLevelTile(subLevelDomain: subLevel),
           )
           .toList(),
     );

@@ -1,11 +1,12 @@
 import 'package:animations/animations.dart';
-import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
+import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 
 class SingleLevelTile extends StatelessWidget {
-  final SubLevelDomain subLevel;
+  final SubLevelDomain subLevelDomain;
 
-  const SingleLevelTile({required this.subLevel, Key? key}) : super(key: key);
+  const SingleLevelTile({required this.subLevelDomain, Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,17 +25,13 @@ class SingleLevelTile extends StatelessWidget {
   _buildClosed() {
     return Container(
       child: Center(
-        child: Text('level ${subLevel.id}'),
+        child: Text('level ${subLevelDomain.id}'),
       ),
     );
   }
 
-  //Screen grande para cuando se entra al subnivel, pantalla de juego del subnivel especifico.
+  //Screen grande para cuando se entra al subnivel, pantalla de cargando para el sub nivel
   _buildOpen() {
-    return Container(
-      child: Center(
-        child: Text('level grande ${subLevel.id}'),
-      ),
-    );
+    return SubLevelBackground(subLevelDomain: subLevelDomain);
   }
 }
