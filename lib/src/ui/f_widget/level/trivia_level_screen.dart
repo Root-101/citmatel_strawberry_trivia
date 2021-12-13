@@ -57,11 +57,11 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
               //Value of the progress bar.
               value: double.parse(perc.toStringAsFixed(5)),
               //Color of the liquid animation.
-              valueColor: AlwaysStoppedAnimation(triviaLevelPrimaryColor),
+              valueColor: AlwaysStoppedAnimation(Colors.indigoAccent.shade700),
               //Background Color of the progress bar.
               backgroundColor: Colors.transparent,
               //Border color of the bar.
-              borderColor: triviaLevelDarkColor,
+              borderColor: Colors.indigoAccent.shade100,
               //Border width and radius of the bar.
               borderWidth: 5.0,
               borderRadius: 12.0,
@@ -88,7 +88,7 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
                   ),
                   SvgPicture.asset(
                     "assets/icons/clock.svg",
-                    width: 35,
+                    width: 30,
                   ),
                 ],
               ),
@@ -124,11 +124,11 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
 
         // DOT-STEPPER DECORATIONS
         fixedDotDecoration: FixedDotDecoration(
-          color: triviaLevelPrimaryColor,
+          color: Colors.indigoAccent.shade700,
         ),
 
         indicatorDecoration: IndicatorDecoration(
-          color: triviaLevelSecundaryColor,
+          color: Colors.indigoAccent.shade100,
         ),
         lineConnectorDecoration: LineConnectorDecoration(
           color: Colors.amber,
@@ -147,7 +147,7 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
       margin: const EdgeInsets.symmetric(horizontal: 20),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        //  color: Colors.white,
+        // color: Colors.white,
         borderRadius: BorderRadius.circular(25),
       ),
       child: Column(
@@ -155,10 +155,11 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
           Text(
             //Text of the current question.
             questionDomain.question,
-            style: Theme.of(Get.context!)
-                .textTheme
-                .headline6!
-                .copyWith(color: Colors.white),
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
           ),
           const SizedBox(height: 10),
           ...List.generate(
@@ -194,12 +195,23 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
           borderRadius: BorderRadius.circular(15),
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "$id. $answerText",
+              "$id - ",
               style: TextStyle(
-                  color: controller.getTheRightColor(id), fontSize: 16),
+                  color: controller.getTheRightColor(id),
+                  fontSize: 26,),
+            ),
+            Expanded(
+              child: Text(
+                "$answerText",
+                style: TextStyle(
+                  color: controller.getTheRightColor(id),
+                  fontSize: 25,
+                ),
+                textAlign: TextAlign.start,
+              ),
             ),
             Container(
               height: 26,
@@ -230,33 +242,39 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
   }
 
   Widget _buildBody() {
-    return Container(
-      child: Stack(
-        children: [
-          SvgPicture.asset(
-            "assets/icons/bg.svg",
-            fit: BoxFit.fill,
+    return Stack(
+      children: [
+        new Container(
+          decoration: new BoxDecoration(
+            image: new DecorationImage(
+              image: new AssetImage("assets/icons/background.jpg"),
+              fit: BoxFit.cover,
+            ),
           ),
-          GetBuilder<SubLevelController>(
-            builder: (_) {
-              return SafeArea(
-                child: Column(children: [
-                  //Build the stepper.
-                  _buildStepper(),
-                  //Build the liquid progress bar.
-                  SizedBox(height: 10),
-                  _buildCountDown(),
-                  SizedBox(height: 10),
-                  //Build the Question card
-                  Expanded(
-                    child: _questionCard(controller.activeStep),
-                  ),
-                ]),
-              );
-            },
-          ),
-        ],
-      ),
+        ),
+        // SvgPicture.asset(
+        //   "assets/icons/bg.svg",
+        //   fit: BoxFit.fill,
+        // ),
+        GetBuilder<SubLevelController>(
+          builder: (_) {
+            return SafeArea(
+              child: Column(children: [
+                //Build the stepper.
+                _buildStepper(),
+                //Build the liquid progress bar.
+                SizedBox(height: 10),
+                _buildCountDown(),
+                SizedBox(height: 10),
+                //Build the Question card
+                Expanded(
+                  child: _questionCard(controller.activeStep),
+                ),
+              ]),
+            );
+          },
+        ),
+      ],
     );
   }
 }
