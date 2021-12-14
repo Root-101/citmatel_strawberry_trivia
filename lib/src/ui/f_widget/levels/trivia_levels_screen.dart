@@ -7,7 +7,7 @@ import 'package:page_view_indicators/page_view_indicators.dart';
 
 import 'package:citmatel_strawberry_trivia/src/ui/b_controller/level_controller.dart';
 
-class TriviaLevelsScreen extends GetView<LevelController> {
+class TriviaLevelsScreen extends GetView<LevelController> {//TODO: valorar ese nombre que no me convence
   static const ROUTE_NAME = "/trivia-levels-screen";
 
   TriviaLevelsScreen({Key? key}) : super(key: key);
@@ -18,22 +18,11 @@ class TriviaLevelsScreen extends GetView<LevelController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: _appBar(),
-      body: _buildBody(),
-    );
-  }
-
-  AppBar _appBar() {
-    return AppBar(
-      title: Text(
-        "Trivia Module AppBar",
-      ),
-    );
-  }
-
-  Widget _buildBody() {
     return Container(
+      decoration: new BoxDecoration(
+        color: Colors
+            .white, //default color, sobre este se pone la imagen correspondiente a cada nivel
+      ),
       child: ArrowPageIndicator(
         iconSize: 25,
         isInside: true,
