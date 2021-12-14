@@ -9,13 +9,13 @@ import 'package:im_stepper/stepper.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 
 // ignore: must_be_immutable
-class TriviaLevelScreen extends GetView<SubLevelController> {
-  static const ROUTE_NAME = "/trivia-level-screen";
+class SubLevelScreen extends GetView<SubLevelController> {
+  static const ROUTE_NAME = "/trivia-sublevel-screen";
 
   late CountdownTimerController
       _timerController; //TODO: crearla local donde unico se usa, o en su clase aparte
 
-  TriviaLevelScreen({
+  SubLevelScreen({
     required SubLevelDomain subLevelDomain,
   }) : super() {
     Get.put<SubLevelController>(
@@ -26,6 +26,7 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
   }
 
   _buildCountDown() {
+    //TODO: sacar para una clase entera
     //Current time.
     int startTime = DateTime.now().millisecondsSinceEpoch;
     //Seconds it takes to reach 0.
@@ -49,57 +50,62 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
         //Current percent of the remaining time.
         double perc = time.sec! / dif;
 
-        return Stack(children: [
-          Container(
-            padding: EdgeInsets.all(10),
-            height: 70,
-            child: LiquidLinearProgressIndicator(
-              //Value of the progress bar.
-              value: double.parse(perc.toStringAsFixed(5)),
-              //Color of the liquid animation.
-              valueColor: AlwaysStoppedAnimation(Colors.indigoAccent.shade700),
-              //Background Color of the progress bar.
-              backgroundColor: Colors.transparent,
-              //Border color of the bar.
-              borderColor: Colors.indigoAccent.shade100,
-              //Border width and radius of the bar.
-              borderWidth: 5.0,
-              borderRadius: 12.0,
-              //The direction the liquid moves.
-              //(Axis.vertical = bottom to top, Axis.horizontal = left to right).
-              //Defaults to Axis.horizontal.
-              direction: Axis.horizontal,
-              //Text inside bar.
-              //center: Text("${time.sec} sec"),
-            ),
-          ),
-          Positioned.fill(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "${time.sec} seg",
-                    style: TextStyle(
-                      color: Colors.white70,
-                      fontSize: 20,
-                    ),
-                  ),
-                  SvgPicture.asset(
-                    "assets/icons/clock.svg",
-                    width: 30,
-                  ),
-                ],
+        return Stack(
+          //TODO: @Aidyl98 me gusto mucho el uso del stack aqui, si te pudiera pagar mas lo haria
+          children: [
+            Container(
+              padding: EdgeInsets.all(10),
+              height: 70,
+              child: LiquidLinearProgressIndicator(
+                //Value of the progress bar.
+                value: double.parse(perc.toStringAsFixed(5)),
+                //Color of the liquid animation.
+                valueColor:
+                    AlwaysStoppedAnimation(Colors.indigoAccent.shade700),
+                //Background Color of the progress bar.
+                backgroundColor: Colors.transparent,
+                //Border color of the bar.
+                borderColor: Colors.indigoAccent.shade100,
+                //Border width and radius of the bar.
+                borderWidth: 5.0,
+                borderRadius: 12.0,
+                //The direction the liquid moves.
+                //(Axis.vertical = bottom to top, Axis.horizontal = left to right).
+                //Defaults to Axis.horizontal.
+                direction: Axis.horizontal,
+                //Text inside bar.
+                //center: Text("${time.sec} sec"),
               ),
             ),
-          ),
-        ]);
+            Positioned.fill(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "${time.sec} seg",
+                      style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 20,
+                      ),
+                    ),
+                    SvgPicture.asset(
+                      "assets/icons/clock.svg",
+                      width: 30,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        );
       },
     );
   }
 
   _buildStepper() {
+    //TODO: sacar para una clase entera
     return Padding(
       padding: const EdgeInsets.all(10),
       child: DotStepper(
@@ -117,10 +123,7 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
         indicator: Indicator.jump,
 
         //What should happen when a dot is tapped.
-        onDotTapped: (tappedDotIndex) {
-          controller.onDotTapped(tappedDotIndex);
-          //setState(() {});
-        },
+        onDotTapped: controller.onDotTapped,
 
         // DOT-STEPPER DECORATIONS
         fixedDotDecoration: FixedDotDecoration(
@@ -139,6 +142,7 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
   }
 
   _questionCard(int currentQuestion) {
+    //TODO: sacar par auna clase entera, ponerle un card dentro de un AnimatedSwitcher para que cambie las preguntas con efectos, como está en el sublevel_background
     //Question Domain of the current question.
     final QuestionDomain questionDomain =
         controller.subLevelDomain.question[currentQuestion];
@@ -178,13 +182,6 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
     return InkWell(
       onTap: () {
         controller.checkAnswer(id);
-
-        //setState(() {});
-
-        /*Future.delayed(Duration(seconds: 3), () {
-          subLevelController.nextQuestion();
-          //setState(() {});
-        });*/
       },
       child: Container(
         margin: const EdgeInsets.only(top: 10),
@@ -195,13 +192,13 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
           borderRadius: BorderRadius.circular(15),
         ),
         child: Row(
-        //  mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
               "$id - ",
               style: TextStyle(
-                  color: controller.getTheRightColor(id),
-                  fontSize: 26,),
+                color: controller.getTheRightColor(id),
+                fontSize: 26,
+              ),
             ),
             Expanded(
               child: Text(
@@ -217,7 +214,8 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
               height: 26,
               width: 26,
               decoration: BoxDecoration(
-                color: controller.getTheRightColor(id) == kGrayColor
+                color: controller.getTheRightColor(id) ==
+                        kGrayColor //TODO: comparacion por questionState()
                     ? Colors.transparent
                     : controller.getTheRightColor(id),
                 borderRadius: BorderRadius.circular(50),
@@ -235,46 +233,23 @@ class TriviaLevelScreen extends GetView<SubLevelController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      //  appBar: _appBar(),
-      body: _buildBody(),
-    );
-  }
-
-  Widget _buildBody() {
-    return Stack(
-      children: [
-        new Container(
-          decoration: new BoxDecoration(
-            image: new DecorationImage(
-              image: new AssetImage("assets/icons/background.jpg"),
-              fit: BoxFit.cover,
+    return GetBuilder<SubLevelController>(
+      builder: (_) {
+        return SafeArea(
+          child: Column(children: [
+            //Build the stepper.
+            _buildStepper(),
+            //Build the liquid progress bar.
+            const SizedBox(height: 10),
+            _buildCountDown(),
+            const SizedBox(height: 10),
+            //Build the Question card
+            Expanded(
+              child: _questionCard(controller.activeStep),
             ),
-          ),
-        ),
-        // SvgPicture.asset(
-        //   "assets/icons/bg.svg",
-        //   fit: BoxFit.fill,
-        // ),
-        GetBuilder<SubLevelController>(
-          builder: (_) {
-            return SafeArea(
-              child: Column(children: [
-                //Build the stepper.
-                _buildStepper(),
-                //Build the liquid progress bar.
-                SizedBox(height: 10),
-                _buildCountDown(),
-                SizedBox(height: 10),
-                //Build the Question card
-                Expanded(
-                  child: _questionCard(controller.activeStep),
-                ),
-              ]),
-            );
-          },
-        ),
-      ],
+          ]),
+        );
+      },
     );
   }
 }
