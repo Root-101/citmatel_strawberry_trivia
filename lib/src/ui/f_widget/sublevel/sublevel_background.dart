@@ -36,11 +36,11 @@ class _SubLevelBackgroundState extends State<SubLevelBackground> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: new BoxDecoration(
+      decoration: BoxDecoration(
         color: Colors.transparent, //pa si por si acaso
-        image: new DecorationImage(
+        image: DecorationImage(
           //TODO: @Aidyl98 genial el uso de la imagen de fondo en el container, asi nos quitamos usar el stack para background de imagen, GENIAL!!!!
-          image: new AssetImage("assets/icons/background.jpg"),
+          image: AssetImage("assets/icons/background.jpg"),
           fit: BoxFit.cover,
         ),
       ),
