@@ -27,9 +27,6 @@ class MyApp extends StatelessWidget {
           transition: Transition.rightToLeft,
         ),
       ],
-      unknownRoute: GetPage(
-          name: UnknownRouteScreen.ROUTE_NAME,
-          page: () => UnknownRouteScreen()),
       //--------------------- </PAGINATION> -----------------------------------
     );
   }

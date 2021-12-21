@@ -32,5 +32,3 @@ lib/generated_plugin_registrant.dart
 android/build.gradle
 
 android/gradle/wrapper/gradle-wrapper.properties
-
-lib/src/ui/f_widget/testMain/mainTest.dart
