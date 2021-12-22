@@ -48,6 +48,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
 
+  TriviaQuestionDomain currentQuestion() {
+    return subLevelDomain.question[activeStep];
+  }
+
   void nextQuestion() {
     _isAnswered = false;
     if (_activeStep < dotCount) {
