@@ -1,4 +1,4 @@
-import 'package:citmatel_strawberry_trivia/src/ui/f_widget/widget_constants.dart';
+import 'package:citmatel_strawberry_trivia/src/ui/f_widget/trivia_widget_constants.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

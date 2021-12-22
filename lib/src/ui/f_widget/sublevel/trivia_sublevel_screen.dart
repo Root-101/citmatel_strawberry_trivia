@@ -1,5 +1,4 @@
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
-import 'package:citmatel_strawberry_trivia/src/ui/f_widget/widget_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_countdown_timer/index.dart';
 
@@ -9,13 +8,13 @@ import 'package:im_stepper/stepper.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 
 // ignore: must_be_immutable
-class SubLevelScreen extends GetView<TriviaSubLevelController> {
+class TriviaSubLevelScreen extends GetView<TriviaSubLevelController> {
   static const ROUTE_NAME = "/trivia-sublevel-screen";
 
   late CountdownTimerController
       _timerController; //TODO: crearla local donde unico se usa, o en su clase aparte
 
-  SubLevelScreen({
+  TriviaSubLevelScreen({
     required TriviaSubLevelDomain subLevelDomain,
   }) : super() {
     Get.put<TriviaSubLevelController>(
