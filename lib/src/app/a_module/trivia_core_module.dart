@@ -4,6 +4,6 @@ import '../trivia_app_exporter.dart';
 
 class TriviaCoreModule {
   static void init() {
-    Get.put<LevelUseCase>(LevelUseCaseImpl(TriviaLevelsAll.levels));
+    Get.put<TriviaLevelUseCase>(TriviaLevelUseCaseImpl(TriviaLevelsAll.levels));
   }
 }
