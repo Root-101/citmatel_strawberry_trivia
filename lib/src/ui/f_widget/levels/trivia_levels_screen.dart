@@ -7,7 +7,7 @@ import 'package:page_view_indicators/page_view_indicators.dart';
 
 import 'package:citmatel_strawberry_trivia/src/ui/b_controller/trivia_level_controller.dart';
 
-class TriviaLevelsScreen extends GetView<TriviaLevelController> {//TODO: valorar ese nombre que no me convence
+class TriviaLevelsScreen extends GetView<TriviaLevelController> {
   static const ROUTE_NAME = "/trivia-levels-screen";
 
   TriviaLevelsScreen({Key? key}) : super(key: key);

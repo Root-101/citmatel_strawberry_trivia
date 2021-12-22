@@ -2,7 +2,6 @@ import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 
 class TriviaSubLevelBackground extends StatefulWidget {
-  //TODO: cambiar el nombre ese xds
   final TriviaSubLevelDomain subLevelDomain;
 
   const TriviaSubLevelBackground({required this.subLevelDomain, Key? key})
@@ -39,7 +38,6 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
       decoration: BoxDecoration(
         color: Colors.transparent, //pa si por si acaso
         image: DecorationImage(
-          //TODO: @Aidyl98 genial el uso de la imagen de fondo en el container, asi nos quitamos usar el stack para background de imagen, GENIAL!!!!
           image: AssetImage("assets/icons/background.jpg"),
           fit: BoxFit.cover,
         ),
@@ -47,7 +45,7 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
       child: AnimatedSwitcher(
         duration: const Duration(milliseconds: 500),
         transitionBuilder: (Widget child, Animation<double> animation) {
-          /*return RotationTransition(//TODO: @Aidyl98 elige que transición te gusta mas
+          /*return RotationTransition(
             turns: animation,
             child: child,
           );*/
