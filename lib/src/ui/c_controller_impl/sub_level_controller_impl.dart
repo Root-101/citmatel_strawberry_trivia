@@ -19,7 +19,7 @@ class SubLevelControllerImpl extends SubLevelController {
   int _activeStep = 0; // Initial step set to 0.
   int get activeStep => this._activeStep;
 
-  SubLevelDomain subLevelDomain;
+  TriviaSubLevelDomain subLevelDomain;
   SubLevelControllerImpl({required this.subLevelDomain});
 
   @override

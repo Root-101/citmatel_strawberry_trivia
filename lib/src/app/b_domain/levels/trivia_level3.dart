@@ -1,24 +1,24 @@
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 
-class Level2 {
-  static final LevelDomain level2 = LevelDomain(
-    id: 2,
-    theme: "Level 2",
+class TriviaLevel3 {
+  static final TriviaLevelDomain level3 = TriviaLevelDomain(
+    id: 3,
+    theme: "Level 3",
     urlThemePicture: "",
     sublevel: [
-      SubLevelDomain(
+      TriviaSubLevelDomain(
         id: 1,
         question: [],
       ),
-      SubLevelDomain(
+      TriviaSubLevelDomain(
         id: 2,
         question: [],
       ),
-      SubLevelDomain(
+      TriviaSubLevelDomain(
         id: 3,
         question: [],
       ),
-      SubLevelDomain(
+      TriviaSubLevelDomain(
         id: 4,
         question: [],
       ),

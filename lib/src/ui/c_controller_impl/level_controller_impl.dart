@@ -7,12 +7,12 @@ class LevelControllerImpl extends LevelController {
   final LevelUseCase levelUseCase = Get.find<LevelUseCase>();
 
   @override
-  List<LevelDomain> findAll() {
+  List<TriviaLevelDomain> findAll() {
     return levelUseCase.findAll();
   }
 
   @override
-  LevelDomain findBy(int keyId) {
+  TriviaLevelDomain findBy(int keyId) {
     return levelUseCase.findBy(keyId);
   }
 

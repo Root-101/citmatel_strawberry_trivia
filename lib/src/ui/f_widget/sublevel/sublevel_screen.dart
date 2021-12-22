@@ -16,7 +16,7 @@ class SubLevelScreen extends GetView<SubLevelController> {
       _timerController; //TODO: crearla local donde unico se usa, o en su clase aparte
 
   SubLevelScreen({
-    required SubLevelDomain subLevelDomain,
+    required TriviaSubLevelDomain subLevelDomain,
   }) : super() {
     Get.put<SubLevelController>(
       SubLevelControllerImpl(
@@ -144,7 +144,7 @@ class SubLevelScreen extends GetView<SubLevelController> {
   _questionCard(int currentQuestion) {
     //TODO: sacar par auna clase entera, ponerle un card dentro de un AnimatedSwitcher para que cambie las preguntas con efectos, como está en el sublevel_background
     //Question Domain of the current question.
-    final QuestionDomain questionDomain =
+    final TriviaQuestionDomain questionDomain =
         controller.subLevelDomain.question[currentQuestion];
 
     return Container(

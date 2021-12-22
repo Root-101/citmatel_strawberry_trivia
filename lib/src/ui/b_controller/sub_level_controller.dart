@@ -18,7 +18,7 @@ abstract class SubLevelController extends GetxController {
   void checkAnswer(int selectedId);
 
   int questionsLength();
-  SubLevelDomain get subLevelDomain;
+  TriviaSubLevelDomain get subLevelDomain;
   Color getTheRightColor(int index);
   IconData getTheRightIconData(int index);
 }

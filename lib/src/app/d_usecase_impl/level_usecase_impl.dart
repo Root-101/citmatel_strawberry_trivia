@@ -2,7 +2,7 @@ import 'package:clean_core/clean_core.dart';
 
 import '../trivia_app_exporter.dart';
 
-class LevelUseCaseImpl extends DefaultReadUseCase<LevelDomain>
+class LevelUseCaseImpl extends DefaultReadUseCase<TriviaLevelDomain>
     implements LevelUseCase {
-  LevelUseCaseImpl(List<LevelDomain> info) : super(info);
+  LevelUseCaseImpl(List<TriviaLevelDomain> info) : super(info);
 }

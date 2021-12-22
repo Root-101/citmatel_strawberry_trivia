@@ -3,7 +3,7 @@ import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 
 class SingleLevelTile extends StatelessWidget {
-  final SubLevelDomain subLevelDomain;
+  final TriviaSubLevelDomain subLevelDomain;
 
   const SingleLevelTile({required this.subLevelDomain, Key? key})
       : super(key: key);

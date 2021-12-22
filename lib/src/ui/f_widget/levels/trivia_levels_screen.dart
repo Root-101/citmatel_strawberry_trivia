@@ -1,5 +1,5 @@
-import 'package:citmatel_strawberry_trivia/src/app/b_domain/level_domain.dart';
-import 'package:citmatel_strawberry_trivia/src/app/b_domain/sub_level_domain.dart';
+import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_level_domain.dart';
+import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_sub_level_domain.dart';
 import 'package:citmatel_strawberry_trivia/src/ui/f_widget/levels/single_level_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -71,7 +71,7 @@ class TriviaLevelsScreen extends GetView<LevelController> {//TODO: valorar ese n
     );
   }
 
-  _buildLevelGridView(LevelDomain level) {
+  _buildLevelGridView(TriviaLevelDomain level) {
     return GridView(
       physics: BouncingScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

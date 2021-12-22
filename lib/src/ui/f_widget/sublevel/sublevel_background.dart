@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class SubLevelBackground extends StatefulWidget {
   //TODO: cambiar el nombre ese xds
-  final SubLevelDomain subLevelDomain;
+  final TriviaSubLevelDomain subLevelDomain;
 
   const SubLevelBackground({required this.subLevelDomain, Key? key})
       : super(key: key);
