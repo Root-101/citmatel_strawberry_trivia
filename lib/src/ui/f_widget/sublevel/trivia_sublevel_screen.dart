@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:im_stepper/stepper.dart';
 import 'package:get/get.dart';
 
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
@@ -18,45 +17,7 @@ class TriviaSubLevelScreen extends GetView<TriviaSubLevelController> {
     );
   }
 
-  _buildStepper() {
-    //TODO: sacar para una clase entera
-    return Padding(
-      padding: const EdgeInsets.all(10),
-      child: DotStepper(
-        //Amount of dots to show.
-        dotCount: controller.dotCount,
-        //Size of the dots.
-        dotRadius: 25,
-        //Current selected dot.
-        activeStep: controller.activeStep,
-        //Tipe of shape of the dot.
-        shape: Shape.circle,
-        //Space between the dots.
-        spacing: 10,
-        //The animation that is shown when switch from a dot to another.
-        indicator: Indicator.jump,
-
-        //What should happen when a dot is tapped.
-        onDotTapped: controller.onDotTapped,
-
-        // DOT-STEPPER DECORATIONS
-        fixedDotDecoration: FixedDotDecoration(
-          color: Colors.indigoAccent.shade700,
-        ),
-
-        indicatorDecoration: IndicatorDecoration(
-          color: Colors.indigoAccent.shade100,
-        ),
-        lineConnectorDecoration: LineConnectorDecoration(
-          color: Colors.amber,
-          strokeWidth: 2,
-        ),
-      ),
-    );
-  }
-
   _questionCard(int currentQuestion) {
-    //TODO: sacar par auna clase entera, ponerle un card dentro de un AnimatedSwitcher para que cambie las preguntas con efectos, como está en el sublevel_background
     //Question Domain of the current question.
     final TriviaQuestionDomain questionDomain =
         controller.subLevelDomain.question[currentQuestion];
@@ -152,7 +113,7 @@ class TriviaSubLevelScreen extends GetView<TriviaSubLevelController> {
         return SafeArea(
           child: Column(children: [
             //Build the stepper.
-            _buildStepper(),
+            TriviaSubLevelStepper(),
             //Build the liquid progress bar.
             const SizedBox(height: 10),
             TriviaSubLevelCountDown(),
