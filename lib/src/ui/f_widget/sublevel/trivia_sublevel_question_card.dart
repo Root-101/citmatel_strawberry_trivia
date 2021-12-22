@@ -92,14 +92,14 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
               height: 26,
               width: 26,
               decoration: BoxDecoration(
-                color: controller.getTheRightColor(id) ==
-                        kGrayColor //TODO: comparacion por questionState()
-                    ? Colors.transparent
-                    : controller.getTheRightColor(id),
+                color:
+                    controller.questionState(id) == QuestionState.Not_answered
+                        ? Colors.transparent
+                        : controller.getTheRightColor(id),
                 borderRadius: BorderRadius.circular(50),
                 border: Border.all(color: controller.getTheRightColor(id)),
               ),
-              child: controller.getTheRightColor(id) == kGrayColor
+              child: controller.questionState(id) == QuestionState.Not_answered
                   ? null
                   : Icon(controller.getTheRightIconData(id), size: 16),
             )

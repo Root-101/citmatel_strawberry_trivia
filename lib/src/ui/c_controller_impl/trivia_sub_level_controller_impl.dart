@@ -104,9 +104,3 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     return iconsMap[questionState(index)]!;
   }
 }
-
-enum QuestionState {
-  Not_answered,
-  Answered_wrong,
-  Answered_rigth,
-}
