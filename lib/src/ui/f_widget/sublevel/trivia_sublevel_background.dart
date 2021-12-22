@@ -1,18 +1,18 @@
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 
-class SubLevelBackground extends StatefulWidget {
+class TriviaSubLevelBackground extends StatefulWidget {
   //TODO: cambiar el nombre ese xds
-  final SubLevelDomain subLevelDomain;
+  final TriviaSubLevelDomain subLevelDomain;
 
-  const SubLevelBackground({required this.subLevelDomain, Key? key})
+  const TriviaSubLevelBackground({required this.subLevelDomain, Key? key})
       : super(key: key);
 
   @override
-  _SubLevelBackgroundState createState() => _SubLevelBackgroundState();
+  _TriviaSubLevelBackgroundState createState() => _TriviaSubLevelBackgroundState();
 }
 
-class _SubLevelBackgroundState extends State<SubLevelBackground> {
+class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
   late Widget _animatedWidget;
 
   @override
@@ -20,12 +20,12 @@ class _SubLevelBackgroundState extends State<SubLevelBackground> {
     super.initState();
     setState(
       () {
-        _animatedWidget = SubLevelStartContdown(
+        _animatedWidget = TriviaSubLevelStartContdown(
           onEnd: () {
             //really start the level
             setState(() {
               _animatedWidget =
-                  SubLevelScreen(subLevelDomain: widget.subLevelDomain);
+                  TriviaSubLevelScreen(subLevelDomain: widget.subLevelDomain);
             });
           },
         );

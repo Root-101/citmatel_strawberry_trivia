@@ -1,10 +1,10 @@
 import 'package:clean_core/clean_core.dart';
 
-class QuestionAnswerDomain extends BasicDomainObject {
+class TriviaQuestionAnswerDomain extends BasicDomainObject {
   int id;
   final String answer;
 
-  QuestionAnswerDomain({
+  TriviaQuestionAnswerDomain({
     required this.id,
     required this.answer,
   });

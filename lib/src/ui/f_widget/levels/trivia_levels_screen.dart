@@ -1,13 +1,13 @@
-import 'package:citmatel_strawberry_trivia/src/app/b_domain/level_domain.dart';
-import 'package:citmatel_strawberry_trivia/src/app/b_domain/sub_level_domain.dart';
-import 'package:citmatel_strawberry_trivia/src/ui/f_widget/levels/single_level_tile.dart';
+import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_level_domain.dart';
+import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_sub_level_domain.dart';
+import 'package:citmatel_strawberry_trivia/src/ui/f_widget/levels/trivia_single_level_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:page_view_indicators/page_view_indicators.dart';
 
-import 'package:citmatel_strawberry_trivia/src/ui/b_controller/level_controller.dart';
+import 'package:citmatel_strawberry_trivia/src/ui/b_controller/trivia_level_controller.dart';
 
-class TriviaLevelsScreen extends GetView<LevelController> {//TODO: valorar ese nombre que no me convence
+class TriviaLevelsScreen extends GetView<TriviaLevelController> {//TODO: valorar ese nombre que no me convence
   static const ROUTE_NAME = "/trivia-levels-screen";
 
   TriviaLevelsScreen({Key? key}) : super(key: key);
@@ -71,7 +71,7 @@ class TriviaLevelsScreen extends GetView<LevelController> {//TODO: valorar ese n
     );
   }
 
-  _buildLevelGridView(LevelDomain level) {
+  _buildLevelGridView(TriviaLevelDomain level) {
     return GridView(
       physics: BouncingScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -79,7 +79,7 @@ class TriviaLevelsScreen extends GetView<LevelController> {//TODO: valorar ese n
       ),
       children: level.sublevel
           .map(
-            (subLevel) => SingleLevelTile(subLevelDomain: subLevel),
+            (subLevel) => TriviaSingleLevelTile(subLevelDomain: subLevel),
           )
           .toList(),
     );

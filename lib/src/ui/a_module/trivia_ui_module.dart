@@ -6,6 +6,6 @@ class TriviaUIModule {
   static void init() {
     TriviaCoreModule.init();
 
-    Get.put<LevelController>(LevelControllerImpl());
+    Get.put<TriviaLevelController>(TriviaLevelControllerImpl());
   }
 }

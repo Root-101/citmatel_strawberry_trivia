@@ -3,16 +3,16 @@ import 'package:citmatel_strawberry_trivia/src/ui/trivia_ui_exporter.dart';
 
 import 'package:get/get.dart';
 
-class LevelControllerImpl extends LevelController {
-  final LevelUseCase levelUseCase = Get.find<LevelUseCase>();
+class TriviaLevelControllerImpl extends TriviaLevelController {
+  final TriviaLevelUseCase levelUseCase = Get.find<TriviaLevelUseCase>();
 
   @override
-  List<LevelDomain> findAll() {
+  List<TriviaLevelDomain> findAll() {
     return levelUseCase.findAll();
   }
 
   @override
-  LevelDomain findBy(int keyId) {
+  TriviaLevelDomain findBy(int keyId) {
     return levelUseCase.findBy(keyId);
   }
 

@@ -1,5 +1,4 @@
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
-import 'package:citmatel_strawberry_trivia/src/ui/f_widget/widget_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_countdown_timer/index.dart';
 
@@ -9,17 +8,17 @@ import 'package:im_stepper/stepper.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 
 // ignore: must_be_immutable
-class SubLevelScreen extends GetView<SubLevelController> {
+class TriviaSubLevelScreen extends GetView<TriviaSubLevelController> {
   static const ROUTE_NAME = "/trivia-sublevel-screen";
 
   late CountdownTimerController
       _timerController; //TODO: crearla local donde unico se usa, o en su clase aparte
 
-  SubLevelScreen({
-    required SubLevelDomain subLevelDomain,
+  TriviaSubLevelScreen({
+    required TriviaSubLevelDomain subLevelDomain,
   }) : super() {
-    Get.put<SubLevelController>(
-      SubLevelControllerImpl(
+    Get.put<TriviaSubLevelController>(
+      TriviaSubLevelControllerImpl(
         subLevelDomain: subLevelDomain,
       ),
     );
@@ -144,7 +143,7 @@ class SubLevelScreen extends GetView<SubLevelController> {
   _questionCard(int currentQuestion) {
     //TODO: sacar par auna clase entera, ponerle un card dentro de un AnimatedSwitcher para que cambie las preguntas con efectos, como está en el sublevel_background
     //Question Domain of the current question.
-    final QuestionDomain questionDomain =
+    final TriviaQuestionDomain questionDomain =
         controller.subLevelDomain.question[currentQuestion];
 
     return Container(
@@ -233,7 +232,7 @@ class SubLevelScreen extends GetView<SubLevelController> {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<SubLevelController>(
+    return GetBuilder<TriviaSubLevelController>(
       builder: (_) {
         return SafeArea(
           child: Column(children: [
