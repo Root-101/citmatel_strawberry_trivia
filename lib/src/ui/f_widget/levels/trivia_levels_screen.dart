@@ -18,22 +18,24 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: new BoxDecoration(
-        color: Colors
-            .white, //default color, sobre este se pone la imagen correspondiente a cada nivel
-      ),
-      child: ArrowPageIndicator(
-        iconSize: 25,
-        isInside: true,
-        pageController: _pageController,
-        currentPageNotifier: _currentPageNotifier,
-        itemCount: controller.count(),
-        child: Stack(
-          children: <Widget>[
-            _buildPageView(),
-            _buildCircleIndicator(),
-          ],
+    return Scaffold(
+      body: Container(
+        decoration: new BoxDecoration(
+          color: Colors
+              .white, //default color, sobre este se pone la imagen correspondiente a cada nivel
+        ),
+        child: ArrowPageIndicator(
+          iconSize: 25,
+          isInside: true,
+          pageController: _pageController,
+          currentPageNotifier: _currentPageNotifier,
+          itemCount: controller.count(),
+          child: Stack(
+            children: <Widget>[
+              _buildPageView(),
+              _buildCircleIndicator(),
+            ],
+          ),
         ),
       ),
     );

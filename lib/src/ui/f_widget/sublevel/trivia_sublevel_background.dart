@@ -34,27 +34,29 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.transparent, //pa si por si acaso
-        image: DecorationImage(
-          image: AssetImage("assets/icons/background.jpg"),
-          fit: BoxFit.cover,
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          color: Colors.transparent, //pa si por si acaso
+          image: DecorationImage(
+            image: AssetImage("assets/icons/background.jpg"),
+            fit: BoxFit.cover,
+          ),
         ),
-      ),
-      child: AnimatedSwitcher(
-        duration: const Duration(milliseconds: 500),
-        transitionBuilder: (Widget child, Animation<double> animation) {
-          /*return RotationTransition(
-            turns: animation,
-            child: child,
-          );*/
-          return ScaleTransition(
-            child: child,
-            scale: animation,
-          );
-        },
-        child: _animatedWidget,
+        child: AnimatedSwitcher(
+          duration: const Duration(milliseconds: 500),
+          transitionBuilder: (Widget child, Animation<double> animation) {
+            /*return RotationTransition(
+              turns: animation,
+              child: child,
+            );*/
+            return ScaleTransition(
+              child: child,
+              scale: animation,
+            );
+          },
+          child: _animatedWidget,
+        ),
       ),
     );
   }
