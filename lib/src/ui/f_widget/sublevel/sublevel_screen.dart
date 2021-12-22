@@ -9,7 +9,7 @@ import 'package:im_stepper/stepper.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 
 // ignore: must_be_immutable
-class SubLevelScreen extends GetView<SubLevelController> {
+class SubLevelScreen extends GetView<TriviaSubLevelController> {
   static const ROUTE_NAME = "/trivia-sublevel-screen";
 
   late CountdownTimerController
@@ -18,8 +18,8 @@ class SubLevelScreen extends GetView<SubLevelController> {
   SubLevelScreen({
     required TriviaSubLevelDomain subLevelDomain,
   }) : super() {
-    Get.put<SubLevelController>(
-      SubLevelControllerImpl(
+    Get.put<TriviaSubLevelController>(
+      TriviaSubLevelControllerImpl(
         subLevelDomain: subLevelDomain,
       ),
     );
@@ -233,7 +233,7 @@ class SubLevelScreen extends GetView<SubLevelController> {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<SubLevelController>(
+    return GetBuilder<TriviaSubLevelController>(
       builder: (_) {
         return SafeArea(
           child: Column(children: [

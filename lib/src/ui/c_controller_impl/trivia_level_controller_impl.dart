@@ -3,7 +3,7 @@ import 'package:citmatel_strawberry_trivia/src/ui/trivia_ui_exporter.dart';
 
 import 'package:get/get.dart';
 
-class LevelControllerImpl extends LevelController {
+class TriviaLevelControllerImpl extends TriviaLevelController {
   final TriviaLevelUseCase levelUseCase = Get.find<TriviaLevelUseCase>();
 
   @override

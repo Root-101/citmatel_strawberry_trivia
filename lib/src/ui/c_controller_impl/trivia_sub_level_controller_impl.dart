@@ -3,7 +3,7 @@ import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SubLevelControllerImpl extends SubLevelController {
+class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   final Map<QuestionState, Color> colorMap = {
     QuestionState.Not_answered: kGrayColor,
     QuestionState.Answered_rigth: kGreenColor,
@@ -20,7 +20,7 @@ class SubLevelControllerImpl extends SubLevelController {
   int get activeStep => this._activeStep;
 
   TriviaSubLevelDomain subLevelDomain;
-  SubLevelControllerImpl({required this.subLevelDomain});
+  TriviaSubLevelControllerImpl({required this.subLevelDomain});
 
   @override
   int get dotCount => subLevelDomain.question.length;

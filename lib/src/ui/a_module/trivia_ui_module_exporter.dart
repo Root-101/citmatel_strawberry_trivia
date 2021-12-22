@@ -1,4 +1,4 @@
-library ui_module_exporter;
+library trivia_ui_module_exporter;
 
 //export the controllers
 export 'trivia_ui_module.dart';
