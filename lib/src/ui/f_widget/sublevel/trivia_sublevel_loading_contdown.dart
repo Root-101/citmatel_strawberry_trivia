@@ -1,14 +1,14 @@
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
 
-class TriviaSubLevelStartContdown extends StatelessWidget {
+class TriviaSubLevelLoadingCountDown extends StatelessWidget {
   static const int DURATION = 3; //loading timeout
 
   final CountDownController _controller = CountDownController();
 
   final VoidCallback onEnd;
 
-  TriviaSubLevelStartContdown({Key? key, required this.onEnd}) : super(key: key);
+  TriviaSubLevelLoadingCountDown({Key? key, required this.onEnd}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
