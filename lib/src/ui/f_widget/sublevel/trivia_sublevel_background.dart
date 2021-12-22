@@ -19,7 +19,7 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
     super.initState();
     setState(
       () {
-        _animatedWidget = TriviaSubLevelStartContdown(
+        _animatedWidget = TriviaSubLevelLoadingCountDown(
           onEnd: () {
             //really start the level
             setState(() {

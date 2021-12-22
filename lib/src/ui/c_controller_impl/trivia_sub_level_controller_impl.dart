@@ -20,6 +20,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   int get activeStep => this._activeStep;
 
   TriviaSubLevelDomain subLevelDomain;
+
   TriviaSubLevelControllerImpl({required this.subLevelDomain});
 
   @override
@@ -31,9 +32,11 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     update();
   }
 
+  //aqui es donde van los posibles bonos, por eso no se usa el getter
   @override
-  int get durationOfProgressBar =>
-      subLevelDomain.question[_activeStep].duration;
+  int durationOfProgressBar() {
+    return subLevelDomain.question[_activeStep].duration;
+  }
 
   bool _isAnswered = false;
 
@@ -42,6 +45,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       subLevelDomain.question[_activeStep].correctAnswerId;
 
   int _numOfCorrectAnswers = 0;
+
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
 
   void nextQuestion() {

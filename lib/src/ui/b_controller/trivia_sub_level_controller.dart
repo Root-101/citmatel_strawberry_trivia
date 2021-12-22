@@ -10,7 +10,7 @@ abstract class TriviaSubLevelController extends GetxController {
   int get dotCount;
   int get correctAnswerId;
   int get numOfCorrectAnswers;
-  int get durationOfProgressBar;
+  int durationOfProgressBar();
 
   void onDotTapped(tappedDotIndex);
   void nextQuestion();
