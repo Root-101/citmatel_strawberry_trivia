@@ -1,6 +1,5 @@
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:flutter/material.dart';
-
 class TriviaSubLevelLoadingCountDown extends StatelessWidget {
   static const int DURATION = 3; //loading timeout
 
