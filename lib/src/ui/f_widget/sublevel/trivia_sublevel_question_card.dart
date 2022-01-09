@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 
 class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
@@ -28,61 +27,60 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
       key: ValueKey(questionDomain.id),
       color: Colors.transparent,
       elevation: 0,
-      margin: const EdgeInsets.symmetric(horizontal: 20),
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          children: [
-            Text(
-              //Text of the current question.
-              questionDomain.question,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
+      margin: const EdgeInsets.symmetric(horizontal: 10),
+      child: Column(
+        children: [
+          Text(
+            //Text of the current question.
+            questionDomain.question,
+            style: TextStyle(
+              color: textQuestionColor,
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
             ),
-            const SizedBox(height: 10),
-            ...List.generate(
-              //Amount of questions.
-              questionDomain.answers.length,
+          ),
+          const SizedBox(height: 10),
+          ...List.generate(
+            //Amount of questions.
+            questionDomain.answers.length,
 
-              (index) => _buildOption(questionDomain.answers[index].id,
-                  questionDomain.answers[index].answer),
-            ),
-          ],
-        ),
+            (index) => _buildOption(questionDomain.answers[index].id,
+                questionDomain.answers[index].answer),
+          ),
+        ],
       ),
     );
   }
 
   _buildOption(int id, String answerText) {
-    return InkWell(
-      onTap: () {
-        controller.checkAnswer(id);
-      },
-      child: Container(
-        margin: const EdgeInsets.only(top: 10),
-        padding: const EdgeInsets.all(10),
-        decoration: BoxDecoration(
-          //The color of the question border changes when is pressed.
-          border: Border.all(color: controller.getTheRightColor(id)),
-          borderRadius: BorderRadius.circular(15),
-        ),
+    return Container(
+      margin: const EdgeInsets.only(top: 20, left: 0, right: 0),
+      padding: const EdgeInsets.all(15),
+      decoration: BoxDecoration(
+        //The color of the question border changes when is pressed.
+        border: Border.all(color: primaryColor),
+        borderRadius: BorderRadius.circular(30),
+        gradient: controller.getTheRightColor(id),
+      ),
+      child: InkWell(
+        onTap: () {
+          controller.checkAnswer(id);
+        },
         child: Row(
           children: [
             Text(
               "$id - ",
               style: TextStyle(
-                color: controller.getTheRightColor(id),
+                color: textAnswerColor,
                 fontSize: 26,
+                fontWeight: FontWeight.bold,
               ),
             ),
             Expanded(
               child: Text(
                 "$answerText",
                 style: TextStyle(
-                  color: controller.getTheRightColor(id),
+                  color: textAnswerColor,
                   fontSize: 25,
                 ),
                 textAlign: TextAlign.start,
@@ -92,12 +90,9 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
               height: 26,
               width: 26,
               decoration: BoxDecoration(
-                color:
-                    controller.questionState(id) == QuestionState.Not_answered
-                        ? Colors.transparent
-                        : controller.getTheRightColor(id),
+                color: Colors.transparent,
                 borderRadius: BorderRadius.circular(50),
-                border: Border.all(color: controller.getTheRightColor(id)),
+                border: Border.all(color: secondaryColor),
               ),
               child: controller.questionState(id) == QuestionState.Not_answered
                   ? null
