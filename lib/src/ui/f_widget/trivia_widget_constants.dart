@@ -1,24 +1,39 @@
 import 'package:flutter/material.dart';
 
-//// Trivia Single Level Screen Constants///////
+//// Trivia SubLevel Screen Color Constants ////
 
-const triviaLevelPrimaryColor = Colors.lightBlue;
-const triviaLevelSecundaryColor = Colors.lightBlue;
-const triviaLevelDarkColor = const Color(0xFF3F4768);
+const primaryColor = Colors.lightBlue;
+const secondaryColor = Color(0xFF46A0AE);
 
-const progressBarGradient = LinearGradient(
+const textQuestionColor = Colors.white;
+const textAnswerColor = Colors.black;
+
+final colorWrong = Colors.red.shade800;
+final colorRight = Colors.lightGreen.shade800;
+
+const gradientNormalColor = LinearGradient(
   colors: [
-    Color(0xFF46A0AE),
-    Color(0xFF00FFCB),
+    secondaryColor,
+    primaryColor,
   ],
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,
 );
 
-const kSecondaryColor = Color(0xFF8B94BC);
-const kGreenColor = Color(0xFF6AC259);
-const kRedColor = Color(0xFFE92E30);
-const kGrayColor = Colors.white;
-const kBlackColor = Color(0xFF101010);
+final gradientWrongColor = LinearGradient(
+  colors: [
+    Colors.red.shade300,
+    colorWrong,
+  ],
+  begin: Alignment.centerLeft,
+  end: Alignment.centerRight,
+);
 
-const double kDefaultPadding = 20.0;
+final gradientRightColor = LinearGradient(
+  colors: [
+    Colors.green,
+    colorRight,
+  ],
+  begin: Alignment.centerLeft,
+  end: Alignment.centerRight,
+);
