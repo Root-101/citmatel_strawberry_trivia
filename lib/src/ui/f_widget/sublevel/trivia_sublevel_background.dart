@@ -39,7 +39,7 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
       decoration: BoxDecoration(
         color: Colors.transparent, //pa si por si acaso
         image: DecorationImage(
-          image: AssetImage("assets/icons/background.jpg"),
+          image: AssetImage(TriviaAssets.WALLPAPER),
           fit: BoxFit.cover,
         ),
       ),

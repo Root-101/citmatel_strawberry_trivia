@@ -1,7 +1,7 @@
 name: citmatel_strawberry_trivia
 description: Trivia module for CITMATEL's 'strawberry' project
 
-publish_to: 'none'
+publish_to: "none"
 
 version: 0.1.0-SNAPSHOT.20211213
 
@@ -21,11 +21,10 @@ dependencies:
   animations: ^2.0.2
   cupertino_icons: ^1.0.2
   page_view_indicators: ^2.0.0
-  liquid_progress_indicator: ^0.4.0  
+  liquid_progress_indicator: ^0.4.0
   flutter_countdown_timer: ^4.1.0
   flutter_svg: ^1.0.0
   im_stepper: ^0.1.3
-
 
   #Modified Masters
   circular_countdown_timer:
@@ -37,6 +36,7 @@ dev_dependencies:
 
 flutter:
   assets:
-    - assets/icons/
+    - packages/citmatel_strawberry_trivia/assets/icons/clock.svg
+    - packages/citmatel_strawberry_trivia/assets/images/background.jpg
 
   uses-material-design: true
