@@ -1,30 +1,23 @@
-import 'package:citmatel_strawberry_trivia/src/ui/f_widget/trivia_widget_constants.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
-  final Map<QuestionState, Color> colorMap = {
-    QuestionState.Not_answered: kGrayColor,
-    QuestionState.Answered_rigth: kGreenColor,
-    QuestionState.Answered_wrong: kRedColor,
-  };
-  final Map<QuestionState, IconData> iconsMap = {
-    QuestionState.Not_answered: Icons.circle_outlined,
-    QuestionState.Answered_rigth: Icons.done,
-    QuestionState.Answered_wrong: Icons.close,
-  };
+  TriviaSubLevelUseCase subLevelUseCase;
 
   // Used to control the Stteper
   int _activeStep = 0; // Initial step set to 0.
   int get activeStep => this._activeStep;
 
-  TriviaSubLevelDomain subLevelDomain;
+  // Cantidad de pasos del stepper.
+  int dotCount = 0;
 
-  TriviaSubLevelControllerImpl({required this.subLevelDomain});
-
-  @override
-  int get dotCount => subLevelDomain.question.length;
+  TriviaSubLevelControllerImpl({
+    required TriviaSubLevelDomain subLevelDomain,
+  }) : subLevelUseCase = TriviaSubLevelUseCaseImpl(
+          subLevelDomain: subLevelDomain,
+        ) {
+    dotCount = subLevelUseCase.dotCount;
+  }
 
   @override
   void onDotTapped(tappedDotIndex) {
@@ -32,24 +25,18 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     update();
   }
 
-  //aqui es donde van los posibles bonos, por eso no se usa el getter
   @override
   int durationOfProgressBar() {
-    return subLevelDomain.question[_activeStep].duration;
+    return subLevelUseCase.durationOfProgressBar(_activeStep);
   }
 
   bool _isAnswered = false;
 
-  @override
-  int get correctAnswerId =>
-      subLevelDomain.question[_activeStep].correctAnswerId;
-
   int _numOfCorrectAnswers = 0;
-
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
 
   TriviaQuestionDomain currentQuestion() {
-    return subLevelDomain.question[activeStep];
+    return subLevelUseCase.currentQuestion(_activeStep);
   }
 
   void nextQuestion() {
@@ -64,18 +51,13 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     _activeStep = index + 1;
   }
 
-  int questionsLength() {
-    return subLevelDomain.question.length;
-  }
-
   void checkAnswer(int selectedId) {
     // because once user press any option then it will run
     _isAnswered = true;
 
-    if (correctAnswerId == selectedId) _numOfCorrectAnswers++;
+    if (subLevelUseCase.correctAnswerId(_activeStep) == selectedId)
+      _numOfCorrectAnswers++;
 
-    // // It will stop the counter
-    // _animationController.stop();
     update();
 
     // Once user select an ans after 3s it will go to the next qn
@@ -86,7 +68,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   QuestionState questionState(int questionIndex) {
     if (_isAnswered) {
-      if (questionIndex == correctAnswerId) {
+      if (questionIndex == subLevelUseCase.correctAnswerId(_activeStep)) {
         return QuestionState.Answered_rigth;
       } else {
         return QuestionState.Answered_wrong;
@@ -97,10 +79,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   Color getTheRightColor(int index) {
-    return colorMap[questionState(index)]!;
+    return subLevelUseCase.colorMap[questionState(index)]!;
   }
 
   IconData getTheRightIconData(int index) {
-    return iconsMap[questionState(index)]!;
+    return subLevelUseCase.iconsMap[questionState(index)]!;
   }
 }
