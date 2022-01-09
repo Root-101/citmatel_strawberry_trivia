@@ -7,7 +7,7 @@ import 'package:im_stepper/stepper.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 
 // ignore: must_be_immutable
-class TriviaSubLevelScreen extends GetView<TriviaSubLevelController> {
+class TriviaSubLevelScreen extends StatefulWidget {
   static const ROUTE_NAME = "/trivia-sublevel-screen";
 
   TriviaSubLevelScreen({
@@ -18,6 +18,26 @@ class TriviaSubLevelScreen extends GetView<TriviaSubLevelController> {
         subLevelDomain: subLevelDomain,
       ),
     );
+  }
+
+  @override
+  State<TriviaSubLevelScreen> createState() => _TriviaSubLevelScreenState();
+}
+
+class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
+  late final TriviaSubLevelController _controller;
+
+  @override
+  void initState() {
+    _controller = Get.find();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    Get.delete<TriviaSubLevelController>();
+    super.dispose();
   }
 
   @override
@@ -47,11 +67,11 @@ class TriviaSubLevelScreen extends GetView<TriviaSubLevelController> {
       padding: const EdgeInsets.all(10),
       child: DotStepper(
         //Amount of dots to show.
-        dotCount: controller.dotCount,
+        dotCount: _controller.dotCount,
         //Size of the dots.
         dotRadius: 25,
         //Current selected dot.
-        activeStep: controller.activeStep,
+        activeStep: _controller.activeStep,
         //Type of shape of the dot.
         shape: Shape.circle,
         //Space between the dots.
@@ -60,7 +80,7 @@ class TriviaSubLevelScreen extends GetView<TriviaSubLevelController> {
         indicator: Indicator.jump,
 
         //What should happen when a dot is tapped.
-        onDotTapped: controller.onDotTapped,
+        onDotTapped: _controller.onDotTapped,
 
         // DOT-STEPPER DECORATIONS
         fixedDotDecoration: FixedDotDecoration(
@@ -82,7 +102,7 @@ class TriviaSubLevelScreen extends GetView<TriviaSubLevelController> {
     //Current time.
     int startTime = DateTime.now().millisecondsSinceEpoch;
     //Seconds it takes to reach 0.
-    int dif = controller.durationOfProgressBar();
+    int dif = _controller.durationOfProgressBar();
     //The end time is the current time plus the choosen amount of seconds.
     int endTime = startTime + dif * 1000;
 
@@ -100,7 +120,7 @@ class TriviaSubLevelScreen extends GetView<TriviaSubLevelController> {
           return Text('Game over');
         }
         //Current percent of the remaining time.
-        double perc = time.sec! / controller.durationOfProgressBar();
+        double perc = time.sec! / _controller.durationOfProgressBar();
 
         return Stack(
           children: [
