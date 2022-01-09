@@ -162,7 +162,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
                       ),
                     ),
                     SvgPicture.asset(
-                      "assets/icons/clock.svg",
+                      TriviaAssets.FROG,
                       width: 30,
                     ),
                   ],
