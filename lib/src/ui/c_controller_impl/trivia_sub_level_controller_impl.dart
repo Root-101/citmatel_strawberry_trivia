@@ -36,10 +36,16 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   void nextQuestion() {
     _isAnswered = false;
-    if (_activeStep < dotCount) {
+    if (_activeStep < dotCount - 1) {
       _activeStep++;
       update();
-    } else {}
+    } else {
+      if (_numOfCorrectAnswers == dotCount) {
+        StrawberryFunction.winLevel();
+      } else {
+        StrawberryFunction.looseLevel();
+      }
+    }
   }
 
   bool isAnswerCorrect(int selectedId) {
