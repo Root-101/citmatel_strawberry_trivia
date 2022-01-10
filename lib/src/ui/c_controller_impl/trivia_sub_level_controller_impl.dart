@@ -42,10 +42,6 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     } else {}
   }
 
-  void updateTheQuestionNum(int index) {
-    _activeStep = index + 1;
-  }
-
   bool isAnswerCorrect(int selectedId) {
     if (subLevelUseCase.correctAnswerId(_activeStep) == selectedId) {
       return true;
