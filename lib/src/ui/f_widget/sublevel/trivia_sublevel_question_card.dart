@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animator/flutter_animator.dart';
 import 'package:get/get.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 
@@ -44,14 +45,30 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           const SizedBox(height: 10),
           //// The List of Answers ////
           ...List.generate(
-            // Amount of answers.
-            questionDomain.answers.length,
-            (index) => _buildOption(questionDomain.answers[index].id,
-                questionDomain.answers[index].answer),
-          ),
+              // Amount of answers.
+              questionDomain.answers.length,
+              (index) =>
+                  // If the current question don't have been answerer yet ...
+                  controller.questionState(questionDomain.answers[index].id) ==
+                          QuestionState.Not_answered
+                      ? _buildAnswerOption(index, questionDomain)
+                      // If is aready answered and the correct answer is the selected Bounce else Shake
+                      : controller
+                              .isAnswerCorrect(questionDomain.answers[index].id)
+                          ? Bounce(
+                              child: _buildAnswerOption(index, questionDomain),
+                            )
+                          : Shake(
+                              child: _buildAnswerOption(index, questionDomain),
+                            )),
         ],
       ),
     );
+  }
+
+  _buildAnswerOption(int index, TriviaQuestionDomain questionDomain) {
+    return _buildOption(
+        questionDomain.answers[index].id, questionDomain.answers[index].answer);
   }
 
   _buildOption(int id, String answerText) {
