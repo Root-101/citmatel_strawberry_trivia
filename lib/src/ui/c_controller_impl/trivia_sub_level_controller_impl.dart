@@ -1,3 +1,4 @@
+import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 
@@ -51,12 +52,24 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     _activeStep = index + 1;
   }
 
+  bool isAnswerCorrect(int selectedId) {
+    if (subLevelUseCase.correctAnswerId(_activeStep) == selectedId) {
+      return true;
+    }
+    return false;
+  }
+
   void checkAnswer(int selectedId) {
     // because once user press any option then it will run
     _isAnswered = true;
 
-    if (subLevelUseCase.correctAnswerId(_activeStep) == selectedId)
+    if (isAnswerCorrect(selectedId)) {
       _numOfCorrectAnswers++;
+      StrawberryAudio.playAudioCorrect();
+    } else {
+      StrawberryAudio.playAudioWrong();
+      StrawberryVibration.vibrate();
+    }
 
     update();
 

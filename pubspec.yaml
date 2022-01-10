@@ -25,10 +25,15 @@ dependencies:
   flutter_countdown_timer: ^4.1.0
   flutter_svg: ^1.0.0
   im_stepper: ^0.1.3
+  flutter_animator: ^3.2.0
 
   #Modified Masters
   circular_countdown_timer:
     path: ../master/circular_countdown_timer
+
+  #Tools
+  citmatel_strawberry_tools:
+    path: ../citmatel_strawberry_tools
 
 dev_dependencies:
   flutter_test:
