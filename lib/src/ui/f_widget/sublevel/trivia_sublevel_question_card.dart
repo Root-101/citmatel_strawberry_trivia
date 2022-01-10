@@ -30,20 +30,22 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
       margin: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         children: [
+          //// The Question ////
           Text(
-            //Text of the current question.
+            // Text of the current question.
             questionDomain.question,
             style: TextStyle(
               color: textQuestionColor,
               fontSize: 30,
               fontWeight: FontWeight.bold,
             ),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 10),
+          //// The List of Answers ////
           ...List.generate(
-            //Amount of questions.
+            // Amount of answers.
             questionDomain.answers.length,
-
             (index) => _buildOption(questionDomain.answers[index].id,
                 questionDomain.answers[index].answer),
           ),
@@ -57,9 +59,9 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
       margin: const EdgeInsets.only(top: 20, left: 0, right: 0),
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
-        //The color of the question border changes when is pressed.
         border: Border.all(color: primaryColor),
         borderRadius: BorderRadius.circular(30),
+        //The color of the answer changes when is pressed.
         gradient: controller.getTheRightColor(id),
       ),
       child: InkWell(
@@ -68,6 +70,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
         },
         child: Row(
           children: [
+            //// The ID of the Answer ////
             Text(
               "$id - ",
               style: TextStyle(
@@ -76,6 +79,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            //// The Answer ////
             Expanded(
               child: Text(
                 "$answerText",
@@ -86,13 +90,14 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
                 textAlign: TextAlign.start,
               ),
             ),
+            //// The Icon ////
             Container(
               height: 26,
               width: 26,
               decoration: BoxDecoration(
                 color: Colors.transparent,
                 borderRadius: BorderRadius.circular(50),
-                border: Border.all(color: secondaryColor),
+                border: Border.all(color: Colors.black),
               ),
               child: controller.questionState(id) == QuestionState.Not_answered
                   ? null
