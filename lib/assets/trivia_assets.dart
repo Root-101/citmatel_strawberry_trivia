@@ -7,5 +7,5 @@ class TriviaAssets {
   static const String WALLPAPER = "$_images/background.jpg";
 
   ////ICONS////
-  static const String FROG = "$_icons/clock.svg";
+  static const String CLOCK = "$_icons/clock.svg";
 }

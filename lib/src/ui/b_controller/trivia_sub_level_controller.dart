@@ -19,7 +19,7 @@ abstract class TriviaSubLevelController extends GetxController {
   void updateTheQuestionNum(int index);
   void checkAnswer(int selectedId);
 
-  Color getTheRightColor(int index);
+  LinearGradient getTheRightColor(int index);
   IconData getTheRightIconData(int index);
 }
 

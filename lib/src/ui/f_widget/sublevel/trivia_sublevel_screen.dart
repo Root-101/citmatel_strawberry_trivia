@@ -45,18 +45,18 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
     return GetBuilder<TriviaSubLevelController>(
       builder: (_) {
         return SafeArea(
-          child: Column(children: [
-            //Build the stepper.
-            _buildStepper(),
-            //Build the liquid progress bar.
-            const SizedBox(height: 10),
-            _buildCountdown(),
-            const SizedBox(height: 10),
-            //Build the Question card
-            Expanded(
-              child: TriviaSubLevelQuestionCard(),
-            ),
-          ]),
+          child: Column(
+            children: [
+              //Build the stepper.
+              _buildStepper(),
+              //Build the liquid progress bar.
+              const SizedBox(height: 10),
+              _buildCountdown(),
+              const SizedBox(height: 10),
+              //Build the Question card
+              TriviaSubLevelQuestionCard(),
+            ],
+          ),
         );
       },
     );
@@ -75,7 +75,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         //Type of shape of the dot.
         shape: Shape.circle,
         //Space between the dots.
-        spacing: 10,
+        spacing: 15,
         //The animation that is shown when switch from a dot to another.
         indicator: Indicator.jump,
 
@@ -84,15 +84,11 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
 
         // DOT-STEPPER DECORATIONS
         fixedDotDecoration: FixedDotDecoration(
-          color: Colors.indigoAccent.shade700,
+          color: secondaryColor,
         ),
 
         indicatorDecoration: IndicatorDecoration(
-          color: Colors.indigoAccent.shade100,
-        ),
-        lineConnectorDecoration: LineConnectorDecoration(
-          color: Colors.amber,
-          strokeWidth: 2,
+          color: primaryColor,
         ),
       ),
     );
@@ -131,12 +127,11 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
                 //Value of the progress bar.
                 value: double.parse(perc.toStringAsFixed(5)),
                 //Color of the liquid animation.
-                valueColor:
-                    AlwaysStoppedAnimation(Colors.indigoAccent.shade700),
+                valueColor: AlwaysStoppedAnimation(primaryColor),
                 //Background Color of the progress bar.
                 backgroundColor: Colors.transparent,
                 //Border color of the bar.
-                borderColor: Colors.indigoAccent.shade100,
+                borderColor: Colors.lightBlue.shade900,
                 //Border width and radius of the bar.
                 borderWidth: 5.0,
                 borderRadius: 12.0,
@@ -157,13 +152,14 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
                     Text(
                       "${time.sec} seg",
                       style: TextStyle(
-                        color: Colors.white70,
+                        color: Colors.white,
                         fontSize: 20,
                       ),
                     ),
                     SvgPicture.asset(
-                      TriviaAssets.FROG,
+                      TriviaAssets.CLOCK,
                       width: 30,
+                      color: Colors.white,
                     ),
                   ],
                 ),

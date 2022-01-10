@@ -78,7 +78,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     }
   }
 
-  Color getTheRightColor(int index) {
+  LinearGradient getTheRightColor(int index) {
     return subLevelUseCase.colorMap[questionState(index)]!;
   }
 

@@ -5,10 +5,10 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
   // Domain almacenado para acceder a la info.
   final TriviaSubLevelDomain subLevelDomain;
 
-  final Map<QuestionState, Color> _colorMap = {
-    QuestionState.Not_answered: kGrayColor,
-    QuestionState.Answered_rigth: kGreenColor,
-    QuestionState.Answered_wrong: kRedColor,
+  final Map<QuestionState, LinearGradient> _colorMap = {
+    QuestionState.Not_answered: gradientNormalColor,
+    QuestionState.Answered_rigth: gradientRightColor,
+    QuestionState.Answered_wrong: gradientWrongColor,
   };
 
   final Map<QuestionState, IconData> _iconsMap = {
@@ -23,7 +23,7 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
   int get dotCount => subLevelDomain.question.length;
 
   @override
-  Map<QuestionState, Color> get colorMap => this._colorMap;
+  Map<QuestionState, LinearGradient> get colorMap => this._colorMap;
 
   @override
   Map<QuestionState, IconData> get iconsMap => this._iconsMap;
