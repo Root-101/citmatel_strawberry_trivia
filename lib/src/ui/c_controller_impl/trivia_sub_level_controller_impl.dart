@@ -21,12 +21,6 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   @override
-  void onDotTapped(tappedDotIndex) {
-    _activeStep = tappedDotIndex;
-    update();
-  }
-
-  @override
   int durationOfProgressBar() {
     return subLevelUseCase.durationOfProgressBar(_activeStep);
   }

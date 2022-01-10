@@ -15,7 +15,6 @@ abstract class TriviaSubLevelController extends GetxController {
   QuestionState questionState(int questionIndex);
   TriviaQuestionDomain currentQuestion();
 
-  void onDotTapped(tappedDotIndex);
   void nextQuestion();
   void updateTheQuestionNum(int index);
   void checkAnswer(int selectedId);
