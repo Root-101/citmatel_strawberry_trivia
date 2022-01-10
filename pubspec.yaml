@@ -30,6 +30,10 @@ dependencies:
   circular_countdown_timer:
     path: ../master/circular_countdown_timer
 
+  #Tools
+  citmatel_strawberry_tools:
+    path: ../citmatel_strawberry_tools
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
