@@ -27,16 +27,6 @@ class MyApp extends StatelessWidget {
           page: () => TriviaLevelsScreen(),
           transition: Transition.rightToLeft,
         ),
-        GetPage(
-          name: StrawberryLevelWin.ROUTE_NAME,
-          page: () => StrawberryLevelWin(),
-          transition: Transition.rightToLeft,
-        ),
-        GetPage(
-          name: StrawberryLevelLose.ROUTE_NAME,
-          page: () => StrawberryLevelLose(),
-          transition: Transition.leftToRightWithFade,
-        ),
       ],
       //--------------------- </PAGINATION> -----------------------------------
     );
