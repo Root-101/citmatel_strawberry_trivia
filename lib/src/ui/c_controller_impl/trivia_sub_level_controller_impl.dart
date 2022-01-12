@@ -21,12 +21,6 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   @override
-  void onDotTapped(tappedDotIndex) {
-    _activeStep = tappedDotIndex;
-    update();
-  }
-
-  @override
   int durationOfProgressBar() {
     return subLevelUseCase.durationOfProgressBar(_activeStep);
   }
@@ -42,14 +36,27 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   void nextQuestion() {
     _isAnswered = false;
-    if (_activeStep < dotCount) {
+    if (_activeStep < dotCount - 1) {
       _activeStep++;
       update();
-    } else {}
-  }
-
-  void updateTheQuestionNum(int index) {
-    _activeStep = index + 1;
+    } else {
+      if (_numOfCorrectAnswers == dotCount) {
+        StrawberryFunction.winLevel();
+      } else {
+        StrawberryFunction.looseLevel(
+          childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
+            texts: [
+              _numOfCorrectAnswers == 0
+                  ? 'Ninguna respuesta fue correcta.'
+                  : 'Has respondido $_numOfCorrectAnswers ${_numOfCorrectAnswers == 1 ? 'pregunta' : 'preguntas'} correctamente.',
+              '${_numOfCorrectAnswers / dotCount >= 0.5 ? 'Solo te' : 'Te'} ${dotCount - _numOfCorrectAnswers == 1 ? 'ha' : 'han'} faltado ${dotCount - _numOfCorrectAnswers}.',
+              'Inténtalo de nuevo.',
+              'El que persevera triunfa.',
+            ],
+          ),
+        );
+      }
+    }
   }
 
   bool isAnswerCorrect(int selectedId) {

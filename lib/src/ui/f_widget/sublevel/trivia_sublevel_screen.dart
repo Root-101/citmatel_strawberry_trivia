@@ -1,3 +1,4 @@
+import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_countdown_timer/index.dart';
@@ -78,9 +79,8 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         spacing: 15,
         //The animation that is shown when switch from a dot to another.
         indicator: Indicator.jump,
-
-        //What should happen when a dot is tapped.
-        onDotTapped: _controller.onDotTapped,
+        // So the user can change the step.
+        tappingEnabled: false,
 
         // DOT-STEPPER DECORATIONS
         fixedDotDecoration: FixedDotDecoration(
@@ -105,8 +105,15 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
     CountdownTimerController _timerController = CountdownTimerController(
         endTime: endTime,
         onEnd: () {
-          //What should happen when time reach 0.
-          print("end game");
+          // StrawberryFunction.looseLevel(
+          //   childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
+          //     texts: [
+          //       'Te has quedado sin tiempo.',
+          //       'Inténtalo de nuevo.',
+          //       'El que persevera triunfa.',
+          //     ],
+          //   ),
+          // );
         });
 
     return CountdownTimer(
