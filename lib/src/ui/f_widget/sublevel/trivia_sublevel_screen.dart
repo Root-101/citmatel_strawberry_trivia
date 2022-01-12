@@ -105,7 +105,15 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
     CountdownTimerController _timerController = CountdownTimerController(
         endTime: endTime,
         onEnd: () {
-          StrawberryFunction.looseLevel();
+          // StrawberryFunction.looseLevel(
+          //   childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
+          //     texts: [
+          //       'Te has quedado sin tiempo.',
+          //       'Inténtalo de nuevo.',
+          //       'El que persevera triunfa.',
+          //     ],
+          //   ),
+          // );
         });
 
     return CountdownTimer(
