@@ -43,7 +43,18 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       if (_numOfCorrectAnswers == dotCount) {
         StrawberryFunction.winLevel();
       } else {
-        StrawberryFunction.looseLevel();
+        StrawberryFunction.looseLevel(
+          childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
+            texts: [
+              _numOfCorrectAnswers == 0
+                  ? 'Ninguna respuesta fue correcta.'
+                  : 'Has respondido $_numOfCorrectAnswers ${_numOfCorrectAnswers == 1 ? 'pregunta' : 'preguntas'} correctamente.',
+              '${_numOfCorrectAnswers / dotCount >= 0.5 ? 'Solo te' : 'Te'} ${dotCount - _numOfCorrectAnswers == 1 ? 'ha' : 'han'} faltado ${dotCount - _numOfCorrectAnswers}.',
+              'Inténtalo de nuevo.',
+              'El que persevera triunfa.',
+            ],
+          ),
+        );
       }
     }
   }
