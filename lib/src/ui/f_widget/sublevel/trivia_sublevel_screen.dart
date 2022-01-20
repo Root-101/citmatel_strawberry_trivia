@@ -11,9 +11,11 @@ import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 // ignore: must_be_immutable
 class TriviaSubLevelScreen extends StatefulWidget {
   static const ROUTE_NAME = "/trivia-sublevel-screen";
+  final bool showTutorial;
 
   TriviaSubLevelScreen({
     required TriviaSubLevelDomain subLevelDomain,
+    required this.showTutorial,
   }) : super() {
     Get.put<TriviaSubLevelController>(
       TriviaSubLevelControllerImpl(
@@ -44,7 +46,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   void initState() {
     _controller = Get.find();
 
-    if (_controller.questionId == 1) {
+    if (widget.showTutorial) {
       //Start showcase view after current widget frames are drawn.
       WidgetsBinding.instance!.addPostFrameCallback((duration) async {
         // Is necessary to wait a few seconds because the widgets haven't been created.
