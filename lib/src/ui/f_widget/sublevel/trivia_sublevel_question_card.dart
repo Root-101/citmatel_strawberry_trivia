@@ -5,12 +5,16 @@ import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 
 // ignore: must_be_immutable
 class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
-  late GlobalKey four;
-  late GlobalKey five;
+  late GlobalKey key4;
+  late GlobalKey key5;
+  late GlobalKey key6;
+  late GlobalKey key7;
 
   TriviaSubLevelQuestionCard({
-    required this.four,
-    required this.five,
+    required this.key4,
+    required this.key5,
+    required this.key6,
+    required this.key7,
     Key? key,
   }) : super(key: key);
 
@@ -43,6 +47,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           Text(
             // Text of the current question.
             questionDomain.question,
+            key: key4,
             style: TextStyle(
               color: textQuestionColor,
               fontSize: 30,
@@ -53,24 +58,31 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
 
           const SizedBox(height: 10),
           //// The List of Answers ////
-
-          ...List.generate(
-              // Amount of answers.
-              questionDomain.answers.length,
-              (index) =>
-                  // If the current question don't have been answerer yet ...
-                  controller.questionState(questionDomain.answers[index].id) ==
-                          QuestionState.Not_answered
-                      ? _buildAnswerOption(index, questionDomain)
-                      // If is aready answered and the correct answer is the selected Bounce else Shake
-                      : controller
-                              .isAnswerCorrect(questionDomain.answers[index].id)
-                          ? Bounce(
-                              child: _buildAnswerOption(index, questionDomain),
-                            )
-                          : Shake(
-                              child: _buildAnswerOption(index, questionDomain),
-                            )),
+          Column(
+            key: key5,
+            children: [
+              ...List.generate(
+                  // Amount of answers.
+                  questionDomain.answers.length,
+                  (index) =>
+                      // If the current question don't have been answerer yet ...
+                      controller.questionState(
+                                  questionDomain.answers[index].id) ==
+                              QuestionState.Not_answered
+                          ? _buildAnswerOption(index, questionDomain)
+                          // If is aready answered and the correct answer is the selected Bounce else Shake
+                          : controller.isAnswerCorrect(
+                                  questionDomain.answers[index].id)
+                              ? Bounce(
+                                  child:
+                                      _buildAnswerOption(index, questionDomain),
+                                )
+                              : Shake(
+                                  child:
+                                      _buildAnswerOption(index, questionDomain),
+                                )),
+            ],
+          ),
         ],
       ),
     );
