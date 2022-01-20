@@ -26,6 +26,7 @@ dependencies:
   flutter_svg: ^1.0.0
   im_stepper: ^0.1.3
   flutter_animator: ^3.2.0
+  tutorial_coach_mark: ^1.2.1
 
   #Modified Masters
   circular_countdown_timer:
@@ -34,7 +35,6 @@ dependencies:
   #Tools
   citmatel_strawberry_tools:
     path: ../citmatel_strawberry_tools
-  showcaseview: ^1.1.4
 
 dev_dependencies:
   flutter_test:
