@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 abstract class TriviaSubLevelUseCase extends AbstractUseCase {
   int get dotCount;
+  int get questionId;
 
   Map<QuestionState, LinearGradient> get colorMap;
   Map<QuestionState, IconData> get iconsMap;

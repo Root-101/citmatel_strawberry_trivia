@@ -30,6 +30,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   int _numOfCorrectAnswers = 0;
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
 
+  @override
+  int get questionId => subLevelUseCase.questionId;
+
   TriviaQuestionDomain currentQuestion() {
     return subLevelUseCase.currentQuestion(_activeStep);
   }

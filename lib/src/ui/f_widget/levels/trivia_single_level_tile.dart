@@ -4,9 +4,13 @@ import 'package:flutter/material.dart';
 
 class TriviaSingleLevelTile extends StatelessWidget {
   final TriviaSubLevelDomain subLevelDomain;
+  final bool showTutorial;
 
-  const TriviaSingleLevelTile({required this.subLevelDomain, Key? key})
-      : super(key: key);
+  const TriviaSingleLevelTile({
+    required this.subLevelDomain,
+    required this.showTutorial,
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +36,9 @@ class TriviaSingleLevelTile extends StatelessWidget {
 
   //Screen grande para cuando se entra al subnivel, pantalla de cargando para el sub nivel
   _buildOpen() {
-    return TriviaSubLevelBackground(subLevelDomain: subLevelDomain);
+    return TriviaSubLevelBackground(
+      subLevelDomain: subLevelDomain,
+      showTutorial: showTutorial,
+    );
   }
 }

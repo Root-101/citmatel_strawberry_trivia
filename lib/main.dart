@@ -1,4 +1,3 @@
-import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/src/ui/trivia_ui_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

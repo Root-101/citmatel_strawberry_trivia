@@ -3,9 +3,13 @@ import 'package:flutter/material.dart';
 
 class TriviaSubLevelBackground extends StatefulWidget {
   final TriviaSubLevelDomain subLevelDomain;
+  final bool showTutorial;
 
-  const TriviaSubLevelBackground({required this.subLevelDomain, Key? key})
-      : super(key: key);
+  const TriviaSubLevelBackground({
+    required this.subLevelDomain,
+    required this.showTutorial,
+    Key? key,
+  }) : super(key: key);
 
   @override
   _TriviaSubLevelBackgroundState createState() =>
@@ -24,8 +28,10 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
           onEnd: () {
             //really start the level
             setState(() {
-              _animatedWidget =
-                  TriviaSubLevelScreen(subLevelDomain: widget.subLevelDomain);
+              _animatedWidget = TriviaSubLevelScreen(
+                subLevelDomain: widget.subLevelDomain,
+                showTutorial: widget.showTutorial,
+              );
             });
           },
         );

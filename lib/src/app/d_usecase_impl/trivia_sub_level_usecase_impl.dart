@@ -47,4 +47,7 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
   int questionsLength() {
     return subLevelDomain.question.length;
   }
+
+  @override
+  int get questionId => subLevelDomain.id;
 }

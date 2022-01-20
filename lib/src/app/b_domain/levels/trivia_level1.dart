@@ -12,6 +12,42 @@ class TriviaLevel1 {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 2,
+              duration: 60,
+              question: "Le está gustando el tutorial?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Está muy largo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Puede ser."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 3,
+              question: "3 + 7 = ?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "8"),
+                TriviaQuestionAnswerDomain(id: 2, answer: "20"),
+                TriviaQuestionAnswerDomain(id: 3, answer: "10"),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Ninguna."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "14 + 6 = ?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "20"),
+                TriviaQuestionAnswerDomain(id: 2, answer: "40"),
+                TriviaQuestionAnswerDomain(id: 3, answer: "60"),
+                TriviaQuestionAnswerDomain(id: 4, answer: "80"),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 2,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 2,
               question: "Cómo hacer a una persona feliz?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Dale comida."),
@@ -40,10 +76,6 @@ class TriviaLevel1 {
                 TriviaQuestionAnswerDomain(id: 4, answer: "80"),
               ]),
         ],
-      ),
-      TriviaSubLevelDomain(
-        id: 2,
-        question: [],
       ),
       TriviaSubLevelDomain(
         id: 3,

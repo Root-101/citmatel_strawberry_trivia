@@ -8,6 +8,7 @@ abstract class TriviaSubLevelController extends GetxController {
   int get activeStep;
   int get dotCount;
   int get numOfCorrectAnswers;
+  int get questionId;
 
   int durationOfProgressBar();
   bool isAnswerCorrect(int selectedId);

@@ -1,5 +1,4 @@
 import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_level_domain.dart';
-import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_sub_level_domain.dart';
 import 'package:citmatel_strawberry_trivia/src/ui/f_widget/levels/trivia_single_level_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -81,7 +80,13 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
       ),
       children: level.sublevel
           .map(
-            (subLevel) => TriviaSingleLevelTile(subLevelDomain: subLevel),
+            (subLevel) => TriviaSingleLevelTile(
+              subLevelDomain: subLevel,
+              showTutorial: controller.showTutorial(
+                level.id,
+                subLevel.id,
+              ),
+            ),
           )
           .toList(),
     );
