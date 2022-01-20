@@ -5,7 +5,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:im_stepper/stepper.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
-import 'package:showcaseview/showcaseview.dart';
 
 // ignore: must_be_immutable
 class TriviaSubLevelScreen extends StatefulWidget {
@@ -39,13 +38,6 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   void initState() {
     _controller = Get.find();
     super.initState();
-
-    if (_controller.questionId == 1) {
-      //Start showcase view after current widget frames are drawn.
-      WidgetsBinding.instance!.addPostFrameCallback((_) =>
-          ShowCaseWidget.of(context)!
-              .startShowCase([_one, _two, _three, _four, _five]));
-    }
   }
 
   @override
@@ -62,40 +54,12 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         return SafeArea(
           child: Column(
             children: [
-              Showcase(
-                // The key indicates, when the widget is initiated, the order of the steps to follow.
-                key: _one,
-                // A padding for the overlay.
-                overlayPadding: EdgeInsets.all(10),
-                // The shape border of the overlay.
-                shapeBorder: RoundedRectangleBorder(
-                  side: BorderSide(
-                    // The color of the border
-                    color: Colors.white,
-                    style: BorderStyle.solid,
-                  ),
-                  // The radius of the border.
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                // The title of the tooltip.
-                title: 'Cantidad de preguntas en el nivel.',
-                // The description of the tooltip, is required.
-                description:
-                    'El círculo azul indica la pregunta en la que se encuentra actualmente.',
-                // The widget on which it will be overlay.
-                child:
-                    //Build the stepper.
-                    _buildStepper(),
-              ),
+              _buildStepper(),
+
               //Build the liquid progress bar.
               const SizedBox(height: 10),
-              Showcase(
-                key: _two,
-                title: 'Barra de tiempo.',
-                description:
-                    'Cuando la barra llega al final, el nivel termina y se debe comenzar de nuevo.',
-                child: _buildCountdown(),
-              ),
+              _buildCountdown(),
+
               const SizedBox(height: 10),
               //Build the Question card
               TriviaSubLevelQuestionCard(
@@ -203,58 +167,11 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // The widget ShowCase is used to show a tutorial step by step to the user.
-                    // In this case the Showcase has a widget to.
-                    Showcase.withWidget(
-                      // The key indicates, when the widget is initiated, the order of the steps to follow.
-                      key: _three,
-                      // The height and with that is going to ocupate the widget created with the Showcase.
-                      height: 150,
-                      width: 250,
-                      // A padding for the overlay.
-                      overlayPadding: EdgeInsets.all(15),
-                      // The shape border of the overlay.
-                      shapeBorder: RoundedRectangleBorder(
-                        side: BorderSide(
-                          // The color of the border
-                          color: Colors.white,
-                          style: BorderStyle.solid,
-                        ),
-                        // The radius of the border.
-                        borderRadius: BorderRadius.circular(90),
-                      ),
-                      // The widget created with of the Showcase.
-                      container: Container(
-                        padding: EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white,
-                        ),
-                        child: Row(
-                          children: [
-                            SvgPicture.asset(
-                              TriviaAssets.CLOCK,
-                              width: 30,
-                              color: Colors.black,
-                            ),
-                            SizedBox(width: 10),
-                            Text(
-                              'El tiempo restante.',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      // The widget on which it will be overlay.
-                      child: Text(
-                        "${time.sec} seg",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
+                    Text(
+                      "${time.sec} seg",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
                       ),
                     ),
                     SvgPicture.asset(

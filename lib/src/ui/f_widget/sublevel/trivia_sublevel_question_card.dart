@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
 import 'package:get/get.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
-import 'package:showcaseview/showcaseview.dart';
 
 // ignore: must_be_immutable
 class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
@@ -40,54 +39,38 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
       margin: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         children: [
-          Showcase(
-            key: four,
-            title: 'Pregunta',
-            description: 'La pregunta que se debe responder.',
-            //// The Question ////
-            child: Text(
-              // Text of the current question.
-              questionDomain.question,
-              style: TextStyle(
-                color: textQuestionColor,
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-              ),
-              textAlign: TextAlign.center,
+          //// The Question ////
+          Text(
+            // Text of the current question.
+            questionDomain.question,
+            style: TextStyle(
+              color: textQuestionColor,
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
             ),
+            textAlign: TextAlign.center,
           ),
+
           const SizedBox(height: 10),
           //// The List of Answers ////
-          Showcase(
-            key: five,
-            title: 'Lista de Respuestas.',
-            description: 'Se debe seleccionar la respuesta correcta a la pregunta.',
-            //// The Question ////
-            child: Column(
-              children: [
-                ...List.generate(
-                    // Amount of answers.
-                    questionDomain.answers.length,
-                    (index) =>
-                        // If the current question don't have been answerer yet ...
-                        controller.questionState(
-                                    questionDomain.answers[index].id) ==
-                                QuestionState.Not_answered
-                            ? _buildAnswerOption(index, questionDomain)
-                            // If is aready answered and the correct answer is the selected Bounce else Shake
-                            : controller.isAnswerCorrect(
-                                    questionDomain.answers[index].id)
-                                ? Bounce(
-                                    child: _buildAnswerOption(
-                                        index, questionDomain),
-                                  )
-                                : Shake(
-                                    child: _buildAnswerOption(
-                                        index, questionDomain),
-                                  )),
-              ],
-            ),
-          ),
+
+          ...List.generate(
+              // Amount of answers.
+              questionDomain.answers.length,
+              (index) =>
+                  // If the current question don't have been answerer yet ...
+                  controller.questionState(questionDomain.answers[index].id) ==
+                          QuestionState.Not_answered
+                      ? _buildAnswerOption(index, questionDomain)
+                      // If is aready answered and the correct answer is the selected Bounce else Shake
+                      : controller
+                              .isAnswerCorrect(questionDomain.answers[index].id)
+                          ? Bounce(
+                              child: _buildAnswerOption(index, questionDomain),
+                            )
+                          : Shake(
+                              child: _buildAnswerOption(index, questionDomain),
+                            )),
         ],
       ),
     );
