@@ -1,5 +1,6 @@
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
+import 'package:showcaseview/showcaseview.dart';
 
 class TriviaSubLevelBackground extends StatefulWidget {
   final TriviaSubLevelDomain subLevelDomain;
@@ -51,7 +52,19 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
             scale: animation,
           );
         },
-        child: _animatedWidget,
+
+        //// This show the steps for the tutorial. ////
+        child: ShowCaseWidget(
+          onStart: (index, key) {},
+          onComplete: (index, key) {},
+          // Level of the background transparence.
+          blurValue: 2,
+          // The widget inside the grey area.
+          builder: Builder(builder: (context) => _animatedWidget),
+          autoPlay: false,
+          autoPlayDelay: Duration(seconds: 3),
+          autoPlayLockEnable: false,
+        ),
       ),
     );
   }
