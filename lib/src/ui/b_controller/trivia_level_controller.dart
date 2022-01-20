@@ -7,4 +7,6 @@ abstract class TriviaLevelController extends GetxController {
   TriviaLevelDomain findBy(int keyId);
 
   int count();
+
+  bool showTutorial(int levelId, int subLevelid);
 }
