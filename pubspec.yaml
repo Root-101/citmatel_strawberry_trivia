@@ -34,6 +34,7 @@ dependencies:
   #Tools
   citmatel_strawberry_tools:
     path: ../citmatel_strawberry_tools
+  showcaseview: ^1.1.4
 
 dev_dependencies:
   flutter_test:
