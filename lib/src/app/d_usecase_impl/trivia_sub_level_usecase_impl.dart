@@ -13,13 +13,13 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
 
   final Map<QuestionState, LinearGradient> _colorMap = {
     QuestionState.Not_answered: gradientNormalColor,
-    QuestionState.Answered_rigth: gradientRightColor,
+    QuestionState.Answered_right: gradientRightColor,
     QuestionState.Answered_wrong: gradientWrongColor,
   };
 
   final Map<QuestionState, IconData> _iconsMap = {
     QuestionState.Not_answered: Icons.circle_outlined,
-    QuestionState.Answered_rigth: Icons.done,
+    QuestionState.Answered_right: Icons.done,
     QuestionState.Answered_wrong: Icons.close,
   };
 
