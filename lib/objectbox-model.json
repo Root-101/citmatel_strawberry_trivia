@@ -1,0 +1,52 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:1409585251998705237",
+      "lastPropertyId": "5:6701086804601964654",
+      "name": "TriviaSubLevelProgressEntity",
+      "properties": [
+        {
+          "id": "1:4135502145073129267",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3040075527665529438",
+          "name": "triviaSubLevelDomainId",
+          "type": 6
+        },
+        {
+          "id": "3:8990653528532215080",
+          "name": "triviaLevelDomainId",
+          "type": 6
+        },
+        {
+          "id": "4:5501711033456909289",
+          "name": "contPlayedTimes",
+          "type": 6
+        },
+        {
+          "id": "5:6701086804601964654",
+          "name": "stars",
+          "type": 6
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:1409585251998705237",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
