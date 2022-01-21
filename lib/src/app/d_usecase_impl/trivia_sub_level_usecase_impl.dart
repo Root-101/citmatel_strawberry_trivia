@@ -1,23 +1,32 @@
+import 'dart:math';
+
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
   // Domain almacenado para acceder a la info.
   final TriviaSubLevelDomain subLevelDomain;
 
+  ///domain con la info del progreso
+  final TriviaSubLevelProgressDomain subLevelProgressDomain;
+
   final Map<QuestionState, LinearGradient> _colorMap = {
     QuestionState.Not_answered: gradientNormalColor,
-    QuestionState.Answered_rigth: gradientRightColor,
+    QuestionState.Answered_right: gradientRightColor,
     QuestionState.Answered_wrong: gradientWrongColor,
   };
 
   final Map<QuestionState, IconData> _iconsMap = {
     QuestionState.Not_answered: Icons.circle_outlined,
-    QuestionState.Answered_rigth: Icons.done,
+    QuestionState.Answered_right: Icons.done,
     QuestionState.Answered_wrong: Icons.close,
   };
 
-  TriviaSubLevelUseCaseImpl({required this.subLevelDomain});
+  TriviaSubLevelUseCaseImpl({
+    required this.subLevelDomain,
+    required this.subLevelProgressDomain,
+  });
 
   @override
   int get dotCount => subLevelDomain.question.length;
@@ -50,4 +59,21 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
 
   @override
   int get questionId => subLevelDomain.id;
+
+  @override
+  void saveProgress(int stars) {
+    //me quedo siempre con la mejor cantidad de estrellas
+    subLevelProgressDomain.stars = max(subLevelProgressDomain.stars, stars);
+
+    //aumento la cantidad de veces que se jugo el nivel
+    subLevelProgressDomain.contPlayedTimes =
+        subLevelProgressDomain.contPlayedTimes + 1;
+
+    //salvo el progreso
+    _executeProgressUpdate();
+  }
+
+  void _executeProgressUpdate() {
+    Get.find<TriviaSubLevelProgressUseCase>().edit(subLevelProgressDomain);
+  }
 }

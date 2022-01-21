@@ -4,14 +4,20 @@ import 'package:flutter/material.dart';
 
 abstract class TriviaSubLevelUseCase extends AbstractUseCase {
   int get dotCount;
+
   int get questionId;
 
   Map<QuestionState, LinearGradient> get colorMap;
+
   Map<QuestionState, IconData> get iconsMap;
 
   int correctAnswerId(int activeStep);
+
   int durationOfProgressBar(int activeStep);
+
   int questionsLength();
+
+  void saveProgress(int stars);
 
   TriviaQuestionDomain currentQuestion(activeStep);
 }

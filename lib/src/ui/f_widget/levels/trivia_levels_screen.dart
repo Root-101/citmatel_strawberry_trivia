@@ -1,10 +1,7 @@
-import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_level_domain.dart';
-import 'package:citmatel_strawberry_trivia/src/ui/f_widget/levels/trivia_single_level_tile.dart';
+import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:page_view_indicators/page_view_indicators.dart';
-
-import 'package:citmatel_strawberry_trivia/src/ui/b_controller/trivia_level_controller.dart';
 
 class TriviaLevelsScreen extends GetView<TriviaLevelController> {
   static const ROUTE_NAME = "/trivia-levels-screen";
@@ -73,6 +70,7 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
   }
 
   _buildLevelGridView(TriviaLevelDomain level) {
+    //con un GetBuilder para que actualize el progreso cuando se gane un nivel
     return GridView(
       physics: BouncingScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -80,12 +78,21 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
       ),
       children: level.sublevel
           .map(
-            (subLevel) => TriviaSingleLevelTile(
-              subLevelDomain: subLevel,
-              showTutorial: controller.showTutorial(
-                level.id,
-                subLevel.id,
-              ),
+            (subLevel) => GetBuilder<TriviaLevelController>(
+              builder: (context) {
+                return TriviaSingleLevelTile(
+                  subLevelDomain: subLevel,
+                  subLevelProgressDomain:
+                      Get.find<TriviaSubLevelProgressUseCase>().findByAll(
+                    level,
+                    subLevel,
+                  ),
+                  showTutorial: controller.showTutorial(
+                    level.id,
+                    subLevel.id,
+                  ),
+                );
+              },
             ),
           )
           .toList(),

@@ -15,11 +15,13 @@ class TriviaSubLevelScreen extends StatefulWidget {
 
   TriviaSubLevelScreen({
     required TriviaSubLevelDomain subLevelDomain,
+    required TriviaSubLevelProgressDomain subLevelProgressDomain,
     required this.showTutorial,
   }) : super() {
     Get.put<TriviaSubLevelController>(
       TriviaSubLevelControllerImpl(
         subLevelDomain: subLevelDomain,
+        subLevelProgressDomain: subLevelProgressDomain,
       ),
     );
   }

@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 
 class TriviaSingleLevelTile extends StatelessWidget {
   final TriviaSubLevelDomain subLevelDomain;
+  final TriviaSubLevelProgressDomain subLevelProgressDomain;
   final bool showTutorial;
 
   const TriviaSingleLevelTile({
     required this.subLevelDomain,
+    required this.subLevelProgressDomain,
     required this.showTutorial,
     Key? key,
   }) : super(key: key);
@@ -28,8 +30,13 @@ class TriviaSingleLevelTile extends StatelessWidget {
   //Tile chiquito que se muestra en la lista con todos los subniveles
   _buildClosed() {
     return Container(
-      child: Center(
-        child: Text('level ${subLevelDomain.id}'),
+      child: Column(
+        children: [
+          Text('level id ${subLevelProgressDomain.triviaLevelDomainId}'),
+          Text('sub level id ${subLevelProgressDomain.triviaSubLevelDomainId}'),
+          Text('start ${subLevelProgressDomain.stars}'),
+          Text('played times ${subLevelProgressDomain.contPlayedTimes}'),
+        ],
       ),
     );
   }
@@ -38,6 +45,7 @@ class TriviaSingleLevelTile extends StatelessWidget {
   _buildOpen() {
     return TriviaSubLevelBackground(
       subLevelDomain: subLevelDomain,
+      subLevelProgressDomain: subLevelProgressDomain,
       showTutorial: showTutorial,
     );
   }
