@@ -81,7 +81,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   _doWinLevel() {
     //gane el nivel, paso a la pantalla y salvo progreso
-    StrawberryFunction.winLevel();
+    StrawberryFunction.winLevel(
+      rightButtonFunction: () => Get.back(closeOverlays: true),
+    );
 
     _doSaveProgress(generateProgress());
   }
@@ -89,6 +91,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   _doLooseLevel() {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
+      rightButtonFunction: () => Get.back(closeOverlays: true),
       childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
         texts: [
           _numOfCorrectAnswers == 0
