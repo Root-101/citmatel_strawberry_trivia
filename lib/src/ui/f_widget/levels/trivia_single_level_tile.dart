@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 
 class TriviaSingleLevelTile extends StatelessWidget {
   final TriviaSubLevelDomain subLevelDomain;
+  final TriviaSubLevelProgressDomain subLevelProgressDomain;
   final bool showTutorial;
 
   const TriviaSingleLevelTile({
     required this.subLevelDomain,
+    required this.subLevelProgressDomain,
     required this.showTutorial,
     Key? key,
   }) : super(key: key);
@@ -38,6 +40,7 @@ class TriviaSingleLevelTile extends StatelessWidget {
   _buildOpen() {
     return TriviaSubLevelBackground(
       subLevelDomain: subLevelDomain,
+      subLevelProgressDomain: subLevelProgressDomain,
       showTutorial: showTutorial,
     );
   }
