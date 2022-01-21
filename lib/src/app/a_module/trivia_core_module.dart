@@ -2,7 +2,7 @@ import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:get/get.dart';
 
 class TriviaCoreModule {
-  static void init() async {
+  static Future init() async {
     await TriviaRepoModule.init();
 
     //sin dependencia
