@@ -1,6 +1,7 @@
 import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   TriviaSubLevelUseCase subLevelUseCase;
@@ -14,8 +15,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   TriviaSubLevelControllerImpl({
     required TriviaSubLevelDomain subLevelDomain,
+    required TriviaSubLevelProgressDomain subLevelProgressDomain,
   }) : subLevelUseCase = TriviaSubLevelUseCaseImpl(
           subLevelDomain: subLevelDomain,
+          subLevelProgressDomain: subLevelProgressDomain,
         ) {
     dotCount = subLevelUseCase.dotCount;
   }
@@ -28,6 +31,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   bool _isAnswered = false;
 
   int _numOfCorrectAnswers = 0;
+
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
 
   @override
@@ -107,5 +111,27 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   IconData getTheRightIconData(int index) {
     return subLevelUseCase.iconsMap[questionState(index)]!;
+  }
+
+  int generateProgress() {
+    //TODO corregir a mejor logica
+    double progress = (_numOfCorrectAnswers / dotCount) * 100;
+    if (progress >= 80) {
+      return TriviaSubLevelController.MAX_STARS;
+    } else if (progress >= 60) {
+      return 2;
+    } else if (progress >= 20) {
+      return 1;
+    } else {
+      return 0;
+    }
+  }
+
+  void _doSaveProgress(int stars) {
+    //salva el progreso
+    subLevelUseCase.saveProgress(stars);
+
+    //actualiza manual la lista del level para que al volver atras ya este actualizado
+    Get.find<TriviaLevelController>().update();
   }
 }
