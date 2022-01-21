@@ -30,8 +30,13 @@ class TriviaSingleLevelTile extends StatelessWidget {
   //Tile chiquito que se muestra en la lista con todos los subniveles
   _buildClosed() {
     return Container(
-      child: Center(
-        child: Text('level ${subLevelDomain.id}'),
+      child: Column(
+        children: [
+          Text('level id ${subLevelProgressDomain.triviaLevelDomainId}'),
+          Text('sub level id ${subLevelProgressDomain.triviaSubLevelDomainId}'),
+          Text('start ${subLevelProgressDomain.stars}'),
+          Text('played times ${subLevelProgressDomain.contPlayedTimes}'),
+        ],
       ),
     );
   }
