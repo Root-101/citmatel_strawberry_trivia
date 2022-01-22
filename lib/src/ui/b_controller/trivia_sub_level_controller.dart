@@ -32,11 +32,6 @@ abstract class TriviaSubLevelController extends GetxController {
 
   AnimationController initAnimationController(
       SingleTickerProviderStateMixin ticker);
-
-  @override
-  void dispose() {
-    super.dispose();
-  }
 }
 
 enum QuestionState {

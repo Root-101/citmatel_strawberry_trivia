@@ -30,12 +30,6 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     return subLevelUseCase.durationOfProgressBar(_activeStep);
   }
 
-  @override
-  void dispose() {
-    _animationController.dispose(); //just in case
-    super.dispose();
-  }
-
   bool _isAnswered = false;
 
   int _numOfCorrectAnswers = 0;
