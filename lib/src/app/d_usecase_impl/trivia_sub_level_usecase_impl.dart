@@ -38,8 +38,8 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
   Map<QuestionState, IconData> get iconsMap => this._iconsMap;
 
   @override
-  int durationOfProgressBar(int activeStep) {
-    return subLevelDomain.question[activeStep].duration;
+  Duration durationOfProgressBar(int activeStep) {
+    return Duration(seconds: subLevelDomain.question[activeStep].duration);
   }
 
   @override

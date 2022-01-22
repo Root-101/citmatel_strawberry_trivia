@@ -13,7 +13,7 @@ abstract class TriviaSubLevelUseCase extends AbstractUseCase {
 
   int correctAnswerId(int activeStep);
 
-  int durationOfProgressBar(int activeStep);
+  Duration durationOfProgressBar(int activeStep);
 
   int questionsLength();
 
