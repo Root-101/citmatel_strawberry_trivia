@@ -6,6 +6,8 @@ import 'package:get/get.dart';
 class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   TriviaSubLevelUseCase subLevelUseCase;
 
+  late AnimationController _animationController;
+
   // Used to control the Stteper
   int _activeStep = 0; // Initial step set to 0.
   int get activeStep => this._activeStep;
@@ -53,6 +55,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       StrawberryAudio.playAudioWrong();
       StrawberryVibration.vibrate();
     }
+
+    //para el countdown
+    _animationController.stop();
 
     update();
 
@@ -149,7 +154,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     Get.find<TriviaLevelController>().update();
   }
 
-  void endTime() {
+  void _endTime() {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
       rightButtonFunction: () => Get.back(closeOverlays: true),
@@ -163,5 +168,18 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     );
 
     _doSaveProgress(0);
+  }
+
+  AnimationController initAnimationController(
+      SingleTickerProviderStateMixin ticker) {
+    _animationController = AnimationController(
+      vsync: ticker,
+      duration: durationOfProgressBar(),
+    );
+
+    //para cuando termine la animacion llame a una funcion
+    _animationController.forward().whenComplete(_endTime);
+
+    return _animationController;
   }
 }
