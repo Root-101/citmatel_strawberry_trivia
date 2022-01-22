@@ -1,11 +1,8 @@
 import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_countdown_timer/index.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:im_stepper/stepper.dart';
-import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
 // ignore: must_be_immutable
@@ -76,13 +73,12 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         return SafeArea(
           child: Column(
             children: [
-              _buildStepper(),
-              //Build the liquid progress bar.
-              const SizedBox(height: 10),
-              _buildCountdown(),
-              const SizedBox(height: 10),
+              //Build stepper
+              _buildStepper(_key1),
               //Build the Question card
               TriviaSubLevelQuestionCard(
+                key2: _key2,
+                key3: _key3,
                 key4: _key4,
                 key5: _key5,
                 key6: _key6,
@@ -95,9 +91,9 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
     );
   }
 
-  _buildStepper() {
+  _buildStepper(GlobalKey key1) {
     return Container(
-      key: _key1,
+      key: key1,
       padding: const EdgeInsets.all(10),
       // The widget ShowCase is used to show a tutorial step by step to the user.
       child: DotStepper(
@@ -125,92 +121,6 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
           color: primaryColor,
         ),
       ),
-    );
-  }
-
-  _buildCountdown() {
-    //Current time.
-    int startTime = DateTime.now().millisecondsSinceEpoch;
-    //Seconds it takes to reach 0.
-    int dif = _controller.durationOfProgressBar();
-    //The end time is the current time plus the choosen amount of seconds.
-    int endTime = startTime + dif * 1000;
-
-    CountdownTimerController _timerController = CountdownTimerController(
-        endTime: endTime,
-        onEnd: () {
-          // StrawberryFunction.looseLevel(
-          //   childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
-          //     texts: [
-          //       'Te has quedado sin tiempo.',
-          //       'Inténtalo de nuevo.',
-          //       'El que persevera triunfa.',
-          //     ],
-          //   ),
-          // );
-        });
-
-    return CountdownTimer(
-      controller: _timerController,
-      widgetBuilder: (_, CurrentRemainingTime? time) {
-        if (time == null || time.sec == null) {
-          return Text('Game over');
-        }
-        //Current percent of the remaining time.
-        double perc = time.sec! / _controller.durationOfProgressBar();
-
-        return Stack(
-          key: _key2,
-          children: [
-            Container(
-              padding: EdgeInsets.all(10),
-              height: 70,
-              child: LiquidLinearProgressIndicator(
-                //Value of the progress bar.
-                value: double.parse(perc.toStringAsFixed(5)),
-                //Color of the liquid animation.
-                valueColor: AlwaysStoppedAnimation(primaryColor),
-                //Background Color of the progress bar.
-                backgroundColor: Colors.transparent,
-                //Border color of the bar.
-                borderColor: Colors.lightBlue.shade900,
-                //Border width and radius of the bar.
-                borderWidth: 5.0,
-                borderRadius: 12.0,
-                //The direction the liquid moves.
-                //(Axis.vertical = bottom to top, Axis.horizontal = left to right).
-                //Defaults to Axis.horizontal.
-                direction: Axis.horizontal,
-                //Text inside bar.
-                //center: Text("${time.sec} sec"),
-              ),
-            ),
-            Positioned.fill(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "${time.sec} seg",
-                      key: _key3,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                      ),
-                    ),
-                    SvgPicture.asset(
-                      TriviaAssets.CLOCK,
-                      width: 30,
-                      color: Colors.white,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        );
-      },
     );
   }
 
