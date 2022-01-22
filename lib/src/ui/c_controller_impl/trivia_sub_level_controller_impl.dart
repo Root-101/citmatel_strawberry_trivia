@@ -24,7 +24,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   @override
-  int durationOfProgressBar() {
+  Duration durationOfProgressBar() {
     return subLevelUseCase.durationOfProgressBar(_activeStep);
   }
 
@@ -147,5 +147,21 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
     //actualiza manual la lista del level para que al volver atras ya este actualizado
     Get.find<TriviaLevelController>().update();
+  }
+
+  void endTime() {
+    //perdi el nivel,
+    StrawberryFunction.looseLevel(
+      rightButtonFunction: () => Get.back(closeOverlays: true),
+      childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
+        texts: [
+          'Te has quedado sin tiempo.',
+          'Inténtalo de nuevo.',
+          'El que persevera triunfa.',
+        ],
+      ),
+    );
+
+    _doSaveProgress(0);
   }
 }
