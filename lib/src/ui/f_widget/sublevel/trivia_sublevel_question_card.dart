@@ -1,16 +1,20 @@
+import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
 import 'package:get/get.dart';
-import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 
 // ignore: must_be_immutable
 class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
-  late GlobalKey key4;
-  late GlobalKey key5;
-  late GlobalKey key6;
-  late GlobalKey key7;
+  late final GlobalKey key2;
+  late final GlobalKey key3;
+  late final GlobalKey key4;
+  late final GlobalKey key5;
+  late final GlobalKey key6;
+  late final GlobalKey key7;
 
   TriviaSubLevelQuestionCard({
+    required this.key2,
+    required this.key3,
     required this.key4,
     required this.key5,
     required this.key6,
@@ -18,14 +22,19 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
     Key? key,
   }) : super(key: key);
 
+  ///1.1 en el offset para que empiece de afuera a su lugar
+  ///TODO: la transicion anterior solo se desaparece y solo la nueva entra
   @override
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
       duration: const Duration(milliseconds: 500),
       transitionBuilder: (Widget child, Animation<double> animation) {
-        return ScaleTransition(
+        return SlideTransition(
+          position: Tween<Offset>(
+            begin: Offset(1.1, 0),
+            end: Offset(0, 0),
+          ).animate(animation),
           child: child,
-          scale: animation,
         );
       },
       child: _buildCurrentQuestion(),
@@ -36,13 +45,23 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
     //Question Domain of the current question.
     final TriviaQuestionDomain questionDomain = controller.currentQuestion();
 
-    return Card(
+    return Container(
       key: ValueKey(questionDomain.id),
-      color: Colors.transparent,
-      elevation: 0,
       margin: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          //// Countdown ////
+          TriviaSubLevelCountdown(
+            key2: key2,
+            key3: key3,
+            onEnd: () {
+              print("END");
+            },
+            duration: Duration(
+              seconds: controller.durationOfProgressBar(),
+            ),
+          ),
           //// The Question ////
           Text(
             // Text of the current question.

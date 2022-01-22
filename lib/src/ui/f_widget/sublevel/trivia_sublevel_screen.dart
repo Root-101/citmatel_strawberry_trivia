@@ -73,23 +73,12 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         return SafeArea(
           child: Column(
             children: [
+              //Build stepper
               _buildStepper(_key1),
-              //Build the liquid progress bar.
-              const SizedBox(height: 10),
-              TriviaSubLevelCountdown(
-                key2: _key2,
-                key3: _key3,
-                onEnd: () {
-                  print("END");
-                },
-                duration: Duration(
-                  seconds: _controller.durationOfProgressBar(),
-                ),
-              ),
-              //_buildCountdown(),
-              const SizedBox(height: 10),
               //Build the Question card
               TriviaSubLevelQuestionCard(
+                key2: _key2,
+                key3: _key3,
                 key4: _key4,
                 key5: _key5,
                 key6: _key6,
