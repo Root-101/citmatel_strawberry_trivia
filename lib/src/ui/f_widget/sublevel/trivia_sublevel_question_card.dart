@@ -55,12 +55,8 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           TriviaSubLevelCountdown(
             key2: key2,
             key3: key3,
-            onEnd: () {
-              print("END");
-            },
-            duration: Duration(
-              seconds: controller.durationOfProgressBar(),
-            ),
+            onEnd: controller.endTime,
+            duration: controller.durationOfProgressBar(),
           ),
           //// The Question ////
           Text(
