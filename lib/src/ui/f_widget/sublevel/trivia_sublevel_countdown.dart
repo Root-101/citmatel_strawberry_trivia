@@ -1,16 +1,13 @@
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 
 class TriviaSubLevelCountdown extends StatefulWidget {
-  final Duration duration;
-
   final GlobalKey key2;
 
   final GlobalKey key3;
-
-  final Function() onEnd;
 
   @override
   State<StatefulWidget> createState() =>
@@ -19,29 +16,25 @@ class TriviaSubLevelCountdown extends StatefulWidget {
   TriviaSubLevelCountdown({
     required this.key2,
     required this.key3,
-    required this.onEnd,
-    this.duration = const Duration(
-      seconds: 5,
-    ),
   });
 }
 
 class _AnimatedLiquidLinearProgressIndicatorState
     extends State<TriviaSubLevelCountdown> with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
+  late TriviaSubLevelController _controller;
+  late Duration _lastDuration;
 
   @override
   void initState() {
     super.initState();
-    _animationController = AnimationController(
-      vsync: this,
-      duration: widget.duration,
-    );
+    _controller = Get.find<TriviaSubLevelController>();
+    _animationController = _controller.initAnimationController(this);
+
+    _lastDuration = _controller.durationOfProgressBar();
+
     //actualize cada vez
     _animationController.addListener(() => setState(() {}));
-
-    //para cuando termine la animacion llame a una funcion
-    _animationController.forward().whenComplete(widget.onEnd);
   }
 
   @override
@@ -55,10 +48,10 @@ class _AnimatedLiquidLinearProgressIndicatorState
     //lo ideal es ejecutarla en reversa pero no me funciono en su momento
     final percentage = (1 - _animationController.value);
 
-    Duration elapsed =
-        _animationController.lastElapsedDuration ?? widget.duration;
+    _lastDuration = _animationController.lastElapsedDuration ?? _lastDuration;
 
-    int remaining = widget.duration.inSeconds - elapsed.inSeconds;
+    int remaining =
+        _controller.durationOfProgressBar().inSeconds - _lastDuration.inSeconds;
 
     return Stack(
       key: widget.key2,
