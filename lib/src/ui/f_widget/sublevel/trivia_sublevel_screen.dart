@@ -8,12 +8,10 @@ import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 // ignore: must_be_immutable
 class TriviaSubLevelScreen extends StatefulWidget {
   static const ROUTE_NAME = "/trivia-sublevel-screen";
-  final bool showTutorial;
 
   TriviaSubLevelScreen({
     required TriviaSubLevelDomain subLevelDomain,
     required TriviaSubLevelProgressDomain subLevelProgressDomain,
-    required this.showTutorial,
   }) : super() {
     Get.put<TriviaSubLevelController>(
       TriviaSubLevelControllerImpl(
@@ -45,15 +43,21 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   void initState() {
     _controller = Get.find();
 
-    if (widget.showTutorial) {
+    if (_controller.showTutorial) {
       //Start showcase view after current widget frames are drawn.
       WidgetsBinding.instance!.addPostFrameCallback((duration) async {
         // Is necessary to wait a few seconds because the widgets haven't been created.
         await Future.delayed(Duration(milliseconds: 500));
         // Initialice the steps of the tutorial.
         initTargets();
+        _controller.stopCountdown();
         // Start the tutorial.
-        StrawberryTutorial.showTutorial(context: context, targets: targets);
+        StrawberryTutorial.showTutorial(
+          context: context,
+          targets: targets,
+          onFinish: () => _controller.playCountdown(),
+          onSkip: () => _controller.playCountdown(),
+        );
       });
     }
     super.initState();
@@ -133,6 +137,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         title: 'Cantidad de preguntas en el nivel.',
         description:
             'El círculo azul indica la pregunta en la que se encuentra actualmente.',
+        showImageOnTop: false,
       ),
     );
 
@@ -140,21 +145,23 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
       StrawberryTutorial.addTarget(
         identify: "Target TimeBar",
         keyTarget: _key2,
-        shadowColor: Colors.red,
+        shadowColor: Colors.deepPurple,
         title: 'Barra de tiempo.',
         description:
             'Cuando la barra llega al final, el nivel termina y se debe comenzar de nuevo.',
+        showImageOnTop: false,
       ),
     );
 
     targets.add(
-      StrawberryTutorial.addTarget(
+      StrawberryTutorial.addMultipleTarget(
         identify: "Target TimeText",
         keyTarget: _key3,
         shadowColor: Colors.deepOrange,
         textCrossAxisAlignment: CrossAxisAlignment.start,
         title: 'El tiempo restante.',
         shape: ShapeLightFocus.Circle,
+        contentTextAlign: ContentAlign.right,
       ),
     );
 
@@ -162,9 +169,10 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
       StrawberryTutorial.addTarget(
         identify: "Target Question",
         keyTarget: _key4,
-        shadowColor: Colors.amber,
+        shadowColor: Colors.red,
         title: 'La Pregunta.',
         description: 'La pregunta que se debe responder.',
+        showImageOnTop: false,
       ),
     );
     targets.add(
@@ -172,33 +180,12 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         identify: "Target Answer List",
         keyTarget: _key5,
         shadowColor: Colors.purple,
-        contentAlign: ContentAlign.top,
         title: 'La Lista de Respuestas.',
         description:
             'Se debe seleccionar la respuesta correcta de cada pregunta para poder pasar de nivel.',
         shape: ShapeLightFocus.Circle,
-      ),
-    );
-    targets.add(
-      StrawberryTutorial.addTarget(
-        identify: "Target Answer Right",
-        keyTarget: _key6,
-        shadowColor: Colors.green,
-        title: 'Respuesta correcta.',
-        description:
-            'Cuando se responde correctamente la pregunta se dibuja de verde.\n Sigue así es la única manera de ganar.',
-      ),
-    );
-    targets.add(
-      StrawberryTutorial.addTarget(
-        identify: "Target Answer Wrong",
-        keyTarget: _key7,
-        shadowColor: Colors.red,
-        title: 'Respuesta incorrecta.',
-        description:
-            'Cuando se responde incorrectamente la pregunta se dibuja de rojo.'
-            '\n Una vez q te equivocas se te dara la posibilidad al finalizar el nivel de intentarlo de nuevo.'
-            '\n Solo si respondes todas las preguntas correctamente puedes pasar de nivel.',
+        showImage: false,
+        contentAlign: ContentAlign.top,
       ),
     );
   }

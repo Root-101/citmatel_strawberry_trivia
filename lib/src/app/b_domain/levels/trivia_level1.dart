@@ -12,7 +12,6 @@ class TriviaLevel1 {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 2,
-              duration: 60,
               question: "Le está gustando el tutorial?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Está muy largo."),

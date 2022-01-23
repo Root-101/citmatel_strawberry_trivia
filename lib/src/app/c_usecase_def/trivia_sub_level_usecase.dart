@@ -20,4 +20,6 @@ abstract class TriviaSubLevelUseCase extends AbstractUseCase {
   void saveProgress(int stars);
 
   TriviaQuestionDomain currentQuestion(activeStep);
+
+  bool showTutorial();
 }

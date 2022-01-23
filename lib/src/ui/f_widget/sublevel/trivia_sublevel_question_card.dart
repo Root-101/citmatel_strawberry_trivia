@@ -37,11 +37,11 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           child: child,
         );
       },
-      child: _buildCurrentQuestion(),
+      child: _buildCurrentQuestion(context),
     );
   }
 
-  _buildCurrentQuestion() {
+  _buildCurrentQuestion(BuildContext context) {
     //Question Domain of the current question.
     final TriviaQuestionDomain questionDomain = controller.currentQuestion();
 
@@ -82,17 +82,18 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
                       controller.questionState(
                                   questionDomain.answers[index].id) ==
                               QuestionState.Not_answered
-                          ? _buildAnswerOption(index, questionDomain)
+                          ? _buildAnswerOption(index, questionDomain, context)
                           // If is aready answered and the correct answer is the selected Bounce else Shake
                           : controller.isAnswerCorrect(
                                   questionDomain.answers[index].id)
                               ? Bounce(
-                                  child:
-                                      _buildAnswerOption(index, questionDomain),
+                                  key: key6,
+                                  child: _buildAnswerOption(
+                                      index, questionDomain, context),
                                 )
                               : Shake(
-                                  child:
-                                      _buildAnswerOption(index, questionDomain),
+                                  child: _buildAnswerOption(
+                                      index, questionDomain, context),
                                 )),
             ],
           ),
@@ -101,12 +102,13 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
     );
   }
 
-  _buildAnswerOption(int index, TriviaQuestionDomain questionDomain) {
-    return _buildOption(
-        questionDomain.answers[index].id, questionDomain.answers[index].answer);
+  _buildAnswerOption(
+      int index, TriviaQuestionDomain questionDomain, BuildContext context) {
+    return _buildOption(questionDomain.answers[index].id,
+        questionDomain.answers[index].answer, context);
   }
 
-  _buildOption(int id, String answerText) {
+  _buildOption(int id, String answerText, BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 20, left: 0, right: 0),
       padding: const EdgeInsets.all(15),
@@ -118,7 +120,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
       ),
       child: InkWell(
         onTap: () {
-          controller.checkAnswer(id);
+          controller.checkAnswer(id, key6, key7, context);
         },
         child: Row(
           children: [

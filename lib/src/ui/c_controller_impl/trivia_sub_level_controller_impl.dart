@@ -15,6 +15,11 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   // Cantidad de pasos del stepper.
   int dotCount = 0;
 
+  bool showTutorialRight = true;
+  bool showTutorialWrong =
+      false; // Is originally in true but the wrong answer id is missing.
+  bool isShowingTutorial = false;
+
   TriviaSubLevelControllerImpl({
     required TriviaSubLevelDomain subLevelDomain,
     required TriviaSubLevelProgressDomain subLevelProgressDomain,
@@ -36,6 +41,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
 
+  bool get showTutorial => subLevelUseCase.showTutorial();
+
   TriviaQuestionDomain currentQuestion() {
     return subLevelUseCase.currentQuestion(_activeStep);
   }
@@ -44,27 +51,79 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     return subLevelUseCase.correctAnswerId(_activeStep) == selectedId;
   }
 
-  void checkAnswer(int selectedId) {
+  void checkAnswer(
+      int selectedId, GlobalKey key6, GlobalKey key7, BuildContext context) {
     // because once user press any option then it will run
     _isAnswered = true;
 
     if (isAnswerCorrect(selectedId)) {
       _numOfCorrectAnswers++;
       StrawberryAudio.playAudioCorrect();
+
+      if (showTutorial && showTutorialRight) {
+        showTutorialRight = false;
+        isShowingTutorial = true;
+        // Continue the tutorial.
+        StrawberryTutorial.showTutorial(
+          context: context,
+          targets: [
+            StrawberryTutorial.addTarget(
+              identify: "Target Answer Right",
+              keyTarget: key6,
+              shadowColor: Colors.green,
+              title: 'Respuesta correcta.',
+              description:
+                  'Cuando se responde correctamente la pregunta se dibuja de verde.\n Sigue así es la única manera de ganar.',
+              showImage: false,
+            ),
+          ],
+          onFinish: () => _nextQuestion(),
+          onSkip: () => _nextQuestion(),
+        );
+      }
     } else {
       StrawberryAudio.playAudioWrong();
       StrawberryVibration.vibrate();
+
+      if (showTutorial && showTutorialWrong) {
+        //TODO: Need the wrong answer id,
+        showTutorialWrong = false;
+        isShowingTutorial = true;
+        // Continue the tutorial.
+        StrawberryTutorial.showTutorial(
+          context: Get.context!,
+          targets: [
+            StrawberryTutorial.addTarget(
+              identify: "Target Answer Wrong",
+              keyTarget: key7,
+              shadowColor: Colors.red,
+              title: 'Respuesta incorrecta.',
+              description:
+                  'Cuando se responde incorrectamente la pregunta se dibuja de rojo.'
+                  '\n Una vez q te equivocas se te dara la posibilidad al finalizar el nivel de intentarlo de nuevo.'
+                  '\n Solo si respondes todas las preguntas correctamente puedes pasar de nivel.',
+              showImageOnTop: false,
+              imagePadding: 50,
+            ),
+          ],
+          onFinish: () => _nextQuestion(),
+          onSkip: () => _nextQuestion(),
+        );
+      }
     }
 
     //para el countdown
-    _animationController.stop();
+    stopCountdown();
 
     update();
 
-    // Once user select an ans after 3s it will go to the next qn
-    Future.delayed(Duration(seconds: 3), () {
-      _nextQuestion();
-    });
+    if (!showTutorial || !isShowingTutorial) {
+      // Once user select an ans after 3s it will go to the next qn
+      Future.delayed(Duration(seconds: 3), () {
+        _nextQuestion();
+      });
+    }
+    isShowingTutorial = false;
   }
 
   void _nextQuestion() {
@@ -178,8 +237,16 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     );
 
     //para cuando termine la animacion llame a una funcion
-    _animationController.forward().whenComplete(_endTime);
+    playCountdown();
 
     return _animationController;
+  }
+
+  void stopCountdown() {
+    _animationController.stop();
+  }
+
+  void playCountdown() {
+    _animationController.forward().whenComplete(_endTime);
   }
 }
