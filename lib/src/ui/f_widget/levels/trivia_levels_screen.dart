@@ -87,10 +87,6 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
                     level,
                     subLevel,
                   ),
-                  showTutorial: controller.showTutorial(
-                    level.id,
-                    subLevel.id,
-                  ),
                 );
               },
             ),
