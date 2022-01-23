@@ -53,6 +53,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   void checkAnswer(
       int selectedId, GlobalKey key6, GlobalKey key7, BuildContext context) {
+    //si ya la respondi no hago nada, espero que cambie para la proxima
+    if (_isAnswered) {
+      return;
+    }
     // because once user press any option then it will run
     _isAnswered = true;
 
