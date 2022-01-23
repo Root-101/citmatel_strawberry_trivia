@@ -2,6 +2,7 @@ import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
 class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   TriviaSubLevelUseCase subLevelUseCase;
@@ -36,6 +37,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
 
+  bool get showTutorial => subLevelUseCase.showTutorial();
+
   TriviaQuestionDomain currentQuestion() {
     return subLevelUseCase.currentQuestion(_activeStep);
   }
@@ -44,27 +47,71 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     return subLevelUseCase.correctAnswerId(_activeStep) == selectedId;
   }
 
-  void checkAnswer(int selectedId) {
+  void checkAnswer(int selectedId, GlobalKey key6, GlobalKey key7) {
     // because once user press any option then it will run
     _isAnswered = true;
 
     if (isAnswerCorrect(selectedId)) {
       _numOfCorrectAnswers++;
       StrawberryAudio.playAudioCorrect();
+
+      if (showTutorial) {
+        // Continue the tutorial.
+        StrawberryTutorial.showTutorial(
+          context: Get.context!,
+          targets: [
+            StrawberryTutorial.addMultipleTarget(
+              identify: "Target Answer Right",
+              keyTarget: key6,
+              shadowColor: Colors.green,
+              title: 'Respuesta correcta.',
+              description:
+                  'Cuando se responde correctamente la pregunta se dibuja de verde.\n Sigue así es la única manera de ganar.',
+              contentImageAlign: ContentAlign.top,
+              contentTextAlign: ContentAlign.right,
+            ),
+          ],
+          onFinish: () => _nextQuestion(),
+        );
+      }
     } else {
       StrawberryAudio.playAudioWrong();
       StrawberryVibration.vibrate();
+
+      if (showTutorial) {
+        // Continue the tutorial.
+        StrawberryTutorial.showTutorial(
+          context: Get.context!,
+          targets: [
+            StrawberryTutorial.addTarget(
+              identify: "Target Answer Wrong",
+              keyTarget: key7,
+              shadowColor: Colors.red,
+              title: 'Respuesta incorrecta.',
+              description:
+                  'Cuando se responde incorrectamente la pregunta se dibuja de rojo.'
+                  '\n Una vez q te equivocas se te dara la posibilidad al finalizar el nivel de intentarlo de nuevo.'
+                  '\n Solo si respondes todas las preguntas correctamente puedes pasar de nivel.',
+              showImageOnTop: false,
+              imagePadding: 50,
+            ),
+          ],
+          onFinish: () => _nextQuestion(),
+        );
+      }
     }
 
     //para el countdown
-    _animationController.stop();
+    stopCountdown();
 
     update();
 
-    // Once user select an ans after 3s it will go to the next qn
-    Future.delayed(Duration(seconds: 3), () {
-      _nextQuestion();
-    });
+    if (!showTutorial) {
+      // Once user select an ans after 3s it will go to the next qn
+      Future.delayed(Duration(seconds: 3), () {
+        _nextQuestion();
+      });
+    }
   }
 
   void _nextQuestion() {
@@ -178,8 +225,16 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     );
 
     //para cuando termine la animacion llame a una funcion
-    _animationController.forward().whenComplete(_endTime);
+    playCountdown();
 
     return _animationController;
+  }
+
+  void stopCountdown() {
+    _animationController.stop();
+  }
+
+  void playCountdown() {
+    _animationController.forward().whenComplete(_endTime);
   }
 }

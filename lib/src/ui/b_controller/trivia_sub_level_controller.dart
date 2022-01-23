@@ -14,6 +14,8 @@ abstract class TriviaSubLevelController extends GetxController {
 
   int get numOfCorrectAnswers;
 
+  bool get showTutorial;
+
   Duration durationOfProgressBar();
 
   bool isAnswerCorrect(int selectedId);
@@ -22,7 +24,7 @@ abstract class TriviaSubLevelController extends GetxController {
 
   TriviaQuestionDomain currentQuestion();
 
-  void checkAnswer(int selectedId);
+  void checkAnswer(int selectedId, GlobalKey key6, GlobalKey key7);
 
   int generateProgress();
 
@@ -32,6 +34,9 @@ abstract class TriviaSubLevelController extends GetxController {
 
   AnimationController initAnimationController(
       SingleTickerProviderStateMixin ticker);
+
+  void stopCountdown();
+  void playCountdown();
 }
 
 enum QuestionState {
