@@ -76,4 +76,18 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
   void _executeProgressUpdate() {
     Get.find<TriviaSubLevelProgressUseCase>().edit(subLevelProgressDomain);
   }
+
+  @override
+  bool showTutorial() {
+    return subLevelProgressDomain.triviaLevelDomainId ==
+            Get.find<TriviaLevelUseCase>().findAll()[0].id &&
+        subLevelProgressDomain.triviaSubLevelDomainId ==
+            Get.find<TriviaLevelUseCase>().findAll()[0].sublevel[0].id &&
+        questionId ==
+            Get.find<TriviaLevelUseCase>()
+                .findAll()[0]
+                .sublevel[0]
+                .question[0]
+                .id;
+  }
 }
