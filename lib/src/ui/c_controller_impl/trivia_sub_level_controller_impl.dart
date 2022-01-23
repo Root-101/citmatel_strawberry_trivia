@@ -18,6 +18,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   bool showTutorialRight = true;
   bool showTutorialWrong =
       false; // Is originally in true but the wrong answer id is missing.
+  bool isShowingTutorial = false;
 
   TriviaSubLevelControllerImpl({
     required TriviaSubLevelDomain subLevelDomain,
@@ -61,6 +62,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
       if (showTutorial && showTutorialRight) {
         showTutorialRight = false;
+        isShowingTutorial = true;
         // Continue the tutorial.
         StrawberryTutorial.showTutorial(
           context: context,
@@ -76,6 +78,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
             ),
           ],
           onFinish: () => _nextQuestion(),
+          onSkip: () => _nextQuestion(),
         );
       }
     } else {
@@ -85,6 +88,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       if (showTutorial && showTutorialWrong) {
         //TODO: Need the wrong answer id,
         showTutorialWrong = false;
+        isShowingTutorial = true;
         // Continue the tutorial.
         StrawberryTutorial.showTutorial(
           context: Get.context!,
@@ -103,6 +107,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
             ),
           ],
           onFinish: () => _nextQuestion(),
+          onSkip: () => _nextQuestion(),
         );
       }
     }
@@ -112,12 +117,13 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
     update();
 
-    if (!showTutorial) {
+    if (!showTutorial || !isShowingTutorial) {
       // Once user select an ans after 3s it will go to the next qn
       Future.delayed(Duration(seconds: 3), () {
         _nextQuestion();
       });
     }
+    isShowingTutorial = false;
   }
 
   void _nextQuestion() {
