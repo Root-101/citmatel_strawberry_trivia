@@ -2,7 +2,6 @@ import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
 class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   TriviaSubLevelUseCase subLevelUseCase;
@@ -15,6 +14,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   // Cantidad de pasos del stepper.
   int dotCount = 0;
+
+  bool showTutorialRight = true;
+  bool showTutorialWrong =
+      false; // Is originally in true but the wrong answer id is missing.
 
   TriviaSubLevelControllerImpl({
     required TriviaSubLevelDomain subLevelDomain,
@@ -47,7 +50,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     return subLevelUseCase.correctAnswerId(_activeStep) == selectedId;
   }
 
-  void checkAnswer(int selectedId, GlobalKey key6, GlobalKey key7) {
+  void checkAnswer(
+      int selectedId, GlobalKey key6, GlobalKey key7, BuildContext context) {
     // because once user press any option then it will run
     _isAnswered = true;
 
@@ -55,20 +59,20 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       _numOfCorrectAnswers++;
       StrawberryAudio.playAudioCorrect();
 
-      if (showTutorial) {
+      if (showTutorial && showTutorialRight) {
+        showTutorialRight = false;
         // Continue the tutorial.
         StrawberryTutorial.showTutorial(
-          context: Get.context!,
+          context: context,
           targets: [
-            StrawberryTutorial.addMultipleTarget(
+            StrawberryTutorial.addTarget(
               identify: "Target Answer Right",
               keyTarget: key6,
               shadowColor: Colors.green,
               title: 'Respuesta correcta.',
               description:
                   'Cuando se responde correctamente la pregunta se dibuja de verde.\n Sigue así es la única manera de ganar.',
-              contentImageAlign: ContentAlign.top,
-              contentTextAlign: ContentAlign.right,
+              showImage: false,
             ),
           ],
           onFinish: () => _nextQuestion(),
@@ -78,7 +82,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       StrawberryAudio.playAudioWrong();
       StrawberryVibration.vibrate();
 
-      if (showTutorial) {
+      if (showTutorial && showTutorialWrong) {
+        //TODO: Need the wrong answer id,
+        showTutorialWrong = false;
         // Continue the tutorial.
         StrawberryTutorial.showTutorial(
           context: Get.context!,

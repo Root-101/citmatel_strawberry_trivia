@@ -24,7 +24,7 @@ abstract class TriviaSubLevelController extends GetxController {
 
   TriviaQuestionDomain currentQuestion();
 
-  void checkAnswer(int selectedId, GlobalKey key6, GlobalKey key7);
+  void checkAnswer(int selectedId, GlobalKey key6, GlobalKey key7, BuildContext context);
 
   int generateProgress();
 
