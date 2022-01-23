@@ -2,6 +2,7 @@ import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
 class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   TriviaSubLevelUseCase subLevelUseCase;
@@ -15,9 +16,16 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   // Cantidad de pasos del stepper.
   int dotCount = 0;
 
+  int _numOfCorrectAnswers = 0;
+
+  //flags para el estado de la pregunta
+  bool _isAnswered = false;
+  int lastSelectedId = -1;
+
+  //flags for tutorial
   bool showTutorialRight = true;
   bool showTutorialWrong =
-      false; // Is originally in true but the wrong answer id is missing.
+      true; // Is originally in true but the wrong answer id is missing.
   bool isShowingTutorial = false;
 
   TriviaSubLevelControllerImpl({
@@ -30,18 +38,14 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     dotCount = subLevelUseCase.dotCount;
   }
 
+  int get numOfCorrectAnswers => this._numOfCorrectAnswers;
+
+  bool get showTutorial => subLevelUseCase.showTutorial();
+
   @override
   Duration durationOfProgressBar() {
     return subLevelUseCase.durationOfProgressBar(_activeStep);
   }
-
-  bool _isAnswered = false;
-
-  int _numOfCorrectAnswers = 0;
-
-  int get numOfCorrectAnswers => this._numOfCorrectAnswers;
-
-  bool get showTutorial => subLevelUseCase.showTutorial();
 
   TriviaQuestionDomain currentQuestion() {
     return subLevelUseCase.currentQuestion(_activeStep);
@@ -58,7 +62,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       return;
     }
     // because once user press any option then it will run
+    //init flags
     _isAnswered = true;
+    lastSelectedId = selectedId;
 
     if (isAnswerCorrect(selectedId)) {
       _numOfCorrectAnswers++;
@@ -79,6 +85,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
               description:
                   'Cuando se responde correctamente la pregunta se dibuja de verde.\n Sigue así es la única manera de ganar.',
               showImage: false,
+              contentAlign: ContentAlign.top,
             ),
           ],
           onFinish: () => _nextQuestion(),
@@ -90,12 +97,11 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       StrawberryVibration.vibrate();
 
       if (showTutorial && showTutorialWrong) {
-        //TODO: Need the wrong answer id,
         showTutorialWrong = false;
         isShowingTutorial = true;
         // Continue the tutorial.
         StrawberryTutorial.showTutorial(
-          context: Get.context!,
+          context: context,
           targets: [
             StrawberryTutorial.addTarget(
               identify: "Target Answer Wrong",
@@ -106,8 +112,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
                   'Cuando se responde incorrectamente la pregunta se dibuja de rojo.'
                   '\n Una vez q te equivocas se te dara la posibilidad al finalizar el nivel de intentarlo de nuevo.'
                   '\n Solo si respondes todas las preguntas correctamente puedes pasar de nivel.',
-              showImageOnTop: false,
-              imagePadding: 50,
+              showImage: false,
+              contentAlign: ContentAlign.top,
             ),
           ],
           onFinish: () => _nextQuestion(),
@@ -131,7 +137,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   void _nextQuestion() {
+    //reset flags
     _isAnswered = false;
+    lastSelectedId = -1;
+
     //chequeo si completé todas las preguntas
     if (_activeStep < dotCount - 1) {
       //no las he completado, paso para la siguiente
@@ -176,11 +185,18 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   QuestionState questionState(int questionIndex) {
+    //si no está respondida QuestionState.Not_answered para todo el mundo
+    //si está respondida reviso si el id es el correcto
     if (_isAnswered) {
-      if (questionIndex == subLevelUseCase.correctAnswerId(_activeStep)) {
+      int correctId = subLevelUseCase.correctAnswerId(_activeStep);
+      if (questionIndex == correctId) {
         return QuestionState.Answered_right;
       } else {
-        return QuestionState.Answered_wrong;
+        if (questionIndex == lastSelectedId) {
+          return QuestionState.Answered_wrong;
+        } else {
+          return QuestionState.Not_answered;
+        }
       }
     } else {
       return QuestionState.Not_answered;
