@@ -92,6 +92,10 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
                                       index, questionDomain, context),
                                 )
                               : Shake(
+                                  key: controller.lastSelectedId ==
+                                          questionDomain.answers[index].id
+                                      ? key7
+                                      : null,
                                   child: _buildAnswerOption(
                                       index, questionDomain, context),
                                 )),
