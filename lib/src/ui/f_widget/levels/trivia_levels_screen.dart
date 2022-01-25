@@ -13,26 +13,32 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
     return CommonsLevelsScreen<TriviaLevelDomain>(
       levelsFindAll: controller.findAll(),
       buildSingleLevel: (levelDomain) {
-        return CommonsSingleLevel<TriviaSubLevelDomain>(
-          urlThemePicture: levelDomain.urlThemePicture,
-          subLevelsAll: (levelDomain).sublevel,
-          singleLevelBuilder: (subLevelDomain) {
-            return GetBuilder<TriviaLevelController>(builder: (context) {
+        return GetBuilder<TriviaLevelController>(builder: (context) {
+          return CommonsSingleLevel<TriviaSubLevelDomain>(
+            moduleName: "Trivia",
+            themeTitle: levelDomain.theme,
+            maxStars: Get.find<TriviaLevelController>().maxStars(levelDomain),
+            winedStars:
+                Get.find<TriviaLevelController>().winedStars(levelDomain),
+            urlThemePicture: levelDomain.urlThemePicture,
+            subLevelsAll: (levelDomain).sublevel,
+            singleLevelBuilder: (subLevelDomain) {
               TriviaSubLevelProgressDomain progressDomain =
                   Get.find<TriviaSubLevelProgressUseCase>().findByAll(
                 levelDomain,
                 subLevelDomain,
               );
               return CommonsSingleSubLevelTile(
-                  stars: progressDomain.stars,
-                  contPlayedTimes: progressDomain.contPlayedTimes,
-                  openWidget: TriviaSubLevelBackground(
-                    subLevelDomain: subLevelDomain,
-                    subLevelProgressDomain: progressDomain,
-                  ));
-            });
-          },
-        );
+                stars: progressDomain.stars,
+                contPlayedTimes: progressDomain.contPlayedTimes,
+                openWidget: TriviaSubLevelBackground(
+                  subLevelDomain: subLevelDomain,
+                  subLevelProgressDomain: progressDomain,
+                ),
+              );
+            },
+          );
+        });
       },
     );
   }
