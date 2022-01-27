@@ -23,6 +23,28 @@ class TriviaLevel1 {
                     id: 3, answer: "Conocimiento General."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "No tiene utilidad."),
               ]),
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 2,
+              question: "¿Cuál es el océano más grande del mundo?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "El océano Pacífico."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "El océano Índico."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "El océano Atlántico."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "El océano Ártico ."),
+              ]),
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 2,
+              question: "¿Cuántos lados tiene un heptágono?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Siete lados."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Ocho lados."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Seis lados."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Nueve lados."),
+              ]),
         ],
       ),
     ],
