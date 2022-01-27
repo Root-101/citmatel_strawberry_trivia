@@ -10,35 +10,47 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
 
   @override
   Widget build(BuildContext context) {
-    return CommonsLevelsScreen<TriviaLevelDomain>(
-      levelsFindAll: controller.findAll(),
-      buildSingleLevel: (levelDomain) {
-        return GetBuilder<TriviaLevelController>(builder: (context) {
-          return CommonsSingleLevel<TriviaSubLevelDomain>(
-            moduleName: "Trivia",
-            themeTitle: levelDomain.theme,
-            maxStars: Get.find<TriviaLevelController>().maxStars(levelDomain),
-            winedStars:
-                Get.find<TriviaLevelController>().winedStars(levelDomain),
-            urlThemePicture: levelDomain.urlThemePicture,
-            subLevelsAll: (levelDomain).sublevel,
-            singleLevelBuilder: (subLevelDomain) {
-              TriviaSubLevelProgressDomain progressDomain =
-                  Get.find<TriviaSubLevelProgressUseCase>().findByAll(
-                levelDomain,
-                subLevelDomain,
-              );
-              return CommonsSingleSubLevelTile(
-                stars: progressDomain.stars,
-                contPlayedTimes: progressDomain.contPlayedTimes,
-                openWidget: TriviaSubLevelBackground(
-                  subLevelDomain: subLevelDomain,
-                  subLevelProgressDomain: progressDomain,
-                ),
-              );
-            },
-          );
-        });
+    return GetBuilder<TriviaLevelController>(
+      builder: (context) {
+        return CommonsLevelsThemeScreen<TriviaLevelDomain>(
+          levelsFindAll: controller.findAll(),
+          urlSliverBackground: TriviaAssets.WALLPAPER,
+          singleThemeTileBuilder: (levelDomain) {
+            return CommonsLevelsThemeSingleTile<TriviaLevelDomain>(
+              singleLevelDomain: levelDomain,
+              colorPrimary: levelDomain.themeBackgroundImage.colorStrong,
+              buildThemeName: (levelDomain) => levelDomain.theme,
+              buildThemeUrlImage: (levelDomain) =>
+                  levelDomain.themeBackgroundImage.urlImage,
+              openWidget: CommonsSingleLevel<TriviaSubLevelDomain>(
+                themeTitle: levelDomain.theme,
+                urlThemePicture: levelDomain.themeBackgroundImage.urlImage,
+                colorPrimary: levelDomain.themeBackgroundImage.colorStrong,
+                colorSecondary: levelDomain.themeBackgroundImage.colorLight,
+                maxStars: 0,
+                winedStars: 0,
+                subLevelsAll: levelDomain.sublevel,
+                singleSubLevelTileBuilder: (subLevelDomain) {
+                  TriviaSubLevelProgressDomain progressDomain =
+                      Get.find<TriviaSubLevelProgressUseCase>().findByAll(
+                    levelDomain,
+                    subLevelDomain,
+                  );
+                  return CommonsSingleSubLevelTile(
+                    //el primario de aqui es el secundario del otro lado
+                    colorPrimary: levelDomain.themeBackgroundImage.colorLight,
+                    stars: progressDomain.stars,
+                    contPlayedTimes: progressDomain.contPlayedTimes,
+                    openWidget: TriviaSubLevelBackground(
+                      subLevelDomain: subLevelDomain,
+                      subLevelProgressDomain: progressDomain,
+                    ),
+                  );
+                },
+              ),
+            );
+          },
+        );
       },
     );
   }
