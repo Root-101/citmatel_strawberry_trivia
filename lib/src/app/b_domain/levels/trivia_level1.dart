@@ -25,7 +25,7 @@ class TriviaLevel1 {
               ]),
           TriviaQuestionDomain(
               id: 1,
-              correctAnswerId: 2,
+              correctAnswerId: 1,
               question: "¿Cuál es el océano más grande del mundo?",
               answers: [
                 TriviaQuestionAnswerDomain(
@@ -37,7 +37,7 @@ class TriviaLevel1 {
               ]),
           TriviaQuestionDomain(
               id: 1,
-              correctAnswerId: 2,
+              correctAnswerId: 1,
               question: "¿Cuántos lados tiene un heptágono?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Siete lados."),
