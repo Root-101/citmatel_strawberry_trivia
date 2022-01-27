@@ -1,10 +1,11 @@
+import 'package:citmatel_strawberry_trivia/assets/trivia_assets.dart';
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 
 class TriviaLevel3 {
   static final TriviaLevelDomain level3 = TriviaLevelDomain(
     id: 3,
     theme: "Ciencias Naturales",
-    urlThemePicture: "",
+    urlThemePicture: TriviaAssets.WALLPAPER,
     sublevel: [
       TriviaSubLevelDomain(
         id: 1,
