@@ -23,6 +23,8 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
     QuestionState.Answered_wrong: Icons.close,
   };
 
+  final int seed = DateTime.now().millisecondsSinceEpoch;
+
   TriviaSubLevelUseCaseImpl({
     required this.subLevelDomain,
     required this.subLevelProgressDomain,
@@ -48,8 +50,17 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
   }
 
   @override
-  TriviaQuestionDomain currentQuestion(activeStep) {
-    return subLevelDomain.question[activeStep];
+  TriviaQuestionDomain currentQuestion(int activeStep) {
+    return subLevelDomain.question[activeStep].clone();
+  }
+
+  @override
+  List<TriviaQuestionAnswerDomain> currentAnswers(int activeStep) {
+    List<TriviaQuestionAnswerDomain> all = currentQuestion(activeStep).answers;
+
+    all.shuffle(Random(seed + activeStep));
+
+    return all;
   }
 
   @override
