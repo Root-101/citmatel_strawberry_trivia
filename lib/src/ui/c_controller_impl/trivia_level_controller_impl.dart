@@ -1,6 +1,8 @@
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 import 'package:citmatel_strawberry_trivia/src/ui/trivia_ui_exporter.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tuple/tuple.dart';
 
 class TriviaLevelControllerImpl extends TriviaLevelController {
   final TriviaLevelUseCase levelUseCase = Get.find<TriviaLevelUseCase>();
@@ -42,5 +44,26 @@ class TriviaLevelControllerImpl extends TriviaLevelController {
           0,
           (previousValue, element) => previousValue + element.stars,
         );
+  }
+
+  @override
+  Widget randomSubLevel() {
+    Tuple2<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> tuple =
+        Get.find<TriviaRandomUseCase>().randomSubLevel();
+    print(tuple);
+    return TriviaSubLevelBackground(
+      subLevelDomain: tuple.item1,
+      subLevelProgressDomain: tuple.item2,
+    );
+  }
+
+  @override
+  Widget randomSubLevelOf(TriviaLevelDomain level) {
+    Tuple2<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> tuple =
+        Get.find<TriviaRandomUseCase>().randomSubLevelOf(level);
+    return TriviaSubLevelBackground(
+      subLevelDomain: tuple.item1,
+      subLevelProgressDomain: tuple.item2,
+    );
   }
 }

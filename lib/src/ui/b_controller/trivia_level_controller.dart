@@ -1,4 +1,5 @@
 import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_level_domain.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 abstract class TriviaLevelController extends GetxController {
@@ -15,4 +16,8 @@ abstract class TriviaLevelController extends GetxController {
 
   //devuelve la cantidad de estrellas ganadas del nivel
   int winedStars(TriviaLevelDomain levelDomain);
+
+  Widget randomSubLevel();
+
+  Widget randomSubLevelOf(TriviaLevelDomain level);
 }
