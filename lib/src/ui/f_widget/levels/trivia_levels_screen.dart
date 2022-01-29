@@ -13,6 +13,24 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
     return GetBuilder<TriviaLevelController>(
       builder: (context) {
         return CommonsLevelsThemeScreen<TriviaLevelDomain>(
+          tutorialTile: CommonsLevelsThemeSingleTile<TriviaLevelDomain>(
+            //levelDomain para generar las cosas de aqui
+            singleLevelDomain: TriviaLevelTutorial.tutorial,
+            //color primario, principalmente para animaciones
+            colorPrimary:
+                TriviaLevelTutorial.tutorial.themeBackgroundImage.colorStrong,
+            //tema del tile, generado a partir del `levelDomain`
+            buildThemeName: (levelDomain) => levelDomain.theme,
+            //foto del tema del tile, generado a partir del `levelDomain`
+            buildThemeUrlImage: (levelDomain) =>
+                levelDomain.themeBackgroundImage.urlImage,
+            //nivel abierto, entrar directo al juego
+            openWidget: TriviaSubLevelBackground(
+              subLevelDomain: TriviaLevelTutorial.tutorialSubLevel,
+              subLevelProgressDomain:
+                  TriviaLevelTutorial.tutorialSubLevelProgress(),
+            ),
+          ),
           //widget que se genera cada vez que se selecciona el aleatorio
           onRandomTap: controller.randomSubLevel,
           //lista de los niveles
