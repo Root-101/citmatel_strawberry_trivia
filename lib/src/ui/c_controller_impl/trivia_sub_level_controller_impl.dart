@@ -44,17 +44,23 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     );
   }
 
+  @override
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
 
+  @override
   bool get showTutorial => subLevelUseCase.showTutorial();
+
+  @override
+  String get currentQuestion =>
+      subLevelUseCase.currentQuestion(activeStep).question;
+
+  @override
+  List<TriviaQuestionAnswerDomain> get currentAnswers =>
+      subLevelUseCase.currentAnswers(activeStep);
 
   @override
   Duration durationOfProgressBar() {
     return subLevelUseCase.durationOfProgressBar(_activeStep);
-  }
-
-  TriviaQuestionDomain currentQuestion() {
-    return subLevelUseCase.currentQuestion(_activeStep);
   }
 
   bool isAnswerCorrect(int selectedId) {

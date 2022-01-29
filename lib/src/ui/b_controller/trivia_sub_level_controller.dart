@@ -1,4 +1,4 @@
-import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
+import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_domain_exporter.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,13 +19,14 @@ abstract class TriviaSubLevelController extends GetxController {
 
   int get lastSelectedId;
 
+  String get currentQuestion;
+  List<TriviaQuestionAnswerDomain> get currentAnswers;
+
   Duration durationOfProgressBar();
 
   bool isAnswerCorrect(int selectedId);
 
   QuestionState questionState(int questionIndex);
-
-  TriviaQuestionDomain currentQuestion();
 
   void checkAnswer(
       int selectedId, GlobalKey key6, GlobalKey key7, BuildContext context);
