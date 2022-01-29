@@ -2,10 +2,11 @@ import 'dart:ui';
 
 import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
+import 'package:get/get.dart';
 
-class TriviaLevel1 {
-  static final TriviaLevelDomain level1 = TriviaLevelDomain(
-    id: 1,
+class TriviaLevelTutorial {
+  static final TriviaLevelDomain tutorial = TriviaLevelDomain(
+    id: 0,
     theme: "Tutorial",
     themeBackgroundImage: ToolsThemesBackgroundImage(
       urlImage: ToolsThemesAssets.THEME_CULTURA_GENERAL,
@@ -55,4 +56,12 @@ class TriviaLevel1 {
       ),
     ],
   );
+
+  static TriviaSubLevelDomain tutorialSubLevel = tutorial.sublevel[0];
+
+  static TriviaSubLevelProgressDomain tutorialSubLevelProgress() =>
+      Get.find<TriviaSubLevelProgressUseCase>().findByAll(
+        TriviaLevelTutorial.tutorial,
+        TriviaLevelTutorial.tutorialSubLevel,
+      );
 }
