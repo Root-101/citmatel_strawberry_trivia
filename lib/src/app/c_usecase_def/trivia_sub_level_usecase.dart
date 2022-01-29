@@ -11,6 +11,10 @@ abstract class TriviaSubLevelUseCase extends AbstractUseCase {
 
   Map<QuestionState, IconData> get iconsMap;
 
+  TriviaQuestionDomain currentQuestion(int activeStep);
+
+  List<TriviaQuestionAnswerDomain> currentAnswers(int activeStep);
+
   int correctAnswerId(int activeStep);
 
   Duration durationOfProgressBar(int activeStep);
@@ -18,8 +22,6 @@ abstract class TriviaSubLevelUseCase extends AbstractUseCase {
   int questionsLength();
 
   void saveProgress(int stars);
-
-  TriviaQuestionDomain currentQuestion(activeStep);
 
   bool showTutorial();
 }

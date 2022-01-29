@@ -23,6 +23,8 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
     QuestionState.Answered_wrong: Icons.close,
   };
 
+  final int seed = DateTime.now().millisecondsSinceEpoch;
+
   TriviaSubLevelUseCaseImpl({
     required this.subLevelDomain,
     required this.subLevelProgressDomain,
@@ -48,8 +50,21 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
   }
 
   @override
-  TriviaQuestionDomain currentQuestion(activeStep) {
-    return subLevelDomain.question[activeStep];
+  TriviaQuestionDomain currentQuestion(int activeStep) {
+    return subLevelDomain.question[activeStep].clone();
+  }
+
+  //implementado con semilla para que cada vez que se entre a un subnivel sea aleatorio,
+  //xq se recrea el UC y se reinicia la semilla, pero a su vez dentro del mismo subnivel
+  //no se actualize si se llama varias veces sobre la misma pregunta y si se
+  //ponga aleatorio en diferentes preguntas del mismo subnivel
+  @override
+  List<TriviaQuestionAnswerDomain> currentAnswers(int activeStep) {
+    List<TriviaQuestionAnswerDomain> all = currentQuestion(activeStep).answers;
+
+    all.shuffle(Random(seed + activeStep));
+
+    return all;
   }
 
   @override

@@ -42,11 +42,9 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
   }
 
   _buildCurrentQuestion(BuildContext context) {
-    //Question Domain of the current question.
-    final TriviaQuestionDomain questionDomain = controller.currentQuestion();
-
     return Container(
-      key: ValueKey(questionDomain.id),
+      //para que cambie para la proxima en el switcher
+      key: ValueKey(controller.activeStep),
       margin: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -59,7 +57,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           //// The Question ////
           Text(
             // Text of the current question.
-            questionDomain.question,
+            controller.currentQuestion,
             key: key4,
             style: TextStyle(
               color: textQuestionColor,
@@ -73,46 +71,35 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           //// The List of Answers ////
           Column(
             key: key5,
-            children: [
-              ...List.generate(
-                  // Amount of answers.
-                  questionDomain.answers.length,
-                  (index) =>
-                      // If the current question don't have been answerer yet ...
-                      controller.questionState(
-                                  questionDomain.answers[index].id) ==
+            children: controller.currentAnswers
+                .map(
+                  (answer) => // If the current question don't have been answerer yet ...
+                      controller.questionState(answer.id) ==
                               QuestionState.Not_answered
-                          ? _buildAnswerOption(index, questionDomain, context)
-                          // If is aready answered and the correct answer is the selected Bounce else Shake
-                          : controller.isAnswerCorrect(
-                                  questionDomain.answers[index].id)
+                          ? _buildOption(answer.id, answer.answer, context)
+                          // If is already answered and the correct answer is the selected Bounce else Shake
+                          : controller.isAnswerCorrect(answer.id)
                               ? Bounce(
                                   key: key6,
-                                  child: _buildAnswerOption(
-                                      index, questionDomain, context),
+                                  child: _buildOption(
+                                      answer.id, answer.answer, context),
                                 )
                               : Shake(
-                                  key: controller.lastSelectedId ==
-                                          questionDomain.answers[index].id
+                                  key: controller.lastSelectedId == answer.id
                                       ? key7
                                       : null,
-                                  child: _buildAnswerOption(
-                                      index, questionDomain, context),
-                                )),
-            ],
+                                  child: _buildOption(
+                                      answer.id, answer.answer, context),
+                                ),
+                )
+                .toList(),
           ),
         ],
       ),
     );
   }
 
-  _buildAnswerOption(
-      int index, TriviaQuestionDomain questionDomain, BuildContext context) {
-    return _buildOption(questionDomain.answers[index].id,
-        questionDomain.answers[index].answer, context);
-  }
-
-  _buildOption(int id, String answerText, BuildContext context) {
+  Widget _buildOption(int id, String answerText, BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 20, left: 0, right: 0),
       padding: const EdgeInsets.all(15),
@@ -130,7 +117,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           children: [
             //// The ID of the Answer ////
             Text(
-              "$id - ",
+              "${String.fromCharCode(id + 64)} - ",
               style: TextStyle(
                 color: textAnswerColor,
                 fontSize: 26,
