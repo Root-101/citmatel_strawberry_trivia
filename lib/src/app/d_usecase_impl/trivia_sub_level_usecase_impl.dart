@@ -54,6 +54,10 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
     return subLevelDomain.question[activeStep].clone();
   }
 
+  //implementado con semilla para que cada vez que se entre a un subnivel sea aleatorio,
+  //xq se recrea el UC y se reinicia la semilla, pero a su vez dentro del mismo subnivel
+  //no se actualize si se llama varias veces sobre la misma pregunta y si se
+  //ponga aleatorio en diferentes preguntas del mismo subnivel
   @override
   List<TriviaQuestionAnswerDomain> currentAnswers(int activeStep) {
     List<TriviaQuestionAnswerDomain> all = currentQuestion(activeStep).answers;
