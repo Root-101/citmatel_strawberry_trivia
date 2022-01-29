@@ -1,4 +1,5 @@
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
+import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -30,6 +31,8 @@ abstract class TriviaSubLevelController extends GetxController {
       int selectedId, GlobalKey key6, GlobalKey key7, BuildContext context);
 
   int generateProgress();
+
+  ConfettiController get confettiController;
 
   LinearGradient getTheRightColor(int index);
 

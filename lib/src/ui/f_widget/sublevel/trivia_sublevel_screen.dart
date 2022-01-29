@@ -75,18 +75,28 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
     return GetBuilder<TriviaSubLevelController>(
       builder: (_) {
         return SafeArea(
-          child: Column(
+          child: Stack(
             children: [
-              //Build stepper
-              _buildStepper(_key1),
-              //Build the Question card
-              TriviaSubLevelQuestionCard(
-                key2: _key2,
-                key3: _key3,
-                key4: _key4,
-                key5: _key5,
-                key6: _key6,
-                key7: _key7,
+              Column(
+                children: [
+                  //Build stepper
+                  _buildStepper(_key1),
+                  //Build the Question card
+                  TriviaSubLevelQuestionCard(
+                    key2: _key2,
+                    key3: _key3,
+                    key4: _key4,
+                    key5: _key5,
+                    key6: _key6,
+                    key7: _key7,
+                  ),
+                ],
+              ),
+              Align(
+                alignment: Alignment.topCenter,
+                child: StrawberryWidgets.confettiWidget(
+                  confettiController: _controller.confettiController,
+                ),
               ),
             ],
           ),

@@ -1,5 +1,6 @@
 import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
+import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
@@ -8,6 +9,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   TriviaSubLevelUseCase subLevelUseCase;
 
   late AnimationController _animationController;
+
+  late final ConfettiController confettiController;
 
   // Used to control the Stteper
   int _activeStep = 0; // Initial step set to 0.
@@ -36,6 +39,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
           subLevelProgressDomain: subLevelProgressDomain,
         ) {
     dotCount = subLevelUseCase.dotCount;
+    confettiController = ConfettiController(
+      duration: const Duration(milliseconds: 50),
+    );
   }
 
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
@@ -69,6 +75,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     if (isAnswerCorrect(selectedId)) {
       _numOfCorrectAnswers++;
       StrawberryAudio.playAudioCorrect();
+      _makeConffeti();
 
       if (showTutorial && showTutorialRight) {
         showTutorialRight = false;
@@ -134,6 +141,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       });
     }
     isShowingTutorial = false;
+  }
+
+  void _makeConffeti() {
+    confettiController.play();
   }
 
   void _nextQuestion() {
