@@ -68,6 +68,22 @@ class TriviaLevelControllerImpl extends TriviaLevelController {
     );
   }
 
+  //compruebo todos los progresos de todos los subniveles, y saco los que no tienen progreso
+  //el nivel se gano solo si la cantidad de subniveles sin progreso es 0, o sea, que todos tienen algo de progreso
+  @override
+  bool wonedLevel(TriviaLevelDomain levelDomain) {
+    int cantEmpty = 0;
+    levelDomain.sublevel.forEach((subLevel) {
+      if (Get.find<TriviaSubLevelProgressUseCase>()
+              .findByAllId(levelDomain.id, subLevel.id)
+              .stars ==
+          0) {
+        cantEmpty++;
+      }
+    });
+    return cantEmpty == 0;
+  }
+
   @override
   Widget randomSubLevel() {
     Tuple2<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> tuple =
