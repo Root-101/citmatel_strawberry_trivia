@@ -47,6 +47,28 @@ class TriviaLevelControllerImpl extends TriviaLevelController {
   }
 
   @override
+  int maxStarsAll() {
+    //recorro todos los niveles, y empezando en 0, voy sumando la cantidad maxima de estrellas de cada nivel
+    return levelUseCase.findAll().fold(
+      0,
+      (previousValue, level) {
+        return previousValue + maxStars(level);
+      },
+    );
+  }
+
+  @override
+  int winedStarsAll() {
+    //recorro todos los niveles, y empezando en 0, voy sumando la cantidad de estrellas ganadas en cada nivel
+    return levelUseCase.findAll().fold(
+      0,
+      (previousValue, level) {
+        return previousValue + winedStars(level);
+      },
+    );
+  }
+
+  @override
   Widget randomSubLevel() {
     Tuple2<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> tuple =
         Get.find<TriviaRandomUseCase>().randomSubLevel();
