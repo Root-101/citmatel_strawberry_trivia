@@ -17,6 +17,12 @@ abstract class TriviaLevelController extends GetxController {
   //devuelve la cantidad de estrellas ganadas del nivel
   int winedStars(TriviaLevelDomain levelDomain);
 
+  //devuelve la cantidad de estrellas maximo de todos los niveles
+  int maxStarsAll();
+
+  //devuelve la cantidad de estrellas ganadas de todos los nivel
+  int winedStarsAll();
+
   Widget randomSubLevel();
 
   Widget randomSubLevelOf(TriviaLevelDomain level);
