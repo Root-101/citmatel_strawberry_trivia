@@ -17,6 +17,10 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
 
         return CommonsLevelsThemeScreen<TriviaLevelDomain>(
           tutorialTile: CommonsLevelsThemeSingleTile<TriviaLevelDomain>(
+            winedStars: TriviaLevelTutorial.tutorialSubLevelProgress().stars,
+            maxStars: TriviaSubLevelController.MAX_STARS,
+            wonedLevel: _.wonedLevel(TriviaLevelTutorial.tutorial),
+
             //levelDomain para generar las cosas de aqui
             singleLevelDomain: TriviaLevelTutorial.tutorial,
             //color primario, principalmente para animaciones
@@ -45,22 +49,30 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
           //builder de cada tile, uno por tema/uno por nivel
           singleThemeTileBuilder: (levelDomain) {
             //single level/tema tile por defecto
-            return GetBuilder<TriviaLevelController>(builder: (_) {
-              int winedStars = _.winedStars(levelDomain);
-              int maxStars = _.maxStars(levelDomain);
+            return GetBuilder<TriviaLevelController>(
+              builder: (_) {
+                int winedStars = _.winedStars(levelDomain);
+                int maxStars = _.maxStars(levelDomain);
 
-              return CommonsLevelsThemeSingleTile<TriviaLevelDomain>(
-                //levelDomain para generar las cosas de aqui
-                singleLevelDomain: levelDomain,
-                //color primario, principalmente para animaciones
-                colorPrimary: levelDomain.themeBackgroundImage.colorStrong,
-                //tema del tile, generado a partir del `levelDomain`
-                buildThemeName: (levelDomain) => levelDomain.theme,
-                //foto del tema del tile, generado a partir del `levelDomain`
-                buildThemeUrlImage: (levelDomain) =>
-                    levelDomain.themeBackgroundImage.urlImage,
-                //nivel abierto, lista de subniveles
-                openWidget: CommonsSingleLevel<TriviaSubLevelDomain>(
+                return CommonsLevelsThemeSingleTile<TriviaLevelDomain>(
+                  //estrellas chiquitas de cada tile
+                  maxStars: maxStars,
+                  winedStars: winedStars,
+
+                  //marca el nivel como ganado o no
+                  wonedLevel: _.wonedLevel(levelDomain),
+
+                  //levelDomain para generar las cosas de aqui
+                  singleLevelDomain: levelDomain,
+                  //color primario, principalmente para animaciones
+                  colorPrimary: levelDomain.themeBackgroundImage.colorStrong,
+                  //tema del tile, generado a partir del `levelDomain`
+                  buildThemeName: (levelDomain) => levelDomain.theme,
+                  //foto del tema del tile, generado a partir del `levelDomain`
+                  buildThemeUrlImage: (levelDomain) =>
+                      levelDomain.themeBackgroundImage.urlImage,
+                  //nivel abierto, lista de subniveles
+                  openWidget: CommonsSingleLevel<TriviaSubLevelDomain>(
                     //level domain para random
                     levelDomain: levelDomain,
                     //funcion para generar un nivel random cada vez, recive por defecto el levelDomain
@@ -103,9 +115,11 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
                           subLevelProgressDomain: progressDomain,
                         ),
                       );
-                    }),
-              );
-            });
+                    },
+                  ),
+                );
+              },
+            );
           },
         );
       },
