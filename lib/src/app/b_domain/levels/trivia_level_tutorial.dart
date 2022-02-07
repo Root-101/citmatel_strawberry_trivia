@@ -9,9 +9,9 @@ class TriviaLevelTutorial {
     id: 0,
     theme: "Tutorial",
     themeBackgroundImage: ToolsThemesBackgroundImage(
-      urlImage: ToolsThemesAssets.THEME_CULTURA_GENERAL,
-      colorStrong: Color(0xffd4801c),
-      colorLight: Color(0xffe1a41b).withOpacity(0.5),
+      urlImage: ToolsThemesAssets.THEME_TUTORIAL,
+      colorStrong: Color(0xff960b3c),
+      colorLight: Color(0xffca1a41).withOpacity(0.5),
     ),
     sublevel: [
       TriviaSubLevelDomain(
