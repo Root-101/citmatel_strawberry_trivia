@@ -31,6 +31,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       true; // Is originally in true but the wrong answer id is missing.
   bool isShowingTutorial = false;
 
+  late bool _showTutorial;
+
   TriviaSubLevelControllerImpl({
     required TriviaSubLevelDomain subLevelDomain,
     required TriviaSubLevelProgressDomain subLevelProgressDomain,
@@ -42,13 +44,14 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     confettiController = ConfettiController(
       duration: const Duration(milliseconds: 50),
     );
+    _showTutorial = subLevelUseCase.showTutorial();
   }
 
   @override
   int get numOfCorrectAnswers => this._numOfCorrectAnswers;
 
   @override
-  bool get showTutorial => subLevelUseCase.showTutorial();
+  bool get showTutorial => _showTutorial;
 
   @override
   String get currentQuestion =>
@@ -102,7 +105,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
             ),
           ],
           onFinish: () => _nextQuestion(),
-          onSkip: () => _nextQuestion(),
+          onSkip: () {
+            _nextQuestion();
+            stopTutorial();
+          },
         );
       }
     } else {
@@ -130,7 +136,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
             ),
           ],
           onFinish: () => _nextQuestion(),
-          onSkip: () => _nextQuestion(),
+          onSkip: () {
+            _nextQuestion();
+            stopTutorial();
+          },
         );
       }
     }
@@ -285,5 +294,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   void playCountdown() {
     _animationController.forward().whenComplete(_endTime);
+  }
+
+  @override
+  void stopTutorial() {
+    _showTutorial = false;
   }
 }

@@ -22,6 +22,8 @@ abstract class TriviaSubLevelController extends GetxController {
   String get currentQuestion;
   List<TriviaQuestionAnswerDomain> get currentAnswers;
 
+  void stopTutorial();
+
   Duration durationOfProgressBar();
 
   bool isAnswerCorrect(int selectedId);
