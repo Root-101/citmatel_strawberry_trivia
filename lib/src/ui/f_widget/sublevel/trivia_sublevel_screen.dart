@@ -56,7 +56,10 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
           context: context,
           targets: targets,
           onFinish: () => _controller.playCountdown(),
-          onSkip: () => _controller.playCountdown(),
+          onSkip: () {
+            _controller.playCountdown();
+            _controller.stopTutorial();
+          },
         );
       });
     }
