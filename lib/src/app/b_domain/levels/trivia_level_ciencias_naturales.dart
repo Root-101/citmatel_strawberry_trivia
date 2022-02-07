@@ -3,14 +3,14 @@ import 'dart:ui';
 import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 
-class TriviaLevel2 {
-  static final TriviaLevelDomain level3 = TriviaLevelDomain(
+class TriviaLevelCienciasNaturales {
+  static final TriviaLevelDomain levelCienciasNaturales = TriviaLevelDomain(
     id: 2,
     theme: "Ciencias Naturales",
     themeBackgroundImage: ToolsThemesBackgroundImage(
-      urlImage: ToolsThemesAssets.THEME_CULTURA_GENERAL,
-      colorStrong: Color(0xffd4801c),
-      colorLight: Color(0xffe1a41b).withOpacity(0.5),
+      urlImage: ToolsThemesAssets.THEME_CIENCIAS,
+      colorStrong: Color(0xff3647db),
+      colorLight: Color(0xff3fd4fc).withOpacity(0.5),
     ),
     sublevel: [
       TriviaSubLevelDomain(
