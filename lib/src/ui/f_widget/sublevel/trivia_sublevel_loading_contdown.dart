@@ -1,13 +1,22 @@
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
+import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:flutter/material.dart';
+
 class TriviaSubLevelLoadingCountDown extends StatelessWidget {
   static const int DURATION = 3; //loading timeout
 
   final CountDownController _controller = CountDownController();
 
   final VoidCallback onEnd;
+  final List<String> firstText;
+  final List<String> secondText;
 
-  TriviaSubLevelLoadingCountDown({Key? key, required this.onEnd}) : super(key: key);
+  TriviaSubLevelLoadingCountDown({
+    Key? key,
+    required this.onEnd,
+    required this.firstText,
+    required this.secondText,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +24,16 @@ class TriviaSubLevelLoadingCountDown extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Text("Comenzando el nivel en..."),
+          StrawberryAnimatedTextKit.typewriterAnimatedText(
+            texts: firstText,
+            color: Colors.white,
+            repeatForever: true,
+          ),
+          StrawberryAnimatedTextKit.typewriterAnimatedText(
+            texts: secondText,
+            color: Colors.white,
+            repeatForever: true,
+          ),
           CircularCountDownTimer(
             // Countdown duration in Seconds.
             duration: DURATION,

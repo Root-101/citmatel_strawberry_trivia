@@ -1,5 +1,6 @@
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class TriviaSubLevelBackground extends StatefulWidget {
   final TriviaSubLevelDomain subLevelDomain;
@@ -34,6 +35,12 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
               );
             });
           },
+          firstText: [
+            "Tema: ${Get.find<TriviaLevelController>().themeOfGivenLevel(widget.subLevelProgressDomain)}"
+          ],
+          secondText: [
+            "Nivel: ${widget.subLevelProgressDomain.triviaLevelDomainId}"
+          ],
         );
       },
     );
