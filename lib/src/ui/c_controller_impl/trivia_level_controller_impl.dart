@@ -104,4 +104,8 @@ class TriviaLevelControllerImpl extends TriviaLevelController {
       subLevelProgressDomain: tuple.item2,
     );
   }
+
+  @override
+  String themeOfGivenLevel(TriviaSubLevelProgressDomain progressDomain) =>
+      levelUseCase.themeOfGivenLevel(progressDomain);
 }
