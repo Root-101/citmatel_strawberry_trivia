@@ -48,30 +48,33 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
-          colors: [
-            Get.find<TriviaLevelController>()
-                .themeLooksOfGivenLevel(widget.subLevelProgressDomain)
-                .colorStrong,
-            Get.find<TriviaLevelController>()
-                .themeLooksOfGivenLevel(widget.subLevelProgressDomain)
-                .colorLight,
-          ],
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [
+              Get.find<TriviaLevelController>()
+                  .themeLooksOfGivenLevel(widget.subLevelProgressDomain)
+                  .colorStrong,
+              Get.find<TriviaLevelController>()
+                  .themeLooksOfGivenLevel(widget.subLevelProgressDomain)
+                  .colorLight,
+            ],
+          ),
         ),
-      ),
-      child: AnimatedSwitcher(
-        duration: const Duration(milliseconds: 500),
-        transitionBuilder: (Widget child, Animation<double> animation) {
-          return ScaleTransition(
-            child: child,
-            scale: animation,
-          );
-        },
-        child: _animatedWidget,
+        child: AnimatedSwitcher(
+          duration: const Duration(milliseconds: 500),
+          transitionBuilder: (Widget child, Animation<double> animation) {
+            return ScaleTransition(
+              child: child,
+              scale: animation,
+            );
+          },
+          child: _animatedWidget,
+        ),
       ),
     );
   }
