@@ -29,10 +29,6 @@ dependencies:
   tutorial_coach_mark: ^1.2.1
   confetti: ^0.6.0
 
-  #Modified Masters
-  circular_countdown_timer:
-    path: ../master/circular_countdown_timer
-
   #Tools
   citmatel_strawberry_tools:
     path: ../citmatel_strawberry_tools
