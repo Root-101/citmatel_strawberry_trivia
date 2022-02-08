@@ -194,6 +194,12 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   _doLooseLevel() {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
+      leftButtonFunction: () => Get.off(
+        TriviaSubLevelBackground(
+          subLevelDomain: subLevelUseCase.subLevelDomain,
+          subLevelProgressDomain: subLevelUseCase.subLevelProgressDomain,
+        ),
+      ),
       rightButtonFunction: () => Get.back(closeOverlays: true),
       childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
         texts: [
