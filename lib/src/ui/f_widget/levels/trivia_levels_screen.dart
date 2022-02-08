@@ -16,7 +16,6 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
         int maxStarsAll = _.maxStarsAll();
 
         return CommonsLevelsThemeScreen<TriviaLevelDomain>(
-          title: "Trivia",
           tutorialTile: CommonsLevelsThemeSingleTile<TriviaLevelDomain>(
             winedStars: TriviaLevelTutorial.tutorialSubLevelProgress().stars,
             maxStars: TriviaSubLevelController.MAX_STARS,
@@ -43,6 +42,10 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
           onRandomTap: controller.randomSubLevel,
           //lista de los niveles
           levelsFindAll: controller.findAll(),
+          //title del modulo
+          title: "Trivia",
+          appbarBackgroundColor: Colors.redAccent,
+          backgroundColor: Colors.redAccent.withOpacity(0.5),
           //background del sliver
           urlSliverBackground: TriviaAssets.WALLPAPER,
           winedStars: winedStarsAll,
