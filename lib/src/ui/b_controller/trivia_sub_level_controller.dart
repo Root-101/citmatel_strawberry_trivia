@@ -47,6 +47,12 @@ abstract class TriviaSubLevelController extends GetxController {
   void stopCountdown();
 
   void playCountdown();
+
+  //devuelve el tema del nivel al que pertenece este subnivel
+  String subLevelTheme();
+
+  //devuelve el numero del subnivel en los niveles, basicamene el id del subnivel
+  int subLevelNumber();
 }
 
 enum QuestionState {
