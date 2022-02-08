@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
-  // Domain almacenado para acceder a la info.
+  ///Domain almacenado para acceder a la info.
   final TriviaSubLevelDomain subLevelDomain;
 
   ///domain con la info del progreso
