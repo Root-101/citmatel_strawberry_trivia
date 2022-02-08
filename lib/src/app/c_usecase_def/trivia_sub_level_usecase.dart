@@ -3,6 +3,12 @@ import 'package:clean_core/clean_core.dart';
 import 'package:flutter/material.dart';
 
 abstract class TriviaSubLevelUseCase extends AbstractUseCase {
+  /// Domain almacenado para acceder a la info.
+  TriviaSubLevelDomain get subLevelDomain;
+
+  ///domain con la info del progreso
+  TriviaSubLevelProgressDomain get subLevelProgressDomain;
+
   int get dotCount;
 
   int get questionId;

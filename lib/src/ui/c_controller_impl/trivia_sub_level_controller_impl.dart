@@ -2,6 +2,7 @@ import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animator/utils/pair.dart';
 import 'package:get/get.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
@@ -185,6 +186,17 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   _doWinLevel() {
     //gane el nivel, paso a la pantalla y salvo progreso
     StrawberryFunction.winLevel(
+      leftButtonFunction: () {
+        Pair<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> nextLevel =
+            Get.find<TriviaLevelController>()
+                .nextLevel(subLevelUseCase.subLevelProgressDomain);
+        Get.off(
+          TriviaSubLevelBackground(
+            subLevelDomain: nextLevel.a,
+            subLevelProgressDomain: nextLevel.b,
+          ),
+        );
+      },
       rightButtonFunction: () => Get.back(closeOverlays: true),
     );
 
@@ -194,6 +206,12 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   _doLooseLevel() {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
+      leftButtonFunction: () => Get.off(
+        TriviaSubLevelBackground(
+          subLevelDomain: subLevelUseCase.subLevelDomain,
+          subLevelProgressDomain: subLevelUseCase.subLevelProgressDomain,
+        ),
+      ),
       rightButtonFunction: () => Get.back(closeOverlays: true),
       childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
         texts: [

@@ -1,7 +1,7 @@
 import 'package:citmatel_strawberry_tools/assets/assets_exporter.dart';
-import 'package:citmatel_strawberry_trivia/src/app/b_domain/progress/trivia_progress_exporter.dart';
-import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_level_domain.dart';
+import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animator/utils/pair.dart';
 import 'package:get/get.dart';
 
 abstract class TriviaLevelController extends GetxController {
@@ -36,4 +36,7 @@ abstract class TriviaLevelController extends GetxController {
 
   ToolsThemesBackgroundImage themeLooksOfGivenLevel(
       TriviaSubLevelProgressDomain progressDomain);
+
+  Pair<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> nextLevel(
+      TriviaSubLevelProgressDomain currentProgress);
 }

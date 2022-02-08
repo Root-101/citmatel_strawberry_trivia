@@ -2,6 +2,7 @@ import 'package:citmatel_strawberry_tools/assets/assets_exporter.dart';
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 import 'package:citmatel_strawberry_trivia/src/ui/trivia_ui_exporter.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animator/utils/pair.dart';
 import 'package:get/get.dart';
 import 'package:tuple/tuple.dart';
 
@@ -114,4 +115,9 @@ class TriviaLevelControllerImpl extends TriviaLevelController {
   ToolsThemesBackgroundImage themeLooksOfGivenLevel(
           TriviaSubLevelProgressDomain progressDomain) =>
       levelUseCase.themeLooksOfGivenLevel(progressDomain);
+
+  @override
+  Pair<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> nextLevel(
+          TriviaSubLevelProgressDomain currentProgress) =>
+      levelUseCase.nextLevel(currentProgress);
 }
