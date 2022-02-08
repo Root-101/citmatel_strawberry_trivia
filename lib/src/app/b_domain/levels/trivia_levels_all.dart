@@ -8,11 +8,11 @@ class TriviaLevelsAll {
     TriviaLevelConocimientoGeneral.levelConocimientoGeneral,
     TriviaLevelCienciasNaturales.levelCienciasNaturales,
     TriviaLevelTecnologias.levelTecnologias,
-    TriviaLevelTecnologias.levelTecnologias.clone(),
-    TriviaLevelTecnologias.levelTecnologias.clone(),
-    TriviaLevelTecnologias.levelTecnologias.clone(),
-    TriviaLevelTecnologias.levelTecnologias.clone(),
-    TriviaLevelTecnologias.levelTecnologias.clone(),
-    TriviaLevelTecnologias.levelTecnologias.clone(),
+    TriviaLevelTecnologias.levelTecnologias.clone()..id = 4,
+    TriviaLevelTecnologias.levelTecnologias.clone()..id = 5,
+    TriviaLevelTecnologias.levelTecnologias.clone()..id = 6,
+    TriviaLevelTecnologias.levelTecnologias.clone()..id = 7,
+    TriviaLevelTecnologias.levelTecnologias.clone()..id = 8,
+    TriviaLevelTecnologias.levelTecnologias.clone()..id = 9,
   ];
 }
