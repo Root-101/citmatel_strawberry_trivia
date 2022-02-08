@@ -54,6 +54,6 @@ dev_dependencies:
 flutter:
   assets:
     - packages/citmatel_strawberry_trivia/assets/icons/clock.svg
-    - packages/citmatel_strawberry_trivia/assets/images/background.jpg
+    - packages/citmatel_strawberry_trivia/assets/images/background.png
 
   uses-material-design: true
