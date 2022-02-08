@@ -50,10 +50,17 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.transparent, //pa si por si acaso
-        image: DecorationImage(
-          image: AssetImage(TriviaAssets.WALLPAPER),
-          fit: BoxFit.cover,
+        gradient: LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: [
+            Get.find<TriviaLevelController>()
+                .themeLooksOfGivenLevel(widget.subLevelProgressDomain)
+                .colorStrong,
+            Get.find<TriviaLevelController>()
+                .themeLooksOfGivenLevel(widget.subLevelProgressDomain)
+                .colorLight,
+          ],
         ),
       ),
       child: AnimatedSwitcher(
