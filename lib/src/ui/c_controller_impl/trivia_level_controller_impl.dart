@@ -91,7 +91,7 @@ class TriviaLevelControllerImpl extends TriviaLevelController {
     Tuple2<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> tuple =
         Get.find<TriviaRandomUseCase>().randomSubLevel();
     print(tuple);
-    return TriviaSubLevelBackground(
+    return TriviaSubLevelLoading(
       subLevelDomain: tuple.item1,
       subLevelProgressDomain: tuple.item2,
     );
@@ -101,7 +101,7 @@ class TriviaLevelControllerImpl extends TriviaLevelController {
   Widget randomSubLevelOf(TriviaLevelDomain level) {
     Tuple2<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> tuple =
         Get.find<TriviaRandomUseCase>().randomSubLevelOf(level);
-    return TriviaSubLevelBackground(
+    return TriviaSubLevelLoading(
       subLevelDomain: tuple.item1,
       subLevelProgressDomain: tuple.item2,
     );
