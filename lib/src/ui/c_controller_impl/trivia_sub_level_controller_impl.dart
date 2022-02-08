@@ -34,6 +34,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   late bool _showTutorial;
 
+  late TutorialCoachMark tutorialCoach;
+
   TriviaSubLevelControllerImpl({
     required TriviaSubLevelDomain subLevelDomain,
     required TriviaSubLevelProgressDomain subLevelProgressDomain,
@@ -91,7 +93,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         showTutorialRight = false;
         isShowingTutorial = true;
         // Continue the tutorial.
-        StrawberryTutorial.showTutorial(
+        tutorialCoach = StrawberryTutorial.showTutorial(
           context: context,
           targets: [
             StrawberryTutorial.addTarget(
@@ -120,7 +122,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         showTutorialWrong = false;
         isShowingTutorial = true;
         // Continue the tutorial.
-        StrawberryTutorial.showTutorial(
+        tutorialCoach = StrawberryTutorial.showTutorial(
           context: context,
           targets: [
             StrawberryTutorial.addTarget(

@@ -2,6 +2,7 @@ import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_domain_export
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
 abstract class TriviaSubLevelController extends GetxController {
   static const String TAG = "sub-level-controller";
@@ -53,6 +54,8 @@ abstract class TriviaSubLevelController extends GetxController {
 
   //devuelve el numero del subnivel en los niveles, basicamene el id del subnivel
   int subLevelNumber();
+
+  TutorialCoachMark get tutorialCoach;
 }
 
 enum QuestionState {
