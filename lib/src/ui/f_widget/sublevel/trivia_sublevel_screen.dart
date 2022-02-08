@@ -77,31 +77,37 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   Widget build(BuildContext context) {
     return GetBuilder<TriviaSubLevelController>(
       builder: (_) {
-        return SafeArea(
-          child: Stack(
-            children: [
-              Column(
-                children: [
-                  //Build stepper
-                  _buildStepper(_key1),
-                  //Build the Question card
-                  TriviaSubLevelQuestionCard(
-                    key2: _key2,
-                    key3: _key3,
-                    key4: _key4,
-                    key5: _key5,
-                    key6: _key6,
-                    key7: _key7,
-                  ),
-                ],
-              ),
-              Align(
-                alignment: Alignment.topCenter,
-                child: StrawberryWidgets.confettiWidget(
-                  confettiController: _controller.confettiController,
+        return CommonsSubLevelBuilder.buildScaffold(
+          tema: _controller.subLevelTheme(),
+          nivel: _controller.subLevelNumber(),
+          stars: _controller.generateProgress(),
+          maxStar: TriviaSubLevelController.MAX_STARS,
+          body: SafeArea(
+            child: Stack(
+              children: [
+                Column(
+                  children: [
+                    //Build stepper
+                    _buildStepper(_key1),
+                    //Build the Question card
+                    TriviaSubLevelQuestionCard(
+                      key2: _key2,
+                      key3: _key3,
+                      key4: _key4,
+                      key5: _key5,
+                      key6: _key6,
+                      key7: _key7,
+                    ),
+                  ],
                 ),
-              ),
-            ],
+                Align(
+                  alignment: Alignment.topCenter,
+                  child: StrawberryWidgets.confettiWidget(
+                    confettiController: _controller.confettiController,
+                  ),
+                ),
+              ],
+            ),
           ),
         );
       },

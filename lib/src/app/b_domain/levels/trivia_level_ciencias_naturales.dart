@@ -4,7 +4,7 @@ import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 class TriviaLevelCienciasNaturales {
   static final TriviaLevelDomain levelCienciasNaturales = TriviaLevelDomain(
     id: 2,
-    theme: "Ciencias Naturales",
+    theme: "Ciencias",
     themeBackgroundImage: ToolsThemesAssets.THEME_CIENCIAS_BACKGROUND,
     sublevel: [
       TriviaSubLevelDomain(

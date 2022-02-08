@@ -99,4 +99,14 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
         subLevelProgressDomain.triviaSubLevelDomainId ==
             Get.find<TriviaLevelUseCase>().findAll()[0].sublevel[0].id;
   }
+
+  String subLevelTheme() {
+    return Get.find<TriviaLevelUseCase>()
+        .findAll()[subLevelProgressDomain.triviaLevelDomainId]
+        .theme;
+  }
+
+  int subLevelNumber() {
+    return subLevelDomain.id;
+  }
 }
