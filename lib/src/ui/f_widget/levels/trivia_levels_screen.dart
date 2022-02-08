@@ -32,7 +32,7 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
             buildThemeUrlImage: (levelDomain) =>
                 levelDomain.themeBackgroundImage.urlImage,
             //nivel abierto, entrar directo al juego
-            openWidget: TriviaSubLevelBackground(
+            openWidget: TriviaSubLevelLoading(
               subLevelDomain: TriviaLevelTutorial.tutorialSubLevel,
               subLevelProgressDomain:
                   TriviaLevelTutorial.tutorialSubLevelProgress(),
@@ -117,7 +117,7 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
                         //cantidad de veces jugado el subnivel
                         contPlayedTimes: progressDomain.contPlayedTimes,
                         //nivel abierto, juego como tal
-                        openWidget: TriviaSubLevelBackground(
+                        openWidget: TriviaSubLevelLoading(
                           subLevelDomain: subLevelDomain,
                           subLevelProgressDomain: progressDomain,
                         ),

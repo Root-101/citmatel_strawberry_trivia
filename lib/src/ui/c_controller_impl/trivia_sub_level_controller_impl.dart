@@ -193,7 +193,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
             Get.find<TriviaLevelController>()
                 .nextLevel(subLevelUseCase.subLevelProgressDomain);
         Get.off(
-          TriviaSubLevelBackground(
+          TriviaSubLevelLoading(
             subLevelDomain: nextLevel.a,
             subLevelProgressDomain: nextLevel.b,
           ),
@@ -209,7 +209,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
       leftButtonFunction: () => Get.off(
-        TriviaSubLevelBackground(
+        TriviaSubLevelLoading(
           subLevelDomain: subLevelUseCase.subLevelDomain,
           subLevelProgressDomain: subLevelUseCase.subLevelProgressDomain,
         ),
