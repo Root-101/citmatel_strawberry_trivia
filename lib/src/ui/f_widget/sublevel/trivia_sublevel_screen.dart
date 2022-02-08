@@ -27,7 +27,7 @@ class TriviaSubLevelScreen extends StatefulWidget {
 
 class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   late final TriviaSubLevelController _controller;
-
+  late TutorialCoachMark tutorialCoachMark;
   List<TargetFocus> targets = [];
 
   // Steps in the tutorial.
@@ -52,7 +52,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         initTargets();
         _controller.stopCountdown();
         // Start the tutorial.
-        StrawberryTutorial.showTutorial(
+        tutorialCoachMark = StrawberryTutorial.showTutorial(
           context: context,
           targets: targets,
           onFinish: () => _controller.playCountdown(),
@@ -68,6 +68,8 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
 
   @override
   void dispose() {
+    tutorialCoachMark.finish();
+    _controller.tutorialCoach.finish();
     _controller.dispose();
     Get.delete<TriviaSubLevelController>();
     super.dispose();
