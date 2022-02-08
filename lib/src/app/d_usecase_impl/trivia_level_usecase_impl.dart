@@ -1,3 +1,4 @@
+import 'package:citmatel_strawberry_tools/assets/assets_exporter.dart';
 import 'package:clean_core/clean_core.dart';
 import 'package:get/get.dart';
 
@@ -12,5 +13,13 @@ class TriviaLevelUseCaseImpl extends DefaultReadUseCase<TriviaLevelDomain>
     return Get.find<TriviaLevelUseCase>()
         .findBy(progressDomain.triviaLevelDomainId)
         .theme;
+  }
+
+  @override
+  ToolsThemesBackgroundImage themeLooksOfGivenLevel(
+      TriviaSubLevelProgressDomain progressDomain) {
+    return Get.find<TriviaLevelUseCase>()
+        .findBy(progressDomain.triviaLevelDomainId)
+        .themeBackgroundImage;
   }
 }
