@@ -4,7 +4,7 @@ import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 class TriviaLevelTecnologias {
   static final TriviaLevelDomain levelTecnologias = TriviaLevelDomain(
     id: 3,
-    theme: "Tecnologías",
+    theme: "Tecnología",
     themeBackgroundImage: ToolsThemesAssets.THEME_TECNOLOGIA_BACKGROUND,
     sublevel: [
       TriviaSubLevelDomain(
