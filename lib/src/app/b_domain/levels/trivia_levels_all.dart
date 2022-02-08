@@ -8,5 +8,11 @@ class TriviaLevelsAll {
     TriviaLevelConocimientoGeneral.levelConocimientoGeneral,
     TriviaLevelCienciasNaturales.levelCienciasNaturales,
     TriviaLevelTecnologias.levelTecnologias,
+    TriviaLevelTecnologias.levelTecnologias.clone(),
+    TriviaLevelTecnologias.levelTecnologias.clone(),
+    TriviaLevelTecnologias.levelTecnologias.clone(),
+    TriviaLevelTecnologias.levelTecnologias.clone(),
+    TriviaLevelTecnologias.levelTecnologias.clone(),
+    TriviaLevelTecnologias.levelTecnologias.clone(),
   ];
 }
