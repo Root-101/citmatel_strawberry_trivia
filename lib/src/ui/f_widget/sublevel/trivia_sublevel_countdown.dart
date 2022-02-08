@@ -6,8 +6,8 @@ import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 
 class TriviaSubLevelCountdown extends StatefulWidget {
   final GlobalKey key2;
-
   final GlobalKey key3;
+  final Size size;
 
   @override
   State<StatefulWidget> createState() =>
@@ -16,6 +16,7 @@ class TriviaSubLevelCountdown extends StatefulWidget {
   TriviaSubLevelCountdown({
     required this.key2,
     required this.key3,
+    required this.size,
   });
 }
 
@@ -57,8 +58,8 @@ class _AnimatedLiquidLinearProgressIndicatorState
       key: widget.key2,
       children: [
         Container(
-          padding: EdgeInsets.all(10),
-          height: 70,
+          padding: EdgeInsets.symmetric(vertical: widget.size.width / 41),
+          height: widget.size.height / 11,
           child: LiquidLinearProgressIndicator(
             //Value of the progress bar.
             value: percentage,
@@ -79,7 +80,7 @@ class _AnimatedLiquidLinearProgressIndicatorState
         ),
         Positioned.fill(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25),
+            padding: EdgeInsets.symmetric(horizontal: widget.size.width / 19),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -88,12 +89,12 @@ class _AnimatedLiquidLinearProgressIndicatorState
                   key: widget.key3,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: widget.size.width / 15,
                   ),
                 ),
                 SvgPicture.asset(
                   TriviaAssets.CLOCK,
-                  width: 30,
+                  width: widget.size.width / 15,
                   color: Colors.white,
                 ),
               ],
