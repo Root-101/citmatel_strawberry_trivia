@@ -16,6 +16,7 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
         int maxStarsAll = _.maxStarsAll();
 
         return CommonsLevelsThemeScreen<TriviaLevelDomain>(
+          title: "Trivia",
           tutorialTile: CommonsLevelsThemeSingleTile<TriviaLevelDomain>(
             winedStars: TriviaLevelTutorial.tutorialSubLevelProgress().stars,
             maxStars: TriviaSubLevelController.MAX_STARS,
