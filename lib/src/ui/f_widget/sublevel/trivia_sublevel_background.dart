@@ -39,7 +39,7 @@ class _TriviaSubLevelBackgroundState extends State<TriviaSubLevelBackground> {
             "Tema: ${Get.find<TriviaLevelController>().themeOfGivenLevel(widget.subLevelProgressDomain)}"
           ],
           secondText: [
-            "Nivel: ${widget.subLevelProgressDomain.triviaLevelDomainId}"
+            "Nivel: ${widget.subLevelProgressDomain.triviaSubLevelDomainId}"
           ],
         );
       },
