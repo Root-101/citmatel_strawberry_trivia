@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
 abstract class TriviaSubLevelController extends GetxController {
-  static const String TAG = "sub-level-controller";
+  static const String TAG = "trivia-sub-level-controller";
 
   ///la cantidad de estrellas(visualmente) va a estar entre [0,3] inclusive
   static const int MAX_STARS = 3;
@@ -33,6 +33,7 @@ abstract class TriviaSubLevelController extends GetxController {
   int get lastSelectedId;
 
   String get currentQuestion;
+
   List<TriviaQuestionAnswerDomain> get currentAnswers;
 
   void stopTutorial();
@@ -67,7 +68,10 @@ abstract class TriviaSubLevelController extends GetxController {
   //devuelve el numero del subnivel en los niveles, basicamene el id del subnivel
   int subLevelNumber();
 
-  TutorialCoachMark get tutorialCoach;
+  void initTutorialCoachMark({
+    required BuildContext context,
+    required List<TargetFocus> targets,
+  });
 }
 
 enum QuestionState {

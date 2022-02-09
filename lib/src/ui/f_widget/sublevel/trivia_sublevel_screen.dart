@@ -45,31 +45,26 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
 
     if (_controller.showTutorial) {
       //Start showcase view after current widget frames are drawn.
-      WidgetsBinding.instance!.addPostFrameCallback((duration) async {
-        // Is necessary to wait a few seconds because the widgets haven't been created.
-        await Future.delayed(Duration(milliseconds: 500));
-        // Initialice the steps of the tutorial.
-        initTargets();
-        _controller.stopCountdown();
-        // Start the tutorial.
-        tutorialCoachMark = StrawberryTutorial.showTutorial(
-          context: context,
-          targets: targets,
-          onFinish: () => _controller.playCountdown(),
-          onSkip: () {
-            _controller.playCountdown();
-            _controller.stopTutorial();
-          },
-        );
-      });
+      WidgetsBinding.instance!.addPostFrameCallback(
+        (duration) async {
+          // Is necessary to wait a few seconds because the widgets haven't been created.
+          await Future.delayed(Duration(milliseconds: 500));
+          // Initialice the steps of the tutorial.
+          initTargets();
+          _controller.stopCountdown();
+          // Start the tutorial.
+          _controller.initTutorialCoachMark(
+            context: context,
+            targets: targets,
+          );
+        },
+      );
     }
     super.initState();
   }
 
   @override
   void dispose() {
-    tutorialCoachMark.finish();
-    _controller.tutorialCoach.finish();
     _controller.dispose();
     Get.delete<TriviaSubLevelController>();
     super.dispose();

@@ -34,7 +34,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   late bool _showTutorial;
 
-  late TutorialCoachMark tutorialCoach;
+  TutorialCoachMark? _tutorialCoachMark;
 
   TriviaSubLevelControllerImpl({
     required TriviaSubLevelDomain subLevelDomain,
@@ -93,7 +93,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         showTutorialRight = false;
         isShowingTutorial = true;
         // Continue the tutorial.
-        tutorialCoach = StrawberryTutorial.showTutorial(
+        _tutorialCoachMark = StrawberryTutorial.showTutorial(
           context: context,
           targets: [
             StrawberryTutorial.addTarget(
@@ -122,7 +122,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         showTutorialWrong = false;
         isShowingTutorial = true;
         // Continue the tutorial.
-        tutorialCoach = StrawberryTutorial.showTutorial(
+        _tutorialCoachMark = StrawberryTutorial.showTutorial(
           context: context,
           targets: [
             StrawberryTutorial.addTarget(
@@ -332,4 +332,23 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   String subLevelTheme() => subLevelUseCase.subLevelTheme();
 
   int subLevelNumber() => subLevelUseCase.subLevelNumber();
+  void initTutorialCoachMark({
+    required BuildContext context,
+    required List<TargetFocus> targets,
+  }) {
+    _tutorialCoachMark = StrawberryTutorial.showTutorial(
+      context: context,
+      targets: targets,
+      onFinish: () => playCountdown(),
+      onSkip: () {
+        stopTutorial();
+      },
+    );
+  }
+
+  @override
+  void dispose() {
+    _tutorialCoachMark?.finish();
+    super.dispose();
+  }
 }
