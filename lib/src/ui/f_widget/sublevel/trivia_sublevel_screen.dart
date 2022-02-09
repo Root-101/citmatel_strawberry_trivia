@@ -77,6 +77,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return GetBuilder<TriviaSubLevelController>(
       builder: (_) {
         return CommonsSubLevelBuilder.buildScaffold(
@@ -90,7 +91,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
                 Column(
                   children: [
                     //Build stepper
-                    _buildStepper(_key1),
+                    _buildStepper(_key1, size),
                     //Build the Question card
                     TriviaSubLevelQuestionCard(
                       key2: _key2,
@@ -99,6 +100,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
                       key5: _key5,
                       key6: _key6,
                       key7: _key7,
+                      size: size,
                     ),
                   ],
                 ),
@@ -116,34 +118,37 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
     );
   }
 
-  _buildStepper(GlobalKey key1) {
-    return Container(
-      key: key1,
-      padding: const EdgeInsets.all(10),
-      // The widget ShowCase is used to show a tutorial step by step to the user.
-      child: DotStepper(
-        //Amount of dots to show.
-        dotCount: _controller.dotCount,
-        //Size of the dots.
-        dotRadius: 25,
-        //Current selected dot.
-        activeStep: _controller.activeStep,
-        //Type of shape of the dot.
-        shape: Shape.circle,
-        //Space between the dots.
-        spacing: 15,
-        //The animation that is shown when switch from a dot to another.
-        indicator: Indicator.jump,
-        // So the user can change the step.
-        tappingEnabled: false,
+  _buildStepper(GlobalKey key1, Size size) {
+    return FittedBox(
+      fit: BoxFit.contain,
+      child: Container(
+        key: key1,
+        padding: const EdgeInsets.all(10),
+        // The widget ShowCase is used to show a tutorial step by step to the user.
+        child: DotStepper(
+          //Amount of dots to show.
+          dotCount: _controller.dotCount,
+          //Size of the dots.
+          dotRadius: size.width / 17,
+          //Current selected dot.
+          activeStep: _controller.activeStep,
+          //Type of shape of the dot.
+          shape: Shape.circle,
+          //Space between the dots.
+          spacing: size.width / 25,
+          //The animation that is shown when switch from a dot to another.
+          indicator: Indicator.jump,
+          // So the user can change the step.
+          tappingEnabled: false,
 
-        // DOT-STEPPER DECORATIONS
-        fixedDotDecoration: FixedDotDecoration(
-          color: secondaryColor,
-        ),
+          // DOT-STEPPER DECORATIONS
+          fixedDotDecoration: FixedDotDecoration(
+            color: secondaryColor,
+          ),
 
-        indicatorDecoration: IndicatorDecoration(
-          color: primaryColor,
+          indicatorDecoration: IndicatorDecoration(
+            color: primaryColor,
+          ),
         ),
       ),
     );
