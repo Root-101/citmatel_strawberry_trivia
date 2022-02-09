@@ -258,14 +258,20 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   int generateProgress() {
-    //TODO corregir a mejor logica
-    double progress = (_numOfCorrectAnswers / dotCount) * 100;
-    if (progress >= 80) {
-      return TriviaSubLevelController.MAX_STARS;
-    } else if (progress >= 60) {
-      return 2;
-    } else if (progress >= 20) {
-      return 1;
+    double progress = (remainingLives / lives) * 100;
+    if (progress >= 99) {
+      return TriviaSubLevelController.STARS_MULTIPLIER *
+          TriviaSubLevelController.MAX_STARS; //3 enteras
+    } else if (progress >= 79) {
+      return 2 * TriviaSubLevelController.STARS_MULTIPLIER +
+          1; //2 enteras + media
+    } else if (progress >= 59) {
+      return 2 * TriviaSubLevelController.STARS_MULTIPLIER; //2 enteras
+    } else if (progress >= 39) {
+      return 1 * TriviaSubLevelController.STARS_MULTIPLIER +
+          1; //1 entera + media
+    } else if (progress >= 19) {
+      return 1 * TriviaSubLevelController.STARS_MULTIPLIER; //1 entera
     } else {
       return 0;
     }
