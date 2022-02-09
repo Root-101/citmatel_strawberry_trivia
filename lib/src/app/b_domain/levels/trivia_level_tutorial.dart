@@ -53,9 +53,15 @@ class TriviaLevelTutorial {
 
   static TriviaSubLevelDomain tutorialSubLevel = tutorial.sublevel[0];
 
-  static TriviaSubLevelProgressDomain tutorialSubLevelProgress() =>
-      Get.find<TriviaSubLevelProgressUseCase>().findByAll(
-        TriviaLevelTutorial.tutorial,
-        TriviaLevelTutorial.tutorialSubLevel,
-      );
+  static TriviaSubLevelProgressDomain tutorialSubLevelProgress({
+    int starsMultiplier = 2,
+  }) {
+    TriviaSubLevelProgressDomain progress =
+        Get.find<TriviaSubLevelProgressUseCase>().findByAll(
+      TriviaLevelTutorial.tutorial,
+      TriviaLevelTutorial.tutorialSubLevel,
+    );
+    progress..stars = progress.stars ~/ starsMultiplier;
+    return progress;
+  }
 }

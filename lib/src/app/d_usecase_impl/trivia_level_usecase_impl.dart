@@ -81,7 +81,9 @@ class TriviaLevelUseCaseImpl extends DefaultReadUseCase<TriviaLevelDomain>
     //POR DEFECTO, NUNK SE DEBE LLAGAR AQUI
     //pal primer subnivel del primer nivel. Me salto el 0 que es el tutorial
     print("no se debe llegar aquí");
-    return Pair(TriviaLevelTutorial.tutorialSubLevel,
-        TriviaLevelTutorial.tutorialSubLevelProgress());
+    return Pair(
+        TriviaLevelTutorial.tutorialSubLevel,
+        TriviaLevelTutorial
+            .tutorialSubLevelProgress()); //TODO: pasarle el multiplier del controller, que en realidad deberia estar aqui
   }
 }
