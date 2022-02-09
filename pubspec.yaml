@@ -28,6 +28,7 @@ dependencies:
   flutter_animator: ^3.2.0
   tutorial_coach_mark: ^1.2.1
   confetti: ^0.6.0
+  auto_size_text: ^3.0.0
 
   #Tools
   citmatel_strawberry_tools:
