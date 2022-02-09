@@ -123,7 +123,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
       fit: BoxFit.contain,
       child: Container(
         key: key1,
-        padding: const EdgeInsets.all(10),
+        padding: EdgeInsets.all(size.height / 37),
         // The widget ShowCase is used to show a tutorial step by step to the user.
         child: DotStepper(
           //Amount of dots to show.
