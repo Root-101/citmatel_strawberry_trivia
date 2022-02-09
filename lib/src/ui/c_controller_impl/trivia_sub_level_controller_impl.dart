@@ -258,7 +258,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   int generateProgress() {
-    double progress = (remainingLives / lives) * 100;
+    double progress =
+        ((dotCount - (_activeStep - _numOfCorrectAnswers)) / dotCount) * 100;
+
     if (progress >= 99) {
       return TriviaSubLevelController.STARS_MULTIPLIER *
           TriviaSubLevelController.MAX_STARS; //3 enteras
