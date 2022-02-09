@@ -16,7 +16,9 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
       int maxStarsAll = controller.maxStarsAll();
       return CommonsLevelsThemeScreen<TriviaLevelDomain>(
         tutorialTile: CommonsLevelsThemeSingleTile<TriviaLevelDomain>(
-          winedStars: TriviaLevelTutorial.tutorialSubLevelProgress().stars,
+          winedStars: TriviaLevelTutorial.tutorialSubLevelProgress(
+            starsMultiplier: TriviaSubLevelController.STARS_MULTIPLIER,
+          ).stars,
           maxStars: TriviaSubLevelController.MAX_STARS,
           wonedLevel: controller.wonedLevel(TriviaLevelTutorial.tutorial),
 
@@ -34,7 +36,9 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
           openWidget: TriviaSubLevelLoading(
             subLevelDomain: TriviaLevelTutorial.tutorialSubLevel,
             subLevelProgressDomain:
-                TriviaLevelTutorial.tutorialSubLevelProgress(),
+                TriviaLevelTutorial.tutorialSubLevelProgress(
+              starsMultiplier: TriviaSubLevelController.STARS_MULTIPLIER,
+            ),
           ),
         ),
         //widget que se genera cada vez que se selecciona el aleatorio
