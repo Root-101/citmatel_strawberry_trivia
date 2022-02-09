@@ -38,14 +38,16 @@ class TriviaLevelControllerImpl extends TriviaLevelController {
     return levelDomain.sublevel.length * TriviaSubLevelController.MAX_STARS;
   }
 
+  ///Las devuelve ya divididas por el multiplier
   @override
   int winedStars(TriviaLevelDomain levelDomain) {
-    return Get.find<TriviaSubLevelProgressUseCase>()
+    int wined = Get.find<TriviaSubLevelProgressUseCase>()
         .findByLevelId(levelDomain.id)
         .fold(
           0,
           (previousValue, element) => previousValue + element.stars,
         );
+    return wined ~/ TriviaSubLevelController.STARS_MULTIPLIER;
   }
 
   @override
