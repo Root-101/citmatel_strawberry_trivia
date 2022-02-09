@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
@@ -11,6 +12,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
   late final GlobalKey key5;
   late final GlobalKey key6;
   late final GlobalKey key7;
+  late final Size size;
 
   TriviaSubLevelQuestionCard({
     required this.key2,
@@ -19,6 +21,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
     required this.key5,
     required this.key6,
     required this.key7,
+    required this.size,
     Key? key,
   }) : super(key: key);
 
@@ -37,15 +40,15 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           child: child,
         );
       },
-      child: _buildCurrentQuestion(context),
+      child: _buildCurrentQuestion(context, size),
     );
   }
 
-  _buildCurrentQuestion(BuildContext context) {
+  _buildCurrentQuestion(BuildContext context, Size size) {
     return Container(
       //para que cambie para la proxima en el switcher
       key: ValueKey(controller.activeStep),
-      margin: const EdgeInsets.symmetric(horizontal: 10),
+      margin: EdgeInsets.symmetric(horizontal: size.width / 37),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -53,18 +56,20 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           TriviaSubLevelCountdown(
             key2: key2,
             key3: key3,
+            size: size,
           ),
           //// The Question ////
-          Text(
+          AutoSizeText(
             // Text of the current question.
             controller.currentQuestion,
             key: key4,
             style: TextStyle(
               color: textQuestionColor,
-              fontSize: 30,
+              fontSize: size.width / 13,
               fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.center,
+            maxLines: 3,
           ),
 
           const SizedBox(height: 10),
