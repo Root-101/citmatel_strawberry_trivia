@@ -100,6 +100,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
                       key5: _key5,
                       key6: _key6,
                       key7: _key7,
+                      size: size,
                     ),
                   ],
                 ),
