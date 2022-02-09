@@ -48,7 +48,9 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
     return Container(
       //para que cambie para la proxima en el switcher
       key: ValueKey(controller.activeStep),
-      margin: EdgeInsets.symmetric(horizontal: size.width / 37),
+      margin: EdgeInsets.symmetric(
+        horizontal: size.width / 37,
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -58,6 +60,8 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
             key3: key3,
             size: size,
           ),
+          const SizedBox(height: 10),
+
           //// The Question ////
           AutoSizeText(
             // Text of the current question.
@@ -107,7 +111,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
   Widget _buildOption(int id, String answerText, BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-        top: size.height / 41,
+        top: size.height / 29,
         left: 0,
         right: 0,
       ),
