@@ -58,8 +58,8 @@ class _AnimatedLiquidLinearProgressIndicatorState
       key: widget.key2,
       children: [
         Container(
-          padding: EdgeInsets.symmetric(vertical: widget.size.width / 41),
-          height: widget.size.height / 11,
+          padding: EdgeInsets.symmetric(vertical: widget.size.width / 45),
+          height: widget.size.height / 10,
           child: LiquidLinearProgressIndicator(
             //Value of the progress bar.
             value: percentage,
