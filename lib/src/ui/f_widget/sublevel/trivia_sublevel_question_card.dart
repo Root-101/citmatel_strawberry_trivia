@@ -106,8 +106,12 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
 
   Widget _buildOption(int id, String answerText, BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 20, left: 0, right: 0),
-      padding: const EdgeInsets.all(15),
+      margin: EdgeInsets.only(
+        top: size.height / 41,
+        left: 0,
+        right: 0,
+      ),
+      padding: EdgeInsets.all(size.width / 33),
       decoration: BoxDecoration(
         border: Border.all(color: primaryColor),
         borderRadius: BorderRadius.circular(30),
@@ -121,29 +125,31 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
         child: Row(
           children: [
             //// The ID of the Answer ////
-            Text(
+            AutoSizeText(
               "${String.fromCharCode(id + 64)} - ",
               style: TextStyle(
                 color: textAnswerColor,
-                fontSize: 26,
+                fontSize: size.width / 14,
                 fontWeight: FontWeight.bold,
               ),
+              maxLines: 1,
             ),
             //// The Answer ////
             Expanded(
-              child: Text(
+              child: AutoSizeText(
                 "$answerText",
                 style: TextStyle(
                   color: textAnswerColor,
-                  fontSize: 25,
+                  fontSize: size.width / 15,
                 ),
                 textAlign: TextAlign.start,
+                maxLines: 1,
               ),
             ),
             //// The Icon ////
             Container(
-              height: 26,
-              width: 26,
+              height: size.width / 15,
+              width: size.width / 15,
               decoration: BoxDecoration(
                 color: Colors.transparent,
                 borderRadius: BorderRadius.circular(50),
@@ -151,7 +157,8 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
               ),
               child: controller.questionState(id) == QuestionState.Not_answered
                   ? null
-                  : Icon(controller.getTheRightIconData(id), size: 16),
+                  : Icon(controller.getTheRightIconData(id),
+                      size: size.width / 19),
             )
           ],
         ),
