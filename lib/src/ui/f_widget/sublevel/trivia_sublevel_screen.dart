@@ -80,6 +80,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
           tema: _controller.subLevelTheme(),
           nivel: _controller.subLevelNumber(),
           stars: _controller.generateProgress(),
+          deviceSize: size,
           maxStar: TriviaSubLevelController.MAX_STARS,
           body: SafeArea(
             child: Stack(
