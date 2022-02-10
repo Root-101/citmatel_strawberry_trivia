@@ -43,16 +43,6 @@ class TriviaLevelTecnologias {
                 TriviaQuestionAnswerDomain(id: 3, answer: "1000."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "1048576."),
               ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿En qué puerto se ejecuta HTTP?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "80."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "53."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "443."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "23."),
-              ]),
         ],
       ),
       TriviaSubLevelDomain(
@@ -90,8 +80,23 @@ class TriviaLevelTecnologias {
                 TriviaQuestionAnswerDomain(id: 3, answer: "8 Gb/s."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "1 Gb/s."),
               ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 3,
+        question: [
           TriviaQuestionDomain(
-              id: 4,
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿En qué puerto se ejecuta HTTP?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "80."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "53."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "443."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "23."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
               correctAnswerId: 1,
               question:
                   "El sistema de numeración con una raíz de 16 se conoce comúnmente como: ",
@@ -102,7 +107,7 @@ class TriviaLevelTecnologias {
                 TriviaQuestionAnswerDomain(id: 4, answer: "Octales."),
               ]),
           TriviaQuestionDomain(
-              id: 5,
+              id: 3,
               correctAnswerId: 1,
               question: "¿Cuántos bytes hay en un solo Kibibyte?",
               answers: [
@@ -111,8 +116,13 @@ class TriviaLevelTecnologias {
                 TriviaQuestionAnswerDomain(id: 3, answer: "1000."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "1240."),
               ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 4,
+        question: [
           TriviaQuestionDomain(
-              id: 6,
+              id: 1,
               correctAnswerId: 1,
               question:
                   "¿Cuál es el número de teclas en un teclado estándar de Windows?",
