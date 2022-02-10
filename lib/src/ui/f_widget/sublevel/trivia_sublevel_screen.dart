@@ -76,6 +76,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
     return GetBuilder<TriviaSubLevelController>(
       builder: (_) {
         return CommonsSubLevelBuilder.buildScaffold(
+          size: size,
           tema: _controller.subLevelTheme(),
           nivel: _controller.subLevelNumber(),
           stars: _controller.generateProgress(),
