@@ -292,6 +292,12 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   void _endTime() {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
+      leftButtonFunction: () => Get.off(
+        TriviaSubLevelLoading(
+          subLevelDomain: subLevelUseCase.subLevelDomain,
+          subLevelProgressDomain: subLevelUseCase.subLevelProgressDomain,
+        ),
+      ),
       rightButtonFunction: () => Get.back(closeOverlays: true),
       childFirstText: [
         'Te has quedado sin tiempo.',
@@ -334,6 +340,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   String subLevelTheme() => subLevelUseCase.subLevelTheme();
 
   int subLevelNumber() => subLevelUseCase.subLevelNumber();
+
   void initTutorialCoachMark({
     required BuildContext context,
     required List<TargetFocus> targets,
