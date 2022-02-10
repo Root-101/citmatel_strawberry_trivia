@@ -41,28 +41,6 @@ class TriviaLevelConocimientoGeneral {
                 TriviaQuestionAnswerDomain(id: 3, answer: "Pelotas."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "La luna."),
               ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question:
-                  "¿Qué signo del zodíaco está representado por el Cangrejo?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cáncer."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Libra."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Virgo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Sagitario."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question:
-                  "¿Qué bebida alcohólica se elabora a partir de la melaza?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ron."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ginebra."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Vodka."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Whisky."),
-              ]),
         ],
       ),
       TriviaSubLevelDomain(
@@ -103,8 +81,13 @@ class TriviaLevelConocimientoGeneral {
                     id: 3, answer: "Un trastorno psicológico."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Un dibujo animado."),
               ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 3,
+        question: [
           TriviaQuestionDomain(
-              id: 4,
+              id: 1,
               correctAnswerId: 1,
               question: "¿La cinofobia es el miedo a ...?",
               answers: [
@@ -114,7 +97,7 @@ class TriviaLevelConocimientoGeneral {
                 TriviaQuestionAnswerDomain(id: 4, answer: "Gérmenes."),
               ]),
           TriviaQuestionDomain(
-              id: 5,
+              id: 2,
               correctAnswerId: 1,
               question:
                   "¿Cuándo uno tiene envidia se dice que es de que color?",
@@ -125,7 +108,7 @@ class TriviaLevelConocimientoGeneral {
                 TriviaQuestionAnswerDomain(id: 4, answer: "Amarillo."),
               ]),
           TriviaQuestionDomain(
-              id: 6,
+              id: 3,
               correctAnswerId: 1,
               question:
                   "¿Cuál de los siguientes componentes de la sangre forma un tapón en el sitio de las lesiones?",
@@ -136,6 +119,33 @@ class TriviaLevelConocimientoGeneral {
                 TriviaQuestionAnswerDomain(
                     id: 3, answer: "Células blancas de la sangre."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Plasma sanguíneo."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 4,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué signo del zodíaco está representado por el Cangrejo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cáncer."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Libra."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Virgo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Sagitario."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué bebida alcohólica se elabora a partir de la melaza?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Ron."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Ginebra."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Vodka."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Whisky."),
               ]),
         ],
       ),
