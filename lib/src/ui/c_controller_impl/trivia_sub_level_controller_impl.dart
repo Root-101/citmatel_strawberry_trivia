@@ -200,6 +200,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         );
       },
       rightButtonFunction: () => Get.back(closeOverlays: true),
+      stars: generateProgress(),
+      maxStar: TriviaSubLevelController.MAX_STARS,
     );
 
     _doSaveProgress(generateProgress());
@@ -215,16 +217,16 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         ),
       ),
       rightButtonFunction: () => Get.back(closeOverlays: true),
-      childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
-        texts: [
-          _numOfCorrectAnswers == 0
-              ? 'Ninguna respuesta fue correcta.'
-              : 'Has respondido $_numOfCorrectAnswers ${_numOfCorrectAnswers == 1 ? 'pregunta' : 'preguntas'} correctamente.',
-          '${_numOfCorrectAnswers / dotCount >= 0.5 ? 'Solo te' : 'Te'} ${dotCount - _numOfCorrectAnswers == 1 ? 'ha' : 'han'} faltado ${dotCount - _numOfCorrectAnswers}.',
-          'Inténtalo de nuevo.',
-          'El que persevera triunfa.',
-        ],
-      ),
+      childFirstText: [
+        _numOfCorrectAnswers == 0
+            ? 'Ninguna respuesta fue correcta.'
+            : 'Has respondido $_numOfCorrectAnswers ${_numOfCorrectAnswers == 1 ? 'pregunta' : 'preguntas'} correctamente.',
+        '${_numOfCorrectAnswers / dotCount >= 0.5 ? 'Solo te' : 'Te'} ${dotCount - _numOfCorrectAnswers == 1 ? 'ha' : 'han'} faltado ${dotCount - _numOfCorrectAnswers}.',
+        'Inténtalo de nuevo.',
+        'El que persevera triunfa.',
+      ],
+      stars: generateProgress(),
+      maxStar: TriviaSubLevelController.MAX_STARS,
     );
 
     _doSaveProgress(0);
@@ -291,13 +293,13 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
       rightButtonFunction: () => Get.back(closeOverlays: true),
-      childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
-        texts: [
-          'Te has quedado sin tiempo.',
-          'Inténtalo de nuevo.',
-          'El que persevera triunfa.',
-        ],
-      ),
+      childFirstText: [
+        'Te has quedado sin tiempo.',
+        'Inténtalo de nuevo.',
+        'El que persevera triunfa.',
+      ],
+      stars: generateProgress(),
+      maxStar: TriviaSubLevelController.MAX_STARS,
     );
 
     _doSaveProgress(0);
