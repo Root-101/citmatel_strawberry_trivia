@@ -1,5 +1,6 @@
+import 'package:citmatel_strawberry_trivia/src/app/b_domain/levels/trivia_level_3_tecnologias.dart';
+import 'package:citmatel_strawberry_trivia/src/app/b_domain/levels/trivia_level_4_mitology.dart';
 import 'package:citmatel_strawberry_trivia/src/app/b_domain/levels/trivia_level_exporter.dart';
-import 'package:citmatel_strawberry_trivia/src/app/b_domain/levels/trivia_level_tecnologias.dart';
 import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_domain_exporter.dart';
 
 class TriviaLevelsAll {
@@ -8,6 +9,7 @@ class TriviaLevelsAll {
     TriviaLevelConocimientoGeneral.levelConocimientoGeneral,
     TriviaLevelCienciasNaturales.levelCienciasNaturales,
     TriviaLevelTecnologias.levelTecnologias,
+    TriviaLevelMitology.levelMitologias,
     TriviaLevelTecnologias.levelTecnologias.clone()..id = 4,
     TriviaLevelTecnologias.levelTecnologias.clone()..id = 5,
     TriviaLevelTecnologias.levelTecnologias.clone()..id = 6,
