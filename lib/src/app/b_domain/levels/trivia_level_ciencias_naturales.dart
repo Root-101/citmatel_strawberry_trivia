@@ -43,17 +43,6 @@ class TriviaLevelCienciasNaturales {
                 TriviaQuestionAnswerDomain(id: 3, answer: "Piel."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Corazón."),
               ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question:
-                  "¿Cuál de los siguientes es el elemento involucrado en hacer que la sangre humana sea roja?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Hierro."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cobre."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Iridio."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Cobalto."),
-              ]),
         ],
       ),
       TriviaSubLevelDomain(
@@ -89,26 +78,6 @@ class TriviaLevelCienciasNaturales {
                 TriviaQuestionAnswerDomain(id: 2, answer: "Marte."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Mercurio."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Júpiter."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Cuál es la composición química del agua?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "H20."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "C12H6O2."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "CO2."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "H."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿En qué parte del cuerpo se encuentra la tibia?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Pierna."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Brazo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Mano."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Cabeza."),
               ]),
         ],
       ),
@@ -147,8 +116,49 @@ class TriviaLevelCienciasNaturales {
                 TriviaQuestionAnswerDomain(id: 3, answer: "Húmero."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Tibia."),
               ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 4,
+        question: [
           TriviaQuestionDomain(
-              id: 4,
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál de los siguientes es el elemento involucrado en hacer que la sangre humana sea roja?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Hierro."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Cobre."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Iridio."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cobalto."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Cuál es la composición química del agua?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "H20."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "C12H6O2."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "CO2."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "H."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿En qué parte del cuerpo se encuentra la tibia?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Pierna."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Brazo."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mano."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cabeza."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 5,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
               correctAnswerId: 1,
               question:
                   "¿Cómo se conoce más comúnmente al ácido isobutilfenilpropanoico?",
