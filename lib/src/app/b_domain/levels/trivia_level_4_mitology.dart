@@ -4,8 +4,8 @@ import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 class TriviaLevelMitology {
   static final TriviaLevelDomain levelMitologias = TriviaLevelDomain(
     id: 4,
-    theme: "Mitología",
-    themeBackgroundImage: ToolsThemesAssets.THEME_MITOLOGY_BACKGROUND,
+    theme: ToolsThemesAssets.THEME_MITOLOGIA_NAME,
+    themeBackgroundImage: ToolsThemesAssets.THEME_MITOLOGIA_BACKGROUND,
     sublevel: [
       TriviaSubLevelDomain(
         id: 1,
