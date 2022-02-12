@@ -492,6 +492,22 @@ class TriviaLevelMitology {
               ])
         ],
       ),
+      TriviaSubLevelDomain(
+        id: 12,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  "¿En qué animal se basó el cuerpo de la esfinge egipcia?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "León."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Toro."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Caballo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Perro."),
+              ]),
+        ],
+      ),
     ],
   );
 }
