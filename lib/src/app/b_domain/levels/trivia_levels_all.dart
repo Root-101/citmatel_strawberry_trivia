@@ -3,15 +3,14 @@ import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_domain_export
 class TriviaLevelsAll {
   static final List<TriviaLevelDomain> levels = [
     TriviaLevelTutorial.tutorial,
-    TriviaLevelConocimientoGeneral.levelConocimientoGeneral,
-    TriviaLevelCienciasNaturales.levelCienciasNaturales,
+    TriviaLevelGeneral.levelGeneral,
+    TriviaLevelCiencias.levelCiencias,
     TriviaLevelTecnologias.levelTecnologias,
     TriviaLevelMitology.levelMitologias,
+    TriviaLevelDeporte.levelDeporte,
     TriviaLevelGeography.levelGeografia,
-    TriviaLevelTecnologias.levelTecnologias.clone()..id = 5,
-    TriviaLevelTecnologias.levelTecnologias.clone()..id = 6,
-    TriviaLevelTecnologias.levelTecnologias.clone()..id = 7,
-    TriviaLevelTecnologias.levelTecnologias.clone()..id = 8,
-    TriviaLevelTecnologias.levelTecnologias.clone()..id = 9,
+    TriviaLevelHistoria.levelHistoria,
+    TriviaLevelArte.levelArte,
+    TriviaLevelAnimales.levelAnimales,
   ];
 }

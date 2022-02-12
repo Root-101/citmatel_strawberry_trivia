@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 class TriviaLevelTutorial {
   static final TriviaLevelDomain tutorial = TriviaLevelDomain(
     id: 0,
-    theme: "Tutorial",
+    theme: ToolsThemesAssets.THEME_TUTORIAL_NAME,
     themeBackgroundImage: ToolsThemesAssets.THEME_TUTORIAL_BACKGROUND,
     sublevel: [
       TriviaSubLevelDomain(

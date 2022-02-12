@@ -4,7 +4,7 @@ import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 class TriviaLevelGeography {
   static final TriviaLevelDomain levelGeografia = TriviaLevelDomain(
     id: 6,
-    theme: "Geografía",
+    theme: ToolsThemesAssets.THEME_GEOGRAFIA_NAME,
     themeBackgroundImage: ToolsThemesAssets.THEME_GEOGRAFIA_BACKGROUND,
     sublevel: [
       TriviaSubLevelDomain(
