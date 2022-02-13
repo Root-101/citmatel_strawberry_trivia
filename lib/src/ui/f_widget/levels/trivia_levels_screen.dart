@@ -45,11 +45,11 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
         onRandomTap: controller.randomSubLevel,
         //lista de los niveles
         levelsFindAll: controller.findAll(),
-        title: "Trivia",
-        appbarBackgroundColor: Colors.blueAccent,
-        backgroundColor: Colors.blueAccent.withOpacity(0.5),
+        title: TriviaUIModule.MODULE_NAME,
+        appbarBackgroundColor: TriviaUIModule.PRIMARY_COLOR,
+        backgroundColor: TriviaUIModule.SECONDARY_COLOR,
         //background del sliver
-        urlSliverBackground: TriviaAssets.WALLPAPER,
+        urlSliverBackground: TriviaUIModule.URL_MODULE_BACKGROUND,
         winedStars: winedStarsAll,
         maxStars: maxStarsAll,
         //builder de cada tile, uno por tema/uno por nivel
