@@ -45,6 +45,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
   }
 
   _buildCurrentQuestion(BuildContext context, Size size) {
+    int charCode = 0;
     return Container(
       //para que cambie para la proxima en el switcher
       key: ValueKey(controller.activeStep),
@@ -67,10 +68,9 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
             // Text of the current question.
             controller.currentQuestion,
             key: key4,
-            style: TextStyle(
+            style: Get.textTheme.subtitle2?.copyWith(
               color: textQuestionColor,
               fontSize: size.width / 13,
-              fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.center,
             maxLines: 3,
@@ -80,35 +80,48 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           //// The List of Answers ////
           Column(
             key: key5,
-            children: controller.currentAnswers
-                .map(
-                  (answer) => // If the current question don't have been answerer yet ...
-                      controller.questionState(answer.id) ==
-                              QuestionState.Not_answered
-                          ? _buildOption(answer.id, answer.answer, context)
-                          // If is already answered and the correct answer is the selected Bounce else Shake
-                          : controller.isAnswerCorrect(answer.id)
-                              ? Bounce(
-                                  key: key6,
-                                  child: _buildOption(
-                                      answer.id, answer.answer, context),
-                                )
-                              : Shake(
-                                  key: controller.lastSelectedId == answer.id
-                                      ? key7
-                                      : null,
-                                  child: _buildOption(
-                                      answer.id, answer.answer, context),
-                                ),
-                )
-                .toList(),
+            children: controller.currentAnswers.map((answer) {
+              charCode++;
+              // If the current question don't have been answerer yet ...
+              return controller.questionState(answer.id) ==
+                      QuestionState.Not_answered
+                  ? _buildOption(
+                      charCode,
+                      answer.id,
+                      answer.answer,
+                      context,
+                    )
+                  // If is already answered and the correct answer is the selected Bounce else Shake
+                  : controller.isAnswerCorrect(answer.id)
+                      ? Bounce(
+                          key: key6,
+                          child: _buildOption(
+                            charCode,
+                            answer.id,
+                            answer.answer,
+                            context,
+                          ),
+                        )
+                      : Shake(
+                          key: controller.lastSelectedId == answer.id
+                              ? key7
+                              : null,
+                          child: _buildOption(
+                            charCode,
+                            answer.id,
+                            answer.answer,
+                            context,
+                          ),
+                        );
+            }).toList(),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildOption(int id, String answerText, BuildContext context) {
+  Widget _buildOption(
+      int charCode, int id, String answerText, BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
         top: size.height / 29,
@@ -130,11 +143,10 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
           children: [
             //// The ID of the Answer ////
             AutoSizeText(
-              "${String.fromCharCode(id + 64)} - ",
-              style: TextStyle(
+              "${String.fromCharCode(charCode + 64)} - ",
+              style: Get.textTheme.subtitle1?.copyWith(
                 color: textAnswerColor,
                 fontSize: size.width / 14,
-                fontWeight: FontWeight.bold,
               ),
               maxLines: 1,
             ),
@@ -142,7 +154,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
             Expanded(
               child: AutoSizeText(
                 "$answerText",
-                style: TextStyle(
+                style: Get.textTheme.subtitle2?.copyWith(
                   color: textAnswerColor,
                   fontSize: size.width / 15,
                 ),

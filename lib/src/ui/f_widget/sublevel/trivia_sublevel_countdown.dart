@@ -87,7 +87,7 @@ class _AnimatedLiquidLinearProgressIndicatorState
                 Text(
                   "$remaining seg",
                   key: widget.key3,
-                  style: TextStyle(
+                  style: Get.textTheme.bodyText1?.copyWith(
                     color: Colors.white,
                     fontSize: widget.size.width / 15,
                   ),
