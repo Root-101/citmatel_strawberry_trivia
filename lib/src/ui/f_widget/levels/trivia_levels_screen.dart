@@ -47,7 +47,7 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
         levelsFindAll: controller.findAll(),
         title: TriviaUIModule.MODULE_NAME,
         appbarBackgroundColor: TriviaUIModule.PRIMARY_COLOR,
-        backgroundColor: TriviaUIModule.SECONDARY_COLOR,
+        backgroundColor: TriviaUIModule.SECONDARY_COLOR.withOpacity(0.5),
         //background del sliver
         urlSliverBackground: TriviaUIModule.URL_MODULE_BACKGROUND,
         winedStars: winedStarsAll,
