@@ -207,11 +207,11 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         );
       },
       rightButtonFunction: () => Get.back(closeOverlays: true),
-      stars: generateProgress(),
+      stars: generateProgress(increment: 1),
       maxStar: TriviaSubLevelController.MAX_STARS,
     );
 
-    _doSaveProgress(generateProgress());
+    _doSaveProgress(generateProgress(increment: 1));
   }
 
   _doLooseLevel() {
@@ -232,7 +232,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         'Inténtalo de nuevo.',
         'El que persevera triunfa.',
       ],
-      stars: generateProgress(),
+      stars: generateProgress(increment: 1),
       maxStar: TriviaSubLevelController.MAX_STARS,
     );
 
@@ -266,9 +266,13 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     return subLevelUseCase.iconsMap[questionState(index)]!;
   }
 
-  int generateProgress() {
+  int generateProgress({int increment = 0}) {
+    //cuando se gana el nivel el _activeStep no se incrementa para no dar out of bound
+    //por lo tanto al llamar al ganar o perder se le incrementa manual el step
+    int step = _activeStep + increment;
+
     double progress =
-        ((dotCount - (_activeStep - _numOfCorrectAnswers)) / dotCount) * 100;
+        ((dotCount - (step - _numOfCorrectAnswers)) / dotCount) * 100;
 
     if (progress >= 99) {
       return TriviaSubLevelController.STARS_MULTIPLIER *
