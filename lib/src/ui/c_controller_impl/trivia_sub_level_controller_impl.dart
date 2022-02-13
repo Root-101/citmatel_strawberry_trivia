@@ -84,8 +84,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     _isAnswered = true;
     lastSelectedId = selectedId;
 
-    if (isAnswerCorrect(selectedId)) {
-      _numOfCorrectAnswers++;
+    bool isCorrect =
+        isAnswerCorrect(selectedId); //almacenado para usarlo mas abajo
+    if (isCorrect) {
       StrawberryAudio.playAudioCorrect();
       _makeConffeti();
 
@@ -155,6 +156,12 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     if (!showTutorial || !isShowingTutorial) {
       // Once user select an ans after 3s it will go to the next qn
       Future.delayed(Duration(seconds: 3), () {
+        //la cantidad de respuestas correctas hay que incrementarlas aqui
+        //porque si no actualiza la cantidad de estrellas en el momento que no es
+        if (isCorrect) {
+          _numOfCorrectAnswers++;
+        }
+
         _nextQuestion();
       });
     }
@@ -200,11 +207,11 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         );
       },
       rightButtonFunction: () => Get.back(closeOverlays: true),
-      stars: generateProgress(),
+      stars: generateProgress(increment: 1),
       maxStar: TriviaSubLevelController.MAX_STARS,
     );
 
-    _doSaveProgress(generateProgress());
+    _doSaveProgress(generateProgress(increment: 1));
   }
 
   _doLooseLevel() {
@@ -225,7 +232,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         'Inténtalo de nuevo.',
         'El que persevera triunfa.',
       ],
-      stars: generateProgress(),
+      stars: generateProgress(increment: 1),
       maxStar: TriviaSubLevelController.MAX_STARS,
     );
 
@@ -259,9 +266,13 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     return subLevelUseCase.iconsMap[questionState(index)]!;
   }
 
-  int generateProgress() {
+  int generateProgress({int increment = 0}) {
+    //cuando se gana el nivel el _activeStep no se incrementa para no dar out of bound
+    //por lo tanto al llamar al ganar o perder se le incrementa manual el step
+    int step = _activeStep + increment;
+
     double progress =
-        ((dotCount - (_activeStep - _numOfCorrectAnswers)) / dotCount) * 100;
+        ((dotCount - (step - _numOfCorrectAnswers)) / dotCount) * 100;
 
     if (progress >= 99) {
       return TriviaSubLevelController.STARS_MULTIPLIER *
