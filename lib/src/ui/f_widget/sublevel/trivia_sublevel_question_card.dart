@@ -67,10 +67,9 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
             // Text of the current question.
             controller.currentQuestion,
             key: key4,
-            style: TextStyle(
+            style: Get.textTheme.subtitle2?.copyWith(
               color: textQuestionColor,
               fontSize: size.width / 13,
-              fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.center,
             maxLines: 3,
@@ -131,10 +130,9 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
             //// The ID of the Answer ////
             AutoSizeText(
               "${String.fromCharCode(id + 64)} - ",
-              style: TextStyle(
+              style: Get.textTheme.subtitle1?.copyWith(
                 color: textAnswerColor,
                 fontSize: size.width / 14,
-                fontWeight: FontWeight.bold,
               ),
               maxLines: 1,
             ),
@@ -142,7 +140,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
             Expanded(
               child: AutoSizeText(
                 "$answerText",
-                style: TextStyle(
+                style: Get.textTheme.subtitle2?.copyWith(
                   color: textAnswerColor,
                   fontSize: size.width / 15,
                 ),
