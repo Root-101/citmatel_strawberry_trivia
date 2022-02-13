@@ -84,8 +84,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     _isAnswered = true;
     lastSelectedId = selectedId;
 
-    if (isAnswerCorrect(selectedId)) {
-      _numOfCorrectAnswers++;
+    bool isCorrect =
+        isAnswerCorrect(selectedId); //almacenado para usarlo mas abajo
+    if (isCorrect) {
       StrawberryAudio.playAudioCorrect();
       _makeConffeti();
 
@@ -155,6 +156,12 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     if (!showTutorial || !isShowingTutorial) {
       // Once user select an ans after 3s it will go to the next qn
       Future.delayed(Duration(seconds: 3), () {
+        //la cantidad de respuestas correctas hay que incrementarlas aqui
+        //porque si no actualiza la cantidad de estrellas en el momento que no es
+        if (isCorrect) {
+          _numOfCorrectAnswers++;
+        }
+
         _nextQuestion();
       });
     }
