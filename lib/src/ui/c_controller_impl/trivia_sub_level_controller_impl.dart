@@ -236,7 +236,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       maxStar: TriviaSubLevelController.MAX_STARS,
     );
 
-    _doSaveProgress(0);
+    _doSaveProgress(generateProgress(increment: 1));
   }
 
   QuestionState questionState(int questionIndex) {
