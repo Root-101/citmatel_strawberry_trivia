@@ -336,11 +336,15 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   void stopCountdown() {
-    _animationController.stop();
+    if (_animationController.isAnimating) {
+      _animationController.stop();
+    }
   }
 
   void playCountdown() {
-    _animationController.forward().whenComplete(_endTime);
+    if (_animationController.isDismissed) {
+      _animationController.forward().whenComplete(_endTime);
+    }
   }
 
   @override
