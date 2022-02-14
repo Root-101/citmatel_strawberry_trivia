@@ -27,7 +27,6 @@ class TriviaSubLevelScreen extends StatefulWidget {
 
 class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   late final TriviaSubLevelController _controller;
-  late TutorialCoachMark tutorialCoachMark;
   List<TargetFocus> targets = [];
 
   // Steps in the tutorial.
@@ -182,6 +181,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         shadowColor: Colors.deepOrange,
         textCrossAxisAlignment: CrossAxisAlignment.start,
         title: 'El tiempo restante.',
+        description: 'En cuanto respondas la primera pregunta empieza a descontar. !Ten cuidado!',
         shape: ShapeLightFocus.Circle,
         contentTextAlign: ContentAlign.right,
       ),
