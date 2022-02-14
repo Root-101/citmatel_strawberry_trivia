@@ -221,6 +221,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         description:
             'El círculo azul indica la pregunta en la que se encuentra actualmente.',
         showImageOnTop: false,
+        descriptionMaxLines: 2,
       ),
     );
 
@@ -233,20 +234,21 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         description:
             'Cuando la barra llega al final, el nivel termina y se debe comenzar de nuevo.',
         showImageOnTop: false,
+        descriptionMaxLines: 3,
       ),
     );
 
     targets.add(
-      StrawberryTutorial.addMultipleTarget(
+      StrawberryTutorial.addTarget(
         identify: "Target TimeText",
         keyTarget: _key3,
         shadowColor: Colors.deepOrange,
         textCrossAxisAlignment: CrossAxisAlignment.start,
         title: 'El tiempo restante.',
         description:
-            'En cuanto respondas la primera pregunta empieza a descontar. !Ten cuidado!',
+            'En cuanto respondas la primera pregunta empieza a descontar.\n¡Ten cuidado!',
         shape: ShapeLightFocus.Circle,
-        contentTextAlign: ContentAlign.right,
+        descriptionMaxLines: 4,
       ),
     );
 
@@ -258,6 +260,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         title: 'La Pregunta.',
         description: 'La pregunta que se debe responder.',
         showImageOnTop: false,
+        descriptionMaxLines: 1,
       ),
     );
     targets.add(
@@ -271,6 +274,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         shape: ShapeLightFocus.Circle,
         showImage: false,
         contentAlign: ContentAlign.top,
+        descriptionMaxLines: 3,
       ),
     );
   }
