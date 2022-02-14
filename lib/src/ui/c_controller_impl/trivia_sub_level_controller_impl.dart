@@ -103,9 +103,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
               shadowColor: Colors.green,
               title: 'Respuesta correcta.',
               description:
-                  'Cuando se responde correctamente la pregunta se dibuja de verde.\n Sigue así es la única manera de ganar.',
+                  'Cuando se responde correctamente la pregunta se dibuja de verde.\nSigue así es la única manera de ganar.',
               showImage: false,
               contentAlign: ContentAlign.top,
+              descriptionMaxLines: 4,
             ),
           ],
           onFinish: () => _nextQuestion(),
@@ -133,10 +134,11 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
               title: 'Respuesta incorrecta.',
               description:
                   'Cuando se responde incorrectamente la pregunta se dibuja de rojo.'
-                  '\n Una vez q te equivocas se te dara la posibilidad al finalizar el nivel de intentarlo de nuevo.'
-                  '\n Solo si respondes todas las preguntas correctamente puedes pasar de nivel.',
+                  '\nUna vez que te equivocas se te dará la posibilidad al finalizar el nivel de intentarlo de nuevo.'
+                  '\nSolo si respondes todas las preguntas correctamente puedes pasar de nivel.',
               showImage: false,
               contentAlign: ContentAlign.top,
+              descriptionMaxLines: 7,
             ),
           ],
           onFinish: () => _nextQuestion(),

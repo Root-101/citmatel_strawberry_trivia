@@ -37,6 +37,10 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   GlobalKey _key5 = GlobalKey();
   GlobalKey _key6 = GlobalKey();
   GlobalKey _key7 = GlobalKey();
+  GlobalKey _keyAppBarBack = GlobalKey();
+  GlobalKey _keyAppBarStars = GlobalKey();
+  GlobalKey _keyAppBarLevel = GlobalKey();
+  GlobalKey _keyAppBarTheme = GlobalKey();
 
   @override
   void initState() {
@@ -75,6 +79,10 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
     return GetBuilder<TriviaSubLevelController>(
       builder: (_) {
         return CommonsSubLevelBuilder.buildScaffold(
+          backKey: _controller.showTutorial ? _keyAppBarBack : null,
+          levelKey: _controller.showTutorial ? _keyAppBarLevel : null,
+          themeKey: _controller.showTutorial ? _keyAppBarTheme : null,
+          starsKey: _controller.showTutorial ? _keyAppBarStars : null,
           tema: _controller.subLevelTheme(),
           nivel: _controller.subLevelNumber(),
           stars: _controller.generateProgress(),
@@ -152,6 +160,60 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   void initTargets() {
     targets.add(
       StrawberryTutorial.addTarget(
+        identify: "Target Back Button",
+        keyTarget: _keyAppBarBack,
+        shadowColor: Colors.blue.shade800,
+        title: 'Atrás',
+        description:
+            'Pulse este botón si desea volver a la pantalla de niveles.',
+        showImageOnTop: false,
+        imagePadding: 50,
+        descriptionMaxLines: 2,
+      ),
+    );
+
+    targets.add(
+      StrawberryTutorial.addTarget(
+        identify: "Target Level",
+        keyTarget: _keyAppBarLevel,
+        shadowColor: Colors.red,
+        title: 'Nivel',
+        description: 'Este número indica el nivel en el que se encuentra.',
+        showImageOnTop: false,
+        imagePadding: 50,
+        descriptionMaxLines: 2,
+      ),
+    );
+
+    targets.add(
+      StrawberryTutorial.addTarget(
+        identify: "Target Theme",
+        keyTarget: _keyAppBarTheme,
+        shadowColor: Colors.cyan.shade900,
+        title: 'Tema',
+        description:
+            'Este texto indica el tema del nivel en el que se encuentra.',
+        showImageOnTop: false,
+        imagePadding: 50,
+        descriptionMaxLines: 2,
+      ),
+    );
+
+    targets.add(
+      StrawberryTutorial.addTarget(
+        identify: "Target Stars",
+        keyTarget: _keyAppBarStars,
+        shadowColor: Colors.teal,
+        title: 'Estrellas',
+        description:
+            'Las estrellas indican cuan bien has realizado el nivel.\nPara obtenerlas todas debes completar el nivel sin equivocarte ni una sola vez.',
+        showImageOnTop: false,
+        imagePadding: 50,
+        descriptionMaxLines: 5,
+      ),
+    );
+    targets.add(
+      StrawberryTutorial.addTarget(
         identify: "Target Stepper",
         keyTarget: _key1,
         shadowColor: Colors.pink,
@@ -159,6 +221,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         description:
             'El círculo azul indica la pregunta en la que se encuentra actualmente.',
         showImageOnTop: false,
+        descriptionMaxLines: 2,
       ),
     );
 
@@ -171,19 +234,21 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         description:
             'Cuando la barra llega al final, el nivel termina y se debe comenzar de nuevo.',
         showImageOnTop: false,
+        descriptionMaxLines: 3,
       ),
     );
 
     targets.add(
-      StrawberryTutorial.addMultipleTarget(
+      StrawberryTutorial.addTarget(
         identify: "Target TimeText",
         keyTarget: _key3,
         shadowColor: Colors.deepOrange,
         textCrossAxisAlignment: CrossAxisAlignment.start,
         title: 'El tiempo restante.',
-        description: 'En cuanto respondas la primera pregunta empieza a descontar. !Ten cuidado!',
+        description:
+            'En cuanto respondas la primera pregunta empieza a descontar.\n¡Ten cuidado!',
         shape: ShapeLightFocus.Circle,
-        contentTextAlign: ContentAlign.right,
+        descriptionMaxLines: 4,
       ),
     );
 
@@ -191,10 +256,11 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
       StrawberryTutorial.addTarget(
         identify: "Target Question",
         keyTarget: _key4,
-        shadowColor: Colors.red,
+        shadowColor: Colors.indigo,
         title: 'La Pregunta.',
         description: 'La pregunta que se debe responder.',
         showImageOnTop: false,
+        descriptionMaxLines: 1,
       ),
     );
     targets.add(
@@ -208,6 +274,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         shape: ShapeLightFocus.Circle,
         showImage: false,
         contentAlign: ContentAlign.top,
+        descriptionMaxLines: 3,
       ),
     );
   }
