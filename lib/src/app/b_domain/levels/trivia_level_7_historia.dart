@@ -531,6 +531,17 @@ class TriviaLevelHistoria {
               TriviaQuestionAnswerDomain(id: 4, answer: "1898."),
             ],
           ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question: "¿En qué año cayó el Muro de Berlín?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "1898."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1990."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "1880."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "1905."),
+            ],
+          ),
         ],
       ),
       TriviaSubLevelDomain(
@@ -539,12 +550,17 @@ class TriviaLevelHistoria {
           TriviaQuestionDomain(
             id: 1,
             correctAnswerId: 1,
-            question: "¿En qué año cayó el Muro de Berlín?",
+            question:
+                "¿Qué evento marcó el inicio de la Segunda Guerra Mundial?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "1898."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "1990."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "1880."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "1905."),
+              TriviaQuestionAnswerDomain(
+                  id: 1, answer: "Invasión de Polonia (1939)."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "Invasión de Rusia (1942)."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Batalla de Gran Bretaña (1940)."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "Invasión de Normandía (1944)."),
             ],
           ),
           TriviaQuestionDomain(
@@ -582,56 +598,618 @@ class TriviaLevelHistoria {
               TriviaQuestionAnswerDomain(id: 4, answer: "Nathan Hale."),
             ],
           ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question:
+                "¿Cuál de estos países fue mapeado en 1500 por las exploraciones marítimas portuguesas?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Brasil."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "India."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Mozambique."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Madagascar."),
+            ],
+          )
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 13,
+        question: [
+          TriviaQuestionDomain(
+            id: 1,
+            correctAnswerId: 1,
+            question:
+                "¿Cuál de estos tanques fue diseñado y operado por el Reino Unido?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Tog II."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "M4 Sherman."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Tiger H1."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "T-34."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 2,
+            correctAnswerId: 1,
+            question:
+                "¿Quién fue el primer explorador a navegar a América del Norte?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Leif Erikson."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "Christopher Columbus."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Amerigo Vespucci."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Ferdinand Magellan."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 3,
+            correctAnswerId: 1,
+            question: "¿Cuándo comenzó la Guerra de la Península Española?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "1808."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1813."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "1795."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "1885."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 4,
+            correctAnswerId: 1,
+            question: "¿Quien descubrió la Penicilina?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Alexander Flemming."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Marie Curie."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Alfred Nobel."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Louis Pasteur."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question: "La idea del socialismo fue articulada y avanzada por:",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Karl Marx."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Vladimir Lenin."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Joseph Stalin."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Vladimir Putin."),
+            ],
+          ),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 14,
+        question: [
+          TriviaQuestionDomain(
+            id: 1,
+            correctAnswerId: 1,
+            question:
+                "¿Quién fue el primer ministro del Reino Unido durante la mayor parte de la Segunda Guerra Mundial?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Winston Churchill."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Neville Chamberlain."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Harold Macmillan."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Edward Heath."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 2,
+            correctAnswerId: 1,
+            question:
+                "Enumere los siguientes imperios iraníes en orden cronológico:",
+            answers: [
+              TriviaQuestionAnswerDomain(
+                  id: 1, answer: "Median, Achaemenid, Parthian, Sassanid."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "Median, Achaemenid, Sassanid, Parthian."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Achaemenid, Median, Parthian, Sassanid."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "Achaemenid, Median, Sassanid, Parthian."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 3,
+            correctAnswerId: 1,
+            question:
+                "El alfabeto romano original carecía de las siguientes letras EXCEPTO:",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "X."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "W."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "U."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "J ."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 4,
+            correctAnswerId: 1,
+            question:
+                "¿Cuál de estos países NO era parte de la Unión Soviética?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Afganistán."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Turkmenistán."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Kazajistán."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Uzbekistán."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question: "¿En qué año ocurrió la invasión de Kuwait por Irak?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "1990."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1992."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "1898."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "2000."),
+            ],
+          ),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 15,
+        question: [
+          TriviaQuestionDomain(
+            id: 1,
+            correctAnswerId: 1,
+            question: "¿Cuándo se establecieron las SS o Schutzstaffel?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "4 de abril de 1925."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "1 de septiembre de 1941."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "8 de marzo de 1935."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "21 de febrero de 1926."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 2,
+            correctAnswerId: 1,
+            question:
+                "¿Dónde y cuándo se fabricó la primera caja de cartón para uso industrial?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Inglaterra, 1817."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "Estados Unidos, 1817."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Inglaterra, 1917."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "Estados Unidos, 1917."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 3,
+            correctAnswerId: 1,
+            question: "¿Cuándo se fundó Google?",
+            answers: [
+              TriviaQuestionAnswerDomain(
+                  id: 1, answer: "4 de septiembre de 1998."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "9 de octubre de 1997."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "12 de diciembre de 1989."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "7 de febrero de 2000."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 4,
+            correctAnswerId: 1,
+            question:
+                "¿En qué año ocurrió el ataque con gas sarín en el metro de Tokio?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "1995."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "2001."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "2011."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "1990."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question: "¿De qué nacionalidad era el sultán Saladino?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Kurdish."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Egipto."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Namibia."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Rusia."),
+            ],
+          ),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 16,
+        question: [
+          TriviaQuestionDomain(
+            id: 1,
+            correctAnswerId: 1,
+            question: "¿Cuál es el estado más antiguo de los Estados Unidos?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Delaware."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Rhode Island."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Maine."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Virginia."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 2,
+            correctAnswerId: 1,
+            question:
+                "¿Qué emperador del Imperio bizantino encargó Hagia Sophia?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Justiniano I."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Constantino IV."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Arcadio."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Teodosio el Grande."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 3,
+            correctAnswerId: 1,
+            question: "¿Qué nación NO tuvo una colonia en la América moderna?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Portugal."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "España."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Suecia."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Inglaterra."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 4,
+            correctAnswerId: 1,
+            question:
+                "¿En qué año fue conquistada Constantinopla por los turcos?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "1453."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1945."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "1366."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "1523."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question:
+                "¿A qué partido político pertenecía Abraham Lincoln cuando fue elegido presidente?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Republicano."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Demócratas."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Derecha."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Whig."),
+            ],
+          ),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 17,
+        question: [
+          TriviaQuestionDomain(
+            id: 1,
+            correctAnswerId: 1,
+            question:
+                "Estos dos países mantuvieron una mancomunidad desde el siglo XVI al XVIII.",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Polonia y Lituania."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Hutu y Ruanda."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Corea del Norte y Corea del Sur."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Bangladés y Bután."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 2,
+            correctAnswerId: 1,
+            question:
+                "¿Cómo se llamó la operación ofensiva alemana en octubre de 1941 para tomar Moscú antes del invierno?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Operación Tifón."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Operación Girasol."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Operación Barbarosa."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Caja Azul."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 3,
+            correctAnswerId: 1,
+            question:
+                "¿Cuál es el nombre del barco que estaba a solo unas pocas millas del RMS Titanic cuando chocó contra un iceberg el 14 de abril de 1912?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Californian."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Carpathia."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Cristol."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Commerce."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 4,
+            correctAnswerId: 1,
+            question:
+                "¿Qué país moderno se conoce como El Cementerio de los Imperios?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Afganistán."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "China."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Iraq."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Rusia."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question:
+                "¿Bajo cuál de los siguientes Brasil fue una antigua colonia?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Portugal."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "España."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Inglaterra."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Francia."),
+            ],
+          ),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 18,
+        question: [
+          TriviaQuestionDomain(
+            id: 1,
+            correctAnswerId: 1,
+            question:
+                "Antes de que las colonias americanas cambiaran al calendario gregoriano en 1752, ¿en qué fecha comenzaba su nuevo año?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "25 de marzo."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1 de junio."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "16 de septiembre."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "1 de enero."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 2,
+            correctAnswerId: 1,
+            question:
+                "De 1940 a 1942, ¿cuál fue la capital en el exilio de la Francia Libre?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Brazzaville."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Algiers."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Paris."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Tunis."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 3,
+            correctAnswerId: 1,
+            question: "¿Qué rey inglés se casó con Leonor de Aquitania?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Henry II."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Henry I."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Henry III."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Henry IIII."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 4,
+            correctAnswerId: 1,
+            question:
+                "Durante la Primera Guerra Mundial, ¿los monarcas de qué nación estaban emparentados por sangre?",
+            answers: [
+              TriviaQuestionAnswerDomain(
+                  id: 1, answer: "Inglaterra, Alemania y Rusia."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "Francia, Rusia y Alemania."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Serbia, Rusia y Croacia."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "Alemania, España y Austria."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question: "¿Qué Luis era conocido como El Rey Sol de Francia?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Louis XIV."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Louis XIIV."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Louis XV."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Louis XV."),
+            ],
+          ),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 19,
+        question: [
+          TriviaQuestionDomain(
+            id: 1,
+            correctAnswerId: 1,
+            question:
+                "La revuelta de Bohemia (1618-1620) comenzó después de que los protestantes de Praga hicieran qué a sus Lores Regentes católicos:",
+            answers: [
+              TriviaQuestionAnswerDomain(
+                  id: 1, answer: "Los tiraron por una ventana."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "Insultaron a sus madres."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Los encerraron en cajas."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Los ahorcaron."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 2,
+            correctAnswerId: 1,
+            question:
+                "¿En qué ciudad de Virginia el abolicionista John Brown asaltó el arsenal?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Harper's Ferry."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Richmond."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Harrisonburg."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Martinsburg."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 3,
+            correctAnswerId: 1,
+            question:
+                "El Imperio Otomano se disolvió después de su pérdida, ¿en qué guerra?",
+            answers: [
+              TriviaQuestionAnswerDomain(
+                  id: 1, answer: "Primera Guerra Mundial."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Guerra de Crimea."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Revolución de Serbia."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "Segunda Guerra de los Balcanes."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 4,
+            correctAnswerId: 1,
+            question:
+                "¿Cuál de estas instalaciones NO estaba presente en el Titanic?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Sala de desmayos."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Baño turco."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Perrera."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Pista de squash."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question:
+                "¿En qué país tuvo lugar la Rebelión de Eureka, una batalla de 1856 contra el dominio colonial?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Australia."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "India."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Canadá."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Brasil."),
+            ],
+          ),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 20,
+        question: [
+          TriviaQuestionDomain(
+            id: 1,
+            correctAnswerId: 1,
+            question: "¿Cómo era William Frederick Cody mejor conocido?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Billy el toro."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Billy el niño."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Salvaje Billy Hickok."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Pawnee Bylly."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 2,
+            correctAnswerId: 1,
+            question:
+                "En relación con la ocupación británica en Irlanda, ¿qué representa el ERI?",
+            answers: [
+              TriviaQuestionAnswerDomain(
+                  id: 1, answer: "Ejército Republicano Irlandés."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "Ejécito Rebelde Irlandesa."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Ejército de Reforma Irlandés."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "Ejército Real Irlandés."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 3,
+            correctAnswerId: 1,
+            question: "¿En qué año ocurrió el desplome de Wall Street?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "1929."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1936."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "1968."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "2009."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 4,
+            correctAnswerId: 1,
+            question:
+                "¿En qué país tuvo lugar la batalla del Somme en la Primera Guerra Mundial?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Francia."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Alemania."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Inglaterra."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Austria."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question:
+                "¿Cuál de los siguientes pueblos antiguos NO fue clasificado como helénico (griego)?",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "Ilirios."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Dorios."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Aqueos."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Jonios."),
+            ],
+          ),
         ],
       ),
     ],
   );
 }
 /*
-TriviaSubLevelDomain(
+      TriviaSubLevelDomain(
         id: ,
         question: [
           TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question:
-                  "",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "."),
-              ],),
+            id: 1,
+            correctAnswerId: 1,
+            question: "",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "."),
+            ],
+          ),
           TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question:
-                  "",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "."),
-              ],),
+            id: 2,
+            correctAnswerId: 1,
+            question: "",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "."),
+            ],
+          ),
           TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "."),
-              ],),TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "."),
-              ],),
+            id: 3,
+            correctAnswerId: 1,
+            question: "",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 4,
+            correctAnswerId: 1,
+            question: "",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "."),
+            ],
+          ),
+          TriviaQuestionDomain(
+            id: 5,
+            correctAnswerId: 1,
+            question: "",
+            answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: "."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "."),
+            ],
+          ),
         ],
       ),
 */
