@@ -7,20 +7,32 @@ void main() {
 
   runApp(MyApp());
 
+  /*
+  //print All
   initialize().then((value) {
     Get.find<TriviaLevelUseCase>().findAll().forEach((theme) {
-      print('Tema: ${theme.theme}\n');
-      theme.sublevel.forEach((level) {
-        print(' Nivel: #${level.id}\n');
-        print('  Preguntas:\n');
-        level.question.forEach((pregunta) {
-          print('  #${pregunta.id}: ${pregunta.question}');
-          print('    Respuesta Correcta: #${pregunta.correctAnswerId}');
-          print('     Respuestas:');
-          pregunta.answers.forEach((respuesta) {
-            print('       #${respuesta.id} ${respuesta.answer}');
-          });
-        });
+      printTheme(theme);
+    });
+  });
+  */
+
+  //print only theme
+  initialize().then((value) {
+    printTheme(Get.find<TriviaLevelUseCase>().findAll()[1]);
+  });
+}
+
+void printTheme(TriviaLevelDomain theme) {
+  print('Tema: ${theme.theme}\n');
+  theme.sublevel.forEach((level) {
+    print(' Nivel: #${level.id}\n');
+    print('  Preguntas:\n');
+    level.question.forEach((pregunta) {
+      print('  #${pregunta.id}: ${pregunta.question}');
+      print('    Respuesta Correcta: #${pregunta.correctAnswerId}');
+      print('     Respuestas:');
+      pregunta.answers.forEach((respuesta) {
+        print('       #${respuesta.id} ${respuesta.answer}');
       });
     });
   });
