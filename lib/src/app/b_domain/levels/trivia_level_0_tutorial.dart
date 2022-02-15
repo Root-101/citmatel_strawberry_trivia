@@ -25,7 +25,7 @@ class TriviaLevelTutorial {
                 TriviaQuestionAnswerDomain(id: 4, answer: "No tiene utilidad."),
               ]),
           TriviaQuestionDomain(
-              id: 1,
+              id: 2,
               correctAnswerId: 1,
               question: "¿Cuál es el océano más grande del mundo?",
               answers: [
@@ -37,7 +37,7 @@ class TriviaLevelTutorial {
                 TriviaQuestionAnswerDomain(id: 4, answer: "El océano Ártico ."),
               ]),
           TriviaQuestionDomain(
-              id: 1,
+              id: 3,
               correctAnswerId: 1,
               question: "¿Cuántos lados tiene un heptágono?",
               answers: [
