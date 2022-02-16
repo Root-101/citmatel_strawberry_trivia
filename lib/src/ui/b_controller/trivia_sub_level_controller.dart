@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
+import '../../../trivia_exporter.dart';
+
 abstract class TriviaSubLevelController extends GetxController {
   static const String TAG = "trivia-sub-level-controller";
 
@@ -21,6 +23,11 @@ abstract class TriviaSubLevelController extends GetxController {
   ///parcial 1 que sale de: 5 % STARS_MULTIPLIER = (int) 1. O la parte decimal de la división anterior
   ///el parcial siembre va a ser 0 o 1, como un booleano si tiene una media estrella
   static const int STARS_MULTIPLIER = 2;
+
+  CountdownController? get countdownController;
+  set countdownController(CountdownController? countdownController);
+
+  void endTime();
 
   int get activeStep;
 
@@ -54,13 +61,6 @@ abstract class TriviaSubLevelController extends GetxController {
   LinearGradient getTheRightColor(int index);
 
   IconData getTheRightIconData(int index);
-
-  AnimationController initAnimationController(
-      SingleTickerProviderStateMixin ticker);
-
-  void stopCountdown();
-
-  void playCountdown();
 
   //devuelve el tema del nivel al que pertenece este subnivel
   String subLevelTheme();

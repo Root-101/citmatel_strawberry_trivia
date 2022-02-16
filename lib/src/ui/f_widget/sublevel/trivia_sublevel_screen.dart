@@ -54,7 +54,8 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
           await Future.delayed(Duration(milliseconds: 500));
           // Initialice the steps of the tutorial.
           initTargets();
-          _controller.stopCountdown();
+          print('parando el cooldown en el tutorial');
+          _controller.countdownController?.stop();
           // Start the tutorial.
           _controller.initTutorialCoachMark(
             context: context,

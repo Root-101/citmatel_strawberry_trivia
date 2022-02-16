@@ -9,7 +9,7 @@ import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   TriviaSubLevelUseCase subLevelUseCase;
 
-  late AnimationController _animationController;
+  CountdownController? countdownController;
 
   late final ConfettiController confettiController;
 
@@ -151,7 +151,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     }
 
     //para el countdown
-    stopCountdown();
+    countdownController?.stop();
 
     update();
 
@@ -175,6 +175,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   void _nextQuestion() {
+    print('_nextQuestion');
     //reset flags
     _isAnswered = false;
     lastSelectedId = -1;
@@ -217,6 +218,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   _doLooseLevel() {
+    print('_doLooseLevel');
     //perdi el nivel,
     StrawberryFunction.looseLevel(
       leftButtonFunction: () => Get.off(
@@ -302,7 +304,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     Get.find<TriviaLevelController>().update();
   }
 
-  void _endTime() {
+  void endTime() {
+    print('LLamando al endTime');
     //perdi el nivel,
     StrawberryFunction.looseLevel(
       leftButtonFunction: () => Get.off(
@@ -324,31 +327,6 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     _doSaveProgress(0);
   }
 
-  AnimationController initAnimationController(
-      SingleTickerProviderStateMixin ticker) {
-    _animationController = AnimationController(
-      vsync: ticker,
-      duration: durationOfProgressBar(),
-    );
-
-    //para cuando termine la animacion llame a una funcion
-    playCountdown();
-
-    return _animationController;
-  }
-
-  void stopCountdown() {
-    if (_animationController.isAnimating) {
-      _animationController.stop();
-    }
-  }
-
-  void playCountdown() {
-    if (_animationController.isDismissed) {
-      _animationController.forward().whenComplete(_endTime);
-    }
-  }
-
   @override
   void stopTutorial() {
     _showTutorial = false;
@@ -365,7 +343,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     _tutorialCoachMark = StrawberryTutorial.showTutorial(
       context: context,
       targets: targets,
-      onFinish: () => playCountdown(),
+      onFinish: () => countdownController?.play(),
       onSkip: () {
         stopTutorial();
       },
