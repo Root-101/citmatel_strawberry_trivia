@@ -1,3 +1,4 @@
+import 'package:citmatel_strawberry_trivia/src/ui/c_controller_impl/countdown_controller.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -23,31 +24,37 @@ class TriviaSubLevelCountdown extends StatefulWidget {
 class _AnimatedLiquidLinearProgressIndicatorState
     extends State<TriviaSubLevelCountdown> with SingleTickerProviderStateMixin {
   late TriviaSubLevelController _controller;
+  late CountdownController _countdownController;
 
   @override
   void initState() {
     super.initState();
     _controller = Get.find<TriviaSubLevelController>();
-    _controller.initCountdownController(this);
+    _countdownController = CountdownController(
+      this,
+      _controller.durationOfProgressBar(),
+      () => _controller.endTime(),
+    );
+    _controller.countdownController = _countdownController;
 
     //actualize cada vez
-    _controller.addCountDownListener(() => setState(() {}));
-    _controller.play();
+    _countdownController.addListener(() => setState(() {}));
+    _countdownController.play();
   }
 
   @override
   void dispose() {
-    _controller.countDownDispose();
+    _countdownController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     //lo ideal es ejecutarla en reversa pero no me funciono en su momento
-    final percentage = (1 - _controller.countDownValue());
+    final percentage = (1 - _countdownController.value);
 
     int remaining = _controller.durationOfProgressBar().inSeconds -
-        _controller.latestDuration().inSeconds;
+        _countdownController.lastDuration.inSeconds;
 
     return Stack(
       key: widget.key2,

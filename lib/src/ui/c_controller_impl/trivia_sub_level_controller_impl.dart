@@ -317,7 +317,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     Get.find<TriviaLevelController>().update();
   }
 
-  void _endTime() {
+  void endTime() {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
       leftButtonFunction: () => Get.off(
@@ -375,35 +375,17 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     print('disposing controller');
     disposeTutorial = true;
     _tutorialCoachMark?.finish();
-    _countdownController.dispose();
     super.dispose();
   }
-
-  @override
-  void initCountdownController(SingleTickerProviderStateMixin ticker) {
-    _countdownController = CountdownController(
-      ticker,
-      durationOfProgressBar(),
-      () => _endTime(),
-    );
-  }
-
-  @override
-  double countDownValue() => _countdownController.value;
-
-  @override
-  void addCountDownListener(VoidCallback listener) =>
-      _countdownController.addListener(listener);
-
-  @override
-  Duration latestDuration() => _countdownController.lastDuration;
-
-  @override
-  void countDownDispose() => _countdownController.dispose();
 
   @override
   void play() => _countdownController.play();
 
   @override
   void stop({String where = "???"}) => _countdownController.stop(where: where);
+
+  @override
+  set countdownController(CountdownController countdownController) {
+    this._countdownController = countdownController;
+  }
 }

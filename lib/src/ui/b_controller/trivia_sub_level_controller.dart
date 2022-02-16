@@ -1,4 +1,5 @@
 import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_domain_exporter.dart';
+import 'package:citmatel_strawberry_trivia/src/ui/c_controller_impl/countdown_controller.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -24,14 +25,10 @@ abstract class TriviaSubLevelController extends GetxController {
   ///el parcial siembre va a ser 0 o 1, como un booleano si tiene una media estrella
   static const int STARS_MULTIPLIER = 2;
 
-  void initCountdownController(SingleTickerProviderStateMixin ticker);
-  void addCountDownListener(VoidCallback listener);
-  double countDownValue();
-  void countDownDispose();
-  Duration latestDuration();
+  set countdownController(CountdownController countdownController);
   void play();
   void stop({String where = "???"});
-
+  void endTime();
   int get activeStep;
 
   int get dotCount;
