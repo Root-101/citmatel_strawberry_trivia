@@ -1226,7 +1226,7 @@ class TriviaLevelCiencias {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Qué animal tiene la mordida más poderosa del mundo? ",
+              question: "¿Qué animal tiene la mordida más poderosa del mundo?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Cocodrilo."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Tiburón."),
@@ -1274,6 +1274,142 @@ class TriviaLevelCiencias {
                 TriviaQuestionAnswerDomain(id: 2, answer: "Flores."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Árboles."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Cultivos."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 25,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Cuál es la arteria más grande del cuerpo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Aorta."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Yugular."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Femoral."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Carotida."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Cómo se conoce a la capa superior de la piel?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Epidermis."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Hipodermis."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Dermis."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Piel superior."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuál es el tipo de sangre más común?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "O+"),
+                TriviaQuestionAnswerDomain(id: 2, answer: "O-."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "B+."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "AB-."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Cuántos músculos controlan los ojos?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "6."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "9."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "12."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "25."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuál es el único órgano que puede regenerarse?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Hígado."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Pulmones."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Corazón."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cerebro."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué hace que nuestro cerebro sea más grande que el de la mayoría de mamiferos?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Corteza Cerebral."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Lóbulo Paretal."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Hipotálamo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cerebelo."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 26,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Cuántas vertebras tiene el cuerpo humano?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "33."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "39."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "26."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "45."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Cómo se llama el fluido claro y húmedo que está situado detrás de la córnea?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Humor Acuso."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Humor Vítreo."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Humor Cristalino."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Humor Ocular."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuál es el mayor músculo del cuerpo humano?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Glúteo Mayor."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Sartorio."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Dorsal Ancho."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Biceps."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Qué sigue creciendo después de morir?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Nada."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Cabello."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Uñas."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Piel."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuántas cámaras inferiores tiene el corazón humano?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "2."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "4."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "6."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "8."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question:
+                  "¿Cómo llegan a todo el cuerpo los nutrientes que resultan de la digestión?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "A través de la sangre."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Por el estómago."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Por el intestino grueso."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "A través de las mitocondrias."),
               ]),
         ],
       ),
