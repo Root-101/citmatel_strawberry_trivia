@@ -84,7 +84,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     }
 
     //para el countdown que se acabó la pregunta
-    stop(where: "checkAnswer");
+    stop();
 
     // because once user press any option then it will run
     //init flags
@@ -118,11 +118,11 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
           ],
           onFinish: () {
             if (!disposeTutorial) {
-              _nextQuestion(where: 'onFinish showTutorialRight');
+              _nextQuestion();
             }
           },
           onSkip: () {
-            _nextQuestion(where: 'onSkip showTutorialRight');
+            _nextQuestion();
             stopTutorial();
             play();
           },
@@ -155,11 +155,11 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
           ],
           onFinish: () {
             if (!disposeTutorial) {
-              _nextQuestion(where: 'onFinish showTutorialWrong');
+              _nextQuestion();
             }
           },
           onSkip: () {
-            _nextQuestion(where: 'onSkip showTutorialWrong');
+            _nextQuestion();
             stopTutorial();
             play();
           },
@@ -188,8 +188,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     confettiController.play();
   }
 
-  void _nextQuestion({String where = "???"}) {
-    print('_nextQuestion $where');
+  void _nextQuestion() {
     //reset flags
     _isAnswered = false;
     lastSelectedId = -1;
@@ -357,12 +356,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       targets: targets,
       onFinish: () {
         if (!disposeTutorial) {
-          print('onFinish initTutorialCoachMark');
           _countdownController.play();
         }
       },
       onSkip: () {
-        print('onSkip initTutorialCoachMark');
         stopTutorial();
         play();
       },
@@ -372,7 +369,6 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   @override
   void dispose() {
-    print('disposing controller');
     disposeTutorial = true;
     _tutorialCoachMark?.finish();
     super.dispose();
@@ -382,7 +378,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   void play() => _countdownController.play();
 
   @override
-  void stop({String where = "???"}) => _countdownController.stop(where: where);
+  void stop() => _countdownController.stop();
 
   @override
   set countdownController(CountdownController countdownController) {

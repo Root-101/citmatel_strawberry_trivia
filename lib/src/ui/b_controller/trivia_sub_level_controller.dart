@@ -27,7 +27,7 @@ abstract class TriviaSubLevelController extends GetxController {
 
   set countdownController(CountdownController countdownController);
   void play();
-  void stop({String where = "???"});
+  void stop();
   void endTime();
   int get activeStep;
 

@@ -24,6 +24,10 @@ class TriviaSubLevelCountdown extends StatefulWidget {
 class _AnimatedLiquidLinearProgressIndicatorState
     extends State<TriviaSubLevelCountdown> with SingleTickerProviderStateMixin {
   late TriviaSubLevelController _controller;
+
+  //tiene que estar aqui para que cree una instancia en cada pregunta
+  //y la ultima instancia se referencia en el controller para usarla
+  //NO QUITAR DE AQUI
   late CountdownController _countdownController;
 
   @override
@@ -44,6 +48,7 @@ class _AnimatedLiquidLinearProgressIndicatorState
 
   @override
   void dispose() {
+    //Siempre hacerle el dispose al countdown, SIEMPRE
     _countdownController.dispose();
     super.dispose();
   }
