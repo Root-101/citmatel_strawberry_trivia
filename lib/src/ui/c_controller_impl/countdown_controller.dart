@@ -28,23 +28,28 @@ class CountdownController {
     animationController.addListener(listener);
   }
 
-  void stop() {
+  void stop({String where = "???"}) {
+    print('stop on: $where');
+    print('tratando de parar');
     if (!_stopped && !_disposed) {
       animationController.stop();
       _stopped = true;
+      print('parado');
     }
   }
 
   void play() {
+    print('tratando de play');
     if (_stopped && !_disposed) {
       animationController.forward().whenComplete(onEnd);
       _stopped = false;
+      print('play');
     }
   }
 
   void dispose() {
-    stop();
     if (!_disposed) {
+      stop(where: 'internal dispose');
       animationController.dispose();
       _disposed = true;
     }

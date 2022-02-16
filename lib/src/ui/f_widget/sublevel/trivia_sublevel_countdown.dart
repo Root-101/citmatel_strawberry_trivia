@@ -32,6 +32,7 @@ class _AnimatedLiquidLinearProgressIndicatorState
 
     //actualize cada vez
     _controller.addCountDownListener(() => setState(() {}));
+    _controller.play();
   }
 
   @override

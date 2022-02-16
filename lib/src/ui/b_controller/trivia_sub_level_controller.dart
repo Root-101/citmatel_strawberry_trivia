@@ -30,7 +30,7 @@ abstract class TriviaSubLevelController extends GetxController {
   void countDownDispose();
   Duration latestDuration();
   void play();
-  void stop();
+  void stop({String where = "???"});
 
   int get activeStep;
 

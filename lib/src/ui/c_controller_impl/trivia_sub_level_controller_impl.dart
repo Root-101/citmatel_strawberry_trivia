@@ -11,7 +11,7 @@ import 'countdown_controller.dart';
 class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   TriviaSubLevelUseCase subLevelUseCase;
 
-  CountdownController? countdownController;
+  late CountdownController _countdownController;
 
   late final ConfettiController confettiController;
 
@@ -33,6 +33,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   bool showTutorialWrong =
       true; // Is originally in true but the wrong answer id is missing.
   bool isShowingTutorial = false;
+  bool disposeTutorial = false;
 
   late bool _showTutorial;
 
@@ -81,6 +82,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     if (_isAnswered) {
       return;
     }
+
+    //para el countdown que se acabó la pregunta
+    stop(where: "checkAnswer");
+
     // because once user press any option then it will run
     //init flags
     _isAnswered = true;
@@ -111,10 +116,15 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
               descriptionMaxLines: 4,
             ),
           ],
-          onFinish: () => _nextQuestion(where: 'onFinish showTutorialRight'),
+          onFinish: () {
+            if (!disposeTutorial) {
+              _nextQuestion(where: 'onFinish showTutorialRight');
+            }
+          },
           onSkip: () {
             _nextQuestion(where: 'onSkip showTutorialRight');
             stopTutorial();
+            play();
           },
         );
       }
@@ -143,17 +153,19 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
               descriptionMaxLines: 7,
             ),
           ],
-          onFinish: () => _nextQuestion(where: 'onFinish showTutorialWrong'),
+          onFinish: () {
+            if (!disposeTutorial) {
+              _nextQuestion(where: 'onFinish showTutorialWrong');
+            }
+          },
           onSkip: () {
             _nextQuestion(where: 'onSkip showTutorialWrong');
             stopTutorial();
+            play();
           },
         );
       }
     }
-
-    //para el countdown
-    countdownController?.stop();
 
     update();
 
@@ -344,49 +356,54 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       context: context,
       targets: targets,
       onFinish: () {
-        print('onFinish initTutorialCoachMark');
-        countdownController?.play();
+        if (!disposeTutorial) {
+          print('onFinish initTutorialCoachMark');
+          _countdownController.play();
+        }
       },
       onSkip: () {
         print('onSkip initTutorialCoachMark');
         stopTutorial();
+        play();
       },
     );
+    disposeTutorial = false;
   }
 
   @override
   void dispose() {
     print('disposing controller');
+    disposeTutorial = true;
     _tutorialCoachMark?.finish();
+    _countdownController.dispose();
     super.dispose();
   }
 
   @override
   void initCountdownController(SingleTickerProviderStateMixin ticker) {
-    countdownController = CountdownController(
+    _countdownController = CountdownController(
       ticker,
       durationOfProgressBar(),
       () => _endTime(),
     );
-    play();
   }
 
   @override
-  double countDownValue() => countdownController!.value;
+  double countDownValue() => _countdownController.value;
 
   @override
   void addCountDownListener(VoidCallback listener) =>
-      countdownController?.addListener(listener);
+      _countdownController.addListener(listener);
 
   @override
-  Duration latestDuration() => countdownController!.lastDuration;
+  Duration latestDuration() => _countdownController.lastDuration;
 
   @override
-  void countDownDispose() => countdownController?.dispose();
+  void countDownDispose() => _countdownController.dispose();
 
   @override
-  void play() => countdownController?.play();
+  void play() => _countdownController.play();
 
   @override
-  void stop() => countdownController?.stop();
+  void stop({String where = "???"}) => _countdownController.stop(where: where);
 }
