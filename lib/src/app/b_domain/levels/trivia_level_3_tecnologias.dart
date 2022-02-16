@@ -493,6 +493,665 @@ class TriviaLevelTecnologias {
               ]),
         ],
       ),
+      TriviaSubLevelDomain(
+        id: 12,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál de los siguientes periféricos es de entrada/salida?.",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Módem de Internet."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Teclado."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Impresora."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Monitor."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué atajo de teclas se usa para cerrar una ventana en Windows?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Alt + F4."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Shift + F4."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Crtl + F4."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Ctrl + S."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question:
+                  "El dispositivo que se utiliza para la digitalización de imágenes y texto se denomina:",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Escáner."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Módem."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Joystick."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Pantallas táctiles."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "Qué es el Spam?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Correo no solicitado."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Marca de ordenador."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Programa espía."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Virus informático."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Qué caracteristica básica diferencia al CD del DVD?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Capacidad."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Tamaño."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Velocidad."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Utilidad."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 13,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "Qué es Windows?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Un sistema operativo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Un Disco Rígido."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Un editor de Imágenes."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Una marca de computadora."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál de las siguientes opciones es una rama de la informática?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Ofimática."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Diseño Gráfico."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Aeronaútica."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Astronomía."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuál de los siguientes componentes es software?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Word de Microsoft Office."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Memoria USB."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mouse."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Impresora."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál es la unidad más pequeña de representación de información en un ordenador?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Bit."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Byte."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mega Byte."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Kilo Byte."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuáles de estos NO es un tipo de virus?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Aviras."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Spywares."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Trojans."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Malwares."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 14,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuáles son las teclas de atajo usadas para borrar un archivo permanentemente?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Shift + Del."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Ctrl + Alt + Del."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Alt + Shift + Del."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Shift + Del + A."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Cuántas capas tiene el modelo OSI?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "7."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "8."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "4."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "3."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuántas capas tiene el modelo TCP/IP?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "4."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "3."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "7."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "8."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál es la capa del modelo OSI que garantiza la entrega de mensajes de extremo a extremo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Red."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Enlace."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Transporte."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Aplicación."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "La fibra óptica se relaciona con la capa OSI:",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Física."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Red."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Transporte."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Aplicación."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 15,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "TCP es un protocolo de la capa OSI:",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Transporte."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Enlace."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Física."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Aplicación."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "El protocolo de transporte usado para streaming de video es:",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "UDP."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "TCP."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "DNS."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "HTTP."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question:
+                  "Si deseo ver el número de la MAC de mi equipo puedo usar el comando:",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "ipconfig."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "netstat."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "ping."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "arp."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿En qué año se estrenó el primer iPhone?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "2007."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "2005."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "2010."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "2012."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿En este año se envió el primer mensaje de texto SMS?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1992."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "1997."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "2001."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "2003."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 16,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Cuál es el emoji más usado en el mundo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "😂."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "😘."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "😅."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "😭."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué tecnología se utiliza para hacer posibles las llamadas telefónicas a través de Internet?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "VoIP."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "POP."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Bluetooth."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Ethernet."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Qué lenguaje informático es el más utilizado?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Java."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "C."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "SQL."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "PHP."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Cuál es la red social más usada del mundo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Facebook."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Instagram."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Twitter."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Youtube."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Quién inventó Google?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Larry Page."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Bill Gates."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Steve Jobs."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Steve Wozniak."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 17,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "Qué hace el ordenador si pulsas Control + Z:",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Deshacer."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Rehacer."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Pegar."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Eliminar."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál es la página de Internet más visitada del mundo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Google."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Youtube."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Facebook."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Gmail."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuándo se fundó Nintendo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1889."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "1995."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "1974."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "2001."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Qué marca vende más teléfonos en el mundo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Samsung."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Huwaei."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Apple."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Xiaomi."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuál NO es una plataforma para ver series?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Shein."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Amazon Prime."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Filmin."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Netflix."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 18,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Qué significan las siglas RV o VR en inglés?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Realidad Virtual."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Realidad Vista."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Rapidez Visual."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Reproducción Virtual."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Cuántas salidas tiene un multiplexor?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "8."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "16."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "32."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "IGBT, BJT y MOSFET son 3 tipos de...",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Transistores."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Condensadores."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Tiristores."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Multiplexores."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Cuántas terminales tiene un transistor?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "3."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "2."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "1."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "4."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿A quién se considera el \"padre de internet\"?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Vinton Cerf."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Linus Torvalds."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Tim Berners-Lee."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Bill Gates."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 19,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿En qué año surgió la palabra weblog?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1997."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "2007."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "1989."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "2009."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál es el apodo del hacker más famoso de la historia?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "El Cóndor."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "RTM."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mafiaboy."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "El Mentor."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "De las siguientes, ¿qué red social nació primero?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "LinkedIn."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Facebook."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Twitter."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Instagram."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿En qué año situamos el nacimiento del Wi-Fi como estándar?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1999."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "1998."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "1997."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "1996."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué país del mundo cuenta con la mayor velocidad de conexión a internet?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Corea del Sur."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Alemania."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Noruega."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "España."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 20,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  " ¿Qué buscador era el más popular antes de la aparición de Google?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Altavista."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Yahoo!."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Excite."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Bing."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué famoso virus infectó a más de 60 millones de ordenadores en 1998?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Virus Chernobyl."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Virus I Love You."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Virus Stuxnet."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Virus MyDoom."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question:
+                  "¿En qué año se puede decir que apareció el primer diseño de teléfono móvil?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1947."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "1963."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "1980."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "2000."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál de estas empresas vende móviles con el sistema operativo Ubuntu?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "BQ."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Asus."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Acer."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Apple."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuál fue el primer móvil con pantalla a color?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Siemens S10."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Nokia 3110."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Ericsson GS88."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Nokia 3210."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 21,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Qué navegador web fue primero?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Netscape Navigator."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Mozilla Firefox."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Internet Explorer."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Opera."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál de las siguientes extensiones de archivos NO existe?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: ".klj"),
+                TriviaQuestionAnswerDomain(id: 2, answer: ".xls"),
+                TriviaQuestionAnswerDomain(id: 3, answer: ".tif."),
+                TriviaQuestionAnswerDomain(id: 4, answer: ".js"),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Qué empresa tecnológica creó Lee Byung-chul?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Samsung."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Huawei."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Sony."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Redmi."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "Windows XP, es un sistema operativo de:",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Interfaz gráfica."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Interfaz monousuario."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Interfaz monotarea."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Interfaz de línea de comandos."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question:
+                  "El ratón, el escáner y el micrófono son dispositivos de:",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Entrada."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Almacenamiento."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Salida."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Comunicación."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question: "¿Cuál es un hardware interno de un equipo de cómputo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Motherboard."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Bocinas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Cámara Web."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Gabinete."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 22,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿De los siguientes inventos, cuál es el más antiguo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Teléfono."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Computadora."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Radio."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Televisión."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál NO es un lenguaje de programación utilizado para codificar y elaborar páginas Web?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Delphi."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "JavaScript."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Python."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "HTML5."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué significa la abreviación 'OS' en el lenguaje informático?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Sistema Operativo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Código Abierto."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Software Libre."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Sistema Libre."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Qué tipo de archivo es \".MOV\"? ",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "De Película."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "De Texto."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "De Imagen."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "De Lectura."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuántos bits hay en un byte?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "8."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "16."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "32."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "64."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question: "¿Cuántos bytes hay en un kilobyte?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1024."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "1000."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "640."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "800."),
+              ]),
+        ],
+      ),
     ],
   );
 }
