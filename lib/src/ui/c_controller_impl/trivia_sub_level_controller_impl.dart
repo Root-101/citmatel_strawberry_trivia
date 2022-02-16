@@ -6,6 +6,8 @@ import 'package:flutter_animator/utils/pair.dart';
 import 'package:get/get.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
+import 'countdown_controller.dart';
+
 class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   TriviaSubLevelUseCase subLevelUseCase;
 
@@ -109,9 +111,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
               descriptionMaxLines: 4,
             ),
           ],
-          onFinish: () => _nextQuestion(),
+          onFinish: () => _nextQuestion(where: 'onFinish showTutorialRight'),
           onSkip: () {
-            _nextQuestion();
+            _nextQuestion(where: 'onSkip showTutorialRight');
             stopTutorial();
           },
         );
@@ -141,9 +143,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
               descriptionMaxLines: 7,
             ),
           ],
-          onFinish: () => _nextQuestion(),
+          onFinish: () => _nextQuestion(where: 'onFinish showTutorialWrong'),
           onSkip: () {
-            _nextQuestion();
+            _nextQuestion(where: 'onSkip showTutorialWrong');
             stopTutorial();
           },
         );
@@ -174,8 +176,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     confettiController.play();
   }
 
-  void _nextQuestion() {
-    print('_nextQuestion');
+  void _nextQuestion({String where = "???"}) {
+    print('_nextQuestion $where');
     //reset flags
     _isAnswered = false;
     lastSelectedId = -1;
@@ -218,7 +220,6 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   _doLooseLevel() {
-    print('_doLooseLevel');
     //perdi el nivel,
     StrawberryFunction.looseLevel(
       leftButtonFunction: () => Get.off(
@@ -304,8 +305,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     Get.find<TriviaLevelController>().update();
   }
 
-  void endTime() {
-    print('LLamando al endTime');
+  void _endTime() {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
       leftButtonFunction: () => Get.off(
@@ -343,8 +343,12 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     _tutorialCoachMark = StrawberryTutorial.showTutorial(
       context: context,
       targets: targets,
-      onFinish: () => countdownController?.play(),
+      onFinish: () {
+        print('onFinish initTutorialCoachMark');
+        countdownController?.play();
+      },
       onSkip: () {
+        print('onSkip initTutorialCoachMark');
         stopTutorial();
       },
     );
@@ -352,7 +356,37 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   @override
   void dispose() {
+    print('disposing controller');
     _tutorialCoachMark?.finish();
     super.dispose();
   }
+
+  @override
+  void initCountdownController(SingleTickerProviderStateMixin ticker) {
+    countdownController = CountdownController(
+      ticker,
+      durationOfProgressBar(),
+      () => _endTime(),
+    );
+    play();
+  }
+
+  @override
+  double countDownValue() => countdownController!.value;
+
+  @override
+  void addCountDownListener(VoidCallback listener) =>
+      countdownController?.addListener(listener);
+
+  @override
+  Duration latestDuration() => countdownController!.lastDuration;
+
+  @override
+  void countDownDispose() => countdownController?.dispose();
+
+  @override
+  void play() => countdownController?.play();
+
+  @override
+  void stop() => countdownController?.stop();
 }

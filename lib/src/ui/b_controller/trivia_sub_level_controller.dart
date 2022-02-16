@@ -24,10 +24,13 @@ abstract class TriviaSubLevelController extends GetxController {
   ///el parcial siembre va a ser 0 o 1, como un booleano si tiene una media estrella
   static const int STARS_MULTIPLIER = 2;
 
-  CountdownController? get countdownController;
-  set countdownController(CountdownController? countdownController);
-
-  void endTime();
+  void initCountdownController(SingleTickerProviderStateMixin ticker);
+  void addCountDownListener(VoidCallback listener);
+  double countDownValue();
+  void countDownDispose();
+  Duration latestDuration();
+  void play();
+  void stop();
 
   int get activeStep;
 
