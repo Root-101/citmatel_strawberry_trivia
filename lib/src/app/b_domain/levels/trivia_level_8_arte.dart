@@ -23,7 +23,7 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál de estos pintores se cortó una oreja.?",
+              question: "¿Cuál de estos pintores se cortó una oreja?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Vincent van Gogh."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Pablo Picasso."),
@@ -335,7 +335,7 @@ class TriviaLevelArte {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Auguste Rodin."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Bernini."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Miguel Ángel."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Donatello ."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Donatello."),
               ]),
         ],
       ),
@@ -383,7 +383,7 @@ class TriviaLevelArte {
               question:
                   "¿Quién fue fundamental en el impulso del arte y la cultura durante el Renacimiento?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Donatello ."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Donatello."),
                 TriviaQuestionAnswerDomain(
                     id: 2, answer: "Constantin Brancusi."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Bernini."),
@@ -414,7 +414,7 @@ class TriviaLevelArte {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Donatello."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Miguel Ángel."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Bernini."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Antonio Canova ."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Antonio Canova."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -575,7 +575,7 @@ class TriviaLevelArte {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Los íberos."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Los cretenses."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Los sumerios."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Loz aztecas."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Los aztecas."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -638,7 +638,8 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Quién de lo siguientes NO fue un muralista mexicano?",
+              question:
+                  "¿Quién de los siguientes NO fue un muralista mexicano?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Pedro Lira."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Diego Rivera."),
@@ -680,13 +681,13 @@ class TriviaLevelArte {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Rufino Tamayo."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "El Greco."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Rablo Picasso."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Pablo Picasso."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Remedios Varo."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿En que siglo nació Velázquez?",
+              question: "¿En qué siglo nació Velázquez?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "XVII."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "XVIII."),
@@ -696,7 +697,7 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿En que museo está la Mona Lisa?",
+              question: "¿En qué museo está la Mona Lisa?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Louvre."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Museo del Prado."),
@@ -706,7 +707,7 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿En que siglo se inició el Renacimiento?",
+              question: "¿En qué siglo se inició el Renacimiento?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "XV."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "XIII."),
@@ -731,7 +732,7 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿En que siglo nació Van Gogh?",
+              question: "¿En qué siglo nació Van Gogh?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "XIX."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "XVIII."),
@@ -762,7 +763,7 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿En que año pinto Picasso el \"Guernica\"?",
+              question: "¿En qué año pinto Picasso el \"Guernica\"?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "1937."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "1947."),
@@ -859,7 +860,8 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "Las vanos abocinados son característicos del arte...",
+              question:
+                  "\'Los vanos abocinados\' son característicos del arte...",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Románico."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Mudejar."),
@@ -1023,7 +1025,7 @@ class TriviaLevelArte {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Jónico."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Rococó."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Corintio."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Dórico ."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Dórico."),
               ])
         ],
       ),
@@ -1056,7 +1058,7 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuál es la obra más famosa de Edvard Munch.?",
+              question: "¿Cuál es la obra más famosa de Edvard Munch?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "El Grito."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Melancolía."),
@@ -1085,7 +1087,7 @@ class TriviaLevelArte {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Modernismo."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Románico."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Realismo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Romántico ."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Romántico."),
               ]),
           TriviaQuestionDomain(
               id: 6,
@@ -1212,7 +1214,7 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Dónde está hubicado el Museo Guggenheim Bilbao?",
+              question: "¿Dónde está ubicado el Museo Guggenheim Bilbao?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "España."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Alemania."),
@@ -1240,7 +1242,7 @@ class TriviaLevelArte {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Quien es el autor de la escultura el \"Éxtasis de Santa Teresa\"?",
+                  "¿Quién es el autor de la escultura el \"Éxtasis de Santa Teresa\"?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Bernini."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Donatello."),
@@ -1251,7 +1253,7 @@ class TriviaLevelArte {
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Dónde está hubicada la Catedral de Santa María de la Flor?",
+                  "¿Dónde está ubicada la Catedral de Santa María de la Flor?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Italia."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Francia."),
@@ -1310,10 +1312,10 @@ class TriviaLevelArte {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Dónde se encuentra \"La primavera\"  de Sandro Botticelli?",
+                  "¿Dónde se encuentra \"La primavera\" de Sandro Botticelli?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Galería Uffizi."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Louvre ."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Louvre."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Museo del Prado."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Museo Británico."),
               ]),
@@ -1366,7 +1368,7 @@ class TriviaLevelArte {
                 TriviaQuestionAnswerDomain(id: 1, answer: "37."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "24."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "42."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "56 ."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "56."),
               ])
         ],
       ),

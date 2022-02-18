@@ -114,7 +114,7 @@ class TriviaLevelDeporte {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Moscow."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Barcelona."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Tokio."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Los Angeles."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Los Ángeles."),
               ]),
         ],
       ),
@@ -229,7 +229,7 @@ class TriviaLevelDeporte {
           TriviaQuestionDomain(
             id: 3,
             correctAnswerId: 1,
-            question: "Which team was the 2014-2015 NBA Champions?",
+            question: "¿Qué equipo fue el campeón de la NBA 2014-2015?",
             answers: [
               TriviaQuestionAnswerDomain(
                   id: 1, answer: "Golden State Warriors."),
@@ -275,9 +275,9 @@ class TriviaLevelDeporte {
             answers: [
               TriviaQuestionAnswerDomain(id: 1, answer: "DING Ning (China)."),
               TriviaQuestionAnswerDomain(id: 2, answer: "LI Xiaoxia (China)."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Ai FUKUHARA (Japan)."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Ai FUKUHARA (Japón)."),
               TriviaQuestionAnswerDomain(
-                  id: 4, answer: "Song KIM (North Korea)."),
+                  id: 4, answer: "Song KIM (Corea del Norte)."),
             ],
           ),
           TriviaQuestionDomain(
@@ -621,10 +621,10 @@ class TriviaLevelDeporte {
             question:
                 "¿En qué fecha se celebró la ceremonia de clausura de los Juegos Olímpicos de Verano de Río 2016?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "21 de Agosto."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "20 de Agosto."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "22 de Agosto."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "23 de Agosto."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "21 de agosto."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "20 de agosto."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "22 de agosto."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "23 de agosto."),
             ],
           ),
           TriviaQuestionDomain(
@@ -677,9 +677,9 @@ class TriviaLevelDeporte {
               TriviaQuestionAnswerDomain(id: 1, answer: "Ma Long (China)."),
               TriviaQuestionAnswerDomain(id: 2, answer: "Zhang Jike (China)."),
               TriviaQuestionAnswerDomain(
-                  id: 3, answer: "Jun Mizutani (Japan)."),
+                  id: 3, answer: "Jun Mizutani (Japón)."),
               TriviaQuestionAnswerDomain(
-                  id: 4, answer: "Vladimir Samsonov (Belarus)."),
+                  id: 4, answer: "Vladimir Samsonov (Belorusia)."),
             ],
           ),
           TriviaQuestionDomain(
@@ -1035,7 +1035,7 @@ class TriviaLevelDeporte {
               TriviaQuestionAnswerDomain(
                   id: 2, answer: "The Showdown (Australia)."),
               TriviaQuestionAnswerDomain(
-                  id: 3, answer: "Incendia de Verstappen (Germany)."),
+                  id: 3, answer: "Incendia de Verstappen (Alemania)."),
               TriviaQuestionAnswerDomain(
                   id: 4, answer: "Prohibición de Schumacher (Gran Bretaña)."),
             ],

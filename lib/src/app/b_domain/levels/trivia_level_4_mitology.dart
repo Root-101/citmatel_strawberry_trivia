@@ -256,7 +256,7 @@ class TriviaLevelMitology {
               id: 2,
               correctAnswerId: 1,
               question:
-                  "En la mitología africana, Anansi toma la forma de qué animal?",
+                  "¿En la mitología africana, Anansi toma la forma de qué animal?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Araña."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Perro Salvaje."),
@@ -330,7 +330,7 @@ class TriviaLevelMitology {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Seth."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Anubis."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Osiris ."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Osiris."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Amon-Ra."),
               ]),
         ],
@@ -374,7 +374,7 @@ class TriviaLevelMitology {
               id: 4,
               correctAnswerId: 1,
               question:
-                  "En la mitología egipcia, ¿qué dios está epresentado con cabeza de chacal ?",
+                  "En la mitología egipcia, ¿qué dios está representado con cabeza de chacal?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Anubis."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Horus."),
@@ -406,7 +406,7 @@ class TriviaLevelMitology {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Thor."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Odín."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Loki."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Balder ."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Balder."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -439,7 +439,7 @@ class TriviaLevelMitology {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "Según la mitología griega, ¿quién era el mesajero de los dioses?",
+                  "Según la mitología griega, ¿quién era el mensajero de los dioses?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Hermes."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Hefesto."),
@@ -461,7 +461,7 @@ class TriviaLevelMitology {
               id: 3,
               correctAnswerId: 1,
               question:
-                  "En la mitología egipcia, ¿qué dios está epresentado con cabeza de halcón?",
+                  "En la mitología egipcia, ¿qué dios está representado con cabeza de halcón?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Horus."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Anubis."),
@@ -575,7 +575,7 @@ class TriviaLevelMitology {
                   "¿Cuál de estas divinidades NO era hermana de las otras tres?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Poseidón."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Artemisa ."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Artemisa."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Hermes."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Atenea."),
               ]),
@@ -898,7 +898,7 @@ class TriviaLevelMitology {
               id: 5,
               correctAnswerId: 1,
               question:
-                  "¿Quién o quiénes eran las deidades de las muerte violenta?",
+                  "¿Quién o quiénes eran las deidades de la muerte violenta?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Las Keres."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Hades."),
@@ -1049,7 +1049,7 @@ class TriviaLevelMitology {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Quienes son los hermanos de Odín?",
+              question: "¿Quiénes son los hermanos de Odín?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Vili y Ve."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Ymir y Frigg."),
@@ -1165,7 +1165,7 @@ class TriviaLevelMitology {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "Por qué se colgó Odín del Yggdrasil?",
+              question: "¿Por qué se colgó Odín del Yggdrasil?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Obtener las runas."),
                 TriviaQuestionAnswerDomain(

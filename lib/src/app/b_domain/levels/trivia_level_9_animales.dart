@@ -14,7 +14,7 @@ class TriviaLevelAnimales {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "Un animal carnivoro come carne, ¿que come un animal nucivoro?",
+                  "Un animal carnívoro come carne, ¿que come un animal nucívoro?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Nueces."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Nada."),
@@ -327,7 +327,7 @@ class TriviaLevelAnimales {
               id: 4,
               correctAnswerId: 1,
               question:
-                  "¿A qué división biológico pertenecen todos los mamíferos, aves y reptiles?",
+                  "¿A qué división biológica pertenecen todos los mamíferos, aves y reptiles?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Cordados."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Equinodermos."),
@@ -359,7 +359,7 @@ class TriviaLevelAnimales {
                     id: 2, answer: "Oso pardo de California."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Oso Atlas."),
                 TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Oso pardo Mexicano."),
+                    id: 4, answer: "Oso pardo mexicano."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -576,7 +576,7 @@ class TriviaLevelAnimales {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿De qué país es originario el periquito?f",
+              question: "¿De qué país es originario el periquito?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Australia."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Indonesia."),
@@ -734,7 +734,7 @@ class TriviaLevelAnimales {
                 TriviaQuestionAnswerDomain(id: 2, answer: "Gorila."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Chimpancé."),
                 TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Los simios no rién."),
+                    id: 4, answer: "Los simios no ríen."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -916,7 +916,7 @@ class TriviaLevelAnimales {
               id: 2,
               correctAnswerId: 1,
               question:
-                  "Las moscas, zumban siempre en una escala musical. ¿Sabrías cual?",
+                  "Las moscas, zumban siempre en una escala musical. ¿Cuál?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Fa Mayor."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Re Mayor."),
@@ -949,7 +949,7 @@ class TriviaLevelAnimales {
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cual es el pez más veloz de todos?",
+              question: "¿Cuál es el pez más veloz de todos?",
               answers: [
                 TriviaQuestionAnswerDomain(
                     id: 1, answer: "Pez vela del Pacífico."),
@@ -1035,7 +1035,7 @@ class TriviaLevelAnimales {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Qué animal de los siguientes NO es hervíboro?",
+              question: "¿Qué animal de los siguientes NO es herbívoro?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Erizo."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Koala."),
@@ -1196,7 +1196,7 @@ class TriviaLevelAnimales {
                 TriviaQuestionAnswerDomain(id: 1, answer: "África."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Bretaña."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Filipinas."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Iran."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Irán."),
               ]),
           TriviaQuestionDomain(
               id: 5,
@@ -1216,7 +1216,7 @@ class TriviaLevelAnimales {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Estrella de mar."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Nutria."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Seal."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Foca."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Medusa."),
               ])
         ],

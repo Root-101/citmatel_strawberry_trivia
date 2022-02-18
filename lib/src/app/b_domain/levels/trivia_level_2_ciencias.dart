@@ -393,7 +393,7 @@ class TriviaLevelCiencias {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Diplofase."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Metafase."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Anafase ."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Anafase."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Telofase."),
               ]),
           TriviaQuestionDomain(
@@ -440,7 +440,7 @@ class TriviaLevelCiencias {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Venus."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Marte."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Mercurio ."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mercurio."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Júpiter."),
               ]),
           TriviaQuestionDomain(
@@ -496,7 +496,7 @@ class TriviaLevelCiencias {
               question:
                   "Según su forma de alimentarse, consideramos a los cerdos...",
               answers: [
-                TriviaQuestionAnswerDomain(id: 3, answer: "Omnívoros ."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Omnívoros."),
                 TriviaQuestionAnswerDomain(id: 1, answer: "Herbívoros."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Carnívoros."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Animales."),
@@ -610,7 +610,7 @@ class TriviaLevelCiencias {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "27."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "33."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "25 ."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "25."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "13."),
               ]),
           TriviaQuestionDomain(
@@ -649,7 +649,7 @@ class TriviaLevelCiencias {
               id: 5,
               correctAnswerId: 1,
               question:
-                  "¿Cómo se llama el proceso por el cual las plantas elaboran su alimento?",
+                  "¿Cómo se llama el proceso por el cuál las plantas elaboran su alimento?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Fotosíntesis."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Relación."),
@@ -714,7 +714,8 @@ class TriviaLevelCiencias {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Por una célula."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Por dos células."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Por tres células."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Por cuatro célula."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Por cuatro células."),
               ]),
         ],
       ),
@@ -728,7 +729,7 @@ class TriviaLevelCiencias {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Paleontología."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Astronomía."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Geología ."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Geología."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Física."),
               ]),
           TriviaQuestionDomain(
@@ -840,7 +841,7 @@ class TriviaLevelCiencias {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Queratina."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Calcio."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Fósforo ."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Fósforo."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Melanina."),
               ]),
           TriviaQuestionDomain(
@@ -882,7 +883,7 @@ class TriviaLevelCiencias {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Araña."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Rana."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Salamandra ."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Salamandra."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Tapalcua."),
               ]),
         ],
@@ -1247,7 +1248,7 @@ class TriviaLevelCiencias {
               id: 4,
               correctAnswerId: 1,
               question:
-                  "¿Cuál de los siguientes NO esd un animal de sangre fría?",
+                  "¿Cuál de los siguientes NO es un animal de sangre fría?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Oso hormiguero."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Lagarto de Komodo."),
@@ -1334,7 +1335,7 @@ class TriviaLevelCiencias {
               id: 6,
               correctAnswerId: 1,
               question:
-                  "¿Qué hace que nuestro cerebro sea más grande que el de la mayoría de mamiferos?",
+                  "¿Qué hace que nuestro cerebro sea más grande que el de la mayoría de mamíferos?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Corteza Cerebral."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Lóbulo Paretal."),
@@ -1375,7 +1376,7 @@ class TriviaLevelCiencias {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Glúteo Mayor."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Sartorio."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Dorsal Ancho."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Biceps."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Bíceps."),
               ]),
           TriviaQuestionDomain(
               id: 4,

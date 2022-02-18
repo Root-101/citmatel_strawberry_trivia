@@ -100,7 +100,7 @@ class TriviaLevelGeneral {
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Cuándo uno tiene envidia se dice que es de que color?",
+                  "¿Cuándo uno tiene envidia se dice que es de qué color?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Verde."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Rojo."),
@@ -177,7 +177,7 @@ class TriviaLevelGeneral {
               id: 2,
               correctAnswerId: 1,
               question:
-                  "Las palabras \"bungalow\" y \"champú\" son originarias del idiomas del país:",
+                  "Las palabras \"bungalow\" y \"champú\" son originarias del idioma del país:",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "India."),
                 TriviaQuestionAnswerDomain(
@@ -750,7 +750,7 @@ class TriviaLevelGeneral {
               correctAnswerId: 1,
               question: "¿Cuánto duró “La Guerra de los Cien Años”?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "116 ."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "116."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "100."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "110."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "107."),
@@ -915,7 +915,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿De qué isla son endémicos los lemures?",
+              question: "¿De qué isla son endémicos los lémures?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Madagascar."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Cuba."),
@@ -1084,7 +1084,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: " ¿Quién escribió La Odisea?",
+              question: "¿Quién escribió La Odisea?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Homero."),
                 TriviaQuestionAnswerDomain(
@@ -1129,7 +1129,7 @@ class TriviaLevelGeneral {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Café."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Arroz."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Azucar."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Azúcar."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Trigo."),
               ]),
         ],
@@ -1154,7 +1154,7 @@ class TriviaLevelGeneral {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Baloncesto."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Fútbol."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Ajedrés."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Ajedréz."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Tenis."),
               ]),
           TriviaQuestionDomain(
@@ -1318,7 +1318,7 @@ class TriviaLevelGeneral {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Australia."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Irán."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Mongolia ."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mongolia."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "China."),
               ]),
           TriviaQuestionDomain(

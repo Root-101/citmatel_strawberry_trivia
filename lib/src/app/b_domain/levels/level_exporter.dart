@@ -18,7 +18,7 @@ void main() {
 
   //print only theme
   initialize().then((value) {
-    printTheme(Get.find<TriviaLevelUseCase>().findAll()[1]);
+    printTheme(Get.find<TriviaLevelUseCase>().findAll()[9]);
   });
 }
 

@@ -14,7 +14,7 @@ class TriviaLevelTutorial {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 2,
-              question: "¿Para que se utilizan los tutoriales?",
+              question: "¿Para qué se utilizan los tutoriales?",
               answers: [
                 TriviaQuestionAnswerDomain(
                     id: 1, answer: "Transferir conocimiento."),
@@ -34,7 +34,7 @@ class TriviaLevelTutorial {
                 TriviaQuestionAnswerDomain(id: 2, answer: "El océano Índico."),
                 TriviaQuestionAnswerDomain(
                     id: 3, answer: "El océano Atlántico."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "El océano Ártico ."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "El océano Ártico."),
               ]),
           TriviaQuestionDomain(
               id: 3,

@@ -59,7 +59,7 @@ class TriviaLevelGeography {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cual es la capital de Australia?",
+              question: "¿Cuál es la capital de Australia?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Canberra."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Sydney."),
@@ -320,7 +320,7 @@ class TriviaLevelGeography {
                 TriviaQuestionAnswerDomain(id: 2, answer: "San Marino."),
                 TriviaQuestionAnswerDomain(
                     id: 3, answer: "Ciudad del Vaticano."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Lichtenstein ."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Lichtenstein."),
               ]),
           TriviaQuestionDomain(
               id: 4,
@@ -351,7 +351,7 @@ class TriviaLevelGeography {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "How many states are in Australia?",
+              question: "¿Cuántos estados tiene Australia?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "6."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "7."),
@@ -392,7 +392,7 @@ class TriviaLevelGeography {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Washington D.C."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Seattle."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Los Angeles."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Los Ángeles."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Albany."),
               ]),
           TriviaQuestionDomain(
@@ -697,7 +697,7 @@ class TriviaLevelGeography {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Buenos Aires."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Mendoza."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Rosario."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Cienfugos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cienfuegos."),
               ]),
           TriviaQuestionDomain(
               id: 5,
@@ -733,7 +733,7 @@ class TriviaLevelGeography {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Afganistán."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Irák."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "México."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Japon."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Japón."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -818,7 +818,7 @@ class TriviaLevelGeography {
               correctAnswerId: 1,
               question: "¿Cuál es la capital de los Países Bajos?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Amsterdam."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Ámsterdam."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Rotterdam."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Delt."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Alejandría."),
@@ -1089,7 +1089,7 @@ class TriviaLevelGeography {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Franco."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Escudo."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Corona."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Dolar."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Dólar."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -1162,7 +1162,7 @@ class TriviaLevelGeography {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿El desiero de Atacama se encuentra en?",
+              question: "¿El desierto de Atacama se encuentra en?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Chile."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Argentina."),
@@ -1209,7 +1209,7 @@ class TriviaLevelGeography {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Cuál es el nombre del supercontinente del que derivaron los continenete actuales?",
+                  "¿Cuál es el nombre del supercontinente del que derivaron los continentes actuales?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Pangea."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Panea."),
@@ -1239,7 +1239,7 @@ class TriviaLevelGeography {
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "Las islas Salomón se ubican en el oceáno:",
+              question: "Las islas Salomón se ubican en el océano:",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Pacífico."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Atlántico."),
@@ -1290,7 +1290,7 @@ class TriviaLevelGeography {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Asia."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "América Central."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "África."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Sudámerica."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Sudamérica."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -1354,7 +1354,7 @@ class TriviaLevelGeography {
               correctAnswerId: 1,
               question: "¿Cuál es la parte más seca de la Tierra?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "La Ántartida."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "La Antártida."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "América del Sur."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "América del Norte."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Asia."),

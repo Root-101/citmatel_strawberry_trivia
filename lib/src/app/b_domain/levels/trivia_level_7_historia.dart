@@ -64,7 +64,7 @@ class TriviaLevelHistoria {
           TriviaQuestionDomain(
             id: 2,
             correctAnswerId: 1,
-            question: "¿Cuántos aterrizajes lunares tripulados han habido?",
+            question: "¿Cuántos aterrizajes lunares tripulados ha habido?",
             answers: [
               TriviaQuestionAnswerDomain(id: 1, answer: "6."),
               TriviaQuestionAnswerDomain(id: 2, answer: "1."),
@@ -654,7 +654,7 @@ class TriviaLevelHistoria {
           TriviaQuestionDomain(
             id: 4,
             correctAnswerId: 1,
-            question: "¿Quien descubrió la Penicilina?",
+            question: "¿Quién descubrió la Penicilina?",
             answers: [
               TriviaQuestionAnswerDomain(id: 1, answer: "Alexander Flemming."),
               TriviaQuestionAnswerDomain(id: 2, answer: "Marie Curie."),
@@ -715,7 +715,7 @@ class TriviaLevelHistoria {
               TriviaQuestionAnswerDomain(id: 1, answer: "X."),
               TriviaQuestionAnswerDomain(id: 2, answer: "W."),
               TriviaQuestionAnswerDomain(id: 3, answer: "U."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "J ."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "J."),
             ],
           ),
           TriviaQuestionDomain(
@@ -1104,7 +1104,7 @@ class TriviaLevelHistoria {
               TriviaQuestionAnswerDomain(
                   id: 1, answer: "Ejército Republicano Irlandés."),
               TriviaQuestionAnswerDomain(
-                  id: 2, answer: "Ejécito Rebelde Irlandesa."),
+                  id: 2, answer: "Ejército Rebelde Irlandesa."),
               TriviaQuestionAnswerDomain(
                   id: 3, answer: "Ejército de Reforma Irlandés."),
               TriviaQuestionAnswerDomain(

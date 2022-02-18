@@ -54,10 +54,10 @@ class TriviaLevelTecnologias {
               question:
                   "¿En programación, el operador ternario se define principalmente con qué símbolo(s)?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "?:."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "??."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "if then."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "?."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "?:"),
+                TriviaQuestionAnswerDomain(id: 2, answer: "??"),
+                TriviaQuestionAnswerDomain(id: 3, answer: "if then"),
+                TriviaQuestionAnswerDomain(id: 4, answer: "?"),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -346,7 +346,7 @@ class TriviaLevelTecnologias {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Capa de conexión."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Capa de aplicación ."),
+                    id: 2, answer: "Capa de aplicación."),
                 TriviaQuestionAnswerDomain(
                     id: 3, answer: "Capa de transporte."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Capa física."),
@@ -500,7 +500,7 @@ class TriviaLevelTecnologias {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Cuál de los siguientes periféricos es de entrada/salida?.",
+                  "¿Cuál de los siguientes periféricos es de entrada/salida?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Módem de Internet."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Teclado."),
@@ -545,7 +545,7 @@ class TriviaLevelTecnologias {
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Qué caracteristica básica diferencia al CD del DVD?",
+              question: "¿Qué característica básica diferencia al CD del DVD?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Capacidad."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Tamaño."),
@@ -578,7 +578,7 @@ class TriviaLevelTecnologias {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Ofimática."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Diseño Gráfico."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Aeronaútica."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Aeronáutica."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Astronomía."),
               ]),
           TriviaQuestionDomain(
@@ -771,7 +771,7 @@ class TriviaLevelTecnologias {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Facebook."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Instagram."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Twitter."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Youtube."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "YouTube."),
               ]),
           TriviaQuestionDomain(
               id: 5,
@@ -805,7 +805,7 @@ class TriviaLevelTecnologias {
                   "¿Cuál es la página de Internet más visitada del mundo?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Google."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Youtube."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "YouTube."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Facebook."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Gmail."),
               ]),
@@ -825,7 +825,7 @@ class TriviaLevelTecnologias {
               question: "¿Qué marca vende más teléfonos en el mundo?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Samsung."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Huwaei."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Huawei."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Apple."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Xiaomi."),
               ]),
@@ -962,7 +962,7 @@ class TriviaLevelTecnologias {
               id: 1,
               correctAnswerId: 1,
               question:
-                  " ¿Qué buscador era el más popular antes de la aparición de Google?",
+                  "¿Qué buscador era el más popular antes de la aparición de Google?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Altavista."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Yahoo!."),
@@ -1036,7 +1036,7 @@ class TriviaLevelTecnologias {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: ".klj"),
                 TriviaQuestionAnswerDomain(id: 2, answer: ".xls"),
-                TriviaQuestionAnswerDomain(id: 3, answer: ".tif."),
+                TriviaQuestionAnswerDomain(id: 3, answer: ".tif"),
                 TriviaQuestionAnswerDomain(id: 4, answer: ".js"),
               ]),
           TriviaQuestionDomain(
