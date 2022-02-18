@@ -1,8 +1,11 @@
 import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_domain_exporter.dart';
+import 'package:citmatel_strawberry_trivia/src/ui/c_controller_impl/countdown_controller.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
+
+import '../../../trivia_exporter.dart';
 
 abstract class TriviaSubLevelController extends GetxController {
   static const String TAG = "trivia-sub-level-controller";
@@ -22,6 +25,10 @@ abstract class TriviaSubLevelController extends GetxController {
   ///el parcial siembre va a ser 0 o 1, como un booleano si tiene una media estrella
   static const int STARS_MULTIPLIER = 2;
 
+  set countdownController(CountdownController countdownController);
+  void play();
+  void stop();
+  void endTime();
   int get activeStep;
 
   int get dotCount;
@@ -54,13 +61,6 @@ abstract class TriviaSubLevelController extends GetxController {
   LinearGradient getTheRightColor(int index);
 
   IconData getTheRightIconData(int index);
-
-  AnimationController initAnimationController(
-      SingleTickerProviderStateMixin ticker);
-
-  void stopCountdown();
-
-  void playCountdown();
 
   //devuelve el tema del nivel al que pertenece este subnivel
   String subLevelTheme();
