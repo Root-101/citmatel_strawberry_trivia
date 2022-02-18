@@ -53,10 +53,10 @@ class TriviaLevelCiencias {
               correctAnswerId: 1,
               question: "¿Qué elemento tiene el símbolo químico \"Fe\"?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Octágono."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Hexágono."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Círculo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Triángulo."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Hierro."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Mercurio."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Hidrógeno."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Litio."),
               ]),
           TriviaQuestionDomain(
               id: 2,
