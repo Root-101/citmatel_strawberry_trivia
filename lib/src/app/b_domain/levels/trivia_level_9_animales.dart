@@ -493,6 +493,940 @@ class TriviaLevelAnimales {
               ])
         ],
       ),
+      TriviaSubLevelDomain(
+        id: 12,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Cómo se orienta el topo bajo tierra?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Bigotes."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Ojos."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Nariz."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Pies."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Qué es lo que más les gusta comer a las mariquitas?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Pulgones."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Polen."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Pétalos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Flores."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Qué comen principalmente las morsas?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Moluscos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Algas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Peces."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Pingüinos."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Cuánto tiempo hibernan las musarañas?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "No hibernan."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Tres meses."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Cinco meses."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Las musarañas no existen."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuál de estas acciones no puede hacerla un tigre?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Trepar."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Nadar."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Saltar."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Rascarse."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 13,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Cuál es el principal enemigo del águila ratonera?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Hombre."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Zorro."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Oso pardo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "León."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿De qué material es el cascabel de las serpientes de cascabel?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cuerno."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Piedra."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Cartílago."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Hueso."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿De qué país es originario el periquito?f",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Australia."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Indonesia."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Brasil."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cuba."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Cuánto tiempo pueden estar los camellos sin beber?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "2 semanas."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "1 semana."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "3 semanas."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "4 semanas."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cómo construyen sus nidos las avispas?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Mascando madera."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Mascando hojas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mascando flores."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Mascando piedras."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 14,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Hasta cuántas avispas pueden vivir en un avispero?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "7000."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "200."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "700."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "2000."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿En qué estación del año ulula el búho?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Primavera."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Todo el año."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Otoño."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Verano."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question:
+                  "¿En qué período geológico termina el dominio de los dinosaurios sobre la Tierra?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Mesozoico."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Paleozoico."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Fanerozoico."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Jurásico."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuántas especies de dinosaurios se han encontrado hasta ahora?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1000."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "3000."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "5000."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "8000."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question:
+                  "De entre todos los dinosaurios, ¿cuál fue el mayor depredador?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Tiranosaurio Rex."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Velociraptor."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Protosuchus."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Diplodocus."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 15,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  "¿Durante cuántos años vivieron los dinosaurios sobre la Tierra?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "140 millones."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "50 millones."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "250 millones."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "20 millones."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Para qué animal es físicamente imposible mirar hacia el cielo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cerdo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Jirafa."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Rinoceronte."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Elefante."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuántos dientes posee un tiburón ballena de media?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Más de 4.500."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Más de 3.500."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Más de 2.500."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Más de 1.500."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Qué animal de los siguientes es incapaz de vomitar?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Caballo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Elefante."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Suricata."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Jirafa."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question:
+                  "La relación sexual más fugaz del mundo animal (unos 5 segundos) pertenece a...",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Ratones."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Ranas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Caracoles."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cerdo."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 16,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué simio se contagia de la risa con una facilidad pasmosa?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Orangután."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Gorila."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Chimpancé."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Los simios no rién."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuántos kilómetros por hora puede alcanzar un coyote?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "65."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "80."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "95."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "105."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cómo se llama el escarabajo más grande del mundo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Escarabajo Titán."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Escarabajo Violín."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Escarabajo Ciervo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Escarabajo Común."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Qué animal tiene más de 2.000 músculos?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Oruga."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Caracol."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Anaconda."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Humano."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Qué mamífero es completamente mudo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Jirafa."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Delfín."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Murciélago."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Conejo."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 17,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué porcentaje de los animales terrestres ha sido descubierto?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "14."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "25."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "55."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "87."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál es el animal terrestre que pone el huevo más grande?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Avestruz."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Cisne."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Camello."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Gallina."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿De qué color es el pelo de un oso polar?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Transparente."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Blanco."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Marrón."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Negro."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Cuántos dientes tiene un mosquito?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "47."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "6."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "32."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Ninguno."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuál es el único animal visible desde el espacio?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Coral."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Elefante africano."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Abeja."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Ballena azul."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 18,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Cuántas vidas tiene un gato?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "7."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "9."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "2."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué animal necesita cerrar los ojos para poder tragar?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Sapo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Armadillo."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Serpiente."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Humano."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuál de estos animales tiene la gestación más larga?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Salamandra negra alpina."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Murciélago."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Monstruo de Gila."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Gusano de terciopelo."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál es el animal con el mejor oído del reino animal?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Polilla de la cera."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Delfín mular."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Murciélago orejudo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Elefante africano."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuántas hora de promedio duerme un koala al día?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "20."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "10."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "2."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "8."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 19,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Cuál es el tamaño medio de una musaraña?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Entre 3,6 y 5,2 cm."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Entre 4 y 6 cm."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Entre 3 y 4 cm."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Entre 2,2 y 4,7 cm."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "Las moscas, zumban siempre en una escala musical. ¿Sabrías cual?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Fa Mayor."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Re Mayor."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Re Menor."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Mi Menor."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué animal tiene la capacidad de cambiar de género varias veces durante su vida?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Ostras."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Babosas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "caballitos de Mar."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Orugas."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué animal tiene una lengua más larga en relación a su cuerpo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Murciélago Anoura."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Oso hormiguero gigante."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Camaleón común."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Serpiente"),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cual es el pez más veloz de todos?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Pez vela del Pacífico."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Guaju."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Atún rojo gigante."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Pez gato."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 20,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Qué animal tiene los dientes más grandes?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Narval."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Elefante africano."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Morsa."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Rinoceronte."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Y cuál es el ave más pequeña del mundo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Zunzuncito."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Colibrí orejiblanco."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Reyezuelo sencillo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Codorniz."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Qué aves construyen los nidos más grandes?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Tejedor republicano."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Cigüeña blanca."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Águila calva."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Periquito."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál es el único mamífero de todo el reino animal que puede volar?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Murciélago."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Cigüeña."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Albatros."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Avestruz."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuánto dura aproximadamente el embarazo de un elefante hembra?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "2 años."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "1 año."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "9 meses."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "7 meses."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 21,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Qué animal tiene más de 10 corazones?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Lombriz de tierra."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Medusa."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Pulpo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Calamar."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Qué animal de los siguientes NO es hervíboro?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Erizo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Koala."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Ciervo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Elefante."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuántos meses al año hiberna el oso panda gigante? ",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "No hiberna."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "1 mes."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "3 meses."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "5 meses."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál de los siguientes es el animal más venenoso del mundo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Avispa de mar."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Escorpión."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mamba Negra."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Medusa."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuál de estos insectos está en peligro de extinción?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Mariposa Monarca."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Insecto Palo."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Escarabajo Goliat."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Abeja Reina."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuánta electricidad puede llegar a descargar una anguila eléctrica?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "600 voltios."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "300 voltios."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "100 voltios."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "500 voltios."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 22,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál de los siguientes animales no puede distinguir el color rojo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Toro."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Loro."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Serpiente."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Humano."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Cuál es el tipo de ballena más pequeño del mundo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "La vaquita marina."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "La ballena asesina."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "La ballena beluga."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "La ballena común."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuál de los siguientes animales es caníbal?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Lobo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Suricata."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Murciélago."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Alcón."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿En qué dirección vuelan las aves del norte durante el invierno?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Sur."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Oeste."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Norte."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Este."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cómo se llama a un cabrito?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Niño."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Dólar."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Ternero."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cachorro."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question: "¿Cómo se llama a un pavo real hembra?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Peahens."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Pavo real."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Peananny."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Peonías."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 23,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Cuál es la esperanza de vida media de un perro?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "10-13 años."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "14-20 años."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "20-25 años."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "3-5 años."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Qué raza de perro tiene el tamaño más grande?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Mastín inglés."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Chihuahua."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Pastor alemán."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Perro perdiguero."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuál es el mecanismo de defensa de una mofeta?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Pedos malolientes."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Mordeduras fatales."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Saliva venenosa."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Garras afiladas."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Dónde viven normalmente los leones?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "África."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Bretaña."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Filipinas."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Iran."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál de los siguientes animales puede respirar bajo el agua?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Mantarrayas."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Pingüinos."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Patos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cóndores."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question: "¿Qué animal no tiene cerebro?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Estrella de mar."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Nutria."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Seal."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Medusa."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 24,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Cuánto tiempo pueden dormir los caracoles a la vez?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "15 horas."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "8 horas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "30 horas."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "36 horas."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Cuántas hormigas hay por cada humano en el mundo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1.6 millones."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "100."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "1000."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "100.000."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuánto dura el orgasmo de un cerdo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "30 minutos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "3 minutos."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "15 minutos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "1 hora."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Dónde se encuentra el corazón del camarón?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cabeza."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Colas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Pecho."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Pierna."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Qué animal es el único animal que no puede saltar?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Elefantes."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Jirafas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Ballenas."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cerdos."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question: "¿Cuántos cerebros tiene una sanguijuela?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "32."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "33."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "34."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "35."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 25,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Qué animal es conocido por sus leches rosadas?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Hipopótamos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Elefantes."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Cerdos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Conejos."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿De qué color es la sangre de un gusano del maní?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Púrpura."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Verde."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Rojo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Rosado."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué animal puede vivir durante semanas sin cabeza o cerebro?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cucaracha."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Araña."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Hormigas."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Saltamontes."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué animal no necesita beber agua durante toda su vida?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Pequeña rata canguro."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Camello."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Búho."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Elefante."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuánto pesa un elefante africano al nacer?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "90 kilos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "34 kilos."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "454 kilos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "100 kilos."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué tipo de perro es el que se más se utiliza para tirar de trineos?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Husky de Alaska."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Husky Siberiano."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "San Bernardo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Pequinés."),
+              ])
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 26,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Qué nombre recibe un grupo de pingüinos?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Colonia."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Bandada."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Manada."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Camada."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál es la especie de camello que tiene una sola joroba?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Camello arábigo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Camello asiático."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Camello bactriano salvaje."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Ninguno."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question:
+                  "¿Dónde se pueden encontrar los macacos de cara roja bañándose en aguas termales?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Japón."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Mongolia."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Rusia."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "África."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "¿Cómo explican los científicos los saltos que dan fuera del agua los delfines giradores?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Comunicarse con la manada."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Encontrar Depredadores."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Comer insectos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Para divertirse."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuál es el primate genéticamente más próximo al chimpancé?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Humanos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Gorilas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Babuinos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Macacos."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question: "¿Cuántas especies de cebras hay?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "3."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "5."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "15."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "9."),
+              ])
+        ],
+      ),
     ],
   );
 }
