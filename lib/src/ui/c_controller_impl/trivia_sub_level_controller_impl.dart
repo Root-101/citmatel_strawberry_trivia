@@ -107,11 +107,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     if (isCorrect) {
       StrawberryAudio.playAudioCorrect();
       _makeConffeti();
-
-      _stepperIcons[_activeStep] = Icon(
-        Icons.done,
-        color: Colors.white,
-      );
+      putTheRightIconStepper(Icons.done);
 
       if (showTutorial && showTutorialRight) {
         showTutorialRight = false;
@@ -147,11 +143,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     } else {
       StrawberryAudio.playAudioWrong();
       StrawberryVibration.vibrate();
-
-      _stepperIcons[_activeStep] = Icon(
-        Icons.close,
-        color: Colors.white,
-      );
+      putTheRightIconStepper(Icons.close);
 
       if (showTutorial && showTutorialWrong) {
         showTutorialWrong = false;
@@ -203,6 +195,13 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       });
     }
     isShowingTutorial = false;
+  }
+
+  void putTheRightIconStepper(IconData iconData) {
+    _stepperIcons[_activeStep] = Icon(
+      iconData,
+      color: Colors.white,
+    );
   }
 
   void _makeConffeti() {
