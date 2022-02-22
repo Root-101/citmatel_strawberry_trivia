@@ -4,17 +4,18 @@ import 'package:flutter/material.dart';
 
 const primaryColor = Colors.lightBlue;
 const secondaryColor = Color(0xFF46A0AE);
+//Color(0xFF46A0AE)
 
 const textQuestionColor = Colors.white;
-const textAnswerColor = Colors.black;
+const textAnswerColor = Colors.white;
 
 final colorWrong = Colors.red.shade800;
 final colorRight = Colors.lightGreen.shade800;
 
 const gradientNormalColor = LinearGradient(
   colors: [
-    secondaryColor,
     primaryColor,
+    secondaryColor,
   ],
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,
@@ -22,8 +23,8 @@ const gradientNormalColor = LinearGradient(
 
 final gradientWrongColor = LinearGradient(
   colors: [
-    Colors.red.shade300,
     colorWrong,
+    Colors.red.shade300,
   ],
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,
@@ -31,8 +32,8 @@ final gradientWrongColor = LinearGradient(
 
 final gradientRightColor = LinearGradient(
   colors: [
-    Colors.green,
     colorRight,
+    Colors.green,
   ],
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,

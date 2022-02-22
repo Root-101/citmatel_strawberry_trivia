@@ -2,8 +2,15 @@ import 'package:citmatel_strawberry_trivia/src/app/b_domain/trivia_domain_export
 
 class TriviaLevelsAll {
   static final List<TriviaLevelDomain> levels = [
-    TriviaLevel1.level1,
-    TriviaLevel2.level2,
-    TriviaLevel3.level3,
+    TriviaLevelTutorial.tutorial,
+    TriviaLevelGeneral.levelGeneral,
+    TriviaLevelCiencias.levelCiencias,
+    TriviaLevelTecnologias.levelTecnologias,
+    TriviaLevelMitology.levelMitologias,
+    TriviaLevelDeporte.levelDeporte,
+    TriviaLevelGeography.levelGeografia,
+    TriviaLevelHistoria.levelHistoria,
+    TriviaLevelArte.levelArte,
+    TriviaLevelAnimales.levelAnimales,
   ];
 }

@@ -1,22 +1,17 @@
 import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_countdown_timer/index.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:im_stepper/stepper.dart';
-import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
 // ignore: must_be_immutable
 class TriviaSubLevelScreen extends StatefulWidget {
   static const ROUTE_NAME = "/trivia-sublevel-screen";
-  final bool showTutorial;
 
   TriviaSubLevelScreen({
     required TriviaSubLevelDomain subLevelDomain,
     required TriviaSubLevelProgressDomain subLevelProgressDomain,
-    required this.showTutorial,
   }) : super() {
     Get.put<TriviaSubLevelController>(
       TriviaSubLevelControllerImpl(
@@ -32,7 +27,6 @@ class TriviaSubLevelScreen extends StatefulWidget {
 
 class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   late final TriviaSubLevelController _controller;
-
   List<TargetFocus> targets = [];
 
   // Steps in the tutorial.
@@ -43,21 +37,31 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   GlobalKey _key5 = GlobalKey();
   GlobalKey _key6 = GlobalKey();
   GlobalKey _key7 = GlobalKey();
+  GlobalKey _keyAppBarBack = GlobalKey();
+  GlobalKey _keyAppBarStars = GlobalKey();
+  GlobalKey _keyAppBarLevel = GlobalKey();
+  GlobalKey _keyAppBarTheme = GlobalKey();
 
   @override
   void initState() {
     _controller = Get.find();
 
-    if (widget.showTutorial) {
+    if (_controller.showTutorial) {
       //Start showcase view after current widget frames are drawn.
-      WidgetsBinding.instance!.addPostFrameCallback((duration) async {
-        // Is necessary to wait a few seconds because the widgets haven't been created.
-        await Future.delayed(Duration(milliseconds: 500));
-        // Initialice the steps of the tutorial.
-        initTargets();
-        // Start the tutorial.
-        StrawberryTutorial.showTutorial(context: context, targets: targets);
-      });
+      WidgetsBinding.instance!.addPostFrameCallback(
+        (duration) async {
+          // Is necessary to wait a few seconds because the widgets haven't been created.
+          await Future.delayed(Duration(milliseconds: 500));
+          // Initialice the steps of the tutorial.
+          initTargets();
+          _controller.stop();
+          // Start the tutorial.
+          _controller.initTutorialCoachMark(
+            context: context,
+            targets: targets,
+          );
+        },
+      );
     }
     super.initState();
   }
@@ -71,150 +75,147 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return GetBuilder<TriviaSubLevelController>(
       builder: (_) {
-        return SafeArea(
-          child: Column(
-            children: [
-              _buildStepper(),
-              //Build the liquid progress bar.
-              const SizedBox(height: 10),
-              _buildCountdown(),
-              const SizedBox(height: 10),
-              //Build the Question card
-              TriviaSubLevelQuestionCard(
-                key4: _key4,
-                key5: _key5,
-                key6: _key6,
-                key7: _key7,
-              ),
-            ],
+        return CommonsSubLevelBuilder.buildScaffold(
+          backKey: _controller.showTutorial ? _keyAppBarBack : null,
+          levelKey: _controller.showTutorial ? _keyAppBarLevel : null,
+          themeKey: _controller.showTutorial ? _keyAppBarTheme : null,
+          starsKey: _controller.showTutorial ? _keyAppBarStars : null,
+          tema: _controller.subLevelTheme(),
+          nivel: _controller.subLevelNumber(),
+          stars: _controller.generateProgress(),
+          deviceSize: size,
+          maxStar: TriviaSubLevelController.MAX_STARS,
+          body: SafeArea(
+            child: Stack(
+              children: [
+                Column(
+                  children: [
+                    //Build stepper
+                    _buildStepper(_key1, size),
+                    //Build the Question card
+                    TriviaSubLevelQuestionCard(
+                      key2: _key2,
+                      key3: _key3,
+                      key4: _key4,
+                      key5: _key5,
+                      key6: _key6,
+                      key7: _key7,
+                      size: size,
+                    ),
+                  ],
+                ),
+                Align(
+                  alignment: Alignment.topCenter,
+                  child: StrawberryWidgets.confettiWidget(
+                    confettiController: _controller.confettiController,
+                  ),
+                ),
+              ],
+            ),
           ),
         );
       },
     );
   }
 
-  _buildStepper() {
+  _buildStepper(GlobalKey key1, Size size) {
     return Container(
-      key: _key1,
-      padding: const EdgeInsets.all(10),
+      key: key1,
+      padding: EdgeInsets.symmetric(vertical: size.height / 37),
       // The widget ShowCase is used to show a tutorial step by step to the user.
-      child: DotStepper(
-        //Amount of dots to show.
-        dotCount: _controller.dotCount,
-        //Size of the dots.
-        dotRadius: 25,
+      child: IconStepper(
+        //The icons in the steps.
+        icons: [..._controller.stepperIcons],
         //Current selected dot.
         activeStep: _controller.activeStep,
-        //Type of shape of the dot.
-        shape: Shape.circle,
-        //Space between the dots.
-        spacing: 15,
-        //The animation that is shown when switch from a dot to another.
-        indicator: Indicator.jump,
-        // So the user can change the step.
-        tappingEnabled: false,
-
-        // DOT-STEPPER DECORATIONS
-        fixedDotDecoration: FixedDotDecoration(
-          color: secondaryColor,
-        ),
-
-        indicatorDecoration: IndicatorDecoration(
-          color: primaryColor,
-        ),
+        // The color of the step when it is not reached.
+        stepColor: secondaryColor,
+        // The color of a step when it is reached.
+        activeStepColor: primaryColor,
+        // The border color of a step when it is reached.
+        activeStepBorderColor: Colors.transparent,
+        // The color of the line that separates the steps.
+        lineColor: Colors.transparent,
+        // Whether to enable or disable the next and previous buttons.
+        enableNextPreviousButtons: false,
+        // Whether to allow tapping a step to move to that step or not.
+        enableStepTapping: false,
+        // The amount of padding inside a step.
+        stepPadding: 0,
+        // Whether the scrolling is disabled or not.
+        scrollingDisabled: true,
+        // The length of the line that separates the steps.
+        lineLength: size.width / 25,
+        // Determines how far away the border should be drawn from the step when it is reached.
+        activeStepBorderPadding: 0,
+        // The radius of a step.
+        stepRadius: size.width / 17,
+        // The duration of the animation effect to show when a step is reached.
+        stepReachedAnimationDuration: const Duration(seconds: 2),
+        // The animation effect to show when a step is reached.
+        stepReachedAnimationEffect: Curves.bounceInOut,
       ),
     );
   }
 
-  _buildCountdown() {
-    //Current time.
-    int startTime = DateTime.now().millisecondsSinceEpoch;
-    //Seconds it takes to reach 0.
-    int dif = _controller.durationOfProgressBar();
-    //The end time is the current time plus the choosen amount of seconds.
-    int endTime = startTime + dif * 1000;
-
-    CountdownTimerController _timerController = CountdownTimerController(
-        endTime: endTime,
-        onEnd: () {
-          // StrawberryFunction.looseLevel(
-          //   childFirstText: StrawberryAnimatedTextKit.rotateAnimatedText(
-          //     texts: [
-          //       'Te has quedado sin tiempo.',
-          //       'Inténtalo de nuevo.',
-          //       'El que persevera triunfa.',
-          //     ],
-          //   ),
-          // );
-        });
-
-    return CountdownTimer(
-      controller: _timerController,
-      widgetBuilder: (_, CurrentRemainingTime? time) {
-        if (time == null || time.sec == null) {
-          return Text('Game over');
-        }
-        //Current percent of the remaining time.
-        double perc = time.sec! / _controller.durationOfProgressBar();
-
-        return Stack(
-          key: _key2,
-          children: [
-            Container(
-              padding: EdgeInsets.all(10),
-              height: 70,
-              child: LiquidLinearProgressIndicator(
-                //Value of the progress bar.
-                value: double.parse(perc.toStringAsFixed(5)),
-                //Color of the liquid animation.
-                valueColor: AlwaysStoppedAnimation(primaryColor),
-                //Background Color of the progress bar.
-                backgroundColor: Colors.transparent,
-                //Border color of the bar.
-                borderColor: Colors.lightBlue.shade900,
-                //Border width and radius of the bar.
-                borderWidth: 5.0,
-                borderRadius: 12.0,
-                //The direction the liquid moves.
-                //(Axis.vertical = bottom to top, Axis.horizontal = left to right).
-                //Defaults to Axis.horizontal.
-                direction: Axis.horizontal,
-                //Text inside bar.
-                //center: Text("${time.sec} sec"),
-              ),
-            ),
-            Positioned.fill(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "${time.sec} seg",
-                      key: _key3,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                      ),
-                    ),
-                    SvgPicture.asset(
-                      TriviaAssets.CLOCK,
-                      width: 30,
-                      color: Colors.white,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ],
-        );
-      },
-    );
-  }
-
   void initTargets() {
+    targets.add(
+      StrawberryTutorial.addTarget(
+        identify: "Target Back Button",
+        keyTarget: _keyAppBarBack,
+        shadowColor: Colors.blue.shade800,
+        title: 'Atrás',
+        description:
+            'Pulse este botón si desea volver a la pantalla de niveles.',
+        showImageOnTop: false,
+        imagePadding: 50,
+        descriptionMaxLines: 2,
+      ),
+    );
+
+    targets.add(
+      StrawberryTutorial.addTarget(
+        identify: "Target Level",
+        keyTarget: _keyAppBarLevel,
+        shadowColor: Colors.red,
+        title: 'Nivel',
+        description: 'Este número indica el nivel en el que se encuentra.',
+        showImageOnTop: false,
+        imagePadding: 50,
+        descriptionMaxLines: 2,
+      ),
+    );
+
+    targets.add(
+      StrawberryTutorial.addTarget(
+        identify: "Target Theme",
+        keyTarget: _keyAppBarTheme,
+        shadowColor: Colors.cyan.shade900,
+        title: 'Tema',
+        description:
+            'Este texto indica el tema del nivel en el que se encuentra.',
+        showImageOnTop: false,
+        imagePadding: 50,
+        descriptionMaxLines: 2,
+      ),
+    );
+
+    targets.add(
+      StrawberryTutorial.addTarget(
+        identify: "Target Stars",
+        keyTarget: _keyAppBarStars,
+        shadowColor: Colors.teal,
+        title: 'Estrellas',
+        description:
+            'Las estrellas indican cuan bien has realizado el nivel.\nPara obtenerlas todas debes completar el nivel sin equivocarte ni una sola vez.',
+        showImageOnTop: false,
+        imagePadding: 50,
+        descriptionMaxLines: 5,
+      ),
+    );
     targets.add(
       StrawberryTutorial.addTarget(
         identify: "Target Stepper",
@@ -223,6 +224,8 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         title: 'Cantidad de preguntas en el nivel.',
         description:
             'El círculo azul indica la pregunta en la que se encuentra actualmente.',
+        showImageOnTop: false,
+        descriptionMaxLines: 2,
       ),
     );
 
@@ -230,10 +233,12 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
       StrawberryTutorial.addTarget(
         identify: "Target TimeBar",
         keyTarget: _key2,
-        shadowColor: Colors.red,
+        shadowColor: Colors.deepPurple,
         title: 'Barra de tiempo.',
         description:
             'Cuando la barra llega al final, el nivel termina y se debe comenzar de nuevo.',
+        showImageOnTop: false,
+        descriptionMaxLines: 3,
       ),
     );
 
@@ -244,7 +249,10 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         shadowColor: Colors.deepOrange,
         textCrossAxisAlignment: CrossAxisAlignment.start,
         title: 'El tiempo restante.',
+        description:
+            'En cuanto respondas la primera pregunta empieza a descontar.\n¡Ten cuidado!',
         shape: ShapeLightFocus.Circle,
+        descriptionMaxLines: 4,
       ),
     );
 
@@ -252,9 +260,11 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
       StrawberryTutorial.addTarget(
         identify: "Target Question",
         keyTarget: _key4,
-        shadowColor: Colors.amber,
+        shadowColor: Colors.indigo,
         title: 'La Pregunta.',
         description: 'La pregunta que se debe responder.',
+        showImageOnTop: false,
+        descriptionMaxLines: 1,
       ),
     );
     targets.add(
@@ -262,33 +272,13 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         identify: "Target Answer List",
         keyTarget: _key5,
         shadowColor: Colors.purple,
-        contentAlign: ContentAlign.top,
         title: 'La Lista de Respuestas.',
         description:
             'Se debe seleccionar la respuesta correcta de cada pregunta para poder pasar de nivel.',
         shape: ShapeLightFocus.Circle,
-      ),
-    );
-    targets.add(
-      StrawberryTutorial.addTarget(
-        identify: "Target Answer Right",
-        keyTarget: _key6,
-        shadowColor: Colors.green,
-        title: 'Respuesta correcta.',
-        description:
-            'Cuando se responde correctamente la pregunta se dibuja de verde.\n Sigue así es la única manera de ganar.',
-      ),
-    );
-    targets.add(
-      StrawberryTutorial.addTarget(
-        identify: "Target Answer Wrong",
-        keyTarget: _key7,
-        shadowColor: Colors.red,
-        title: 'Respuesta incorrecta.',
-        description:
-            'Cuando se responde incorrectamente la pregunta se dibuja de rojo.'
-            '\n Una vez q te equivocas se te dara la posibilidad al finalizar el nivel de intentarlo de nuevo.'
-            '\n Solo si respondes todas las preguntas correctamente puedes pasar de nivel.',
+        showImage: false,
+        contentAlign: ContentAlign.top,
+        descriptionMaxLines: 3,
       ),
     );
   }

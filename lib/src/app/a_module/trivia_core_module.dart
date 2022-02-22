@@ -7,6 +7,7 @@ class TriviaCoreModule {
 
     //sin dependencia
     Get.put<TriviaLevelUseCase>(TriviaLevelUseCaseImpl(TriviaLevelsAll.levels));
+    Get.put<TriviaRandomUseCase>(TriviaRandomUseCaseImpl());
 
     //el de progreso con la BD
     Get.put<TriviaSubLevelProgressUseCase>(

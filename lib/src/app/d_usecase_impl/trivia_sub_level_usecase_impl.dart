@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
-  // Domain almacenado para acceder a la info.
+  ///Domain almacenado para acceder a la info.
   final TriviaSubLevelDomain subLevelDomain;
 
   ///domain con la info del progreso
@@ -23,6 +23,8 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
     QuestionState.Answered_wrong: Icons.close,
   };
 
+  final int seed = DateTime.now().millisecondsSinceEpoch;
+
   TriviaSubLevelUseCaseImpl({
     required this.subLevelDomain,
     required this.subLevelProgressDomain,
@@ -38,8 +40,8 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
   Map<QuestionState, IconData> get iconsMap => this._iconsMap;
 
   @override
-  int durationOfProgressBar(int activeStep) {
-    return subLevelDomain.question[activeStep].duration;
+  Duration durationOfProgressBar(int activeStep) {
+    return Duration(seconds: subLevelDomain.question[activeStep].duration);
   }
 
   @override
@@ -48,8 +50,21 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
   }
 
   @override
-  TriviaQuestionDomain currentQuestion(activeStep) {
-    return subLevelDomain.question[activeStep];
+  TriviaQuestionDomain currentQuestion(int activeStep) {
+    return subLevelDomain.question[activeStep].clone();
+  }
+
+  //implementado con semilla para que cada vez que se entre a un subnivel sea aleatorio,
+  //xq se recrea el UC y se reinicia la semilla, pero a su vez dentro del mismo subnivel
+  //no se actualize si se llama varias veces sobre la misma pregunta y si se
+  //ponga aleatorio en diferentes preguntas del mismo subnivel
+  @override
+  List<TriviaQuestionAnswerDomain> currentAnswers(int activeStep) {
+    List<TriviaQuestionAnswerDomain> all = currentQuestion(activeStep).answers;
+
+    all.shuffle(Random(seed + activeStep));
+
+    return all;
   }
 
   @override
@@ -75,5 +90,23 @@ class TriviaSubLevelUseCaseImpl extends TriviaSubLevelUseCase {
 
   void _executeProgressUpdate() {
     Get.find<TriviaSubLevelProgressUseCase>().edit(subLevelProgressDomain);
+  }
+
+  @override
+  bool showTutorial() {
+    return subLevelProgressDomain.triviaLevelDomainId ==
+            Get.find<TriviaLevelUseCase>().findAll()[0].id &&
+        subLevelProgressDomain.triviaSubLevelDomainId ==
+            Get.find<TriviaLevelUseCase>().findAll()[0].sublevel[0].id;
+  }
+
+  String subLevelTheme() {
+    return Get.find<TriviaLevelUseCase>()
+        .findAll()[subLevelProgressDomain.triviaLevelDomainId]
+        .theme;
+  }
+
+  int subLevelNumber() {
+    return subLevelDomain.id;
   }
 }
