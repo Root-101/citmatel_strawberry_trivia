@@ -72,6 +72,8 @@ abstract class TriviaSubLevelController extends GetxController {
     required BuildContext context,
     required List<TargetFocus> targets,
   });
+
+  List<Icon> get stepperIcons;
 }
 
 enum QuestionState {

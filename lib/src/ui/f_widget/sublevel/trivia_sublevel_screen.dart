@@ -122,37 +122,41 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   }
 
   _buildStepper(GlobalKey key1, Size size) {
-    return FittedBox(
-      fit: BoxFit.contain,
-      child: Container(
-        key: key1,
-        padding: EdgeInsets.all(size.height / 37),
-        // The widget ShowCase is used to show a tutorial step by step to the user.
-        child: DotStepper(
-          //Amount of dots to show.
-          dotCount: _controller.dotCount,
-          //Size of the dots.
-          dotRadius: size.width / 17,
-          //Current selected dot.
-          activeStep: _controller.activeStep,
-          //Type of shape of the dot.
-          shape: Shape.circle,
-          //Space between the dots.
-          spacing: size.width / 25,
-          //The animation that is shown when switch from a dot to another.
-          indicator: Indicator.jump,
-          // So the user can change the step.
-          tappingEnabled: false,
-
-          // DOT-STEPPER DECORATIONS
-          fixedDotDecoration: FixedDotDecoration(
-            color: secondaryColor,
-          ),
-
-          indicatorDecoration: IndicatorDecoration(
-            color: primaryColor,
-          ),
-        ),
+    return Container(
+      key: key1,
+      padding: EdgeInsets.symmetric(vertical: size.height / 37),
+      // The widget ShowCase is used to show a tutorial step by step to the user.
+      child: IconStepper(
+        //The icons in the steps.
+        icons: [..._controller.stepperIcons],
+        //Current selected dot.
+        activeStep: _controller.activeStep,
+        // The color of the step when it is not reached.
+        stepColor: secondaryColor,
+        // The color of a step when it is reached.
+        activeStepColor: primaryColor,
+        // The border color of a step when it is reached.
+        activeStepBorderColor: Colors.transparent,
+        // The color of the line that separates the steps.
+        lineColor: Colors.transparent,
+        // Whether to enable or disable the next and previous buttons.
+        enableNextPreviousButtons: false,
+        // Whether to allow tapping a step to move to that step or not.
+        enableStepTapping: false,
+        // The amount of padding inside a step.
+        stepPadding: 0,
+        // Whether the scrolling is disabled or not.
+        scrollingDisabled: true,
+        // The length of the line that separates the steps.
+        lineLength: size.width / 25,
+        // Determines how far away the border should be drawn from the step when it is reached.
+        activeStepBorderPadding: 0,
+        // The radius of a step.
+        stepRadius: size.width / 17,
+        // The duration of the animation effect to show when a step is reached.
+        stepReachedAnimationDuration: const Duration(seconds: 2),
+        // The animation effect to show when a step is reached.
+        stepReachedAnimationEffect: Curves.bounceInOut,
       ),
     );
   }
