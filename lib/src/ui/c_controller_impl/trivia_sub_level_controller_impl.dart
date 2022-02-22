@@ -41,9 +41,12 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   TutorialCoachMark? _tutorialCoachMark;
 
+  bool mute;
+
   TriviaSubLevelControllerImpl({
     required TriviaSubLevelDomain subLevelDomain,
     required TriviaSubLevelProgressDomain subLevelProgressDomain,
+    required this.mute,
   }) : subLevelUseCase = TriviaSubLevelUseCaseImpl(
           subLevelDomain: subLevelDomain,
           subLevelProgressDomain: subLevelProgressDomain,
@@ -105,7 +108,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     bool isCorrect =
         isAnswerCorrect(selectedId); //almacenado para usarlo mas abajo
     if (isCorrect) {
-      StrawberryAudio.playAudioCorrect();
+      StrawberryAudio.playAudioCorrect(mute);
       _makeConffeti();
       putTheRightIconStepper(Icons.done);
 
@@ -141,7 +144,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
         );
       }
     } else {
-      StrawberryAudio.playAudioWrong();
+      StrawberryAudio.playAudioWrong(mute);
       StrawberryVibration.vibrate();
       putTheRightIconStepper(Icons.close);
 
@@ -231,12 +234,14 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   _doWinLevel() {
     //gane el nivel, paso a la pantalla y salvo progreso
     StrawberryFunction.winLevel(
+      mute: mute,
       leftButtonFunction: () {
         Pair<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> nextLevel =
             Get.find<TriviaLevelController>()
                 .nextLevel(subLevelUseCase.subLevelProgressDomain);
         Get.off(
           TriviaSubLevelLoading(
+            mute: mute,
             subLevelDomain: nextLevel.a,
             subLevelProgressDomain: nextLevel.b,
           ),
@@ -253,8 +258,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   _doLooseLevel() {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
+      mute: mute,
       leftButtonFunction: () => Get.off(
         TriviaSubLevelLoading(
+          mute: mute,
           subLevelDomain: subLevelUseCase.subLevelDomain,
           subLevelProgressDomain: subLevelUseCase.subLevelProgressDomain,
         ),
@@ -339,8 +346,10 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   void endTime() {
     //perdi el nivel,
     StrawberryFunction.looseLevel(
+      mute: mute,
       leftButtonFunction: () => Get.off(
         TriviaSubLevelLoading(
+          mute: mute,
           subLevelDomain: subLevelUseCase.subLevelDomain,
           subLevelProgressDomain: subLevelUseCase.subLevelProgressDomain,
         ),
