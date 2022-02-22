@@ -12,9 +12,11 @@ class TriviaSubLevelScreen extends StatefulWidget {
   TriviaSubLevelScreen({
     required TriviaSubLevelDomain subLevelDomain,
     required TriviaSubLevelProgressDomain subLevelProgressDomain,
+    required bool mute,
   }) : super() {
     Get.put<TriviaSubLevelController>(
       TriviaSubLevelControllerImpl(
+        mute: mute,
         subLevelDomain: subLevelDomain,
         subLevelProgressDomain: subLevelProgressDomain,
       ),

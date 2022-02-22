@@ -6,10 +6,12 @@ import 'package:get/get.dart';
 class TriviaSubLevelLoading extends GetView<TriviaLevelController> {
   final TriviaSubLevelDomain subLevelDomain;
   final TriviaSubLevelProgressDomain subLevelProgressDomain;
+  final bool mute;
 
   const TriviaSubLevelLoading({
     required this.subLevelDomain,
     required this.subLevelProgressDomain,
+    required this.mute,
     Key? key,
   }) : super(key: key);
 
@@ -29,6 +31,7 @@ class TriviaSubLevelLoading extends GetView<TriviaLevelController> {
         ],
         secondText: ["Nivel: ${subLevelProgressDomain.triviaSubLevelDomainId}"],
         subLevel: TriviaSubLevelScreen(
+          mute: mute,
           subLevelDomain: subLevelDomain,
           subLevelProgressDomain: subLevelProgressDomain,
         ),

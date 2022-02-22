@@ -5,8 +5,12 @@ import 'package:get/get.dart';
 
 class TriviaLevelsScreen extends GetView<TriviaLevelController> {
   static const ROUTE_NAME = "/trivia-levels-screen";
+  final bool mute;
 
-  TriviaLevelsScreen({Key? key}) : super(key: key);
+  TriviaLevelsScreen({
+    Key? key,
+    required this.mute,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +38,7 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
               levelDomain.themeBackgroundImage.urlImage,
           //nivel abierto, entrar directo al juego
           openWidget: TriviaSubLevelLoading(
+            mute: mute,
             subLevelDomain: TriviaLevelTutorial.tutorialSubLevel,
             subLevelProgressDomain:
                 TriviaLevelTutorial.tutorialSubLevelProgress(
@@ -126,6 +131,7 @@ class TriviaLevelsScreen extends GetView<TriviaLevelController> {
                     contPlayedTimes: progressDomain.contPlayedTimes,
                     //nivel abierto, juego como tal
                     openWidget: TriviaSubLevelLoading(
+                      mute: mute,
                       subLevelDomain: subLevelDomain,
                       subLevelProgressDomain: progressDomain,
                     ),
