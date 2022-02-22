@@ -37,6 +37,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
 
   late bool _showTutorial;
 
+  late List<Icon> _stepperIcons;
+
   TutorialCoachMark? _tutorialCoachMark;
 
   TriviaSubLevelControllerImpl({
@@ -51,6 +53,15 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       duration: const Duration(milliseconds: 50),
     );
     _showTutorial = subLevelUseCase.showTutorial();
+    _stepperIcons = List<Icon>.generate(
+      dotCount,
+      (int index) {
+        return Icon(
+          Icons.circle_outlined,
+          color: Colors.transparent,
+        );
+      },
+    );
   }
 
   @override
@@ -97,6 +108,11 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       StrawberryAudio.playAudioCorrect();
       _makeConffeti();
 
+      _stepperIcons[_activeStep] = Icon(
+        Icons.done,
+        color: Colors.white,
+      );
+
       if (showTutorial && showTutorialRight) {
         showTutorialRight = false;
         isShowingTutorial = true;
@@ -131,6 +147,11 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
     } else {
       StrawberryAudio.playAudioWrong();
       StrawberryVibration.vibrate();
+
+      _stepperIcons[_activeStep] = Icon(
+        Icons.close,
+        color: Colors.white,
+      );
 
       if (showTutorial && showTutorialWrong) {
         showTutorialWrong = false;
@@ -384,4 +405,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   set countdownController(CountdownController countdownController) {
     this._countdownController = countdownController;
   }
+
+  @override
+  List<Icon> get stepperIcons => _stepperIcons;
 }
