@@ -135,12 +135,13 @@ class TriviaLevelTecnologias {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuándo se lanzó el lenguaje de programación \"C#\"?",
+              question:
+                  "¿Cuál fue la primera nación de Iberoamérica en tener ferrocarril?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "2000."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1998."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1999."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2001."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cuba."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Venezuela."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Bolivia."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Panamá."),
               ]),
           TriviaQuestionDomain(
               id: 3,

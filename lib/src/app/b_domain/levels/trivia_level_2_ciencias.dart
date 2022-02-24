@@ -24,13 +24,12 @@ class TriviaLevelCiencias {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Cuál de los siguientes vasos sanguíneos transporta sangre desoxigenada?",
+              question: "¿En qué país se desarrollo el Heberprot –P?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Arteria pulmonar."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Vena pulmonar."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Aorta."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Arteria coronaria."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cuba."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "EEUU."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "China."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "España."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -88,12 +87,12 @@ class TriviaLevelCiencias {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Quemar cuál de estos metales producirá una llama blanca brillante?",
+                  "¿De qué nacionalidad era el científico Carlos Juan Finlay?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Magnesio."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cobre."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Litio."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Hierro."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cubano."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Brasileño."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Español."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Mexicano."),
               ]),
           TriviaQuestionDomain(
               id: 2,
