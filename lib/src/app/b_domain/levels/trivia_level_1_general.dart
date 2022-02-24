@@ -34,12 +34,14 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Sobre qué camina un funambulista?",
+              question: "¿Dónde tenía Ernest Hemingway su amado Mojito?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Una cuerda floja."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Vidrio roto."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Pelotas."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "La luna."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "En La Bodeguita del Medio."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "En el malecón."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "En El Floridita."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "En su barco de pesca."),
               ]),
         ],
       ),
@@ -89,12 +91,12 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿La cinofobia es el miedo a ...?",
+              question: " ¿Cómo llaman los cubanos a su isla por su forma?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Perros."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Aves."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Volar."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Gérmenes."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cocodrilo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Palma."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Zapato."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Dragón."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -166,12 +168,13 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Qué idioma NO es indoeuropeo?",
+              question:
+                  "¿Cuál es la palabra informal para \"amigo\" que se usa en Cuba?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Húngaro."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ruso."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Griego."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Letón."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Asere."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Che."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Camarada."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Compañero."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -236,12 +239,12 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cómo se llama Polonia en polaco?",
+              question: "¿Cuál es la marca de ron más popular en Cuba?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Polska."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Pupcia."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Polszka."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Polonia."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Havana Club."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Paticruzado."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Bacardi."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cristal."),
               ]),
         ],
       ),
@@ -319,13 +322,12 @@ class TriviaLevelGeneral {
               id: 3,
               correctAnswerId: 1,
               question:
-                  "¿Qué tipo de avión fue desarrollado por Igor Sikorsky en los EEUU en 1942?",
+                  "¿En qué pueblo pesquero de Cuba Ernest Hemingway se inspiró para su novela \"El viejo y el mar\"?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Helicóptero."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Dirigible sigiloso."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Jet."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Cápsula espacial."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cojimar."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Bejucal."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Baracoa."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Viñales."),
               ]),
           TriviaQuestionDomain(
               id: 4,
@@ -378,13 +380,12 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question:
-                  "¿Cuántas calorías hay en una lata de 355 ml de Pepsi Cola?",
+              question: "¿Cuál es el ave nacional de Cuba?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "150."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "200."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "100."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "155."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Trogón cubano."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Zunzún."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Guacamayo."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Canario."),
               ]),
         ],
       ),
@@ -451,13 +452,15 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Qué país, sin incluir Japón, tiene la mayor cantidad de personas de ascendencia japonesa?",
+              question: "¿Qué líder religioso visitó Cuba en 1998?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Brasil."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "China."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Sur Corea."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Estados Unidos."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Papa Juan Pablo II."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Papa Juan Pablo III."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Papa Francisco."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Papa Benedicto XVI."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -566,12 +569,13 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuándo murió Freddie Mercury?",
+              question:
+                  "¿Qué estatua de qué famoso animador se encuentra en La Habana?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1991."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1990."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1980."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1981."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "John Lennon."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Michael Jackson."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Liberace."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Elvis Presley."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -682,13 +686,13 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál fue la primera película de Disney?",
+              question: "¿Cuál de estos autores vivió en Cuba durante años?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Blancanieves."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cenicienta."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Ernest Hemingway."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Lawrence Kaplow."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "James Joyce."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "La Bella Durmiente."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "La Sirenita Ariel."),
+                    id: 4, answer: "F. Scott Fitzgerald."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -793,13 +797,12 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "De acuerdo a la Biblia, ¿cuántos años vivió Matusalén?",
+              question: "¿Cuál de estos colores NO está en la bandera cubana?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "969."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "896."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "959."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "569."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Amarillo."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Blanco."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Azul."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Rojo."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -961,7 +964,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál es el primer libro de la Biblia?",
+              question: "¿Cuál es la pelicula?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Génesis."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Éxodo."),
@@ -1047,12 +1050,12 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Quién fue el último faraón de Egipto?",
+              question: "¿A que hora se tira el cañonazo en la Habana? ",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ramsés III."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ramsés II."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Tutankamón."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Amenhotep II."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "9:00 p.m."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "10:00 p.m."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "8:00 p.m."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "7:00 p.m."),
               ]),
           TriviaQuestionDomain(
               id: 6,
@@ -1190,12 +1193,13 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 6,
               correctAnswerId: 1,
-              question: "¿A qué país pertenecen los cariocas?",
+              question: "¿Quién nombro a la Isla con el nombre de Cuba?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Brasil."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Panamá."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Cuba."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Colombia."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cristóbal Colón."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Sebastián de Ocampo."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Fidel Castro."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Simón Bolívar."),
               ]),
         ],
       ),
@@ -1294,12 +1298,12 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuál de las siguientes NO es una nota musical?",
+              question: "¿Cuál es el estado político que maneja Cuba?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Al."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Do."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Re."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Mi."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Socialista."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Comunista."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Monarquía."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Dictatorial."),
               ]),
           TriviaQuestionDomain(
               id: 4,
@@ -1395,6 +1399,142 @@ class TriviaLevelGeneral {
                 TriviaQuestionAnswerDomain(id: 2, answer: "Austria."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "España."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Italia."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 27,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question: "¿Sobre qué camina un funambulista?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Una cuerda floja."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Vidrio roto."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Pelotas."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "La luna."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué tipo de avión fue desarrollado por Igor Sikorsky en los EEUU en 1942?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Helicóptero."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Dirigible sigiloso."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Jet."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Cápsula espacial."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿La cinofobia es el miedo a ...?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Perros."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Aves."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Volar."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Gérmenes."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Qué idioma NO es indoeuropeo?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Húngaro."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Ruso."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Griego."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Letón."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cómo se llama Polonia en polaco?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Polska."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Pupcia."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Polszka."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Polonia."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question:
+                  "¿Cuántas calorías hay en una lata de 355 ml de Pepsi Cola?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "150."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "200."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "100."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "155."),
+              ]),
+        ],
+      ),
+      TriviaSubLevelDomain(
+        id: 28,
+        question: [
+          TriviaQuestionDomain(
+              id: 1,
+              correctAnswerId: 1,
+              question:
+                  "¿Qué país, sin incluir Japón, tiene la mayor cantidad de personas de ascendencia japonesa?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Brasil."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "China."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Sur Corea."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Estados Unidos."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿Cuándo murió Freddie Mercury?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "1991."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "1990."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "1980."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "1981."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "¿Cuál fue la primera película de Disney?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Blancanieves."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Cenicienta."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "La Bella Durmiente."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "La Sirenita Ariel."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question:
+                  "De acuerdo a la Biblia, ¿cuántos años vivió Matusalén?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "969."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "896."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "959."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "569."),
+              ]),
+          TriviaQuestionDomain(
+              id: 5,
+              correctAnswerId: 1,
+              question: "¿Cuál es el primer libro de la Biblia?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Génesis."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Éxodo."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Levítico."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Jeremías."),
+              ]),
+          TriviaQuestionDomain(
+              id: 6,
+              correctAnswerId: 1,
+              question: "¿Quién fue el último faraón de Egipto?",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Ramsés III."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Ramsés II."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Tutankamón."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Amenhotep II."),
               ]),
         ],
       ),
