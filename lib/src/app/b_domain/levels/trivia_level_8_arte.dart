@@ -34,12 +34,12 @@ class TriviaLevelArte {
               id: 3,
               correctAnswerId: 1,
               question:
-                  "¿En qué año creó Alberto Durero el cuadro \"La liebre joven\"?",
+                  "¿Quién es la única mujer en obtener el Premio Nacional de Artes Plásticas en Cuba?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1502."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1702."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1402."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1602."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Rita Longa."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Zaida del Río."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Flora Fong."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Jilma Madero."),
               ]),
         ],
       ),
@@ -87,13 +87,14 @@ class TriviaLevelArte {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿De qué movimiento artístico formó parte la pintura \"La noche estrellada\"?",
+                  "¿Cuál es la película cubana nominada a los Oscar y ganadora de un Goya?",
               answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Fresa y Chocolate."),
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Post Impresionismo."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Romanticismo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Neoclásico."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Impresionismo."),
+                    id: 2, answer: "Juan de los muertos."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "La Bella de la Alhambra."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Suite Habana."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -198,12 +199,13 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Quién diseñó el logo de Chupa Chups?",
+              question: "El Ballet Nacional de Cuba fue fundado por:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Salvador Dali."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Pablo Picasso."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Andy Warhol."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Vincent van Gogh."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Alicia y Fernando Alonso."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Fernando Alonso."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Alicia Alonso."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Laura Alonso."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -267,13 +269,14 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "¿Qué tipo de compás se conoce comúnmente como tiempo de corte?",
+              question: "La primera obra literaria cubana fue:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "2/2."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "4/4."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "6/8."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "3/4."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Espejo de Paciencia."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Cecilia Valdés."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Crónicas de las Indias."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Caupolicán."),
               ]),
           TriviaQuestionDomain(
               id: 4,
@@ -419,13 +422,16 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "¿Cuántas mujeres aparecen en el cuadro \"Las señoritas de Avignon\"?",
+              question: "La primera obra de teatro cubana fue:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "4."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Contigo pan y cebolla."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "El príncipe jardinero y ..."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "El millonario y la maleta."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "El Conde de Alarcos."),
               ]),
           TriviaQuestionDomain(
               id: 4,
@@ -661,13 +667,13 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Quién de las siguientes no fue una pintora famosa?",
+              question:
+                  "¿Cuál de los siguientes escritores cubanos obtuvo el Premio Cervantes?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Virginia Woolf."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Leonora Carrington."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Remedios Varo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Frida Kahlo."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Alejo Carpentier."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "José Lezama Lima."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Dora Alonso."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Leonardo Padura."),
               ])
         ],
       ),
@@ -849,13 +855,13 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question:
-                  "¿Cuál de los siguientes periodos artísticos NO utiliza el arco de herradura?",
+              question: "¿Quién está conciderado el primer músico cubano?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Gótico."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Árabe."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Visigodo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Mudejar."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Esteban Salas y Castro."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Ignacio Cervantes."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Manuel de Falla."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Manuel Saumell."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -1009,12 +1015,12 @@ class TriviaLevelArte {
               id: 4,
               correctAnswerId: 1,
               question:
-                  "¿Cómo se llama el estilo artístico que predominaba en Europa en el siglo XII?",
+                  "Cuál es el alias del comediante cubano Juan Marchante?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Románico."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Romántico."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Gótico."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Rococó."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Chivichana."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Pánfilo."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Churrisco."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Mariconchi."),
               ]),
           TriviaQuestionDomain(
               id: 5,
@@ -1137,12 +1143,13 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿A qué edad murió el Pablo Picasso?",
+              question:
+                  "¿Cómo se llamaba la muchacha a la que le cantaba el cubano Pablo Milanés?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "91."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "76."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "60."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "58."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Yolanda."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Chuncha."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Cecilia."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Laura."),
               ]),
           TriviaQuestionDomain(
               id: 5,
