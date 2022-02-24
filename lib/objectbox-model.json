@@ -4,33 +4,33 @@
   "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
   "entities": [
     {
-      "id": "1:1409585251998705237",
-      "lastPropertyId": "5:6701086804601964654",
+      "id": "1:2520933479143208056",
+      "lastPropertyId": "5:1704702536425477949",
       "name": "TriviaSubLevelProgressEntity",
       "properties": [
         {
-          "id": "1:4135502145073129267",
+          "id": "1:7754814278045661997",
           "name": "id",
           "type": 6,
           "flags": 1
         },
         {
-          "id": "2:3040075527665529438",
+          "id": "2:5289455409025088829",
           "name": "triviaSubLevelDomainId",
           "type": 6
         },
         {
-          "id": "3:8990653528532215080",
+          "id": "3:5489232399282317045",
           "name": "triviaLevelDomainId",
           "type": 6
         },
         {
-          "id": "4:5501711033456909289",
+          "id": "4:285724516350801672",
           "name": "contPlayedTimes",
           "type": 6
         },
         {
-          "id": "5:6701086804601964654",
+          "id": "5:1704702536425477949",
           "name": "stars",
           "type": 6
         }
@@ -38,7 +38,7 @@
       "relations": []
     }
   ],
-  "lastEntityId": "1:1409585251998705237",
+  "lastEntityId": "1:2520933479143208056",
   "lastIndexId": "0:0",
   "lastRelationId": "0:0",
   "lastSequenceId": "0:0",
