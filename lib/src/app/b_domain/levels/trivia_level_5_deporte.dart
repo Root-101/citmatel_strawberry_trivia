@@ -329,16 +329,12 @@ class TriviaLevelDeporte {
             id: 2,
             correctAnswerId: 1,
             question:
-                "¿Cuál es el nombre completo del futbolista Cristiano Ronaldo?",
+                "¿En cuántas ediciones de los Juegos Olímpicos de verano ha participado Cuba?",
             answers: [
-              TriviaQuestionAnswerDomain(
-                  id: 1, answer: "Cristiano Ronaldo dos Santos Aveiro."),
-              TriviaQuestionAnswerDomain(
-                  id: 2, answer: "Cristiano Ronaldo los Santos Diego."),
-              TriviaQuestionAnswerDomain(
-                  id: 3, answer: "Cristiano Armando Diego Ronaldo."),
-              TriviaQuestionAnswerDomain(
-                  id: 4, answer: "Cristiano Luis Armando Ronaldo."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "20."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "5."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "10."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "15."),
             ],
           ),
           TriviaQuestionDomain(
@@ -812,12 +808,12 @@ class TriviaLevelDeporte {
             id: 1,
             correctAnswerId: 1,
             question:
-                "¿A qué equipo venció Inglaterra en la etapa de semifinales para ganar en la final de la Copa del Mundo de 1966?",
+                "¿En el medallero histórico de los Juegos Olímpicos que posición ocupa Cuba?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Portugal."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Alemania occidental."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Unión Soviética."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Brasil."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "18."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "29."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "30."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "41."),
             ],
           ),
           TriviaQuestionDomain(
