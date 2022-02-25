@@ -285,7 +285,7 @@ class TriviaLevelHistoria {
             correctAnswerId: 1,
             question: "¿Dónde se libró la Segunda Guerra de los Bóers en 1899?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "South Africa."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Sudáfrica."),
               TriviaQuestionAnswerDomain(id: 2, answer: "Argentina."),
               TriviaQuestionAnswerDomain(id: 3, answer: "Nepal."),
               TriviaQuestionAnswerDomain(id: 4, answer: "Bulgaria."),
@@ -586,10 +586,10 @@ class TriviaLevelHistoria {
             correctAnswerId: 1,
             question: "¿Cuándo fue el Pacto del Zanjón en Cuba?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "1878 ."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "1917 ."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "1902 ."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "1930 ."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "1878."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1917."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "1902."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "1930."),
             ],
           ),
           TriviaQuestionDomain(

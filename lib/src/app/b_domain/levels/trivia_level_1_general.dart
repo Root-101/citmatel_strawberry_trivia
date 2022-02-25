@@ -91,7 +91,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: " ¿Cómo llaman los cubanos a su isla por su forma?",
+              question: "¿Cómo llaman los cubanos a su isla por su forma?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Cocodrilo."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Palma."),
@@ -324,7 +324,7 @@ class TriviaLevelGeneral {
               question:
                   "¿En qué pueblo pesquero de Cuba Ernest Hemingway se inspiró para su novela \"El viejo y el mar\"?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cojimar."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cojímar."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Bejucal."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Baracoa."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Viñales."),
@@ -429,8 +429,8 @@ class TriviaLevelGeneral {
               correctAnswerId: 1,
               question: "¿Dónde se originó la planta de la piña?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Sudamerica."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Hawai."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Sudamérica."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Hawái."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Europa."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Asia."),
               ]),
@@ -964,7 +964,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál es la pelicula?",
+              question: "¿Cuál es la película?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Génesis."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Éxodo."),
@@ -1050,7 +1050,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿A que hora se tira el cañonazo en la Habana? ",
+              question: "¿A qué hora se tira el cañonazo en la Habana? ",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "9:00 p.m."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "10:00 p.m."),
@@ -1157,7 +1157,7 @@ class TriviaLevelGeneral {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Baloncesto."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Fútbol."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Ajedréz."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Ajedrez."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Tenis."),
               ]),
           TriviaQuestionDomain(

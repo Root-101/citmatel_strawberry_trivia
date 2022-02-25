@@ -24,7 +24,7 @@ class TriviaLevelCiencias {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿En qué país se desarrollo el Heberprot –P?",
+              question: "¿En qué país se desarrolló el Heberprot –P?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Cuba."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "EEUU."),
@@ -98,12 +98,12 @@ class TriviaLevelCiencias {
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Un organismo descrito como heliotrópico tiene tendencia a moverse hacia cuál de estas cosas?",
+                  "Un organismo descrito como heliotrópico tiene tendencia a moverse hacia:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Luz."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Agua."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Árboles."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Polen."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "La luz."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "El agua."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Los árboles."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "El polen."),
               ]),
           TriviaQuestionDomain(
               id: 3,

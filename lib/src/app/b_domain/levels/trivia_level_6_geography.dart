@@ -23,10 +23,10 @@ class TriviaLevelGeography {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: " ¿Cuántas provincias forman Cuba?",
+              question: "¿Cuántas provincias forman Cuba?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "16."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "15."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "15."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "16."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "17."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "18."),
               ]),
@@ -420,7 +420,7 @@ class TriviaLevelGeography {
                   "¿Qué ciudad alemana se encuentra a orillas del río Isar?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Munich."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Berlin."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Berlín."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Hamburgo."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Dortmund."),
               ]),
@@ -729,7 +729,7 @@ class TriviaLevelGeography {
               question: "¿Cuál es el país más peligroso del mundo para vivir?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Afganistán."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Irák."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Irak."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "México."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Japón."),
               ]),
@@ -759,9 +759,9 @@ class TriviaLevelGeography {
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuál es la capital de Irák?",
+              question: "¿Cuál es la capital de Irak?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Bagdag."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Bagdad."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Teherán."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Basora."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Trinidad."),

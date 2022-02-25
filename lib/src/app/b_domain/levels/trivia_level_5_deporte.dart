@@ -90,7 +90,7 @@ class TriviaLevelDeporte {
               correctAnswerId: 1,
               question: "¿Qué país albergará la Copa Mundial de la FIFA 2022?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Katar."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Catar."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Uganda."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Vietnam."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Bolivia."),
@@ -180,7 +180,7 @@ class TriviaLevelDeporte {
             answers: [
               TriviaQuestionAnswerDomain(id: 1, answer: "Leicester City."),
               TriviaQuestionAnswerDomain(id: 2, answer: "Liverpool."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Cheslea."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Chelsea."),
               TriviaQuestionAnswerDomain(id: 4, answer: "Manchester United."),
             ],
           ),
@@ -638,12 +638,12 @@ class TriviaLevelDeporte {
           TriviaQuestionDomain(
             id: 4,
             correctAnswerId: 1,
-            question: "¿Qué país albergará la Copa Mundial de la FIFA 2022?",
+            question: "¿Cuántos oros olímpicos ha ganado Mijaín López?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Quatar."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Reino Unido."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Brasil."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Alemania."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "4."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "3."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "5."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "6."),
             ],
           ),
           TriviaQuestionDomain(
@@ -1086,7 +1086,7 @@ class TriviaLevelDeporte {
               TriviaQuestionAnswerDomain(id: 1, answer: "Los zorros."),
               TriviaQuestionAnswerDomain(id: 2, answer: "Los cachorros."),
               TriviaQuestionAnswerDomain(id: 3, answer: "Los leones."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Los águilas."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Las águilas."),
             ],
           ),
           TriviaQuestionDomain(

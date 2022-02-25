@@ -253,7 +253,7 @@ class TriviaLevelArte {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Núremberg."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Augsburgo."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Bamberg."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Berlin."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Berlín."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -786,7 +786,7 @@ class TriviaLevelArte {
                 TriviaQuestionAnswerDomain(
                     id: 2, answer: "Templo de Artemisa."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Gran Piramide de Giza."),
+                    id: 3, answer: "Gran Pirámide de Giza."),
                 TriviaQuestionAnswerDomain(
                     id: 4, answer: "Faro de Alejandría."),
               ])
@@ -855,7 +855,7 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Quién está conciderado el primer músico cubano?",
+              question: "¿Quién está considerado el primer músico cubano?",
               answers: [
                 TriviaQuestionAnswerDomain(
                     id: 1, answer: "Esteban Salas y Castro."),
@@ -880,7 +880,7 @@ class TriviaLevelArte {
               question:
                   "¿Qué animal simboliza peligro y se repite más en los cuadros de El Bosco?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Buho."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Búho."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Mariposa."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Lobo."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Gato."),
@@ -988,8 +988,7 @@ class TriviaLevelArte {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿A qué estilo corresponde la Catedral de Notre Dame de París?",
+              question: "Claude Monet fue:",
               answers: [
                 TriviaQuestionAnswerDomain(
                     id: 1, answer: "Un pintor impresionista."),
@@ -1053,7 +1052,7 @@ class TriviaLevelArte {
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Qué representa el cuadro de Guérnica de Pablo Picasso?",
+                  "¿Qué representa el cuadro de Guernica de Pablo Picasso?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Un bombardeo."),
                 TriviaQuestionAnswerDomain(
