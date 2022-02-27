@@ -14,6 +14,9 @@ class TriviaSubLevelScreen extends StatefulWidget {
     required TriviaSubLevelProgressDomain subLevelProgressDomain,
     required bool mute,
   }) : super() {
+    //clear the controller before start level
+    Get.delete<TriviaSubLevelController>();
+    //set up the new controller
     Get.put<TriviaSubLevelController>(
       TriviaSubLevelControllerImpl(
         mute: mute,
