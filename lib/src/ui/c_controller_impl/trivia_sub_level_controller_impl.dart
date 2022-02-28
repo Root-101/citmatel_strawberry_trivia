@@ -344,6 +344,14 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   }
 
   void endTime() {
+    //marcado como respondida para si en el tiempo de espera entre que se pierde el nivel
+    //y sale la ventana de cargando el usuario toque algo no avance de pregunta
+    //esto resuelve el error de que si en el tiempo ese de espera se responde la ultima
+    //se entra a la ventana de win/loose dos veces, una por perder por tiempo y la otra
+    //por perder/ganar el nivel por intentos, eso hace incluso que se almacene el progreso doble
+    //PD: lo del progreso doble se valida en la BD
+    _isAnswered = true;
+
     //perdi el nivel,
     StrawberryFunction.looseLevel(
       mute: mute,
