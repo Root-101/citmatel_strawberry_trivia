@@ -407,6 +407,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
   @override
   void dispose() {
     disposeTutorial = true;
+    StrawberryFunction.dispose();
     _tutorialCoachMark?.finish();
     super.dispose();
   }
