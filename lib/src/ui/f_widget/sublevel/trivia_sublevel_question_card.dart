@@ -122,11 +122,11 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
       int charCode, int id, String answerText, BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-        top: size.height / 31,
+        top: size.height / 33,
       ),
-      padding: EdgeInsets.all(size.width / 39),
+      padding: EdgeInsets.all(size.width / 41),
       decoration: BoxDecoration(
-        border: Border.all(color: primaryColor),
+        border: Border.all(width: 3, color: Colors.lightBlue.shade800),
         borderRadius: BorderRadius.circular(30),
         //The color of the answer changes when is pressed.
         gradient: controller.getTheRightColor(id),
