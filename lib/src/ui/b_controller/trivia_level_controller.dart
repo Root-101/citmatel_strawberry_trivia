@@ -28,9 +28,9 @@ abstract class TriviaLevelController extends GetxController {
   //check if all sublevels are completed with at most 1 stars
   bool wonedLevel(TriviaLevelDomain levelDomain);
 
-  Widget randomSubLevel();
+  Widget randomSubLevel(bool mute);
 
-  Widget randomSubLevelOf(TriviaLevelDomain level);
+  Widget randomSubLevelOf(TriviaLevelDomain level, bool mute);
 
   String themeOfGivenLevel(TriviaSubLevelProgressDomain progressDomain);
 

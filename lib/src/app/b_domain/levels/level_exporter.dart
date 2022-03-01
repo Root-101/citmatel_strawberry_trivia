@@ -1,6 +1,5 @@
 import 'package:citmatel_strawberry_trivia/trivia_exporter.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 void main() {
   //flutter run -t lib/src/app/b_domain/levels/level_exporter.dart
@@ -9,17 +8,13 @@ void main() {
 
   /*
   //print All
-  initialize().then((value) {
-    Get.find<TriviaLevelUseCase>().findAll().forEach((theme) {
+    TriviaLevelsAll.levels.forEach((theme) {
       printTheme(theme);
     });
-  });
   */
 
   //print only theme
-  initialize().then((value) {
-    printTheme(Get.find<TriviaLevelUseCase>().findAll()[9]);
-  });
+  printTheme(TriviaLevelsAll.levels[9]);
 }
 
 void printTheme(TriviaLevelDomain theme) {
@@ -36,10 +31,6 @@ void printTheme(TriviaLevelDomain theme) {
       });
     });
   });
-}
-
-Future initialize() async {
-  await TriviaUIModule.init();
 }
 
 class MyApp extends StatelessWidget {

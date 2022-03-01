@@ -36,12 +36,13 @@ class TriviaLevelHistoria {
           TriviaQuestionDomain(
             id: 3,
             correctAnswerId: 1,
-            question: "¿Qué rey murió en la batalla de Bosworth Field en 1485?",
+            question:
+                "¿En qué año tuvo lugar la nefasta invasión de Bahía de Cochinos en Cuba?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Ricardo III."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Edward V."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Henry VII."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "James I."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "1961."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1960."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "1959."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "1958."),
             ],
           ),
         ],
@@ -96,13 +97,12 @@ class TriviaLevelHistoria {
           TriviaQuestionDomain(
             id: 1,
             correctAnswerId: 1,
-            question:
-                "¿Con cuál de sus seis esposas Enrique VIII estuvo casado por más tiempo?",
+            question: "¿De qué país era el Che Guevara?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Catalina de Aragón."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Anne Boleyn."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Jane Seymour."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Catherine Parr."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Argentina."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Cuba."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Bolivia."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "México."),
             ],
           ),
           TriviaQuestionDomain(
@@ -139,7 +139,7 @@ class TriviaLevelHistoria {
             id: 1,
             correctAnswerId: 1,
             question:
-                "Una de las pandemias más mortíferas, la gripe española, ¿qué porcentaje de la población mundial humana acabó con la vida en ese momento?",
+                "¿Con qué porcentaje de la población mundial humana acabó la gripe española?",
             answers: [
               TriviaQuestionAnswerDomain(id: 1, answer: "50 porciento."),
               TriviaQuestionAnswerDomain(id: 2, answer: "30 porciento."),
@@ -180,14 +180,12 @@ class TriviaLevelHistoria {
             id: 1,
             correctAnswerId: 1,
             question:
-                "¿Cuándo se estableció la Agencia de Seguridad Nacional de los Estados Unidos?",
+                "¿En qué año se fundó la futura capital de San Cristóbal de la Habana? ",
             answers: [
-              TriviaQuestionAnswerDomain(
-                  id: 1, answer: "4 de noviembre de 1952."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "26 de julio de 1908."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "1 de julio de 1973."),
-              TriviaQuestionAnswerDomain(
-                  id: 4, answer: "25 de noviembre de 2002."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "1515."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1417."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "1432."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "1531."),
             ],
           ),
           TriviaQuestionDomain(
@@ -257,12 +255,12 @@ class TriviaLevelHistoria {
           TriviaQuestionDomain(
             id: 4,
             correctAnswerId: 1,
-            question: "¿Quién fue el primer presidente de los Estados Unidos?",
+            question: "¿En qué año fue la crisis de los misiles en Cuba?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "George Washington."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "James Madison."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Thomas Jefferson."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "James K. Polk."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "1962."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1963."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "1964."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "1965."),
             ],
           ),
         ],
@@ -274,12 +272,12 @@ class TriviaLevelHistoria {
             id: 1,
             correctAnswerId: 1,
             question:
-                "En 1720, Inglaterra estaba endeudada masivamente y se involucró en la Burbuja de los Mares del Sur. ¿Quién fue el cerebro principal detrás de esto?",
+                "¿Cuál de estos es un pueblo nativo (prehispánico) de Cuba?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "John Blunt."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Daniel Defoe."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Robert Harley."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "John Churchill."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Taíno."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Krío."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Hausa."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Dahomey."),
             ],
           ),
           TriviaQuestionDomain(
@@ -287,7 +285,7 @@ class TriviaLevelHistoria {
             correctAnswerId: 1,
             question: "¿Dónde se libró la Segunda Guerra de los Bóers en 1899?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "South Africa."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Sudáfrica."),
               TriviaQuestionAnswerDomain(id: 2, answer: "Argentina."),
               TriviaQuestionAnswerDomain(id: 3, answer: "Nepal."),
               TriviaQuestionAnswerDomain(id: 4, answer: "Bulgaria."),
@@ -360,14 +358,16 @@ class TriviaLevelHistoria {
             id: 4,
             correctAnswerId: 1,
             question:
-                "¿Cómo se llamó la transferencia de enfermedades, cultivos y personas a través del Atlántico poco después del descubrimiento de las Américas?",
+                "El Himno de Bayamo, hoy Himno Nacional de Cuba fue entonado por primera vez el:",
             answers: [
               TriviaQuestionAnswerDomain(
-                  id: 1, answer: "El intercambio colombino."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Comercio triangular."),
+                  id: 1, answer: "20 de octubre de 1868."),
               TriviaQuestionAnswerDomain(
-                  id: 3, answer: "Comercio transatlántico de esclavos."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "La ruta de la seda."),
+                  id: 2, answer: "10 de octubre de 1869."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "10 de octubre de 1868."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "20 de octubre de 1869."),
             ],
           ),
         ],
@@ -442,7 +442,7 @@ class TriviaLevelHistoria {
             id: 2,
             correctAnswerId: 1,
             question:
-                "¿Qué presidente de EE. UU. participó en la Conferencia de Potsdam, donde los Aliados llegaron a un acuerdo de paz con Alemania?",
+                "¿Qué presidente de EE. UU. participó en la Conferencia de Potsdam, donde se acordó la paz con Alemania?",
             answers: [
               TriviaQuestionAnswerDomain(id: 1, answer: "Harry S. Truman."),
               TriviaQuestionAnswerDomain(
@@ -483,17 +483,12 @@ class TriviaLevelHistoria {
           TriviaQuestionDomain(
             id: 1,
             correctAnswerId: 1,
-            question:
-                "¿En qué fecha el Cuerpo Aéreo del Ejército de los Estados Unidos se convirtió en la Fuerza Aérea de los Estados Unidos?",
+            question: "¿Quién comenzó la conquista de Cuba?",
             answers: [
-              TriviaQuestionAnswerDomain(
-                  id: 1, answer: "18 de septiembre de 1947."),
-              TriviaQuestionAnswerDomain(
-                  id: 2, answer: "14 de diciembre de 1946."),
-              TriviaQuestionAnswerDomain(
-                  id: 3, answer: "27 de octubre de 1945."),
-              TriviaQuestionAnswerDomain(
-                  id: 4, answer: "08 de noviembre de 1944."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Diego Velázquez."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Diego Colón."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Cristóbal Colón."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Marco Polo."),
             ],
           ),
           TriviaQuestionDomain(
@@ -589,13 +584,12 @@ class TriviaLevelHistoria {
           TriviaQuestionDomain(
             id: 4,
             correctAnswerId: 1,
-            question:
-                "¿Quién montó a caballo para advertir a los Minutemen que los británicos venían durante la Guerra Revolucionaria de EE. UU.?",
+            question: "¿Cuándo fue el Pacto del Zanjón en Cuba?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Paul Revere."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Thomas Paine."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Henry Longfellow."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Nathan Hale."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "1878."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "1917."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "1902."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "1930."),
             ],
           ),
           TriviaQuestionDomain(
@@ -908,7 +902,7 @@ class TriviaLevelHistoria {
             id: 3,
             correctAnswerId: 1,
             question:
-                "¿Cuál es el nombre del barco que estaba a solo unas pocas millas del RMS Titanic cuando chocó contra un iceberg el 14 de abril de 1912?",
+                "¿Qué barco estaba a solo unas pocas millas del RMS Titanic cuando chocó contra un iceberg?",
             answers: [
               TriviaQuestionAnswerDomain(id: 1, answer: "Californian."),
               TriviaQuestionAnswerDomain(id: 2, answer: "Carpathia."),
@@ -948,13 +942,12 @@ class TriviaLevelHistoria {
           TriviaQuestionDomain(
             id: 1,
             correctAnswerId: 1,
-            question:
-                "Antes de que las colonias americanas cambiaran al calendario gregoriano en 1752, ¿en qué fecha comenzaba su nuevo año?",
+            question: "¿Quién encabezó en Cuba la Protesta de los Trece?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "25 de marzo."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "1 de junio."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "16 de septiembre."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "1 de enero."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Martínez Villena."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Julio A. Mella."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Fidel Castro."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Camilo Cienfuegos."),
             ],
           ),
           TriviaQuestionDomain(
@@ -1015,16 +1008,15 @@ class TriviaLevelHistoria {
           TriviaQuestionDomain(
             id: 1,
             correctAnswerId: 1,
-            question:
-                "La revuelta de Bohemia (1618-1620) comenzó después de que los protestantes de Praga hicieran qué a sus Lores Regentes católicos:",
+            question: "El Tratado de Versalles pone fin a:",
             answers: [
               TriviaQuestionAnswerDomain(
-                  id: 1, answer: "Los tiraron por una ventana."),
+                  id: 1, answer: "La Iª Guerra Mundial."),
               TriviaQuestionAnswerDomain(
-                  id: 2, answer: "Insultaron a sus madres."),
+                  id: 2, answer: "La IIª Guerra Mundial."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "La Guerra de Cuba."),
               TriviaQuestionAnswerDomain(
-                  id: 3, answer: "Los encerraron en cajas."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Los ahorcaron."),
+                  id: 4, answer: "La Guerra de Secesión."),
             ],
           ),
           TriviaQuestionDomain(

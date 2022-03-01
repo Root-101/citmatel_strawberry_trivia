@@ -89,20 +89,22 @@ class TriviaLevelControllerImpl extends TriviaLevelController {
   }
 
   @override
-  Widget randomSubLevel() {
+  Widget randomSubLevel(bool mute) {
     Tuple2<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> tuple =
         Get.find<TriviaRandomUseCase>().randomSubLevel();
     return TriviaSubLevelLoading(
+      mute: mute,
       subLevelDomain: tuple.item1,
       subLevelProgressDomain: tuple.item2,
     );
   }
 
   @override
-  Widget randomSubLevelOf(TriviaLevelDomain level) {
+  Widget randomSubLevelOf(TriviaLevelDomain level, bool mute) {
     Tuple2<TriviaSubLevelDomain, TriviaSubLevelProgressDomain> tuple =
         Get.find<TriviaRandomUseCase>().randomSubLevelOf(level);
     return TriviaSubLevelLoading(
+      mute: mute,
       subLevelDomain: tuple.item1,
       subLevelProgressDomain: tuple.item2,
     );

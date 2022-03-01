@@ -23,13 +23,12 @@ class TriviaLevelGeography {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Qué estado es el más grande de los Estados Unidos de América?",
+              question: "¿Cuántas provincias forman Cuba?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Alaska."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "California."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Texas."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Washington."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "15."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "16."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "17."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "18."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -85,12 +84,12 @@ class TriviaLevelGeography {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Qué óblast de Rusia forma frontera con Polonia?",
+              question: "¿Cuál de estas regiones NO pertenece a Cuba?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Kaliningrado."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Samara."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Nizhny Novgorod."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Omsk."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Punta Cana."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Holguín."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Matanzas."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Varadero."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -158,13 +157,12 @@ class TriviaLevelGeography {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question:
-                  "¿En qué país de África occidental se encuentra la ciudad histórica Tombuctú?",
+              question: "¿Cuba se encuentra en qué mar?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Malí."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Senegal."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Níger."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Burkina Faso."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Caribe."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Mediterraneo."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mar Negro."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Mr de Galilea."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -422,7 +420,7 @@ class TriviaLevelGeography {
                   "¿Qué ciudad alemana se encuentra a orillas del río Isar?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Munich."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Berlin."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Berlín."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Hamburgo."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Dortmund."),
               ]),
@@ -731,7 +729,7 @@ class TriviaLevelGeography {
               question: "¿Cuál es el país más peligroso del mundo para vivir?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Afganistán."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Irák."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Irak."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "México."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Japón."),
               ]),
@@ -761,9 +759,9 @@ class TriviaLevelGeography {
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuál es la capital de Irák?",
+              question: "¿Cuál es la capital de Irak?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Bagdag."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Bagdad."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Teherán."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Basora."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Trinidad."),
