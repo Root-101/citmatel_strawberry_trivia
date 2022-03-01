@@ -50,7 +50,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
       //para que cambie para la proxima en el switcher
       key: ValueKey(controller.activeStep),
       margin: EdgeInsets.symmetric(
-        horizontal: size.width / 37,
+        horizontal: size.width / 38,
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -61,7 +61,6 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
             key3: key3,
             size: size,
           ),
-          const SizedBox(height: 10),
 
           //// The Question ////
           AutoSizeText(
@@ -76,7 +75,6 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
             maxLines: 3,
           ),
 
-          const SizedBox(height: 10),
           //// The List of Answers ////
           Column(
             key: key5,
@@ -124,11 +122,9 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
       int charCode, int id, String answerText, BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-        top: size.height / 29,
-        left: 0,
-        right: 0,
+        top: size.height / 31,
       ),
-      padding: EdgeInsets.all(size.width / 37),
+      padding: EdgeInsets.all(size.width / 39),
       decoration: BoxDecoration(
         border: Border.all(color: primaryColor),
         borderRadius: BorderRadius.circular(30),

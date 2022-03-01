@@ -129,7 +129,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
   _buildStepper(GlobalKey key1, Size size) {
     return Container(
       key: key1,
-      padding: EdgeInsets.symmetric(vertical: size.height / 37),
+      padding: EdgeInsets.symmetric(vertical: size.height / 39),
       // The widget ShowCase is used to show a tutorial step by step to the user.
       child: IconStepper(
         //The icons in the steps.
