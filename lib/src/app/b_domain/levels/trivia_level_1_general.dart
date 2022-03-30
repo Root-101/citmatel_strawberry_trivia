@@ -1050,7 +1050,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿A qué hora se tira el cañonazo en la Habana? ",
+              question: "¿A qué hora se tira el cañonazo en La Habana? ",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "9:00 p.m."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "10:00 p.m."),
@@ -1060,7 +1060,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 6,
               correctAnswerId: 1,
-              question: "¿Dónde originaron los juegos olímpicos?",
+              question: "¿Dónde se originaron los juegos olímpicos?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Grecia."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Roma."),
@@ -1075,7 +1075,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Quién es el autor de el Quijote?",
+              question: "¿Quién es el autor de El Quijote?",
               answers: [
                 TriviaQuestionAnswerDomain(
                     id: 1, answer: "Miguel de Cervantes."),
@@ -1145,9 +1145,9 @@ class TriviaLevelGeneral {
               correctAnswerId: 1,
               question: "¿Dónde se encuentra la famosa Torre Eiffel?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 3, answer: "Francia."),
-                TriviaQuestionAnswerDomain(id: 1, answer: "Italia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Roma."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Francia."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Italia."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Roma."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "España."),
               ]),
           TriviaQuestionDomain(
@@ -1193,7 +1193,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 6,
               correctAnswerId: 1,
-              question: "¿Quién nombro a la Isla con el nombre de Cuba?",
+              question: "¿Quién nombró a la Isla con el nombre de Cuba?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Cristóbal Colón."),
                 TriviaQuestionAnswerDomain(
@@ -1214,7 +1214,7 @@ class TriviaLevelGeneral {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Mandarín."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Chino."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Español."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Ingles."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Inglés."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -1278,7 +1278,7 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿De qué estado fue emperador Napoleón Bonaparte?",
+              question: "¿De qué país fue emperador Napoleón Bonaparte?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Francia."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "España."),
@@ -1355,10 +1355,10 @@ class TriviaLevelGeneral {
               correctAnswerId: 1,
               question: "¿De qué país es originario el café?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Etiopía"),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cuba"),
-                TriviaQuestionAnswerDomain(id: 3, answer: "España"),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Colombia"),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Etiopía."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Cuba."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "España."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Colombia."),
               ]),
           TriviaQuestionDomain(
               id: 3,
