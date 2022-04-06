@@ -1126,10 +1126,10 @@ class TriviaLevelTecnologias {
               correctAnswerId: 1,
               question: "¿Qué tipo de archivo es \".MOV\"? ",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "De Película."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "De Texto."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "De Imagen."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "De Lectura."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "De película."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "De texto."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "De imagen."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "De lectura."),
               ]),
           TriviaQuestionDomain(
               id: 5,

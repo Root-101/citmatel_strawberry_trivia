@@ -89,10 +89,10 @@ class TriviaLevelCiencias {
               question:
                   "¿De qué nacionalidad era el científico Carlos Juan Finlay?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cubano."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Brasileño."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Español."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Mexicano."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cubana."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Brasileña."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Española."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Mexicana."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -136,7 +136,7 @@ class TriviaLevelCiencias {
               correctAnswerId: 1,
               question: "¿Cuál es la composición química del agua?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "H20."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "H2O."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "C12H6O2."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "CO2."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "H."),
@@ -350,13 +350,13 @@ class TriviaLevelCiencias {
               question:
                   "¿El Sol se compone principalmente de qué dos elementos?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Hidrógeno & Helio."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Hidrógeno y Helio."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Hidrógeno & Nitrógeno."),
+                    id: 2, answer: "Hidrógeno y Nitrógeno."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Carbón & Nitrógeno."),
+                    id: 3, answer: "Carbón y Nitrógeno."),
                 TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Carbón & Hidrógeno."),
+                    id: 4, answer: "Carbón y Hidrógeno."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -495,9 +495,9 @@ class TriviaLevelCiencias {
               question:
                   "Según su forma de alimentarse, consideramos a los cerdos...",
               answers: [
-                TriviaQuestionAnswerDomain(id: 3, answer: "Omnívoros."),
-                TriviaQuestionAnswerDomain(id: 1, answer: "Herbívoros."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Carnívoros."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Omnívoros."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Herbívoros."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Carnívoros."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Animales."),
               ]),
           TriviaQuestionDomain(
@@ -1362,7 +1362,7 @@ class TriviaLevelCiencias {
               question:
                   "¿Cómo se llama el fluido claro y húmedo que está situado detrás de la córnea?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Humor Acuso."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Humor Acuoso."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Humor Vítreo."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Humor Cristalino."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Humor Ocular."),

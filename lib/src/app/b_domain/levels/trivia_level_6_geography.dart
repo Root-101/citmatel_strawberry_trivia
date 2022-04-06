@@ -647,7 +647,7 @@ class TriviaLevelGeography {
               question:
                   "¿Cuál es el único país del mundo que comienza por la letra O?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Guayana."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Omán."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Senegal."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Liberia."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Somalia."),
@@ -979,7 +979,7 @@ class TriviaLevelGeography {
               correctAnswerId: 1,
               question: "¿Cuál es la capital de Madagascar?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Antananaribo."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Antananarivo."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Lusaka."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Maputo."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Viena."),
