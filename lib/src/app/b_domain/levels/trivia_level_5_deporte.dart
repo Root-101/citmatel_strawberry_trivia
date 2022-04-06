@@ -111,7 +111,7 @@ class TriviaLevelDeporte {
               correctAnswerId: 1,
               question: "¿Dónde se celebraron los Juegos de la XXII Olimpiada?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Moscow."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Moscú."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Barcelona."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Tokio."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Los Ángeles."),
