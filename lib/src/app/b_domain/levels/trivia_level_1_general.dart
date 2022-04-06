@@ -229,12 +229,12 @@ class TriviaLevelGeneral {
               id: 3,
               correctAnswerId: 1,
               question:
-                  "¿Qué carácter se consideró una vez como la letra 27 del alfabeto?",
+                  "¿Qué carácter se consideró una vez como la letra 27 del alfabeto inglés?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Ampersand &."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Interrobang ‽."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Asterisco *."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Tilde '."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Pilcrow ¶."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Numeral #."),
               ]),
           TriviaQuestionDomain(
               id: 4,
@@ -570,7 +570,7 @@ class TriviaLevelGeneral {
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Qué estatua de qué famoso animador se encuentra en La Habana?",
+                  "¿Qué estatua de qué famoso músico se encuentra en La Habana?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "John Lennon."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Michael Jackson."),
