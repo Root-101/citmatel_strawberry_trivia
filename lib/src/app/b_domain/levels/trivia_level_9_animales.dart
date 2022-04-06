@@ -1212,7 +1212,7 @@ class TriviaLevelAnimales {
           TriviaQuestionDomain(
               id: 6,
               correctAnswerId: 1,
-              question: "¿Qué animal no tiene cerebro?",
+              question: "¿Qué animal de los siguientes no tiene cerebro?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Estrella de mar."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Nutria."),
@@ -1227,7 +1227,7 @@ class TriviaLevelAnimales {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuánto tiempo pueden dormir los caracoles a la vez?",
+              question: "¿Cuánto tiempo pueden dormir los caracoles de una vez?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "15 horas."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "8 horas."),
@@ -1267,7 +1267,7 @@ class TriviaLevelAnimales {
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Qué animal es el único animal que no puede saltar?",
+              question: "¿Cuál es el único animal que no puede saltar?",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Elefantes."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Jirafas."),
