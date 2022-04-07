@@ -14,12 +14,16 @@ class TriviaLevelDeporte {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "En golf, ¿qué nombre se le da a un hoyo de dos bajo par?",
+                  "¿Quiénes fue sido nuestro abanderado olímpico en 1900?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Águila."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Pajarito."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Espectro."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Albatros."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Ramón Fonst Segundo."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Ernesto García Albear."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Ramón Fonst Segundo."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Manuel Sanguily Betancourt."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -99,12 +103,16 @@ class TriviaLevelDeporte {
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Quién ganó el Campeonato Mundial de Fórmula 1 de 2015?",
+                  "¿Quién mereció el Trofeo Internacional Fair Play Pierre de Coubertin?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Lewis Hamilton."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Nico Rosberg."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Sebastian Vettel."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Jenson Button."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Teófilo Stevenson Lawrence (1989)."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Raúl Mazorra Zamora (1993)."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Ruperto Herrera Tabío (2020)."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Félix Savón Fabré (2001)."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -176,12 +184,14 @@ class TriviaLevelDeporte {
           TriviaQuestionDomain(
             id: 2,
             correctAnswerId: 1,
-            question: "¿Qué equipo ganó la Premier League inglesa 2015-16?",
+            question:
+                "¿Qué cubano ostenta más participaciones en juegos olímpicos antes de Tokio 2020?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Leicester City."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Liverpool."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Chelsea."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Manchester United."),
+              TriviaQuestionAnswerDomain(
+                  id: 1, answer: "Guillermo Alfredo Torres."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Driulis González."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Leuris Pupo."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Iván Pedroso Soler."),
             ],
           ),
           TriviaQuestionDomain(
@@ -205,12 +215,13 @@ class TriviaLevelDeporte {
             id: 1,
             correctAnswerId: 1,
             question:
-                "¿Cuál fue el marcador final del partido de la Copa Mundial de la FIFA Alemania vs. Brasil 2014?",
+                "¿Qué cubano acumula la mayor cantidad de títulos en juegos olímpicos antes de Tokio 2020?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "7 - 1."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "0 - 1."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "3 - 4."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "16 - 0."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Ramón Fonst Segundo."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Félix Savón Fabré."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Iván Pedroso Soler."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "Teófilo Stevenson Lawrence."),
             ],
           ),
           TriviaQuestionDomain(
@@ -241,13 +252,17 @@ class TriviaLevelDeporte {
           TriviaQuestionDomain(
             id: 4,
             correctAnswerId: 1,
-            question: "¿Josh Mansour es parte de qué equipo de NRL?",
+            question:
+                "¿Qué cubanos poseen más medallas en juegos olímpicos antes de Tokio 2020?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Penrith Panthers."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Melbourne Storm."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Sydney Roosters."),
               TriviaQuestionAnswerDomain(
-                  id: 4, answer: "North Queensland Cowboys."),
+                  id: 1, answer: "Ramón Fonst Segundo (Esgrima)."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "Ana Ibis Fernández (Voleibol)."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Pedro Luis Lazo (Deporte)."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "Driulis González (Judo)."),
             ],
           ),
         ],
@@ -271,13 +286,12 @@ class TriviaLevelDeporte {
             id: 2,
             correctAnswerId: 1,
             question:
-                "¿Qué jugadora ganó la medalla de oro de individuales de tenis de mesa en los Juegos Olímpicos de 2016?",
+                "¿En qué posición quedó Cuba en el medallero Olímpico en Barcelona 1992?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "DING Ning (China)."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "LI Xiaoxia (China)."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Ai FUKUHARA (Japón)."),
-              TriviaQuestionAnswerDomain(
-                  id: 4, answer: "Song KIM (Corea del Norte)."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "5."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "6."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "4."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "7."),
             ],
           ),
           TriviaQuestionDomain(
@@ -297,15 +311,15 @@ class TriviaLevelDeporte {
           TriviaQuestionDomain(
             id: 4,
             correctAnswerId: 1,
-            question: "¿Qué equipo ha ganado más Copas Stanley en la NHL?",
+            question:
+                "¿Quien lanzó el primer juego sin hits ni carreras en Series Nacionales?",
             answers: [
+              TriviaQuestionAnswerDomain(id: 1, answer: " Aquino Abreu."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Jorge Luis Lazo."),
               TriviaQuestionAnswerDomain(
-                  id: 1, answer: "Canadienses de Montreal."),
+                  id: 3, answer: "Manuel R. González Guerra."),
               TriviaQuestionAnswerDomain(
-                  id: 2, answer: "Blackhawks de Chicago."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Toronto Maple Leafs."),
-              TriviaQuestionAnswerDomain(
-                  id: 4, answer: "Alas rojas de Detroit."),
+                  id: 4, answer: "Reynaldo González López."),
             ],
           ),
         ],
@@ -341,15 +355,12 @@ class TriviaLevelDeporte {
             id: 3,
             correctAnswerId: 1,
             question:
-                "¿Quién ganó el Campeonato Nacional de Playoffs de Fútbol Universitario (CFP) de 2015?",
+                "¿Qué pelotero ha conectado 4 jonrones en un mismo partido de Series Nacionales?",
             answers: [
-              TriviaQuestionAnswerDomain(
-                  id: 1, answer: "Buckeyes del estado de Ohio."),
-              TriviaQuestionAnswerDomain(
-                  id: 2, answer: "Marea carmesí de Alabama."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Tigres de Clemson."),
-              TriviaQuestionAnswerDomain(
-                  id: 4, answer: "Tejones de Wisconsin."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Leonel Moa."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Pedro Pérez Dueñas."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Miguel Ángel Moenck."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Reynaldo González."),
             ],
           ),
           TriviaQuestionDomain(
@@ -372,12 +383,15 @@ class TriviaLevelDeporte {
           TriviaQuestionDomain(
             id: 1,
             correctAnswerId: 1,
-            question: "¿En qué deporte compite Fanny Chmelar por Alemania?",
+            question:
+                "¿Quien fue el primer pelotero en ganar 4 campeonatos de bateo consecutivos en la Liga Profesional de Beisbol Cubana?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Esquí."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Natación."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Gimnasia."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Futbol."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Regino García."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "José Álvarez de la Campa."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Rafael de Jesús Iglesias."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Ramón Fonst Segundo."),
             ],
           ),
           TriviaQuestionDomain(
@@ -511,24 +525,28 @@ class TriviaLevelDeporte {
           TriviaQuestionDomain(
             id: 4,
             correctAnswerId: 1,
-            question: "¿Quién ganó la Copa Stanley 2011?",
+            question:
+                "¿Quién es el único pelotero cubano con 3000 hits, 500 jonrones y 500 dobletes en Grandes Ligas?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Boston Bruins."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Montreal Canadiens."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "New York Rangers."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Toronto Maple Leafs."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Rafael Palmeiro."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Iván Pedroso Soler."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Mijaín López Núñez."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Héctor Milián Pérez."),
             ],
           ),
           TriviaQuestionDomain(
             id: 5,
             correctAnswerId: 1,
             question:
-                "¿Cuál es el nombre del afiliado de AHL de los Toronto Maple Leafs?",
+                "¿Quién fue el primer cubano en ganar el premio Novato del Año en la MLB?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Toronto Marlies."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Toronto Rock."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Toronto Argonauts."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Toronto Wolfpack."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Tony Oliva (1964)."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "Héctor Ramírez Guerra (1968)."),
+              TriviaQuestionAnswerDomain(
+                  id: 3, answer: "Ernesto Varona Morell (1970)."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "osé Yánez Ordaz (1962)."),
             ],
           ),
         ],
@@ -552,12 +570,14 @@ class TriviaLevelDeporte {
             id: 2,
             correctAnswerId: 1,
             question:
-                "¿Cuál es el apodo del club de rugby de la ciudad de Northampton?",
+                "¿Quien fue el primer pitcher en lanzar un partido sin hits ni carreras en la Liga Mexicana de Beisbol?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Santos."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Arlequines."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Sarracenos."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Avispas."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Martin Dihigo."),
+              TriviaQuestionAnswerDomain(
+                  id: 2, answer: "Rodrigo Álvarez Cambra."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Alberto Juantorena."),
+              TriviaQuestionAnswerDomain(
+                  id: 4, answer: "Roberto Leon Richards."),
             ],
           ),
           TriviaQuestionDomain(
@@ -568,7 +588,7 @@ class TriviaLevelDeporte {
               TriviaQuestionAnswerDomain(id: 1, answer: "Campo de golf."),
               TriviaQuestionAnswerDomain(id: 2, answer: "Campo de fútbol."),
               TriviaQuestionAnswerDomain(id: 3, answer: "Campo de críquet."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Mesa de billar."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Campo de fútbol."),
             ],
           ),
           TriviaQuestionDomain(
@@ -722,12 +742,12 @@ class TriviaLevelDeporte {
             id: 5,
             correctAnswerId: 1,
             question:
-                "¿En qué año los New Orleans Saints ganaron el Super Bowl?",
+                "¿En cuántas ediciones de los Juegos Olímpicos de Verano ha participado Cuba?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "2010."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "2009."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "2011."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "2008."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "20."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "25."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "15."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "18."),
             ],
           ),
         ],
@@ -750,12 +770,13 @@ class TriviaLevelDeporte {
           TriviaQuestionDomain(
             id: 2,
             correctAnswerId: 1,
-            question: "¿Qué equipo ha ganado más Copas Stanley en la NHL?",
+            question:
+                "¿Que cubano fue miembro del equipo de los Tigres de Detroit, ganadores de la Serie Mundial de 1984?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Montreal Canadians."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Chicago Blackhawks."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Toronto Maple Leafs"),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Detroit Red Wings."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Bárbaro Garbey."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Miguel Cuebas."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Agustín Marquetti."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Antonio Muñoz."),
             ],
           ),
           TriviaQuestionDomain(
@@ -791,12 +812,13 @@ class TriviaLevelDeporte {
             id: 5,
             correctAnswerId: 1,
             question:
-                "¿Cuándo se jugó el primer partido internacional oficial?",
+                "¿Quien fue el primero en conectar 100 jonrones en Series Nacionales?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "1872."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "1880."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "1863."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "1865."),
+              TriviaQuestionAnswerDomain(
+                  id: 1, answer: "Armando Capiró Laferte."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Omar Linares."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Antonio Pacheco."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Orestes Kindelan."),
             ],
           ),
         ],
@@ -947,12 +969,13 @@ class TriviaLevelDeporte {
           TriviaQuestionDomain(
             id: 2,
             correctAnswerId: 1,
-            question: "¿Qué equipo de fútbol inglés es apodado The Tigers?",
+            question:
+                "¿Cuántas medallas ha obtenido Cuba en Juegos Olímpicos hasta Río 2020?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Hull City."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Cardiff City."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Bristol City."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Manchester City."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "220."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "195."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "230."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "90."),
             ],
           ),
           TriviaQuestionDomain(
@@ -983,12 +1006,12 @@ class TriviaLevelDeporte {
             id: 5,
             correctAnswerId: 1,
             question:
-                "¿Qué herramienta le da su nombre a una ventaja de última piedra en un final en Curling?",
+                "¿Quien fue el primer cubano, en cualquier liga del mundo, en rebasar las 600 bases robadas de por vida?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Martillo."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Llave inglesa."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Taladro."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Destornillador."),
+              TriviaQuestionAnswerDomain(id: 1, answer: "Bert Campaneris."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "José Antonio Huelga."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Jesús Hernández."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Braudilio Vinnent."),
             ],
           ),
         ],
@@ -1081,12 +1104,14 @@ class TriviaLevelDeporte {
           TriviaQuestionDomain(
             id: 2,
             correctAnswerId: 1,
-            question: "¿Cuál es el apodo del Leicester City?",
+            question:
+                "¿Quien es el primer y único pitcher en la historia que logró los primeros 6 outs de un juego de Serie Mundial por ponche?",
             answers: [
-              TriviaQuestionAnswerDomain(id: 1, answer: "Los zorros."),
-              TriviaQuestionAnswerDomain(id: 2, answer: "Los cachorros."),
-              TriviaQuestionAnswerDomain(id: 3, answer: "Los leones."),
-              TriviaQuestionAnswerDomain(id: 4, answer: "Las águilas."),
+              TriviaQuestionAnswerDomain(
+                  id: 1, answer: "Orlando “el Duque” Hernández."),
+              TriviaQuestionAnswerDomain(id: 2, answer: "Driulys González."),
+              TriviaQuestionAnswerDomain(id: 3, answer: "Antonio Muñoz."),
+              TriviaQuestionAnswerDomain(id: 4, answer: "Leonel Álvarez."),
             ],
           ),
           TriviaQuestionDomain(
