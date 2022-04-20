@@ -270,7 +270,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       childFirstText: [
         _numOfCorrectAnswers == 0
             ? 'Ninguna respuesta fue correcta.'
-            : 'Has respondido $_numOfCorrectAnswers ${_numOfCorrectAnswers == 1 ? 'pregunta' : 'preguntas'} correctamente.',
+            : 'Tienes $_numOfCorrectAnswers ${_numOfCorrectAnswers == 1 ? 'pregunta correcta' : 'preguntas correctas'}.',
         '${_numOfCorrectAnswers / dotCount >= 0.5 ? 'Solo te' : 'Te'} ${dotCount - _numOfCorrectAnswers == 1 ? 'ha' : 'han'} faltado ${dotCount - _numOfCorrectAnswers}.',
         'Inténtalo de nuevo.',
         'El que persevera triunfa.',
