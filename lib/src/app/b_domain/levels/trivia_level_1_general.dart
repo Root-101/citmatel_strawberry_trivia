@@ -1044,7 +1044,7 @@ class TriviaLevelGeneral {
                 TriviaQuestionAnswerDomain(id: 1, answer: "Albert Einstein."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Michael Faraday."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Ernerst Rutherford."),
+                    id: 3, answer: "Ernest Rutherford."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Niels Bohr."),
               ]),
           TriviaQuestionDomain(
