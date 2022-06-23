@@ -1,11 +1,16 @@
 import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
+import 'package:flutter/material.dart';
 
 class TriviaLevelGeneral {
   static final TriviaLevelDomain levelGeneral = TriviaLevelDomain(
     id: 1,
-    theme: ToolsThemesAssets.THEME_GENERAL_NAME,
-    themeBackgroundImage: ToolsThemesAssets.THEME_GENERAL_BACKGROUND,
+    theme: "Variado",
+    themeBackgroundImage: ToolsThemesBackgroundImage(
+      urlImage: "",
+      colorStrong: const Color(0xffb2205c),
+      colorLight: const Color(0xffb2205c).withOpacity(0.5),
+    ),
     sublevel: [
       TriviaSubLevelDomain(
         id: 1,
@@ -1043,8 +1048,7 @@ class TriviaLevelGeneral {
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Albert Einstein."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Michael Faraday."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Ernest Rutherford."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Ernest Rutherford."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Niels Bohr."),
               ]),
           TriviaQuestionDomain(
