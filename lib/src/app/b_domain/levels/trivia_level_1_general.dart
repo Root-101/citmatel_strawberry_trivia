@@ -937,54 +937,64 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿En qué país se encuentra la Riviera Maya?",
+              question: "¿En qué consiste la adaptación al cambio climático? ",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "México."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Colombia."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Ecuador."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Brasil."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Mayor resiliencia y adaptación."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Adquirir materiales de respuesto."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Cursos de agricultura y ganadería."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Cursos de superación."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Qué animal contagió a los humanos en la pandemia de peste negra?",
+              question: "Medida de enfrentamiento al cambio climático:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Pulgas."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ratas."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Gatos."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Perros."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Investigar los procesos climáticos."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Mejorar la red de viales."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Invertir en ferrocarriles."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Construir escuelas."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿De qué isla son endémicos los lémures?",
+              question:
+                  "Adaptarse al cambio climático requiere adoptar nuevas estrategias de producción de alimentos",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Madagascar."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cuba."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Hawái."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Puerto Rico."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cuál es el libro más vendido de la historia?",
+              question:
+                  "Para enfrentar el CC hay que reducir las vulnerabilidades ante eventos hidro-meteorológicos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "La Biblia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Don Quijote."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Harry Potter."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "El principito."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question:
-                  "Si elevas cualquier número a 0, ¿qué resultado obtienes siempre?",
+              question: "Medidas de enfrentamiento al CC:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "0."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "El mismo número."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Monitorear las variables climáticas."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Extraer agua subterránea."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Medir las lluvias 3 veces al día."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Importar alimentos orgánicos."),
               ]),
         ],
       ),
@@ -994,12 +1004,16 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Qué volcán sepultó la ciudad de Pompeya?",
+              question: "Medidas de enfrentamiento al CC:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Vesubio."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Tambora​."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Krakatoa."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Timanfaya."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Establecer una estrategia nacional."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Mejorar los puentes ferroviarios."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Evitar la construcción de túneles."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Construir nuevas ciudades."),
               ]),
           TriviaQuestionDomain(
               id: 2,
