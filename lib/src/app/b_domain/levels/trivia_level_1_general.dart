@@ -584,49 +584,54 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Qué estatua de qué famoso músico se encuentra en La Habana?",
+              question: "¿Qué es la resiliencia?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "John Lennon."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Michael Jackson."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Liberace."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Elvis Presley."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Recuperarse por sí mismo."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Utilizar financiamiento estatal."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Abandonar un lugar."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Resistencia al calor."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "¿Cuál NO es una de las siete maravillas del mundo moderno?",
+              question: "¿Qué es la resiliencia ambiental?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Coloso de Rodas."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Coliseo de Roma."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Taj Mahal."),
                 TriviaQuestionAnswerDomain(
-                    id: 4, answer: "El Cristo Redentor."),
+                    id: 1, answer: "Ecosistema que se autorecupera."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Reforestación con recursos estatales."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Dragar embalces con recursos donados."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Construir escuelas ambientales."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cuándo llegó Cristóbal Colón a América?",
+              question: "¿Qué es la resiliencia de una ciudad o país?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "12 de octubre de 1492."),
+                    id: 1, answer: "Restaurar sistema con mínimo de ayuda."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "13 de octubre de 1492."),
+                    id: 2, answer: "Reconstrucción mediante donaciones."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "11 de octubre de 1493."),
+                    id: 3, answer: "Restauración de tendidos eléctricos."),
                 TriviaQuestionAnswerDomain(
-                    id: 4, answer: "12 de octubre de 1493."),
+                    id: 4, answer: "Soporte contra terremotos."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuál es el animal que más muertes provoca cada año?",
+              question:
+                  "¿Los bosques pueden recuperarse por sí mismos después de un incendio?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Mosquito."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Tiburón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Serpiente."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Araña."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
