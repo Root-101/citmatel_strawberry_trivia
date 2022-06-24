@@ -862,52 +862,72 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿De qué grupo formaba parte Paul McCartney?",
+              question:
+                  "¿Cómo se pueden reducir la contaminación del agua de los ríos?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "The Beatles."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Backstreet Boys."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "One Direction."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Bee Gees."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "NO verter aguas usadas."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Eliminar los bosques de galería."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Dragar los ríos."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Construir represas."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál NO es un color primario?",
+              question: "¿Cómo se pueden reducir la contaminación de los ríos?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Verde."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Amarillo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Rojo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Azul."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "NO lavar vehículos en los causes."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Construir embalses."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Colocar muros de contención."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Cercar sus márgenes."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuántas patas tiene una araña?",
+              question:
+                  "¿Qué medidas se pueden tomar para potabilizar el agua?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "8."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "2."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "4."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "6."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Hervirla y filtrarla."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Tomar agua de lagos."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Tomar agua de ríos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Ahorrar agua."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Qué célebre compositor clásico era sordo?",
+              question: "¿Cómo se protegen las aguas subterráneas?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Beethoven."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Chopin."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Bach."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Mozart."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "NO verter basura en las cavernas."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Tapando todas las cavernas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Sembrando marabú."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Cultivando champiñones."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuántas películas de Harry Potter se han hecho?",
+              question:
+                  "¿Cómo se puede reducir la contaminación de las aguas subterráneas?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "8."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "6."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "9."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "7."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "NO verter aguas usadas."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Pozos de explotación profundos."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Letrinas sobre pozos de explotación."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Reduciendo las áreas de bosques."),
               ]),
         ],
       ),
