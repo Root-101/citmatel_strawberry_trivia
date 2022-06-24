@@ -1018,576 +1018,72 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál es la película?",
+              question: "¿En qué consiste la mitigación del cambio climático? ",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Génesis."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Éxodo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Levítico."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Jeremías."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Reducir las emisiones de gases."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Equipos que no afecten la capa de ozono."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Cursos de superación a los agrónomos."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Reducir los bosques de manglares."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿A qué país pertenece Groenlandia?",
+              question: "Estrategias para la mitigación:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Dinamarca."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Alemania."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Rusia."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Francia."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Uso la energía limpia."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Ampliar la red de termoeléctricas."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Usar combustibles fósiles."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Desarrollar la industria siderúrgica."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿En qué continente está Siria?",
+              question: "¿Cómo contribuir a la mitigación?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Asia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Europa."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "América."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Australia."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Mecanismos de captura de carbono."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Ampliar red de lecherías."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Reducir el ganado mayor."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Controlar el nivel del mar."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cómo se llama al resultado de una multiplicación?",
+              question: "Una medida de mitigación:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Producto."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Sumando."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Resto."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Dividendo."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 21,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Quién postuló las leyes del movimiento?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Isaac Newton."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Galileo Galilei."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Albert Einstein."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Paul Dirac."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Cuál es el planeta más cercano al Sol?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Mercurio."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Martes."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Venus."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "La Tierra."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿Cuántos corazones tiene un pulpo?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Quién formuló la Teoría de la Relatividad?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Albert Einstein."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Michael Faraday."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Ernest Rutherford."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Niels Bohr."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿A qué hora se tira el cañonazo en La Habana? ",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "9:00 p.m."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "10:00 p.m."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "8:00 p.m."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "7:00 p.m."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Ahorrar combustibles fósiles."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Utilizar petróleo y gas nacional."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Importar solamente motores diesel."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Aumentar el transporte subterráneo."),
               ]),
           TriviaQuestionDomain(
               id: 6,
               correctAnswerId: 1,
-              question: "¿Dónde se originaron los juegos olímpicos?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Grecia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Roma."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "España."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Alemania."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 22,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Quién es el autor de El Quijote?",
+              question: "Iniciativa para contribuir a la mitigación:",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Miguel de Cervantes."),
+                    id: 1, answer: "Desarrollar las producciones circulares."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "William Shakespeare."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "George Orwell."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "William Faulkner."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Quién escribió La Odisea?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Homero."),
+                    id: 2, answer: "Quemar todo el carbón posible."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Gabriel García Márquez."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Charles Dickens."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Ernest Hemmingway."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿Quién pintó “La última cena”?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Leonardo da Vinci."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Donatello."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Miguel Ángel."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Picasso."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿En qué país se encuentra la torre de Pisa?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Italia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Roma."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Francia."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "España."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Quién es el padre del psicoanálisis?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Sigmund Freud."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Wilhelm Wundt."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Lev Vygotsky."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Albert Bandura."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿Qué producto cultiva más Guatemala?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Café."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Arroz."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Azúcar."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Trigo."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 23,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Dónde se encuentra la famosa Torre Eiffel?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Francia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Italia."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Roma."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "España."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Qué deporte practicaba Michael Jordan?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Baloncesto."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Fútbol."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Ajedrez."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Tenis."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿Cuál es tercer planeta en el sistema solar?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "La Tierra."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Mercurio."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Martes."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Júpiter."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Qué país tiene forma de bota visto en un mapa?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Italia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cuba."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Roma."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "México."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Qué rama de la Biología estudia los animales?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Zoología."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Anatomía."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Fisiología."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Genética."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿Quién nombró a la Isla con el nombre de Cuba?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cristóbal Colón."),
+                    id: 3, answer: "Desarrollar la ganadería intensiva."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Sebastián de Ocampo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Fidel Castro."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Simón Bolívar."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 24,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Cuál es el nombre de la lengua oficial en china?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Mandarín."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Chino."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Español."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Inglés."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question:
-                  "¿En qué país se encuentra el famoso monumento Taj Mahal?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "India."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "China."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "México."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Roma."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question:
-                  "¿Cuál es el primero de la lista de los números primos?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "2."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "5."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Quién escribió “Hamlet”?",
-              answers: [
-                TriviaQuestionAnswerDomain(
-                    id: 1, answer: "William Shakespeare."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Gabriel García Márquez."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Ernest Hemmingway."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Charles Dickens."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿En qué país nació Pablo Neruda?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Chile."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Brasil."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "España."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Ecuador."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿Quién traicionó a Jesús?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Judas."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Moisés."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Salomón."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Sansón."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 25,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿De qué país fue emperador Napoleón Bonaparte?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Francia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "España."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Roma."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Italia."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Cuánto vale el número pi?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "3,1416..."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "3,1315..."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "3,1426..."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "3,1431..."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿Cuál es el estado político que maneja Cuba?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Socialista."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Comunista."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Monarquía."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Dictatorial."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Cuál es el metal más caro del mundo?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Rodio."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Oro."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Platino."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Hierro."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Cuál es el país con más camellos salvajes?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Australia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Irán."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Mongolia."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "China."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿En qué año se produce la Revolución Francesa?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1789."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1782."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1786."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1783."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 26,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Cuántas estrellas aparecen en la bandera de China?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "4."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿De qué país es originario el café?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Etiopía."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cuba."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "España."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Colombia."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿En qué año murió Steve Jobs?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "2011."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1990."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "2010."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2021."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿En qué año se inicia la Revolución Rusa?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1917."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1903."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1913."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1907."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Cuántos lados tiene un hexágono?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "6."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "7."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "8."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "9."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿En qué país se encuentra la ciudad de Calcuta?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "India."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Austria."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "España."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Italia."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 27,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Sobre qué camina un funambulista?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Una cuerda floja."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Vidrio roto."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Pelotas."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "La luna."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question:
-                  "¿Qué tipo de avión fue desarrollado por Igor Sikorsky en los EEUU en 1942?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Helicóptero."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Dirigible sigiloso."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Jet."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Cápsula espacial."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿La cinofobia es el miedo a ...?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Perros."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Aves."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Volar."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Gérmenes."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Qué idioma NO es indoeuropeo?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Húngaro."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ruso."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Griego."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Letón."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Cómo se llama Polonia en polaco?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Polska."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Pupcia."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Polszka."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Polonia."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question:
-                  "¿Cuántas calorías hay en una lata de 355 ml de Pepsi Cola?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "150."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "200."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "100."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "155."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 28,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question:
-                  "¿Qué país, sin incluir Japón, tiene la mayor cantidad de personas de ascendencia japonesa?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Brasil."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "China."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Sur Corea."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Estados Unidos."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Cuándo murió Freddie Mercury?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1991."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1990."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1980."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1981."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿Cuál fue la primera película de Disney?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Blancanieves."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cenicienta."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "La Bella Durmiente."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "La Sirenita Ariel."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question:
-                  "De acuerdo a la Biblia, ¿cuántos años vivió Matusalén?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "969."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "896."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "959."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "569."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Cuál es el primer libro de la Biblia?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Génesis."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Éxodo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Levítico."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Jeremías."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿Quién fue el último faraón de Egipto?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ramsés III."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ramsés II."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Tutankamón."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Amenhotep II."),
+                    id: 4, answer: "Fumigar la ciudad periódicamente."),
               ]),
         ],
       ),
