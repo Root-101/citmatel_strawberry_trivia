@@ -641,52 +641,51 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuál es el planeta más grande del Sistema Solar?",
+              question:
+                  "El cambio climático provoca afectaciones a la agricultura.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Júpiter."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Venus."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Martes."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "La Tierra."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuántos huesos tiene el cuerpo humano?",
+              question:
+                  "El cambio climático provoca afectaciones a los ecosistemas naturales.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "206."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "198."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "210."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "194."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuántas notas musicales existen?",
+              question:
+                  "El calentamiento global puede incrementar el desarrollo de plagas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "12."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "7."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "15."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "9."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿En qué año se inventó la imprenta?",
+              question: "La variabilidad climática es un proceso natural. ",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1440."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1450."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1455."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1430."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuál es el mineral más duro del planeta?",
+              question:
+                  "El cambio climático puede provocar la extinción de especies autóctonas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Diamante."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Oro."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Hierro."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Zinc."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -696,53 +695,52 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuántos corazones tiene un gusano de tierra?",
+              question:
+                  "El Cambio climático puede provocar sequías extremas y prolongadas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "2."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "4."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál de estos autores vivió en Cuba durante años?",
+              question:
+                  "El calentamiento global induce el blanqueamiento y muerte de los corales.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ernest Hemingway."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Lawrence Kaplow."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "James Joyce."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "F. Scott Fitzgerald."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuál es el planeta más alejado del Sol?",
+              question:
+                  "La muerte de los corales y manglares afecta la reproducción de especies marinas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Neptuno."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Plutón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Venus."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Mercurio."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿En qué año llegó el hombre a la Luna?",
+              question:
+                  "La variabilidad climática se puede evitar eliminando el marabú.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1969."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1965."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1960."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1963."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuántos dientes tienen los seres humanos?",
+              question:
+                  "El cambio climático favorece la formación de los hielos polares.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "32."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "35."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "27."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "31."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -752,52 +750,52 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿En qué país nació Adolf Hitler?",
+              question:
+                  "La variabilidad climática puede provocar la reducción de la lluvia.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Austria."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Alemania."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Rusia."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Rumania."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál es el primer elemento de la tabla periódica?",
+              question:
+                  "El cambio climático induce la ocurrencia de eventos de lluvias extremas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Hidrógeno."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Helio."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Litio."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Berilio."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuánto duró “La Guerra de los Cien Años”?",
+              question:
+                  "La sequía es beneficiosa para la agricultura en las montañas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "116."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "100."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "110."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "107."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Quién descubrió la penicilina?",
+              question:
+                  "Para controlar la sequía hay que reforestar los bosques.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Alexander Fleming."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Manuel Jalón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Thomas Edison."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Nikola Tesla."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuántos días tiene un año bisiesto?",
+              question:
+                  "Cosechar la lluvia reduce el impacto negativo de la sequía.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "366."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "367."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "365."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "364."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -807,52 +805,54 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuántos anillos hay en la bandera olímpica?",
+              question:
+                  "Los sistemas de captación de agua de lluvia incrementan la salinidad de los ríos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "9."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "7."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál de estos colores NO está en la bandera cubana?",
+              question:
+                  "El calentamiento global mejora los rendimientos de los cultivos en los trópicos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Amarillo."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Blanco."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Azul."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Rojo."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuál era el nombre de pila de Che Guevara?",
+              question:
+                  "El aumento del nivel del mar en los terrenos bajos costeros:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ernesto."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Mario."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Tomás."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Alejandro."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Provoca inundaciones."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Mejora los suelos."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Aumenta la disponibilidad del agua."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Favorece la pesca."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Quién es el fundador de Facebook?",
+              question: "El cambio climático afecta el medio marino:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Mark Zuckerberg."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Bill Gates."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Steve Jobs."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Ronald Wayne."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuántos años son un lustro?",
+              question:
+                  "El vertimiento de contaminantes en los océanos provoca impacto en las especies marinas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "100."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "10."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "500."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
