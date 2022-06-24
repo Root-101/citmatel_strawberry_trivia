@@ -18,35 +18,35 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuál es el órgano más grande del cuerpo humano?",
+              question: "¿Qué es una construcción segura?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Piel."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Corazón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Intestino Grueso."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Hígado."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Resiste eventos extremos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Diseño elegante."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Viven mucha gente."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Lugar para esconderse."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿El foie gras es un manjar francés hecho típicamente de qué parte de un pato o un ganso?",
+              question: "¿Para qué se construyen escuelas seguras?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Hígado."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Corazón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Estómago."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Intestinos."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Proteger vidas."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Evitar robos."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Impartir clases."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Graduar alumnos."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Dónde tenía Ernest Hemingway su amado Mojito?",
+              question: "¿Para qué se necesitan hospitales seguros?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "En La Bodeguita del Medio."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "En el malecón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "En El Floridita."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "En su barco de pesca."),
+                    id: 1, answer: "Resista eventos extremos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Atender de noche."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Realizar cirugías."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Durabilidad."),
               ]),
         ],
       ),
@@ -57,36 +57,40 @@ class TriviaLevelGeneral {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Qué forma geométrica se usa generalmente para las señales de alto?",
+                  "¿Para qué se construyen obras con un alto nivel de seguridad?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Octágono."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Hexágono."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Círculo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Triángulo."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Resistencia y duración."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Esconderse de noche."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Esconder Residentes."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Escondite."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Cuál de estos colores NO aparece en el logotipo de Google?",
+                  "¿Con qué criterio se selecciona el mejor lugar para construir?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Rosado."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Amarillo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Azul."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Verde."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Lugares Seguros."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Terreno Barato."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mercados cerca."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Playa cerca."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Qué es Tasmania?",
+              question:
+                  "¿Qué tipo de construcciones se deben realizar cerca de las costas?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Un estado australiano."),
+                    id: 1, answer: "Resistentes al oleaje."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Casas flotantes."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Un sabor de helado."),
+                    id: 3, answer: "Casas con muros altos."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Un trastorno psicológico."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Un dibujo animado."),
+                    id: 4, answer: "Hotel de muchos pisos."),
               ]),
         ],
       ),
@@ -96,36 +100,39 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cómo llaman los cubanos a su isla por su forma?",
+              question:
+                  "¿Cómo proteger las poblaciones situadas en las costas rocosas?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cocodrilo."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Palma."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Zapato."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Dragón."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Construyendo rompeolas."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Construyendo altos muros."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Colocando sacos de arena."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Pintándolas de colores oscuros."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Cuándo uno tiene envidia se dice que es de qué color?",
+                  "En las zonas de frecuentes inundaciones los sistemas de abasto se ubican:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Verde."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Rojo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Azul."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Amarillo."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Sobre el nivel de inundaciones previas."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "En el sótano."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "En terreno ajeno."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "En la azotea."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
               question:
-                  "¿Cuál de los siguientes componentes de la sangre forma un tapón en el sitio de las lesiones?",
+                  "Los “vara en tierra” son refugios que se utilizan en caso de huracanes.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Plaquetas."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Células rojas de la sangre."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Células blancas de la sangre."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Plasma sanguíneo."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -136,34 +143,33 @@ class TriviaLevelGeneral {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Qué signo del zodíaco está representado por el Cangrejo?",
+                  "Los edificios con extensos ventanales ahorran combustible.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cáncer."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Libra."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Virgo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Sagitario."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Qué bebida alcohólica se elabora a partir de la melaza?",
+                  "Las carreteras que pasan por zonas con peligro de inundación deben ser protegidas por:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ron."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ginebra."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Vodka."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Whisky."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Contenes y drenajes."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Árboles frutales."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Muros altos."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Ninguna de las anteriores."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "En un tablero de dardos, ¿Qué número está directamente enfrente del número 1?",
+              question: "¿Se pueden construir cimientos en el fondo del mar?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "19."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "20."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "12."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "15."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -174,34 +180,31 @@ class TriviaLevelGeneral {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Cuál es la palabra informal para \"amigo\" que se usa en Cuba?",
+                  "Los diseños de construcción deben ajustarse al relieve.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Asere."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Che."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Camarada."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Compañero."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question:
-                  "Las palabras \"bungalow\" y \"champú\" son originarias del idioma del país:",
+                  "Las construcciones en las zonas con peligro sísmico son más costosas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "India."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Papúa Nueva Guinea."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Etiopía."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "China."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuántos colores hay en un arcoíris?",
+              question:
+                  "Las construcciones en las zonas con peligro sísmico tienen que ser sismoresistentes.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "7."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "8."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "9."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "6."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -211,45 +214,40 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuál de estas empresas NO fabrica automóviles?",
+              question:
+                  "Las construcciones seguras sólo se aplican en las grandes ciudades.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ducati."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Nissan."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "GMC."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Fiat."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Quién está representado en el billete de cien pesos cubanos?",
+              question: "Las normas para la construcción son de uso universal.",
               answers: [
-                TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Carlos M. de Céspedes."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "José Martí."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Máximo Gómez."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Camilo Cienfuegos."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "¿Qué carácter se consideró una vez como la letra 27 del alfabeto inglés?",
+              question: "Las casas deben situarse lejos de los barrancos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ampersand &."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Asterisco *."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Tilde '."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Numeral #."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cuál es la marca de ron más popular en Cuba?",
+              question:
+                  "En los valles de los ríos se debe construir lejos del cauce.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Havana Club."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Paticruzado."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Bacardi."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Cristal."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -259,22 +257,24 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuándo se lanzó el sitio web \"Facebook\"?",
+              question:
+                  "Las construcciones en las zonas bajas inundables deben tener:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "2004."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "2005."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "2003."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2006."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cimientos altos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Varias puertas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Botes de escape."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Ninguna de las anteriores."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Quién inventó el pastafarianismo? ",
+              question:
+                  "En las costas se debe construir sobre la playa y sobre la duna.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Bobby Henderson."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Eric Tignor."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Bill Nye."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Zach Soldi."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
