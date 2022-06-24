@@ -128,7 +128,7 @@ class TriviaLevelGeneral {
               id: 3,
               correctAnswerId: 1,
               question:
-                  "Los “vara en tierra” son refugios que se utilizan en caso de huracanes.",
+                  "Los \“vara en tierra\” son refugios que se utilizan en caso de huracanes.",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "No."),
@@ -272,30 +272,36 @@ class TriviaLevelGeneral {
               question:
                   "En las costas se debe construir sobre la playa y sobre la duna.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "¿Qué frutos secos se utilizan en la producción de mazapán?",
+              question: "¿Qué es la seguridad alimentaria?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Almendras."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cacahuetes."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Nueces."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Pistachos."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Cantidad razonable de alimentos."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Comida abundante y variada."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Alimentos bien guardados."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Alimentos asegurados."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cuántas notas hay en un piano de cola estándar?",
+              question: "Las seguridad alimentaria debe garantizar:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "88."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "89."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "108."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "78."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Acceso universal a alimentos."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Almacenes con alta seguridad."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Alimentos gratis."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Alimentos cuidados."),
               ]),
         ],
       ),
@@ -305,45 +311,54 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿De qué están hechos los sombreros de Panamá?",
+              question: "Cuba promueve la seguridad alimentaria:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Paja."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Seda."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Cáñamo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Linaza."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Incrementando la producción."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Adquiriendo alimentos del exterior."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Rescatando terrenos empantanados."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Sembrando caña."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿En qué ciudad sudamericana se originó el cartel de droga dirigido por Pablo Escobar?",
+              question: "Cuba apoya la producción de alimentos mediante:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Medellín."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Bogotá."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Quito."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Cali."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Resultados científicos e innovación."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Importación de semillas de frutales."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Reforestación con especies maderables."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Creación de especies nuevas de yuca."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
               question:
-                  "¿En qué pueblo pesquero de Cuba Ernest Hemingway se inspiró para su novela \"El viejo y el mar\"?",
+                  "El transporte y la comercialización influyen en la seguridad alimentaria.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cojímar."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Bejucal."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Baracoa."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Viñales."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
               question:
-                  "¿Quién está representado en el billete de 50 pesos cubanos?",
+                  "En caso de aviso de un evento meteorológico extremo se debe:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Calixto García."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "José Martí."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Máximo Gómez."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Camilo Cienfuegos."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Tener productos en lugares protegidos."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Cubrir las plantaciones con lona."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Ponerlos todos a la venta."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Evacuar a todos los obreros."),
               ]),
         ],
       ),
@@ -353,44 +368,48 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuál es la especia más cara del mundo por peso?",
+              question:
+                  "Para aumentar la productividad de los campos se necesita:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Azafrán."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Canela."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Cardamomo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Vainilla."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Aplicar la ciencia y la técnica."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Hacer más carreteras."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Aplicar pesticidas químicos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Talar los boques."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Rolex es una empresa que se especializa en qué tipo de producto?",
+              question: "¿Dónde deben desarrollarse los cultivos?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Relojes."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Coches."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Computadoras."),
                 TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Equipos deportivos."),
+                    id: 1, answer: "Terrenos fértiles, bien drenados."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Cima de las montañas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Zonas costeras."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Pantanos."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cómo se llama el año nuevo judío?",
+              question:
+                  "Las inundaciones favorecen el desarrollo de la agricultura urbana.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Rosh Hashaná."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Elul."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Año nuevo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Succoss."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cuál es el ave nacional de Cuba?",
+              question:
+                  "Para aumentar el rendimiento de los cultivos se deben mejorar los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Trogón cubano."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Zunzún."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Guacamayo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Canario."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -401,43 +420,41 @@ class TriviaLevelGeneral {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Quién es la persona más joven en recibir un premio Nobel?",
+                  "Para mejorar los suelos se deben quemar los restos de las cosechas anteriores.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Malala Yousafzai."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Lawrence Bragg."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Werner Heisenberg."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Yasser Arafat."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Cuáles de los siguientes químicos se encuentran en las semillas de berenjena?",
+                  "Para mejorar los suelos hay que eliminar las lombrices.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Nicotina."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Mescalina."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Cianuro."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Psilocibina."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cinco pesos valen cuántos centavos?",
+              question:
+                  "Para mejorar los suelos se debe incrementar el uso de abonos químicos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "500."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "200."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "20."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "50."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Dónde se originó la planta de la piña?",
+              question:
+                  "El abono orgánico se debe aplicar siempre que sea posible.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Sudamérica."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Hawái."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Europa."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Asia."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -447,12 +464,17 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "El malva es un tono del color:",
+              question:
+                  "¿Qué medidas se pueden tomar para incrementar el rendimiento de los cultivos?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Morado."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Rojo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Carmelita."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Rosado."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Usar semillas resistentes a sequía."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Evitar la rotación de los cultivos."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Sembrar con intensas lluvias."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Aplicar abonos nitrogenados."),
               ]),
           TriviaQuestionDomain(
               id: 2,
