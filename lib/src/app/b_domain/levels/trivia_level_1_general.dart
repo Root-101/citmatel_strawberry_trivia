@@ -479,49 +479,41 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Qué líder religioso visitó Cuba en 1998?",
+              question:
+                  "Los suelos son ecosistemas con una altísima biodiversidad.",
               answers: [
-                TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Papa Juan Pablo II."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Papa Juan Pablo III."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Papa Francisco."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Papa Benedicto XVI."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "¿Cuál es el signo zodiacal de alguien nacido el día de San Valentín?",
+              question: "La vegetación protege a los suelos de la erosión",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Acuario."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Piscis."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Capricornio."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Escorpión."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
               question:
-                  "Si plantases las semillas de Quercus robur, ¿qué crecería?",
+                  "La erosión es importante pues permite el reciclaje de los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Árboles."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Granos."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Vegetales."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Flores."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿En qué galaxia se encuentra la Tierra?",
+              question:
+                  "La supervivencia de todas las especies terrestres depende de los suelos",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "La Vía Láctea."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Molinillo Austral."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Galaxia del Molinete."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Enana del Can Mayor."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -531,52 +523,48 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuál es el río más largo del mundo?",
+              question: "Los suelos son importantes para la ganadería.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "El Amazonas."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Nilo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Yangtsé."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Misisipi."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál es el país con más habitantes del mundo?",
+              question: "Los suelos salinizados afectan la agricultura.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "China."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "India."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Rusia."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Estados Unidos."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuál es el edificio más alto del mundo?",
+              question:
+                  "La ganadería intensiva reduce la fertilidad de los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Burj Khalifa."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Torre de Shanghái."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Makkah Royal."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Merdeka 118."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿En qué año cayó el muro de Berlín?",
+              question: "La deforestación provoca la erosión de los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1989."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1990."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1988."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1987."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuántos años duró la Primera Guerra Mundial?",
+              question: "Las prácticas de corte y quema deterioran los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "4."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "6."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -586,12 +574,12 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuántos años duró la Segunda Guerra Mundial?",
+              question:
+                  "La rotación de los cultivos garantiza la fertilidad de los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "6."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "4."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
