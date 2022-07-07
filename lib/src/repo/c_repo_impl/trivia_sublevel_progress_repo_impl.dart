@@ -3,7 +3,8 @@ import 'package:clean_core/clean_core.dart';
 
 class TriviaSubLevelProgressRepoImpl extends DefaultCRUDRepo<
     TriviaSubLevelProgressDomain,
-    TriviaSubLevelProgressEntity> implements TriviaSubLevelProgressRepo {
+    TriviaSubLevelProgressEntity,
+    TriviaSubLevelProgressRepoExternal> implements TriviaSubLevelProgressRepo {
   TriviaSubLevelProgressRepoExternal _externalRepo;
 
   TriviaSubLevelProgressRepoImpl(
@@ -34,7 +35,7 @@ class TriviaSubLevelProgressRepoImpl extends DefaultCRUDRepo<
   }
 }
 
-class TriviaSubLevelProgressConverter extends DefaultGeneralConverter<
+class TriviaSubLevelProgressConverter extends GeneralConverter<
     TriviaSubLevelProgressDomain, TriviaSubLevelProgressEntity> {
   static final TriviaSubLevelProgressConverter converter =
       TriviaSubLevelProgressConverter._();
