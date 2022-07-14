@@ -87,10 +87,8 @@ class TriviaLevelGeneral {
                 TriviaQuestionAnswerDomain(
                     id: 1, answer: "Resistentes al oleaje."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Casas flotantes."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Casas con muros altos."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Hotel de muchos pisos."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Muros altos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Hoteles."),
               ]),
         ],
       ),
@@ -103,14 +101,11 @@ class TriviaLevelGeneral {
               question:
                   "¿Cómo proteger las poblaciones situadas en las costas rocosas?",
               answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Con rompeolas."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Con muros altos."),
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Construyendo rompeolas."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Construyendo altos muros."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Colocando sacos de arena."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Pintándolas de colores oscuros."),
+                    id: 3, answer: "Con sacos de arena."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Pintándolas."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -119,7 +114,7 @@ class TriviaLevelGeneral {
                   "En las zonas de frecuentes inundaciones los sistemas de abasto se ubican:",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Sobre el nivel de inundaciones previas."),
+                    id: 1, answer: "Sobre inundaciones previas."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "En el sótano."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "En terreno ajeno."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "En la azotea."),
@@ -283,8 +278,7 @@ class TriviaLevelGeneral {
               answers: [
                 TriviaQuestionAnswerDomain(
                     id: 1, answer: "Cantidad razonable de alimentos."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Comida abundante y variada."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Comida abundante."),
                 TriviaQuestionAnswerDomain(
                     id: 3, answer: "Alimentos bien guardados."),
                 TriviaQuestionAnswerDomain(
@@ -296,9 +290,8 @@ class TriviaLevelGeneral {
               question: "Las seguridad alimentaria debe garantizar:",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Acceso universal a alimentos."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Almacenes con alta seguridad."),
+                    id: 1, answer: "Acceso a alimentos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Almacenes seguros."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Alimentos gratis."),
                 TriviaQuestionAnswerDomain(
                     id: 4, answer: "Alimentos cuidados."),
@@ -316,9 +309,9 @@ class TriviaLevelGeneral {
                 TriviaQuestionAnswerDomain(
                     id: 1, answer: "Incrementando la producción."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Adquiriendo alimentos del exterior."),
+                    id: 2, answer: "Importando alimentos."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Rescatando terrenos empantanados."),
+                    id: 3, answer: "Rescatando terrenos."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Sembrando caña."),
               ]),
           TriviaQuestionDomain(
@@ -326,14 +319,12 @@ class TriviaLevelGeneral {
               correctAnswerId: 1,
               question: "Cuba apoya la producción de alimentos mediante:",
               answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Innovación."),
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Resultados científicos e innovación."),
+                    id: 2, answer: "Importación de semillas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Reforestación."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Importación de semillas de frutales."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Reforestación con especies maderables."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Creación de especies nuevas de yuca."),
+                    id: 4, answer: "Importación de yuca."),
               ]),
           TriviaQuestionDomain(
               id: 3,
@@ -352,13 +343,11 @@ class TriviaLevelGeneral {
                   "En caso de aviso de un evento meteorológico extremo se debe:",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Tener productos en lugares protegidos."),
+                    id: 1, answer: "Productos Protegidos."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Cubrir las plantaciones con lona."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Ponerlos todos a la venta."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Evacuar a todos los obreros."),
+                    id: 2, answer: "Cubrir plantaciones."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Vender Productos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Evacuar obreros."),
               ]),
         ],
       ),
@@ -371,23 +360,19 @@ class TriviaLevelGeneral {
               question:
                   "Para aumentar la productividad de los campos se necesita:",
               answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Ciencia y Técnica."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Más carreteras."),
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Aplicar la ciencia y la técnica."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Hacer más carreteras."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Aplicar pesticidas químicos."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Talar los boques."),
+                    id: 3, answer: "Pesticidas químicos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Talar bosques."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question: "¿Dónde deben desarrollarse los cultivos?",
               answers: [
-                TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Terrenos fértiles, bien drenados."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Cima de las montañas."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Terrenos fértiles."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Montañas."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Zonas costeras."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Pantanos."),
               ]),
@@ -468,13 +453,12 @@ class TriviaLevelGeneral {
                   "¿Qué medidas se pueden tomar para incrementar el rendimiento de los cultivos?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Usar semillas resistentes a sequía."),
+                    id: 1, answer: "Semilla resistente a sequía."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "NO rotar cultivos."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Evitar la rotación de los cultivos."),
+                    id: 3, answer: "Sembrar con lluvias."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Sembrar con intensas lluvias."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Aplicar abonos nitrogenados."),
+                    id: 4, answer: "Abonos nitrogenados."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -586,10 +570,9 @@ class TriviaLevelGeneral {
               correctAnswerId: 1,
               question: "¿Qué es la resiliencia?",
               answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Autorecuperarse."),
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Recuperarse por sí mismo."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Utilizar financiamiento estatal."),
+                    id: 2, answer: "Financiamiento estatal."),
                 TriviaQuestionAnswerDomain(
                     id: 3, answer: "Abandonar un lugar."),
                 TriviaQuestionAnswerDomain(
@@ -601,13 +584,11 @@ class TriviaLevelGeneral {
               question: "¿Qué es la resiliencia ambiental?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Ecosistema que se autorecupera."),
+                    id: 1, answer: "Ecosistema que se autorestaura."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Reforestación."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Dragar embalces."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Reforestación con recursos estatales."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Dragar embalces con recursos donados."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Construir escuelas ambientales."),
+                    id: 4, answer: "Escuelas ambientales."),
               ]),
           TriviaQuestionDomain(
               id: 4,
@@ -615,11 +596,11 @@ class TriviaLevelGeneral {
               question: "¿Qué es la resiliencia de una ciudad o país?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Restaurar sistema con mínimo de ayuda."),
+                    id: 1, answer: "Sistema que se autorestaura."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Reconstrucción mediante donaciones."),
+                    id: 2, answer: "Construir con donaciones."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Restauración de tendidos eléctricos."),
+                    id: 3, answer: "Restaurar tendidos eléctricos."),
                 TriviaQuestionAnswerDomain(
                     id: 4, answer: "Soporte contra terremotos."),
               ]),
@@ -832,7 +813,7 @@ class TriviaLevelGeneral {
                     id: 1, answer: "Provoca inundaciones."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "Mejora los suelos."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Aumenta la disponibilidad del agua."),
+                    id: 3, answer: "Aumenta las reservas."),
                 TriviaQuestionAnswerDomain(id: 4, answer: "Favorece la pesca."),
               ]),
           TriviaQuestionDomain(
@@ -866,10 +847,9 @@ class TriviaLevelGeneral {
                   "¿Cómo se pueden reducir la contaminación del agua de los ríos?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "NO verter aguas usadas."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Eliminar los bosques de galería."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Dragar los ríos."),
+                    id: 1, answer: "NO verter desechos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Eliminar bosques."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Dragar ríos."),
                 TriviaQuestionAnswerDomain(
                     id: 4, answer: "Construir represas."),
               ]),
@@ -879,11 +859,11 @@ class TriviaLevelGeneral {
               question: "¿Cómo se pueden reducir la contaminación de los ríos?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "NO lavar vehículos en los causes."),
+                    id: 1, answer: "NO lavar en los causes."),
                 TriviaQuestionAnswerDomain(
                     id: 2, answer: "Construir embalses."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Colocar muros de contención."),
+                    id: 3, answer: "Muros de contención."),
                 TriviaQuestionAnswerDomain(
                     id: 4, answer: "Cercar sus márgenes."),
               ]),
@@ -906,10 +886,9 @@ class TriviaLevelGeneral {
               correctAnswerId: 1,
               question: "¿Cómo se protegen las aguas subterráneas?",
               answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "NO verter basura."),
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "NO verter basura en las cavernas."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Tapando todas las cavernas."),
+                    id: 2, answer: "Tapando las cavernas."),
                 TriviaQuestionAnswerDomain(id: 3, answer: "Sembrando marabú."),
                 TriviaQuestionAnswerDomain(
                     id: 4, answer: "Cultivando champiñones."),
@@ -921,13 +900,12 @@ class TriviaLevelGeneral {
                   "¿Cómo se puede reducir la contaminación de las aguas subterráneas?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "NO verter aguas usadas."),
+                    id: 1, answer: "NO verter desechos."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Pozos de explotación profundos."),
+                    id: 2, answer: "Pozos de explotación."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Letrinas."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Letrinas sobre pozos de explotación."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Reduciendo las áreas de bosques."),
+                    id: 4, answer: "Reduciendo los bosques."),
               ]),
         ],
       ),
@@ -939,12 +917,11 @@ class TriviaLevelGeneral {
               correctAnswerId: 1,
               question: "¿En qué consiste la adaptación al cambio climático? ",
               answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Mayor resiliencia."),
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Mayor resiliencia y adaptación."),
+                    id: 2, answer: "Materiales de respuesto."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Adquirir materiales de respuesto."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Cursos de agricultura y ganadería."),
+                    id: 3, answer: "Cursos de agricultura."),
                 TriviaQuestionAnswerDomain(
                     id: 4, answer: "Cursos de superación."),
               ]),
@@ -953,8 +930,7 @@ class TriviaLevelGeneral {
               correctAnswerId: 1,
               question: "Medida de enfrentamiento al cambio climático:",
               answers: [
-                TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Investigar los procesos climáticos."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Investigación."),
                 TriviaQuestionAnswerDomain(
                     id: 2, answer: "Mejorar la red de viales."),
                 TriviaQuestionAnswerDomain(
@@ -988,13 +964,12 @@ class TriviaLevelGeneral {
               question: "Medidas de enfrentamiento al CC:",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Monitorear las variables climáticas."),
+                    id: 1, answer: "Monitorear el clima."),
                 TriviaQuestionAnswerDomain(
                     id: 2, answer: "Extraer agua subterránea."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Medir las lluvias."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Medir las lluvias 3 veces al día."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Importar alimentos orgánicos."),
+                    id: 4, answer: "Importar alimentos."),
               ]),
         ],
       ),
@@ -1004,16 +979,14 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "Medidas de enfrentamiento al CC:",
+              question: "Para enfrentar el CC se debe mejorar:",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Establecer una estrategia nacional."),
+                    id: 1, answer: "Estrategia nacional."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Mejorar los puentes ferroviarios."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Evitar la construcción de túneles."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Construir nuevas ciudades."),
+                    id: 2, answer: "Puentes ferroviarios."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Túneles."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Ciudades."),
               ]),
           TriviaQuestionDomain(
               id: 2,
@@ -1021,27 +994,25 @@ class TriviaLevelGeneral {
               question: "¿En qué consiste la mitigación del cambio climático? ",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Reducir las emisiones de gases."),
+                    id: 1, answer: "Reducir gases emitidos."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Equipos que no afecten la capa de ozono."),
+                    id: 2, answer: "No afectar capa de ozono."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Cursos de superación a los agrónomos."),
+                    id: 3, answer: "Superación de agrónomos."),
                 TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Reducir los bosques de manglares."),
+                    id: 4, answer: "Reducir los bosques."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
               question: "Estrategias para la mitigación:",
               answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Energía limpia."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Termoeléctricas."),
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Uso la energía limpia."),
+                    id: 3, answer: "Combustibles fósiles."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Ampliar la red de termoeléctricas."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Usar combustibles fósiles."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Desarrollar la industria siderúrgica."),
+                    id: 4, answer: "Industria siderúrgica."),
               ]),
           TriviaQuestionDomain(
               id: 4,
@@ -1049,13 +1020,11 @@ class TriviaLevelGeneral {
               question: "¿Cómo contribuir a la mitigación?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Mecanismos de captura de carbono."),
+                    id: 1, answer: "Captura de carbono."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Red de lecherías."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Reducir el ganado."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Ampliar red de lecherías."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Reducir el ganado mayor."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Controlar el nivel del mar."),
+                    id: 4, answer: "Controlar nivel del mar."),
               ]),
           TriviaQuestionDomain(
               id: 5,
@@ -1063,13 +1032,11 @@ class TriviaLevelGeneral {
               question: "Una medida de mitigación:",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Ahorrar combustibles fósiles."),
+                    id: 1, answer: "Ahorrar combustibles."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Utilizar petróleo."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Importar diesel."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Utilizar petróleo y gas nacional."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Importar solamente motores diesel."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Aumentar el transporte subterráneo."),
+                    id: 4, answer: "Transporte subterráneo."),
               ]),
           TriviaQuestionDomain(
               id: 6,
@@ -1077,13 +1044,12 @@ class TriviaLevelGeneral {
               question: "Iniciativa para contribuir a la mitigación:",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Desarrollar las producciones circulares."),
+                    id: 1, answer: "Producciones circulares."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Quemar carbón."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Quemar todo el carbón posible."),
+                    id: 3, answer: "Ganadería intensiva."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Desarrollar la ganadería intensiva."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Fumigar la ciudad periódicamente."),
+                    id: 4, answer: "Fumigar periódicamente."),
               ]),
         ],
       ),
