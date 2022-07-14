@@ -69,7 +69,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
             key: key4,
             style: Get.textTheme.subtitle2?.copyWith(
               color: textQuestionColor,
-              fontSize: size.width / 14,
+              fontSize: size.width / 16,
             ),
             textAlign: TextAlign.center,
             maxLines: 3,
@@ -142,7 +142,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
               "${String.fromCharCode(charCode + 64)} - ",
               style: Get.textTheme.subtitle1?.copyWith(
                 color: textAnswerColor,
-                fontSize: size.width / 16,
+                fontSize: size.width / 19,
               ),
               maxLines: 1,
             ),
@@ -152,7 +152,7 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
                 "$answerText",
                 style: Get.textTheme.subtitle2?.copyWith(
                   color: textAnswerColor,
-                  fontSize: size.width / 17,
+                  fontSize: size.width / 20,
                 ),
                 textAlign: TextAlign.start,
                 maxLines: 1,
@@ -160,8 +160,8 @@ class TriviaSubLevelQuestionCard extends GetView<TriviaSubLevelController> {
             ),
             //// The Icon ////
             Container(
-              height: size.width / 15,
-              width: size.width / 15,
+              height: size.width / 16,
+              width: size.width / 16,
               decoration: BoxDecoration(
                 color: Colors.transparent,
                 borderRadius: BorderRadius.circular(50),
