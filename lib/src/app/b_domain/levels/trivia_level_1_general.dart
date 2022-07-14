@@ -153,7 +153,7 @@ class TriviaLevelGeneral {
               id: 2,
               correctAnswerId: 1,
               question:
-                  "Las carreteras que pasan por zonas con peligro de inundación deben ser protegidas por:",
+                  "Las carreteras que pasan por zonas con peligro de inundación se protegen con:",
               answers: [
                 TriviaQuestionAnswerDomain(
                     id: 1, answer: "Contenes y drenajes."),
@@ -200,7 +200,7 @@ class TriviaLevelGeneral {
               id: 3,
               correctAnswerId: 1,
               question:
-                  "Las construcciones en las zonas con peligro sísmico tienen que ser sismoresistentes.",
+                  "Las construcciones en zonas de peligro sísmico tienen que ser sismoresistentes.",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "No."),
@@ -716,7 +716,7 @@ class TriviaLevelGeneral {
               id: 3,
               correctAnswerId: 1,
               question:
-                  "La muerte de los corales y manglares afecta la reproducción de especies marinas.",
+                  "La muerte de corales y manglares afecta la reproducción de especies marinas.",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "No."),
@@ -848,7 +848,7 @@ class TriviaLevelGeneral {
               id: 5,
               correctAnswerId: 1,
               question:
-                  "El vertimiento de contaminantes en los océanos provoca impacto en las especies marinas.",
+                  "El vertimiento de contaminantes en los océanos impacta en las especies marinas.",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "No."),
@@ -966,7 +966,7 @@ class TriviaLevelGeneral {
               id: 3,
               correctAnswerId: 1,
               question:
-                  "Adaptarse al cambio climático requiere adoptar nuevas estrategias de producción de alimentos",
+                  "Adaptarse al cambio climático requiere nuevas estrategias de producción de alimentos",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "No."),
@@ -976,7 +976,7 @@ class TriviaLevelGeneral {
               id: 4,
               correctAnswerId: 1,
               question:
-                  "Para enfrentar el CC hay que reducir las vulnerabilidades ante eventos hidro-meteorológicos.",
+                  "El CC se enfrenta aumentando la seguridad ante eventos hidro-meteorológicos.",
               answers: [
                 TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
                 TriviaQuestionAnswerDomain(id: 2, answer: "No."),
