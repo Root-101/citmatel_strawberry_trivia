@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class TriviaLevelGeneral {
   static final TriviaLevelDomain levelGeneral = TriviaLevelDomain(
     id: 1,
-    theme: "Variado",
+    theme: "Natura 1",
     themeBackgroundImage: ToolsThemesBackgroundImage(
       urlImage: "",
       colorStrong: const Color(0xffb2205c),
