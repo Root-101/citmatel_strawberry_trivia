@@ -14,7 +14,7 @@ void main() {
   */
 
   //print only theme
-  printTheme(TriviaLevelsAll.levels[9]);
+  printTheme(TriviaLevelsAll.levels[1]);
 }
 
 void printTheme(TriviaLevelDomain theme) {
