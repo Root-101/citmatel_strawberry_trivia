@@ -1,11 +1,16 @@
 import 'package:citmatel_strawberry_tools/tools_exporter.dart';
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
+import 'package:flutter/material.dart';
 
 class TriviaLevelGeneral {
   static final TriviaLevelDomain levelGeneral = TriviaLevelDomain(
     id: 1,
-    theme: ToolsThemesAssets.THEME_GENERAL_NAME,
-    themeBackgroundImage: ToolsThemesAssets.THEME_GENERAL_BACKGROUND,
+    theme: "Natura 1",
+    themeBackgroundImage: ToolsThemesBackgroundImage(
+      urlImage: "",
+      colorStrong: const Color(0xffb2205c),
+      colorLight: const Color(0xffb2205c).withOpacity(0.5),
+    ),
     sublevel: [
       TriviaSubLevelDomain(
         id: 1,
@@ -13,35 +18,35 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuál es el órgano más grande del cuerpo humano?",
+              question: "¿Qué es una construcción segura?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Piel."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Corazón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Intestino Grueso."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Hígado."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Resiste eventos extremos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Diseño elegante."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Viven mucha gente."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Lugar para esconderse."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿El foie gras es un manjar francés hecho típicamente de qué parte de un pato o un ganso?",
+              question: "¿Para qué se construyen escuelas seguras?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Hígado."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Corazón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Estómago."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Intestinos."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Proteger vidas."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Evitar robos."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Impartir clases."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Graduar alumnos."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Dónde tenía Ernest Hemingway su amado Mojito?",
+              question: "¿Para qué se necesitan hospitales seguros?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "En La Bodeguita del Medio."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "En el malecón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "En El Floridita."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "En su barco de pesca."),
+                    id: 1, answer: "Resista eventos extremos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Atender de noche."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Realizar cirugías."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Durabilidad."),
               ]),
         ],
       ),
@@ -52,36 +57,38 @@ class TriviaLevelGeneral {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Qué forma geométrica se usa generalmente para las señales de alto?",
+                  "¿Para qué se construyen obras con un alto nivel de seguridad?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Octágono."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Hexágono."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Círculo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Triángulo."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Resistencia y duración."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Esconderse de noche."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Esconder Residentes."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Escondite."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Cuál de estos colores NO aparece en el logotipo de Google?",
+                  "¿Con qué criterio se selecciona el mejor lugar para construir?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Rosado."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Amarillo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Azul."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Verde."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Lugares Seguros."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Terreno Barato."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Mercados cerca."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Playa cerca."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Qué es Tasmania?",
+              question:
+                  "¿Qué tipo de construcciones se deben realizar cerca de las costas?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Un estado australiano."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Un sabor de helado."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Un trastorno psicológico."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Un dibujo animado."),
+                    id: 1, answer: "Resistentes al oleaje."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Casas flotantes."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Muros altos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Hoteles."),
               ]),
         ],
       ),
@@ -91,36 +98,36 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cómo llaman los cubanos a su isla por su forma?",
+              question:
+                  "¿Cómo proteger las poblaciones situadas en las costas rocosas?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cocodrilo."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Palma."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Zapato."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Dragón."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Con rompeolas."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Con muros altos."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Con sacos de arena."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Pintándolas."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Cuándo uno tiene envidia se dice que es de qué color?",
+                  "En las zonas de frecuentes inundaciones los sistemas de abasto se ubican:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Verde."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Rojo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Azul."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Amarillo."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Sobre inundaciones previas."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "En el sótano."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "En terreno ajeno."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "En la azotea."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
               question:
-                  "¿Cuál de los siguientes componentes de la sangre forma un tapón en el sitio de las lesiones?",
+                  "Los \“vara en tierra\” son refugios que se utilizan en caso de huracanes.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Plaquetas."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Células rojas de la sangre."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Células blancas de la sangre."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Plasma sanguíneo."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -131,34 +138,33 @@ class TriviaLevelGeneral {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Qué signo del zodíaco está representado por el Cangrejo?",
+                  "Los edificios con extensos ventanales ahorran combustible.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cáncer."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Libra."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Virgo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Sagitario."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Qué bebida alcohólica se elabora a partir de la melaza?",
+                  "Las carreteras que pasan por zonas con peligro de inundación se protegen con:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ron."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ginebra."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Vodka."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Whisky."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Contenes y drenajes."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Árboles frutales."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Muros altos."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Ninguna de las anteriores."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "En un tablero de dardos, ¿Qué número está directamente enfrente del número 1?",
+              question: "¿Se pueden construir cimientos en el fondo del mar?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "19."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "20."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "12."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "15."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -169,34 +175,31 @@ class TriviaLevelGeneral {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Cuál es la palabra informal para \"amigo\" que se usa en Cuba?",
+                  "Los diseños de construcción deben ajustarse al relieve.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Asere."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Che."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Camarada."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Compañero."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question:
-                  "Las palabras \"bungalow\" y \"champú\" son originarias del idioma del país:",
+                  "Las construcciones en las zonas con peligro sísmico son más costosas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "India."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Papúa Nueva Guinea."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Etiopía."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "China."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuántos colores hay en un arcoíris?",
+              question:
+                  "Las construcciones en zonas de peligro sísmico tienen que ser sismoresistentes.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "7."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "8."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "9."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "6."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -206,45 +209,40 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuál de estas empresas NO fabrica automóviles?",
+              question:
+                  "Las construcciones seguras sólo se aplican en las grandes ciudades.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ducati."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Nissan."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "GMC."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Fiat."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Quién está representado en el billete de cien pesos cubanos?",
+              question: "Las normas para la construcción son de uso universal.",
               answers: [
-                TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Carlos M. de Céspedes."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "José Martí."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Máximo Gómez."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Camilo Cienfuegos."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "¿Qué carácter se consideró una vez como la letra 27 del alfabeto?",
+              question: "Las casas deben situarse lejos de los barrancos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ampersand &."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Interrobang ‽."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Tilde '."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Pilcrow ¶."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cuál es la marca de ron más popular en Cuba?",
+              question:
+                  "En los valles de los ríos se debe construir lejos del cauce.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Havana Club."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Paticruzado."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Bacardi."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Cristal."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -254,43 +252,49 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuándo se lanzó el sitio web \"Facebook\"?",
+              question:
+                  "Las construcciones en las zonas bajas inundables deben tener:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "2004."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "2005."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "2003."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2006."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Cimientos altos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Varias puertas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Botes de escape."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Ninguna de las anteriores."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Quién inventó el pastafarianismo? ",
+              question:
+                  "En las costas se debe construir sobre la playa y sobre la duna.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Bobby Henderson."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Eric Tignor."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Bill Nye."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Zach Soldi."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "¿Qué frutos secos se utilizan en la producción de mazapán?",
+              question: "¿Qué es la seguridad alimentaria?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Almendras."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cacahuetes."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Nueces."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Pistachos."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Cantidad razonable de alimentos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Comida abundante."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Alimentos bien guardados."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Alimentos asegurados."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cuántas notas hay en un piano de cola estándar?",
+              question: "Las seguridad alimentaria debe garantizar:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "88."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "89."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "108."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "78."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Acceso a alimentos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Almacenes seguros."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Alimentos gratis."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Alimentos cuidados."),
               ]),
         ],
       ),
@@ -300,45 +304,50 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿De qué están hechos los sombreros de Panamá?",
+              question: "Cuba promueve la seguridad alimentaria:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Paja."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Seda."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Cáñamo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Linaza."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Incrementando la producción."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Importando alimentos."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Rescatando terrenos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Sembrando caña."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿En qué ciudad sudamericana se originó el cartel de droga dirigido por Pablo Escobar?",
+              question: "Cuba apoya la producción de alimentos mediante:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Medellín."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Bogotá."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Quito."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Cali."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Innovación."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Importación de semillas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Reforestación."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Importación de yuca."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
               question:
-                  "¿En qué pueblo pesquero de Cuba Ernest Hemingway se inspiró para su novela \"El viejo y el mar\"?",
+                  "El transporte y la comercialización influyen en la seguridad alimentaria.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cojímar."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Bejucal."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Baracoa."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Viñales."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
               question:
-                  "¿Quién está representado en el billete de 50 pesos cubanos?",
+                  "En caso de aviso de un evento meteorológico extremo se debe:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Calixto García."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "José Martí."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Máximo Gómez."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Camilo Cienfuegos."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Productos Protegidos."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Cubrir plantaciones."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Vender Productos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Evacuar obreros."),
               ]),
         ],
       ),
@@ -348,44 +357,44 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuál es la especia más cara del mundo por peso?",
+              question:
+                  "Para aumentar la productividad de los campos se necesita:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Azafrán."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Canela."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Cardamomo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Vainilla."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Ciencia y Técnica."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Más carreteras."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Pesticidas químicos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Talar bosques."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Rolex es una empresa que se especializa en qué tipo de producto?",
+              question: "¿Dónde deben desarrollarse los cultivos?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Relojes."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Coches."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Computadoras."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Equipos deportivos."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Terrenos fértiles."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Montañas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Zonas costeras."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Pantanos."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cómo se llama el año nuevo judío?",
+              question:
+                  "Las inundaciones favorecen el desarrollo de la agricultura urbana.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Rosh Hashaná."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Elul."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Año nuevo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Succoss."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cuál es el ave nacional de Cuba?",
+              question:
+                  "Para aumentar el rendimiento de los cultivos se deben mejorar los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Trogón cubano."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Zunzún."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Guacamayo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Canario."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -396,43 +405,41 @@ class TriviaLevelGeneral {
               id: 1,
               correctAnswerId: 1,
               question:
-                  "¿Quién es la persona más joven en recibir un premio Nobel?",
+                  "Para mejorar los suelos se deben quemar los restos de las cosechas anteriores.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Malala Yousafzai."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Lawrence Bragg."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Werner Heisenberg."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Yasser Arafat."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
               question:
-                  "¿Cuáles de los siguientes químicos se encuentran en las semillas de berenjena?",
+                  "Para mejorar los suelos hay que eliminar las lombrices.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Nicotina."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Mescalina."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Cianuro."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Psilocibina."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cinco pesos valen cuántos centavos?",
+              question:
+                  "Para mejorar los suelos se debe incrementar el uso de abonos químicos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "500."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "200."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "20."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "50."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Dónde se originó la planta de la piña?",
+              question:
+                  "El abono orgánico se debe aplicar siempre que sea posible.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Sudamérica."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Hawái."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Europa."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Asia."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -442,59 +449,55 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "El malva es un tono del color:",
+              question:
+                  "¿Qué medidas se pueden tomar para incrementar el rendimiento de los cultivos?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Morado."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Rojo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Carmelita."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Rosado."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Semilla resistente a sequía."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "NO rotar cultivos."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Sembrar con lluvias."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Abonos nitrogenados."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Qué líder religioso visitó Cuba en 1998?",
+              question:
+                  "Los suelos son ecosistemas con una altísima biodiversidad.",
               answers: [
-                TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Papa Juan Pablo II."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Papa Juan Pablo III."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Papa Francisco."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Papa Benedicto XVI."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "¿Cuál es el signo zodiacal de alguien nacido el día de San Valentín?",
+              question: "La vegetación protege a los suelos de la erosión",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Acuario."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Piscis."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Capricornio."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Escorpión."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
               question:
-                  "Si plantases las semillas de Quercus robur, ¿qué crecería?",
+                  "La erosión es importante pues permite el reciclaje de los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Árboles."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Granos."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Vegetales."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Flores."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿En qué galaxia se encuentra la Tierra?",
+              question:
+                  "La supervivencia de todas las especies terrestres depende de los suelos",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "La Vía Láctea."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Molinillo Austral."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Galaxia del Molinete."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "Enana del Can Mayor."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -504,52 +507,48 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuál es el río más largo del mundo?",
+              question: "Los suelos son importantes para la ganadería.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "El Amazonas."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Nilo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Yangtsé."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Misisipi."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál es el país con más habitantes del mundo?",
+              question: "Los suelos salinizados afectan la agricultura.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "China."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "India."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Rusia."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Estados Unidos."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuál es el edificio más alto del mundo?",
+              question:
+                  "La ganadería intensiva reduce la fertilidad de los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Burj Khalifa."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Torre de Shanghái."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Makkah Royal."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Merdeka 118."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿En qué año cayó el muro de Berlín?",
+              question: "La deforestación provoca la erosión de los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1989."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1990."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1988."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1987."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuántos años duró la Primera Guerra Mundial?",
+              question: "Las prácticas de corte y quema deterioran los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "4."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "6."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -559,59 +558,61 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuántos años duró la Segunda Guerra Mundial?",
+              question:
+                  "La rotación de los cultivos garantiza la fertilidad de los suelos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "6."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "4."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Qué estatua de qué famoso animador se encuentra en La Habana?",
+              question: "¿Qué es la resiliencia?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "John Lennon."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Michael Jackson."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Liberace."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Elvis Presley."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Autorecuperarse."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Financiamiento estatal."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Abandonar un lugar."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Resistencia al calor."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question:
-                  "¿Cuál NO es una de las siete maravillas del mundo moderno?",
+              question: "¿Qué es la resiliencia ambiental?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Coloso de Rodas."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Coliseo de Roma."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Taj Mahal."),
                 TriviaQuestionAnswerDomain(
-                    id: 4, answer: "El Cristo Redentor."),
+                    id: 1, answer: "Ecosistema que se autorestaura."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Reforestación."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Dragar embalces."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Escuelas ambientales."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cuándo llegó Cristóbal Colón a América?",
+              question: "¿Qué es la resiliencia de una ciudad o país?",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "12 de octubre de 1492."),
+                    id: 1, answer: "Sistema que se autorestaura."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "13 de octubre de 1492."),
+                    id: 2, answer: "Construir con donaciones."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "11 de octubre de 1493."),
+                    id: 3, answer: "Restaurar tendidos eléctricos."),
                 TriviaQuestionAnswerDomain(
-                    id: 4, answer: "12 de octubre de 1493."),
+                    id: 4, answer: "Soporte contra terremotos."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuál es el animal que más muertes provoca cada año?",
+              question:
+                  "¿Los bosques pueden recuperarse por sí mismos después de un incendio?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Mosquito."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Tiburón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Serpiente."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Araña."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -621,52 +622,51 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuál es el planeta más grande del Sistema Solar?",
+              question:
+                  "El cambio climático provoca afectaciones a la agricultura.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Júpiter."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Venus."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Martes."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "La Tierra."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuántos huesos tiene el cuerpo humano?",
+              question:
+                  "El cambio climático provoca afectaciones a los ecosistemas naturales.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "206."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "198."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "210."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "194."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuántas notas musicales existen?",
+              question:
+                  "El calentamiento global puede incrementar el desarrollo de plagas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "12."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "7."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "15."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "9."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿En qué año se inventó la imprenta?",
+              question: "La variabilidad climática es un proceso natural. ",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1440."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1450."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1455."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1430."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuál es el mineral más duro del planeta?",
+              question:
+                  "El cambio climático puede provocar la extinción de especies autóctonas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Diamante."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Oro."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Hierro."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Zinc."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -676,53 +676,52 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuántos corazones tiene un gusano de tierra?",
+              question:
+                  "El Cambio climático puede provocar sequías extremas y prolongadas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "2."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "4."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál de estos autores vivió en Cuba durante años?",
+              question:
+                  "El calentamiento global induce el blanqueamiento y muerte de los corales.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ernest Hemingway."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Lawrence Kaplow."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "James Joyce."),
-                TriviaQuestionAnswerDomain(
-                    id: 4, answer: "F. Scott Fitzgerald."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuál es el planeta más alejado del Sol?",
+              question:
+                  "La muerte de corales y manglares afecta la reproducción de especies marinas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Neptuno."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Plutón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Venus."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Mercurio."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿En qué año llegó el hombre a la Luna?",
+              question:
+                  "La variabilidad climática se puede evitar eliminando el marabú.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1969."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1965."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1960."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1963."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuántos dientes tienen los seres humanos?",
+              question:
+                  "El cambio climático favorece la formación de los hielos polares.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "32."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "35."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "27."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "31."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -732,52 +731,52 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿En qué país nació Adolf Hitler?",
+              question:
+                  "La variabilidad climática puede provocar la reducción de la lluvia.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Austria."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Alemania."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Rusia."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Rumania."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál es el primer elemento de la tabla periódica?",
+              question:
+                  "El cambio climático induce la ocurrencia de eventos de lluvias extremas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Hidrógeno."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Helio."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Litio."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Berilio."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuánto duró “La Guerra de los Cien Años”?",
+              question:
+                  "La sequía es beneficiosa para la agricultura en las montañas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "116."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "100."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "110."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "107."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Quién descubrió la penicilina?",
+              question:
+                  "Para controlar la sequía hay que reforestar los bosques.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Alexander Fleming."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Manuel Jalón."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Thomas Edison."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Nikola Tesla."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuántos días tiene un año bisiesto?",
+              question:
+                  "Cosechar la lluvia reduce el impacto negativo de la sequía.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "366."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "367."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "365."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "364."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -787,52 +786,54 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Cuántos anillos hay en la bandera olímpica?",
+              question:
+                  "Los sistemas de captación de agua de lluvia incrementan la salinidad de los ríos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "9."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "7."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál de estos colores NO está en la bandera cubana?",
+              question:
+                  "El calentamiento global mejora los rendimientos de los cultivos en los trópicos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Amarillo."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Blanco."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Azul."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Rojo."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuál era el nombre de pila de Che Guevara?",
+              question:
+                  "El aumento del nivel del mar en los terrenos bajos costeros:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ernesto."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Mario."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Tomás."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Alejandro."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Provoca inundaciones."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Mejora los suelos."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Aumenta las reservas."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Favorece la pesca."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Quién es el fundador de Facebook?",
+              question: "El cambio climático afecta el medio marino:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Mark Zuckerberg."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Bill Gates."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Steve Jobs."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Ronald Wayne."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuántos años son un lustro?",
+              question:
+                  "El vertimiento de contaminantes en los océanos impacta en las especies marinas.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "100."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "10."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "500."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
         ],
       ),
@@ -842,52 +843,69 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿De qué grupo formaba parte Paul McCartney?",
+              question:
+                  "¿Cómo se pueden reducir la contaminación del agua de los ríos?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "The Beatles."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Backstreet Boys."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "One Direction."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Bee Gees."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "NO verter desechos."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Eliminar bosques."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Dragar ríos."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Construir represas."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question: "¿Cuál NO es un color primario?",
+              question: "¿Cómo se pueden reducir la contaminación de los ríos?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Verde."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Amarillo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Rojo."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Azul."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "NO lavar en los causes."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Construir embalses."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Muros de contención."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Cercar sus márgenes."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿Cuántas patas tiene una araña?",
+              question:
+                  "¿Qué medidas se pueden tomar para potabilizar el agua?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "8."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "2."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "4."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "6."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Hervirla y filtrarla."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Tomar agua de lagos."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Tomar agua de ríos."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Ahorrar agua."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Qué célebre compositor clásico era sordo?",
+              question: "¿Cómo se protegen las aguas subterráneas?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Beethoven."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Chopin."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Bach."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Mozart."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "NO verter basura."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Tapando las cavernas."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Sembrando marabú."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Cultivando champiñones."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿Cuántas películas de Harry Potter se han hecho?",
+              question:
+                  "¿Cómo se puede reducir la contaminación de las aguas subterráneas?",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "8."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "6."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "9."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "7."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "NO verter desechos."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Pozos de explotación."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Letrinas."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Reduciendo los bosques."),
               ]),
         ],
       ),
@@ -897,54 +915,61 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿En qué país se encuentra la Riviera Maya?",
+              question: "¿En qué consiste la adaptación al cambio climático? ",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "México."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Colombia."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Ecuador."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Brasil."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Mayor resiliencia."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Materiales de respuesto."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Cursos de agricultura."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Cursos de superación."),
               ]),
           TriviaQuestionDomain(
               id: 2,
               correctAnswerId: 1,
-              question:
-                  "¿Qué animal contagió a los humanos en la pandemia de peste negra?",
+              question: "Medida de enfrentamiento al cambio climático:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Pulgas."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ratas."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Gatos."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Perros."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Investigación."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Mejorar la red de viales."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Invertir en ferrocarriles."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Construir escuelas."),
               ]),
           TriviaQuestionDomain(
               id: 3,
               correctAnswerId: 1,
-              question: "¿De qué isla son endémicos los lémures?",
+              question:
+                  "Adaptarse al cambio climático requiere nuevas estrategias de producción de alimentos",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Madagascar."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cuba."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Hawái."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Puerto Rico."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 4,
               correctAnswerId: 1,
-              question: "¿Cuál es el libro más vendido de la historia?",
+              question:
+                  "El CC se enfrenta aumentando la seguridad ante eventos hidro-meteorológicos.",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "La Biblia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Don Quijote."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Harry Potter."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "El principito."),
+                TriviaQuestionAnswerDomain(id: 1, answer: "Si."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "No."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "No Sé."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question:
-                  "Si elevas cualquier número a 0, ¿qué resultado obtienes siempre?",
+              question: "Medidas de enfrentamiento al CC:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "0."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "El mismo número."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Monitorear el clima."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Extraer agua subterránea."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Medir las lluvias."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Importar alimentos."),
               ]),
         ],
       ),
@@ -954,587 +979,77 @@ class TriviaLevelGeneral {
           TriviaQuestionDomain(
               id: 1,
               correctAnswerId: 1,
-              question: "¿Qué volcán sepultó la ciudad de Pompeya?",
+              question: "Para enfrentar el CC se debe mejorar:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Vesubio."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Tambora​."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Krakatoa."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Timanfaya."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Cuál es la película?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Génesis."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Éxodo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Levítico."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Jeremías."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿A qué país pertenece Groenlandia?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Dinamarca."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Alemania."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Rusia."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Francia."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿En qué continente está Siria?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Asia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Europa."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "América."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Australia."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Cómo se llama al resultado de una multiplicación?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Producto."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Sumando."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Resto."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Dividendo."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 21,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Quién postuló las leyes del movimiento?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Isaac Newton."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Galileo Galilei."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Albert Einstein."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Paul Dirac."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Cuál es el planeta más cercano al Sol?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Mercurio."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Martes."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Venus."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "La Tierra."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿Cuántos corazones tiene un pulpo?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Quién formuló la Teoría de la Relatividad?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Albert Einstein."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Michael Faraday."),
                 TriviaQuestionAnswerDomain(
-                    id: 3, answer: "Ernerst Rutherford."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Niels Bohr."),
+                    id: 1, answer: "Estrategia nacional."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "Puentes ferroviarios."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Túneles."),
+                TriviaQuestionAnswerDomain(id: 4, answer: "Ciudades."),
+              ]),
+          TriviaQuestionDomain(
+              id: 2,
+              correctAnswerId: 1,
+              question: "¿En qué consiste la mitigación del cambio climático? ",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Reducir gases emitidos."),
+                TriviaQuestionAnswerDomain(
+                    id: 2, answer: "No afectar capa de ozono."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Superación de agrónomos."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Reducir los bosques."),
+              ]),
+          TriviaQuestionDomain(
+              id: 3,
+              correctAnswerId: 1,
+              question: "Estrategias para la mitigación:",
+              answers: [
+                TriviaQuestionAnswerDomain(id: 1, answer: "Energía limpia."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Termoeléctricas."),
+                TriviaQuestionAnswerDomain(
+                    id: 3, answer: "Combustibles fósiles."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Industria siderúrgica."),
+              ]),
+          TriviaQuestionDomain(
+              id: 4,
+              correctAnswerId: 1,
+              question: "¿Cómo contribuir a la mitigación?",
+              answers: [
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Captura de carbono."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Red de lecherías."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Reducir el ganado."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Controlar nivel del mar."),
               ]),
           TriviaQuestionDomain(
               id: 5,
               correctAnswerId: 1,
-              question: "¿A qué hora se tira el cañonazo en la Habana? ",
+              question: "Una medida de mitigación:",
               answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "9:00 p.m."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "10:00 p.m."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "8:00 p.m."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "7:00 p.m."),
+                TriviaQuestionAnswerDomain(
+                    id: 1, answer: "Ahorrar combustibles."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Utilizar petróleo."),
+                TriviaQuestionAnswerDomain(id: 3, answer: "Importar diesel."),
+                TriviaQuestionAnswerDomain(
+                    id: 4, answer: "Transporte subterráneo."),
               ]),
           TriviaQuestionDomain(
               id: 6,
               correctAnswerId: 1,
-              question: "¿Dónde originaron los juegos olímpicos?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Grecia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Roma."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "España."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Alemania."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 22,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Quién es el autor de el Quijote?",
+              question: "Iniciativa para contribuir a la mitigación:",
               answers: [
                 TriviaQuestionAnswerDomain(
-                    id: 1, answer: "Miguel de Cervantes."),
+                    id: 1, answer: "Producciones circulares."),
+                TriviaQuestionAnswerDomain(id: 2, answer: "Quemar carbón."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "William Shakespeare."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "George Orwell."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "William Faulkner."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Quién escribió La Odisea?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Homero."),
+                    id: 3, answer: "Ganadería intensiva."),
                 TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Gabriel García Márquez."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Charles Dickens."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Ernest Hemmingway."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿Quién pintó “La última cena”?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Leonardo da Vinci."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Donatello."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Miguel Ángel."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Picasso."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿En qué país se encuentra la torre de Pisa?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Italia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Roma."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Francia."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "España."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Quién es el padre del psicoanálisis?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Sigmund Freud."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Wilhelm Wundt."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Lev Vygotsky."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Albert Bandura."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿Qué producto cultiva más Guatemala?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Café."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Arroz."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Azúcar."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Trigo."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 23,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Dónde se encuentra la famosa Torre Eiffel?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 3, answer: "Francia."),
-                TriviaQuestionAnswerDomain(id: 1, answer: "Italia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Roma."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "España."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Qué deporte practicaba Michael Jordan?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Baloncesto."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Fútbol."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Ajedrez."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Tenis."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿Cuál es tercer planeta en el sistema solar?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "La Tierra."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Mercurio."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Martes."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Júpiter."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Qué país tiene forma de bota visto en un mapa?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Italia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cuba."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Roma."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "México."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Qué rama de la Biología estudia los animales?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Zoología."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Anatomía."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Fisiología."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Genética."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿Quién nombro a la Isla con el nombre de Cuba?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Cristóbal Colón."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Sebastián de Ocampo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Fidel Castro."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Simón Bolívar."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 24,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Cuál es el nombre de la lengua oficial en china?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Mandarín."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Chino."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Español."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Ingles."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question:
-                  "¿En qué país se encuentra el famoso monumento Taj Mahal?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "India."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "China."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "México."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Roma."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question:
-                  "¿Cuál es el primero de la lista de los números primos?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "2."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "5."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Quién escribió “Hamlet”?",
-              answers: [
-                TriviaQuestionAnswerDomain(
-                    id: 1, answer: "William Shakespeare."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Gabriel García Márquez."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Ernest Hemmingway."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Charles Dickens."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿En qué país nació Pablo Neruda?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Chile."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Brasil."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "España."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Ecuador."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿Quién traicionó a Jesús?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Judas."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Moisés."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Salomón."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Sansón."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 25,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿De qué estado fue emperador Napoleón Bonaparte?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Francia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "España."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Roma."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Italia."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Cuánto vale el número pi?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "3,1416..."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "3,1315..."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "3,1426..."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "3,1431..."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿Cuál es el estado político que maneja Cuba?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Socialista."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Comunista."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Monarquía."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Dictatorial."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Cuál es el metal más caro del mundo?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Rodio."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Oro."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Platino."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Hierro."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Cuál es el país con más camellos salvajes?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Australia."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Irán."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Mongolia."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "China."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿En qué año se produce la Revolución Francesa?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1789."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1782."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1786."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1783."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 26,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Cuántas estrellas aparecen en la bandera de China?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "5."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "4."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "3."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿De qué país es originario el café?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Etiopía"),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cuba"),
-                TriviaQuestionAnswerDomain(id: 3, answer: "España"),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Colombia"),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿En qué año murió Steve Jobs?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "2011."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1990."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "2010."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "2021."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿En qué año se inicia la Revolución Rusa?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1917."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1903."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1913."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1907."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Cuántos lados tiene un hexágono?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "6."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "7."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "8."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "9."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿En qué país se encuentra la ciudad de Calcuta?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "India."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Austria."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "España."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Italia."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 27,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question: "¿Sobre qué camina un funambulista?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Una cuerda floja."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Vidrio roto."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Pelotas."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "La luna."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question:
-                  "¿Qué tipo de avión fue desarrollado por Igor Sikorsky en los EEUU en 1942?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Helicóptero."),
-                TriviaQuestionAnswerDomain(
-                    id: 2, answer: "Dirigible sigiloso."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Jet."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Cápsula espacial."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿La cinofobia es el miedo a ...?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Perros."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Aves."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Volar."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Gérmenes."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question: "¿Qué idioma NO es indoeuropeo?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Húngaro."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ruso."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Griego."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Letón."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Cómo se llama Polonia en polaco?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Polska."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Pupcia."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Polszka."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Polonia."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question:
-                  "¿Cuántas calorías hay en una lata de 355 ml de Pepsi Cola?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "150."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "200."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "100."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "155."),
-              ]),
-        ],
-      ),
-      TriviaSubLevelDomain(
-        id: 28,
-        question: [
-          TriviaQuestionDomain(
-              id: 1,
-              correctAnswerId: 1,
-              question:
-                  "¿Qué país, sin incluir Japón, tiene la mayor cantidad de personas de ascendencia japonesa?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Brasil."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "China."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Sur Corea."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Estados Unidos."),
-              ]),
-          TriviaQuestionDomain(
-              id: 2,
-              correctAnswerId: 1,
-              question: "¿Cuándo murió Freddie Mercury?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "1991."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "1990."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "1980."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "1981."),
-              ]),
-          TriviaQuestionDomain(
-              id: 3,
-              correctAnswerId: 1,
-              question: "¿Cuál fue la primera película de Disney?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Blancanieves."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Cenicienta."),
-                TriviaQuestionAnswerDomain(
-                    id: 3, answer: "La Bella Durmiente."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "La Sirenita Ariel."),
-              ]),
-          TriviaQuestionDomain(
-              id: 4,
-              correctAnswerId: 1,
-              question:
-                  "De acuerdo a la Biblia, ¿cuántos años vivió Matusalén?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "969."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "896."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "959."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "569."),
-              ]),
-          TriviaQuestionDomain(
-              id: 5,
-              correctAnswerId: 1,
-              question: "¿Cuál es el primer libro de la Biblia?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Génesis."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Éxodo."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Levítico."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Jeremías."),
-              ]),
-          TriviaQuestionDomain(
-              id: 6,
-              correctAnswerId: 1,
-              question: "¿Quién fue el último faraón de Egipto?",
-              answers: [
-                TriviaQuestionAnswerDomain(id: 1, answer: "Ramsés III."),
-                TriviaQuestionAnswerDomain(id: 2, answer: "Ramsés II."),
-                TriviaQuestionAnswerDomain(id: 3, answer: "Tutankamón."),
-                TriviaQuestionAnswerDomain(id: 4, answer: "Amenhotep II."),
+                    id: 4, answer: "Fumigar periódicamente."),
               ]),
         ],
       ),

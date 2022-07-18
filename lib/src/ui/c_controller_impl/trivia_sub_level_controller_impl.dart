@@ -125,7 +125,7 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
               shadowColor: Colors.green,
               title: 'Respuesta correcta.',
               description:
-                  'Cuando se responde correctamente la pregunta se dibuja de verde.\nSigue así es la única manera de ganar.',
+                  'Cuando se responde correctamente la pregunta se dibuja de verde.\nSiga así es la única manera de ganar.',
               showImage: false,
               contentAlign: ContentAlign.top,
               descriptionMaxLines: 4,
@@ -162,8 +162,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
               title: 'Respuesta incorrecta.',
               description:
                   'Cuando se responde incorrectamente la pregunta se dibuja de rojo.'
-                  '\nUna vez que te equivocas se te dará la posibilidad al finalizar el nivel de intentarlo de nuevo.'
-                  '\nSolo si respondes todas las preguntas correctamente puedes pasar de nivel.',
+                  '\nUna vez que se equivoque se le dará la posibilidad al finalizar el nivel de intentarlo de nuevo.'
+                  '\nSolo si responde todas las preguntas correctamente puede pasar de nivel.',
               showImage: false,
               contentAlign: ContentAlign.top,
               descriptionMaxLines: 7,
@@ -270,9 +270,9 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       childFirstText: [
         _numOfCorrectAnswers == 0
             ? 'Ninguna respuesta fue correcta.'
-            : 'Has respondido $_numOfCorrectAnswers ${_numOfCorrectAnswers == 1 ? 'pregunta' : 'preguntas'} correctamente.',
-        '${_numOfCorrectAnswers / dotCount >= 0.5 ? 'Solo te' : 'Te'} ${dotCount - _numOfCorrectAnswers == 1 ? 'ha' : 'han'} faltado ${dotCount - _numOfCorrectAnswers}.',
-        'Inténtalo de nuevo.',
+            : 'Hay $_numOfCorrectAnswers ${_numOfCorrectAnswers == 1 ? 'pregunta correcta' : 'preguntas correctas'}.',
+        '${dotCount - _numOfCorrectAnswers == 1 ? 'Ha' : 'Han'} faltado ${dotCount - _numOfCorrectAnswers}.',
+        'Inténtelo de nuevo.',
         'El que persevera triunfa.',
       ],
       stars: generateProgress(increment: 1),
@@ -364,8 +364,8 @@ class TriviaSubLevelControllerImpl extends TriviaSubLevelController {
       ),
       rightButtonFunction: () => Get.back(closeOverlays: true),
       childFirstText: [
-        'Te has quedado sin tiempo.',
-        'Inténtalo de nuevo.',
+        'Se ha quedado sin tiempo.',
+        'Inténtelo de nuevo.',
         'El que persevera triunfa.',
       ],
       stars: generateProgress(),

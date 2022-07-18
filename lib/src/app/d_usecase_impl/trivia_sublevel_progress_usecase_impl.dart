@@ -1,9 +1,9 @@
 import 'package:citmatel_strawberry_trivia/src/app/trivia_app_exporter.dart';
 import 'package:clean_core/clean_core.dart';
 
-class TriviaSubLevelProgressUseCaseImpl
-    extends DefaultCRUDUseCase<TriviaSubLevelProgressDomain>
-    implements TriviaSubLevelProgressUseCase {
+class TriviaSubLevelProgressUseCaseImpl extends DefaultCRUDUseCase<
+    TriviaSubLevelProgressDomain,
+    TriviaSubLevelProgressRepo> implements TriviaSubLevelProgressUseCase {
   late TriviaSubLevelProgressRepo _repo;
 
   TriviaSubLevelProgressUseCaseImpl(TriviaSubLevelProgressRepo repo)

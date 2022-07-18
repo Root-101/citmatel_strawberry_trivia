@@ -174,10 +174,11 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         shadowColor: Colors.blue.shade800,
         title: 'Atrás',
         description:
-            'Pulse este botón si desea volver a la pantalla de niveles.',
+            'Pulse este botón si desea volver a la pantalla de niveles.\n'
+            '\nPara avanzar en el tutorial pulse en la zona señalada o en los espacios vacíos.',
         showImageOnTop: false,
         imagePadding: 50,
-        descriptionMaxLines: 2,
+        descriptionMaxLines: 8,
       ),
     );
 
@@ -215,7 +216,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         shadowColor: Colors.teal,
         title: 'Estrellas',
         description:
-            'Las estrellas indican cuan bien has realizado el nivel.\nPara obtenerlas todas debes completar el nivel sin equivocarte ni una sola vez.',
+            'Las estrellas indican cuan bien ha realizado el nivel.\nPara obtenerlas todas debe completar el nivel sin equivocarse ni una sola vez.',
         showImageOnTop: false,
         imagePadding: 50,
         descriptionMaxLines: 5,
@@ -255,7 +256,7 @@ class _TriviaSubLevelScreenState extends State<TriviaSubLevelScreen> {
         textCrossAxisAlignment: CrossAxisAlignment.start,
         title: 'El tiempo restante.',
         description:
-            'En cuanto respondas la primera pregunta empieza a descontar.\n¡Ten cuidado!',
+            'En cuanto responda la primera pregunta empieza a descontar.\n¡Tenga cuidado!',
         shape: ShapeLightFocus.Circle,
         descriptionMaxLines: 4,
       ),
